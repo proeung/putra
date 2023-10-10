@@ -1,4 +1,4 @@
-import Alert from './alert'
+import Header from './header'
 import Footer from './footer'
 import Meta from './meta'
 
@@ -11,10 +11,8 @@ const Layout = ({ preview, children }: Props) => {
   return (
     <>
       <Meta />
-      <div className="min-h-screen">
-        <Alert preview={preview} />
-        <main>{children}</main>
-      </div>
+      <Header />
+        <main className="min-h-screen">{children}</main>
       <Footer />
     </>
   )

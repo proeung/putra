@@ -10,8 +10,31 @@ module.exports = {
         success: '#0070f3',
         cyan: '#79FFE1',
       },
-      spacing: {
-        28: '7rem',
+      screens: {
+        'sm': '624px',
+        'md': '768px',
+        'lg': '1050px',
+        'xl': '1340px',
+        'xxl': '1680px',
+      },
+      fontFamily: {
+        'sans': [
+          'SofiaPro',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          'Segoe UI',
+          'Roboto',
+          'Helvetica Neue',
+        ],
+        'sans-secondary': [
+          'Heebo',
+          'Roboto',
+          'Oxygen',
+          'Ubuntu',
+          'Fira Sans',
+          'Droid Sans',
+          'Helvetica Neue',
+        ],
       },
       letterSpacing: {
         tighter: '-.04em',

@@ -2,12 +2,13 @@ import Link from 'next/link'
 
 const Header = () => {
   return (
-    <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8">
-      <Link href="/" className="hover:underline">
-        Blog
-      </Link>
-      .
-    </h2>
+    <header className="container mx-auto px-5 w-full">
+      <h1 className="text-4xl md:text-7xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-20">
+        <Link href="/" className="hover:underline">
+          putra.
+        </Link>
+      </h1>
+    </header>
   )
 }
 
