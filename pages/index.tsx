@@ -7,6 +7,7 @@ import { CMS_NAME } from '../lib/constants'
 import Post from '../interfaces/post'
 import MoreStories from '../components/more-stories'
 import MoreArticles from '../components/more-articles'
+import About from '../components/about'
 
 type Props = {
   allPosts: Post[]
@@ -24,6 +25,7 @@ export default function Index({ allPosts }: Props) {
           <Intro />
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
           <MoreArticles posts={morePosts} />
+          <About />
       </Layout>
     </>
   )
