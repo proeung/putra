@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./components/**/*.tsx', './pages/**/*.tsx'],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -10,37 +11,19 @@ module.exports = {
         success: '#0070f3',
         cyan: '#79FFE1',
       },
-      screens: {
-        'sm': '624px',
-        'md': '768px',
-        'lg': '1050px',
-        'xl': '1340px',
-        'xxl': '1680px',
-      },
       fontFamily: {
         'sans': [
           'SofiaPro',
-          '-apple-system',
-          'BlinkMacSystemFont',
           'Segoe UI',
           'Roboto',
           'Helvetica Neue',
+          'sans-serif'
         ],
-        'sans-secondary': [
-          'Heebo',
-          'Roboto',
-          'Oxygen',
-          'Ubuntu',
-          'Fira Sans',
-          'Droid Sans',
-          'Helvetica Neue',
-        ],
-      },
-      letterSpacing: {
-        tighter: '-.04em',
-      },
-      lineHeight: {
-        tight: 1.2,
+        'serif': [
+          'Playfair Display',
+          'Georgia',
+          'serif'
+        ]
       },
       fontSize: {
         '5xl': '2.5rem',
