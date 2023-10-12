@@ -5,7 +5,7 @@ const Header = () => {
     <header className="sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.08] bg-white dark:bg-slate-900/75">
       <div className="container mx-auto px-5 py-8 w-full">
         <div className="flex items-center justify-between">
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight md:tracking-tighter text-zinc-800 dark:text-zinc-100 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight md:tracking-tighter text-zinc-800 dark:text-zinc-100 leading-tight">
             <Link href="/">
               putra<span className="text-teal-500">.</span>
             </Link>

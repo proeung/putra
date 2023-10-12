@@ -3,7 +3,6 @@ import Intro from '../components/intro'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
-import { CMS_NAME } from '../lib/constants'
 import Post from '../interfaces/post'
 import MoreStories from '../components/more-stories'
 import MoreArticles from '../components/more-articles'
@@ -21,7 +20,7 @@ export default function Index({ allPosts }: Props) {
     <>
       <Layout>
         <Head>
-          <title>{`Putra Bonaccorsi`}</title>
+          <title>{`Putra Bonaccorsi | Portfolio`}</title>
         </Head>
           <Intro />
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
