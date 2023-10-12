@@ -13,7 +13,7 @@ const MoreStories = ({ posts }: Props) => {
 
   return (
     <section className="container relative mx-auto px-5 md:mb-40 mt-28 w-full">
-      <div aria-hidden="true" className="pointer-events-none hidden lg:block blob absolute opacity-50 -right-40 -top-56 z-[-1]"></div>
+      <div aria-hidden="true" className="pointer-events-none hidden lg:block blob absolute opacity-30 -right-40 -top-56 z-[-1]"></div>
       <div className="grid grid-cols-3 gap-8">
         <div className="row-span-1 rounded-3xl bg-neutral-100 p-4 dark:bg-slate-800">
         </div>
@@ -56,6 +56,7 @@ const MoreStories = ({ posts }: Props) => {
               </div>
           </div>
         </div>
+        
       </div>
 
       <div aria-hidden="true" className="pointer-events-none hidden lg:block blob absolute opacity-30 -left-40 -bottom-1/4 z-[-1]"></div>

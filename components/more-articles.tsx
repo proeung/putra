@@ -1,5 +1,6 @@
 import PostPreview from './post-preview'
 import type Post from '../interfaces/post'
+import Container from './container'
 
 type Props = {
   posts: Post[]
@@ -7,12 +8,12 @@ type Props = {
 
 const MoreArticles = ({ posts }: Props) => {
   return (
-    <section className="bg-slate-50 dark:bg-slate-800 mt-28 w-full">
-      <div className="container mx-auto px-5 py-40">
+    <section className="border-t lg:border-slate-900/10 dark:border-slate-50/[0.08] bg-slate-50 dark:bg-slate-900 py-40 w-full">
+      <Container>
         <div className="max-w-2xl">
-          <h1 className="text-4xl font-light font-serif tracking-tight text-zinc-800 leading-tight dark:text-zinc-100 sm:text-6xl">
-          Writing on tech & gardening.
-          </h1>
+          <h2 className="text-4xl font-light font-serif tracking-tight text-zinc-800 leading-tight dark:text-zinc-100 sm:text-6xl">
+          Writing on tech.
+          </h2>
           <p className="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
             All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order.
           </p>
@@ -119,7 +120,7 @@ const MoreArticles = ({ posts }: Props) => {
             />
           ))}
         </div> */}
-      </div>
+      </Container>
 
     </section>
   )
