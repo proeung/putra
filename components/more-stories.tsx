@@ -7,9 +7,9 @@ type Props = {
 
 const MoreStories = ({ posts }: Props) => {
   // Placeholder video path
-  const placeholderVideo = '/assets/work/outrider/1062304438.mp4';
-  const placeholderVideTwo = '/assets/work/albright-knox/1251772433.mp4';
-  const placeholderVideThree = '/assets/work/happy-cog/work--happy-cog.mp4';
+  const placeholderVideo = '/assets/work/outrider/work--outrider.mp4';
+  const placeholderVideTwo = '/assets/work/albright-knox/work--albright-knox-compressed.mp4';
+  const placeholderVideThree = '/assets/work/happy-cog/work--happy-cog-homepage.mp4';
 
   return (
     <section className="container relative mx-auto px-5 md:mb-40 mt-28 w-full">
@@ -55,8 +55,7 @@ const MoreStories = ({ posts }: Props) => {
                   </video>
               </div>
           </div>
-        </div>
-        
+        </div>        
       </div>
 
       <div aria-hidden="true" className="pointer-events-none hidden lg:block blob absolute opacity-30 -left-40 -bottom-1/4 z-[-1]"></div>

@@ -8,7 +8,7 @@ const Intro = () => {
           Creative developer/designer, founder, and garden enthusiast based outside of Philadelphia.
         </h1>
         <p className="mt-6 text-lg text-zinc-600 max-w-lg dark:text-zinc-400">
-          Scroll down to see for some of my selected web projects that I've done over my profressional career.
+          Scroll down to see a curated selection of web projects from my extensive professional journey.
         </p>
   
       </div>
