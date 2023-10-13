@@ -9,7 +9,7 @@ const MoreStories = ({ posts }: Props) => {
   // Placeholder video path
   const placeholderVideo = '/assets/work/outrider/1062304438.mp4';
   const placeholderVideTwo = '/assets/work/albright-knox/1251772433.mp4';
-  const placeholderVideThree = '/assets/work/wwii/1252901439.mp4';
+  const placeholderVideThree = '/assets/work/happy-cog/work--happy-cog.mp4';
 
   return (
     <section className="container relative mx-auto px-5 md:mb-40 mt-28 w-full">
@@ -33,7 +33,7 @@ const MoreStories = ({ posts }: Props) => {
           <div className="relative aspect-video overflow-hidden">
               <div className="absolute inset-0">
                   <video autoPlay loop muted playsInline className="object-cover w-full h-full">
-                      <source src={placeholderVideThree} type="video/mp4" />
+                      <source src={placeholderVideTwo} type="video/mp4" />
                       Your browser does not support the video tag.
                   </video>
               </div>
@@ -50,7 +50,7 @@ const MoreStories = ({ posts }: Props) => {
           <div className="relative aspect-video overflow-hidden">
               <div className="absolute inset-0">
                   <video autoPlay loop muted playsInline className="object-cover w-full h-full">
-                      <source src={placeholderVideTwo} type="video/mp4" />
+                      <source src={placeholderVideThree} type="video/mp4" />
                       Your browser does not support the video tag.
                   </video>
               </div>

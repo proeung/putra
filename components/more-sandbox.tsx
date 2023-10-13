@@ -31,8 +31,8 @@ const MoreSandBox = () => {
           <h2 className="text-4xl font-light font-serif tracking-tight text-zinc-800 leading-tight dark:text-zinc-100 sm:text-6xl">
           Sandbox.
           </h2>
-          <p className="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
-            Step into my creative playground, where  I experiment with new frameworks and transforming ideas into living prototypes for thorough testing and exploration.
+          <p className="mt-6 text-lg text-zinc-600 max-w-lg dark:text-zinc-400">
+            Step into my playground, where  I experiment with new frameworks and transforming ideas into living prototypes.
           </p>
         </div>
 
@@ -60,7 +60,7 @@ const MoreSandBox = () => {
                 </div>
             </div>
             <h3 className="font-bold text-xl tracking-tight text-center mt-8 mb-4">
-              Leader Board - Alpine & Tailwind CSS
+            Leader Board - Alpine & Tailwind CSS
             </h3>
           </a>
 

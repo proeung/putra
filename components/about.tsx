@@ -11,10 +11,10 @@ const About = () => {
               About.
             </h2>
             <p className="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
-              I'm Putra, a highly skilled front-end engineer with over 10+ years of experience. My expertise lies in utilizing my design background to craft captivating web projects and design system component libraries. In my role as a Design Technologist Lead, I excel in bridging the gap between design and engineering, overseeing projects from initial prototypes to refined production code.
+              I'm Putra, a Design Technologist with expertise in Technical Project Management, based South Jersey/Philadelphia area. I'm also the co-founder of <Link href="https://offred.co" target="_blank" className="font-bold text-teal-600 dark:text-teal-500 hover:underline">Off Red</Link>, where we craft innovative apps to satisfy our own curiosities and love for reality shows.
             </p>
             <p className="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
-              Leveraging my dual role as an engineer and technical project manager, I efficiently create and manage design libraries, collaborating seamlessly with cross-functional teams, including UX Designers, Backend Engineers, and Product Owners. I’m passionate about leveraging my skills to elevate digital projects to their full potential.
+              In my role as a Design Technologist Lead, I excel in bridging the gap between design and engineering, overseeing projects from initial prototypes to refined production code. Leveraging my dual role as an engineer and technical project manager, I efficiently create and manage design libraries, collaborating seamlessly with cross-functional teams, including UX Designers, Backend Engineers, and Product Owners. I’m passionate about leveraging my skills to elevate digital projects to their full potential.
             </p>
             <p className="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
               When I'm not immersed in code, I indulge my love for gardening, sharing my passion on Instagram and TikTok <Link href="https://instagram.com/goodpathgarden/" target="_blank" className="font-bold text-teal-600 dark:text-teal-500 hover:underline">@goodpathgarden</Link>. In addition, my competitive spirit shines as I co-founded and manage a fantasy league app dedicated to the hit reality show "Big Brother" alongside my husband, aptly named <Link href="https://fantasybb.com/" target="_blank" className="font-bold text-teal-600 dark:text-teal-500 hover:underline">FantasyBB</Link>.
@@ -68,11 +68,11 @@ const About = () => {
             </div>
           </div>
 
-          <div className="auto-rows-[250px] grid grid-cols-2 gap-8 lg:pl-16 xl:pl-24">
-            <div className="row-span-2 rounded-3xl bg-neutral-100 p-4 dark:bg-slate-800">
+          <div className="auto-rows-[250px] grid grid-cols-2 gap-8 self-center lg:pl-16 xl:pl-24">
+            <div className="row-span-1 rounded-3xl bg-neutral-100 p-4 dark:bg-slate-800">
             </div>
 
-            <div className="row-span-1 rounded-3xl bg-neutral-100 p-4 dark:bg-slate-800">
+            <div className="row-span-2 rounded-3xl bg-neutral-100 p-4 dark:bg-slate-800">
             </div>
 
             <div className="row-span-1 rounded-3xl bg-neutral-100 p-4 dark:bg-slate-800">
