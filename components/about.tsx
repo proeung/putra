@@ -68,14 +68,34 @@ const About = () => {
             </div>
           </div>
 
-          <div className="auto-rows-[250px] grid grid-cols-2 gap-8 self-center lg:pl-16 xl:pl-24">
-            <div className="row-span-1 rounded-3xl bg-neutral-100 p-4 dark:bg-slate-800">
+          <div className="auto-rows-[210px] grid grid-cols-2 gap-8 self-center lg:pl-16 xl:pl-24">
+            <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-neutral-900 via-teal-300 to-violet-500">
+              <div className="grayscale-[60%]">
+                <img
+                  src="/assets/about/about--pic-01.webp"
+                  className="object-cover"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
             </div>
 
-            <div className="row-span-2 rounded-3xl bg-neutral-100 p-4 dark:bg-slate-800">
+            <div className="row-span-2 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden">
+              <img
+                src="/assets/about/about--pic-03.webp"
+                className="grayscale h-full object-cover transition hover:grayscale-0"
+                alt=""
+                loading="lazy"
+              />
             </div>
 
-            <div className="row-span-1 rounded-3xl bg-neutral-100 p-4 dark:bg-slate-800">
+            <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden">
+              <img
+                src="/assets/about/about--pic-02.webp"
+                className="grayscale w-full object-cover transition hover:grayscale-0"
+                alt=""
+                loading="lazy"
+              />
             </div>          
           </div>
         </div>
