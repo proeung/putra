@@ -3,7 +3,7 @@ import Container from "./container"
 
 const About = () => {
   return (
-    <section className="border-t lg:border-slate-900/10 dark:border-slate-50/[0.1] py-40 w-full">
+    <section id="about" className="border-t lg:border-slate-900/10 dark:border-slate-50/[0.1] py-40 w-full">
       <Container>
         <div className="mx-auto grid max-w-xl grid-cols-1 lg:max-w-none lg:grid-cols-2">
           <div className="max-w-2xl">
@@ -68,35 +68,42 @@ const About = () => {
             </div>
           </div>
 
-          <div className="auto-rows-[210px] grid grid-cols-2 gap-8 self-center lg:pl-16 xl:pl-24">
-            <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-neutral-900 via-teal-300 to-violet-500">
-              <div className="grayscale-[60%]">
-                <img
-                  src="/assets/about/about--pic-01.webp"
-                  className="object-cover"
-                  alt=""
-                  loading="lazy"
-                />
-              </div>
-            </div>
-
-            <div className="row-span-2 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden">
+          <div className="auto-rows-[125px] grid grid-cols-2 gap-8 self-center lg:pl-16 xl:pl-24">
+            <div className="row-span-2 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-neutral-900 shadow-md via-teal-300 to-violet-500">
               <img
-                src="/assets/about/about--pic-03.webp"
-                className="grayscale h-full object-cover transition hover:grayscale-0"
+                src="/assets/about/about--pic-01.webp"
+                className="grayscale-[60%] h-full object-cover"
                 alt=""
                 loading="lazy"
               />
             </div>
 
-            <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden">
+            <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden shadow-md">
               <img
                 src="/assets/about/about--pic-02.webp"
-                className="grayscale w-full object-cover transition hover:grayscale-0"
+                className="grayscale w-full object-cover transition duration-500 ease-out hover:grayscale-0"
                 alt=""
                 loading="lazy"
               />
-            </div>          
+            </div>
+
+            <div className="row-span-2 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden shadow-md">
+              <img
+                src="/assets/about/about--pic-03.webp"
+                className="grayscale h-full object-cover transition duration-500 ease-out hover:grayscale-0"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+
+            <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden shadow-md">
+              <img
+                src="/assets/about/about--pic-04.webp"
+                className="grayscale w-full object-cover transition duration-500 ease-out hover:grayscale-0"
+                alt=""
+                loading="lazy"
+              />
+            </div>         
           </div>
         </div>
         

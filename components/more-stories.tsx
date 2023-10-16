@@ -12,7 +12,7 @@ const MoreStories = ({ posts }: Props) => {
   const placeholderVideThree = '/assets/work/happy-cog/work--happy-cog-homepage.mp4';
 
   return (
-    <section className="container relative mx-auto px-5 md:mb-40 mt-28 w-full">
+    <section id="work" className="container relative mx-auto px-5 md:mb-40 mt-28 w-full">
       <div aria-hidden="true" className="pointer-events-none hidden lg:block blob absolute opacity-30 -right-40 -top-56 z-[-1]"></div>
       <div className="grid grid-cols-3 gap-8">
         <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden">
@@ -45,7 +45,20 @@ const MoreStories = ({ posts }: Props) => {
           </div>
         </div>
 
-        <div className="row-span-1 rounded-3xl bg-neutral-100 p-4 dark:bg-slate-800">
+        <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden px-10 pt-10">
+          <div className="w-full h-full shadow-lg h-[515px] overflow-hidden">
+            <div className="w-full h-10 rounded-t-lg bg-gray-200 dark:bg-slate-900 flex justify-start items-center space-x-1.5 px-4">
+              <span className="w-2 h-2 rounded-full bg-red-400" />
+              <span className="w-2 h-2 rounded-full bg-yellow-400" />
+              <span className="w-2 h-2 rounded-full bg-green-400" />
+            </div>
+            <img
+              src="/assets/work/merative/work--merative-thumb.webp"
+              className="w-full object-cover"
+              alt=""
+              loading="lazy"
+            />
+          </div>
         </div>
 
         <div className="row-span-1 rounded-3xl bg-neutral-100 p-4 dark:bg-slate-800">

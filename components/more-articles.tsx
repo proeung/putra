@@ -8,7 +8,7 @@ type Props = {
 
 const MoreArticles = ({ posts }: Props) => {
   return (
-    <section className="border-t lg:border-slate-900/10 bg-white dark:border-slate-50/[0.08] dark:bg-slate-900 py-40 w-full">
+    <section id="articles" className="border-t lg:border-slate-900/10 bg-white dark:border-slate-50/[0.08] dark:bg-slate-900 py-40 w-full">
       <Container>
         <div className="max-w-2xl">
           <h2 className="text-4xl font-light font-serif tracking-tight text-zinc-800 leading-tight dark:text-zinc-100 sm:text-6xl">
@@ -25,7 +25,7 @@ const MoreArticles = ({ posts }: Props) => {
               <article className="md:grid md:grid-cols-4 md:items-baseline">
                 <div className="md:col-span-3 group relative flex flex-col items-start">
                   <h2 className="font-bold text-2xl tracking-tight text-zinc-800 dark:text-zinc-100">
-                    <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-600/50 sm:-inset-x-6 sm:rounded-2xl" />
+                    <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition duration-300 ease-out group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-600/50 sm:-inset-x-6 sm:rounded-2xl" />
                     <a href="/articles/crafting-a-design-system-for-a-multiplanetary-future">
                       <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl" />
                       <span className="relative z-10">
@@ -66,7 +66,7 @@ const MoreArticles = ({ posts }: Props) => {
               <article className="md:grid md:grid-cols-4 md:items-baseline">
                 <div className="md:col-span-3 group relative flex flex-col items-start">
                   <h2 className="font-bold text-2xl tracking-tight text-zinc-800 dark:text-zinc-100">
-                    <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-600/50 sm:-inset-x-6 sm:rounded-2xl" />
+                    <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition duration-300 ease-out group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-600/50 sm:-inset-x-6 sm:rounded-2xl" />
                     <a href="/articles/crafting-a-design-system-for-a-multiplanetary-future">
                       <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl" />
                       <span className="relative z-10">
@@ -101,47 +101,6 @@ const MoreArticles = ({ posts }: Props) => {
                   dateTime="2022-09-05"
                 >
                   Feb 19, 2020
-                </time>
-              </article>
-
-              <article className="md:grid md:grid-cols-4 md:items-baseline">
-                <div className="md:col-span-3 group relative flex flex-col items-start">
-                  <h2 className="font-bold text-2xl tracking-tight text-zinc-800 dark:text-zinc-100">
-                    <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-600/50 sm:-inset-x-6 sm:rounded-2xl" />
-                    <a href="/articles/crafting-a-design-system-for-a-multiplanetary-future">
-                      <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl" />
-                      <span className="relative z-10">
-                        The new Drupal release is coming soon. What does it mean for your website?
-                      </span>
-                    </a>
-                  </h2>
-                  <time
-                    className="md:hidden relative z-10 order-first mb-3 flex items-center text-lg text-zinc-400 dark:text-zinc-500 pl-3.5"
-                    dateTime="2022-09-05"
-                  >
-                    <span
-                      className="absolute inset-y-0 left-0 flex items-center"
-                      aria-hidden="true"
-                    >
-                      <span className="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500" />
-                    </span>
-                    Jan 31, 2015
-                  </time>
-                  <p className="relative z-10 mt-4 text-base text-zinc-600 dark:text-zinc-400">
-                    With Drupal 8 slated for release this year, we’ve spent some time figuring out what our existing and potential clients need to consider when planning a new site or migrating an existing site.
-                  </p>
-                  <div
-                    aria-hidden="true"
-                    className="relative z-10 mt-4 flex font-bold items-center text-base text-teal-500"
-                  >
-                    read article
-                  </div>
-                </div>
-                <time
-                  className="mt-1 hidden md:block relative z-10 order-first mb-3 flex items-center text-lg text-zinc-500 dark:text-zinc-300"
-                  dateTime="2022-09-05"
-                >
-                  Jan 31, 2015
                 </time>
               </article>
             </div>
