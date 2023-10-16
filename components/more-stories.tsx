@@ -17,7 +17,7 @@ const MoreStories = ({ posts }: Props) => {
       <div className="grid grid-cols-3 gap-8">
         <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden">
           <img
-            src="/assets/work/whyy/work--whyy-thumb.png"
+            src="/assets/work/ibm/work--ibm-thumb.webp"
             className=""
             alt=""
           />
@@ -45,12 +45,12 @@ const MoreStories = ({ posts }: Props) => {
           </div>
         </div>
 
-        <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden px-10 pt-10">
-          <div className="w-full h-full shadow-lg h-[515px] overflow-hidden">
-            <div className="w-full h-10 rounded-t-lg bg-gray-200 dark:bg-slate-900 flex justify-start items-center space-x-1.5 px-4">
-              <span className="w-2 h-2 rounded-full bg-red-400" />
-              <span className="w-2 h-2 rounded-full bg-yellow-400" />
-              <span className="w-2 h-2 rounded-full bg-green-400" />
+        <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden p-10">
+          <div className="w-full h-full shadow-lg h-[475px] rounded-lg overflow-hidden">
+            <div className="w-full h-6 rounded-t-lg bg-gray-200 dark:bg-slate-900 flex justify-start items-center space-x-1.5 px-4">
+              <span className="w-1.5 h-1.5 rounded-full bg-red-400" />
+              <span className="w-1.5 h-1.5 rounded-full bg-yellow-400" />
+              <span className="w-1.5 h-1.5 rounded-full bg-green-400" />
             </div>
             <img
               src="/assets/work/merative/work--merative-thumb.webp"
@@ -61,7 +61,12 @@ const MoreStories = ({ posts }: Props) => {
           </div>
         </div>
 
-        <div className="row-span-1 rounded-3xl bg-neutral-100 p-4 dark:bg-slate-800">
+        <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden">
+          <img
+            src="/assets/work/merative/work--merative-thumb-02.webp"
+            className=""
+            alt=""
+          />
         </div>
 
         <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden col-span-2">

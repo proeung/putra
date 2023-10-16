@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link'
 
 function ModeToggle() {
@@ -68,9 +69,33 @@ function MoonIcon(props) {
 }
 
 const Header = () => {
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.08] bg-white dark:bg-slate-900/75">
-      <div className="container mx-auto px-5 py-8 w-full">
+    <header
+      className={`${
+        isSticky
+          ? 'py-4'
+          : 'py-10'
+      } sticky top-0 z-40 w-full backdrop-blur flex-none transition-all duration-500 ease-out lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.08] bg-white dark:bg-slate-900/75`}
+    >
+      <div className="container mx-auto px-5 w-full">
         <div className="flex items-center justify-between">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight md:tracking-tighter text-zinc-800 dark:text-zinc-100 leading-tight">
             <Link href="/">
@@ -82,16 +107,16 @@ const Header = () => {
             <nav aria-label="Primary">
               <ul className="flex items-center font-bold gap-x-8 text-lg dark:text-zinc-300">
                 <li>
-                  <a className="transition hover:text-teal-500 dark:hover:text-teal-400" href="/">work</a>
+                  <Link className="transition hover:text-teal-500 dark:hover:text-teal-400" href="/#work">work</Link>
                 </li>
                 <li>
-                  <a href="/" className="transition hover:text-teal-500 dark:hover:text-teal-400">articles</a>
+                  <Link className="transition hover:text-teal-500 dark:hover:text-teal-400" href="/#articles">articles</Link>
                 </li>
                 <li>
-                  <a className="transition hover:text-teal-500 dark:hover:text-teal-400" href="/">sandbox</a>
+                  <Link className="transition hover:text-teal-500 dark:hover:text-teal-400" href="/#sandbox">sandbox</Link>
                 </li>
                 <li>
-                  <a className="transition hover:text-teal-500 dark:hover:text-teal-400" href="/">about</a>
+                  <Link className="transition hover:text-teal-500 dark:hover:text-teal-400" href="/#about">about</Link>
                 </li>
               </ul>
             </nav>
