@@ -22,11 +22,11 @@
   @apply text-2xl mt-8 mb-4;
 }
 
-.markdown p a {
+.markdown a {
   @apply font-bold no-underline text-teal-600 dark:text-teal-500;
 }
 
-.markdown p a:hover {
+.markdown a:hover {
   @apply underline;
 }
 

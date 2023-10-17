@@ -2,19 +2,18 @@ import Intro from '../components/intro'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
-import Post from '../interfaces/article'
+import Article from '../interfaces/article'
 import MoreWork from '../components/more-work'
 import MoreArticles from '../components/more-articles'
 import About from '../components/about'
 import MoreSandBox from '../components/more-sandbox'
 
 type Props = {
-  allPosts: Post[]
+  allPosts: Article[]
 }
 
 export default function Index({ allPosts }: Props) {
-  const heroPost = allPosts[0]
-  const morePosts = allPosts.slice(1)
+  const morePosts = allPosts.slice(0)
   return (
     <>
       <Layout>
@@ -23,7 +22,7 @@ export default function Index({ allPosts }: Props) {
         </Head>
           <Intro />
           <MoreWork />
-          <MoreArticles posts={morePosts} />
+          {morePosts.length > 0 && <MoreArticles articles={morePosts} />}
           <MoreSandBox />
           <About />
       </Layout>
@@ -36,7 +35,6 @@ export const getStaticProps = async () => {
     'title',
     'date',
     'slug',
-    'coverImage',
     'excerpt',
   ])
 
