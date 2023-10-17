@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const Intro = () => {
   return (
-    <section className="container mx-auto px-5 relative w-full mb-16 md:mb-28 mt-40">
+    <section className="container mx-auto px-5 relative w-full mt-40">
       <div className="max-w-2xl">
         <h1 className="text-4xl font-light font-serif tracking-tight text-zinc-800 leading-tight dark:text-zinc-100 sm:text-6xl">
           Creative developer/designer, founder, and garden enthusiast based outside of Philadelphia.

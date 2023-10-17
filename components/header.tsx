@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Link from 'next/link'
 
 function ModeToggle() {
@@ -70,20 +70,41 @@ function MoonIcon(props) {
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
+  const [activeSection, setActiveSection] = useState(null);
 
   useEffect(() => {
-    const handleScroll = () => {
+    // Handle scroll event
+    function handleScroll() {
       if (window.scrollY > 0) {
         setIsSticky(true);
       } else {
         setIsSticky(false);
       }
-    };
+
+      const sections = document.querySelectorAll('section[id]');
+      let currentActiveSection = null;
+
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 0 && rect.bottom >= 0) {
+          currentActiveSection = section.id;
+        }
+      });
+
+      setActiveSection(currentActiveSection);
+    }
 
     window.addEventListener('scroll', handleScroll);
 
+    // Initial scroll to set the active section on page load
+    handleScroll();
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
+    };
+
+    const handleNavLinkClick = (sectionId) => {
+      setActiveSection(sectionId);
     };
   }, []);
 
@@ -91,7 +112,7 @@ const Header = () => {
     <header
       className={`${
         isSticky
-          ? 'py-4'
+          ? 'py-3'
           : 'py-10'
       } sticky top-0 z-40 w-full backdrop-blur flex-none transition-all duration-500 ease-out lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.08] bg-white dark:bg-slate-900/75`}
     >
@@ -107,16 +128,24 @@ const Header = () => {
             <nav aria-label="Primary">
               <ul className="flex items-center font-bold gap-x-8 text-lg dark:text-zinc-300">
                 <li>
-                  <Link className="transition hover:text-teal-500 dark:hover:text-teal-400" href="/#work">work</Link>
+                  <Link className={`transition hover:text-teal-500 dark:hover:text-teal-400 ${activeSection === 'work' ? 'active text-teal-500' : ''}`} href="/#work" scroll={false}>
+                    work
+                  </Link>
                 </li>
                 <li>
-                  <Link className="transition hover:text-teal-500 dark:hover:text-teal-400" href="/#articles">articles</Link>
+                  <Link className={`transition hover:text-teal-500 dark:hover:text-teal-400 ${activeSection === 'articles' ? 'active text-teal-500' : ''}`} href="#articles" scroll={false}>
+                    articles
+                  </Link>
                 </li>
                 <li>
-                  <Link className="transition hover:text-teal-500 dark:hover:text-teal-400" href="/#sandbox">sandbox</Link>
+                  <Link className={`transition hover:text-teal-500 dark:hover:text-teal-400 ${activeSection === 'sandbox' ? 'active text-teal-500' : ''}`} href="/#sandbox" scroll={false}>
+                    sandbox
+                  </Link>
                 </li>
                 <li>
-                  <Link className="transition hover:text-teal-500 dark:hover:text-teal-400" href="/#about">about</Link>
+                  <Link className={`transition hover:text-teal-500 dark:hover:text-teal-400 ${activeSection === 'about' ? 'active text-teal-500' : ''}`} href="/#about" scroll={false}>
+                    about
+                  </Link>
                 </li>
               </ul>
             </nav>
@@ -129,7 +158,7 @@ const Header = () => {
         </div>
       </div>
     </header>
-  )
+  );
 }
 
 export default Header

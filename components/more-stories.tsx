@@ -12,7 +12,7 @@ const MoreStories = ({ posts }: Props) => {
   const placeholderVideThree = '/assets/work/happy-cog/work--happy-cog-homepage.mp4';
 
   return (
-    <section id="work" className="container relative mx-auto px-5 md:mb-40 mt-28 w-full">
+    <section id="work" className="container relative mx-auto px-5 md:mb-40 pt-28 w-full">
       <div aria-hidden="true" className="pointer-events-none hidden lg:block blob absolute opacity-30 -right-40 -top-56 z-[-1]"></div>
       <div className="grid grid-cols-3 gap-8">
         <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden">
