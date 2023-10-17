@@ -1,10 +1,45 @@
+import React, { useEffect } from 'react';
 import Container from "./container";
 
 const MoreWork = () => {
-  // Placeholder video path
-  const placeholderVideo = '/assets/work/outrider/work--outrider.mp4';
-  const placeholderVideTwo = '/assets/work/albright-knox/work--albright-knox.mp4';
-  const placeholderVideThree = '/assets/work/happy-cog/work--happy-cog-homepage.mp4';
+
+  useEffect(() => {
+    const lazyVideos = Array.from(document.querySelectorAll<HTMLVideoElement>('video.lazy'));
+
+    if ('IntersectionObserver' in window) {
+      const lazyVideoObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            Array.from(entry.target.children).forEach(child => {
+              if (child instanceof HTMLSourceElement) {
+                child.src = child.dataset.src || '';
+              }
+            });
+
+            // Typecast to HTMLVideoElement
+            const videoElement = entry.target as HTMLVideoElement; 
+
+            // Call load() on the typed videoElement
+            videoElement.load();
+            videoElement.classList.remove('lazy');
+            lazyVideoObserver.unobserve(videoElement);
+          }
+        });
+      });
+
+      lazyVideos.forEach(lazyVideo => {
+        lazyVideoObserver.observe(lazyVideo);
+      });
+    }
+
+    return () => {
+      // Clean up the observer when the component unmounts
+      const lazyVideoObserver = new IntersectionObserver(() => {});
+      lazyVideos.forEach(lazyVideo => {
+        lazyVideoObserver.unobserve(lazyVideo);
+      });
+    };
+  }, []);
 
   return (
     <section id="work" className="md:mb-40 pt-28">
@@ -16,14 +51,15 @@ const MoreWork = () => {
               src="/assets/work/ibm/work--ibm-thumb.webp"
               className=""
               alt=""
+              loading="lazy"
             />
           </div>
 
           <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden col-span-2">
             <div className="relative aspect-video overflow-hidden">
                 <div className="absolute inset-0">
-                    <video autoPlay loop muted playsInline className="object-cover w-full h-full">
-                        <source src={placeholderVideo} type="video/mp4" />
+                    <video autoPlay loop muted playsInline className="lazy object-cover w-full h-full" poster="/assets/work/outrider/work--outrider-poster.webp">
+                        <source data-src="/assets/work/outrider/work--outrider.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -33,8 +69,8 @@ const MoreWork = () => {
           <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden col-span-2">
             <div className="relative aspect-video overflow-hidden">
                 <div className="absolute inset-0">
-                    <video autoPlay loop muted playsInline className="object-cover w-full h-full">
-                        <source src={placeholderVideTwo} type="video/mp4" />
+                    <video autoPlay loop muted playsInline className="lazy object-cover w-full h-full" poster="/assets/work/albright-knox/work--albright-knox-poster.webp">
+                        <source data-src="/assets/work/albright-knox/work--albright-knox.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -68,8 +104,8 @@ const MoreWork = () => {
           <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden col-span-2">
             <div className="relative aspect-video overflow-hidden">
                 <div className="absolute inset-0">
-                    <video autoPlay loop muted playsInline className="object-cover w-full h-full">
-                        <source src={placeholderVideThree} type="video/mp4" />
+                    <video autoPlay loop muted playsInline className="lazy object-cover w-full h-full" poster="/assets/work/happy-cog/work--happy-cog-homepage-poster.webp">
+                        <source data-src="/assets/work/happy-cog/work--happy-cog-homepage.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                 </div>
