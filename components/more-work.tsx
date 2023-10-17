@@ -3,7 +3,7 @@ import Container from "./container";
 const MoreWork = () => {
   // Placeholder video path
   const placeholderVideo = '/assets/work/outrider/work--outrider.mp4';
-  const placeholderVideTwo = '/assets/work/albright-knox/work--albright-knox-compressed.mp4';
+  const placeholderVideTwo = '/assets/work/albright-knox/work--albright-knox.mp4';
   const placeholderVideThree = '/assets/work/happy-cog/work--happy-cog-homepage.mp4';
 
   return (
