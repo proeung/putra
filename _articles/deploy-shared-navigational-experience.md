@@ -14,7 +14,7 @@ In this article, we’ll talk about the efforts to coordinate teams working on p
 
 ## Visual and functional consistency issues
 
-![Design specification of the new Cloud Masthead component](https://miro.medium.com/max/700/0*SPdaY9oacPCklrt5.jpg)
+![Design specification of the new Cloud Masthead component](/assets/articles/deploy-shared-navigational-experience/pic-01.webp)
 *Design specification of the new Cloud Masthead component.*
 
 Maintaining a consistent interface across your app enables users to feel at ease and allows them to quickly navigate their way through your product to accomplish their tasks without being confused.
@@ -31,7 +31,7 @@ Because of those inconsistencies, we decided the masthead would be a strong comp
 
 ## Adopting Carbon for IBM.com library
 
-![A screenshot of the Carbon for IBM.com library homepage.](https://miro.medium.com/max/700/0*X1Mc5M12SHIjeRlM.jpg)
+![A screenshot of the Carbon for IBM.com library homepage.](/assets/articles/deploy-shared-navigational-experience/pic-02.webp)
 *A screenshot of the Carbon for IBM.com library homepage.*
 
 Our team tries to reuse code as much as possible. This can be difficult even in the best of circumstances, but especially within a diverse company using different frameworks like React, Vue, and Angular.
@@ -48,7 +48,7 @@ Web Components is an emerging web standard that allows us to create framework-ag
 
 ## Menu content translation management
 
-![A screenshot of the JSON data output used for delivering content to the masthead.](https://miro.medium.com/max/700/0*jNXq8iXPYnYPykq2.jpg)
+![A screenshot of the JSON data output used for delivering content to the masthead.](/assets/articles/deploy-shared-navigational-experience/pic-03.webp)
 *A screenshot of the JSON data output used for delivering content to the masthead.*
 
 Once we had our masthead component housed within the  [Carbon for IBM.com monorepo](https://github.com/carbon-design-system/carbon-for-ibm-dotcom)  we needed to ensure that Content Editors could update the masthead content and have their changes reflected and deployed uniformly across all of our different content ecosystems.
@@ -57,7 +57,7 @@ To accomplish this, we leveraged the content repository that is the storage cont
 
 ## Building on top of the existing Masthead component
 
-![A screenshot of what the global masthead component looks like within the Storybook preview available within the Carbon for IBM.com library.](https://miro.medium.com/max/700/0*bBc4w4eidx1UY0gu.jpg)
+![A screenshot of what the global masthead component looks like within the Storybook preview available within the Carbon for IBM.com library.](/assets/articles/deploy-shared-navigational-experience/pic-04.webp)
 *A screenshot of what the global masthead component looks like within the Storybook preview available within the Carbon for IBM.com library.*
 
 Carbon for IBM.com already offers a  [Masthead component](https://www.ibm.com/standards/carbon/components/masthead)  built-in with Level 0, which refers to the first position of navigational menus on a page. This masthead houses global elements and navigation labels for the main/global navigational pieces. However, to achieve the new masthead to cater to Cloud products, we extended the Carbon for IBM.com global masthead component to create a new variant that’s designed for the Cloud business branding. This new component leverages all of the baseline global masthead design and functionality with some modifications and enhancements that are Cloud brand-specific.
@@ -66,7 +66,7 @@ By extending Carbon for IBM.com’s global masthead, we were able to build the m
 
 ## Shared Cloud Masthead in the “Cloud”
 
-![A collage of images depicting the desktop and mobile versions of the Cloud Masthead used on different platforms like Adobe Experience Manager, Drupal, React, etc.](https://miro.medium.com/max/700/0*jiKgLPQpDsXPYPMp.jpg)
+![A collage of images depicting the desktop and mobile versions of the Cloud Masthead used on different platforms like Adobe Experience Manager, Drupal, React, etc.](/assets/articles/deploy-shared-navigational-experience/pic-05.webp)
 *A collage of images depicting the desktop and mobile versions of the Cloud Masthead used on different platforms like Adobe Experience Manager, Drupal, React, etc.*
 
 Due to the number of applications and content management systems we needed to launch the new masthead on, we needed to come up with a scalable solution that takes all the files and dependencies of the new Cloud Masthead web components and packs/uploads them to a remote cloud service. That meant no local repo cloning and no complex front-end bundling setup. With this in mind, we decided to leverage the existing Carbon for IBM.com’s CDN auto-publishing workflow that’s made available when a new release is out.
