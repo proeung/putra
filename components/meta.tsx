@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { CMS_NAME, HOME_OG_IMAGE_URL } from '../lib/constants'
+import { HOME_OG_IMAGE_URL } from '../lib/constants'
 
 const Meta = () => {
   return (
@@ -34,7 +34,7 @@ const Meta = () => {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"
-        content="Putra is an award-winning designer and developer with a flair for creative uses of CMS and a dedication to finding unique solutions to tough problems."
+        content="Putra a Creative developer/designer with expertise in Technical Project Management, based South Jersey/Philadelphia area."
       />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
     </Head>

@@ -17,14 +17,15 @@ const About = () => {
               In my role as a Design Technologist Lead, I excel in bridging the gap between design and engineering, overseeing projects from initial prototypes to refined production code. Leveraging my dual role as an engineer and technical project manager, I efficiently create and manage design libraries, collaborating seamlessly with cross-functional teams, including UX Designers, Backend Engineers, and Product Owners. I’m passionate about leveraging my skills to elevate digital projects to their full potential.
             </p>
             <p className="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
-              When I'm not immersed in code, I indulge my love for gardening, sharing my passion on Instagram and TikTok <Link href="https://instagram.com/goodpathgarden/" target="_blank" className="font-bold text-teal-600 dark:text-teal-500 hover:underline">@goodpathgarden</Link>. In addition, my competitive spirit shines as I co-founded and manage a fantasy league app dedicated to the hit reality show "Big Brother" alongside my husband, aptly named <Link href="https://fantasybb.com/" target="_blank" className="font-bold text-teal-600 dark:text-teal-500 hover:underline">FantasyBB</Link>.
+              When I'm not immersed in code, I indulge my love for gardening, sharing my passion on Instagram and TikTok <Link href="https://instagram.com/goodpathgarden" target="_blank" className="font-bold text-teal-600 dark:text-teal-500 hover:underline">@goodpathgarden</Link>. In addition, my competitive spirit shines as I co-founded and manage a fantasy league app dedicated to the hit reality show "Big Brother" alongside my husband, aptly named <Link href="https://fantasybb.com" target="_blank" className="font-bold text-teal-600 dark:text-teal-500 hover:underline">FantasyBB</Link>.
             </p>
 
             <div className="mt-12 flex gap-6">
               <a
                 className="group -m-1 p-1"
                 aria-label="Follow on GitHub"
-                href="https://github.com"
+                href="https://github.com/proeung"
+                target="_blank"
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -41,7 +42,8 @@ const About = () => {
               <a
                 className="group -m-1 p-1"
                 aria-label="Follow on LinkedIn"
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/putra-bonaccorsi"
+                target="_blank"
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -54,7 +56,8 @@ const About = () => {
               <a
                 className="group -m-1 p-1"
                 aria-label="Follow on Instagram"
-                href="https://instagram.com"
+                href="https://instagram.com/goodpathgarden"
+                target="_blank"
               >
                 <svg
                   viewBox="0 0 24 24"

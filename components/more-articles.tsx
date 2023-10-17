@@ -25,7 +25,7 @@ const MoreArticles = ({ posts }: Props) => {
               <article className="md:grid md:grid-cols-4 md:items-baseline">
                 <div className="md:col-span-3 group relative flex flex-col items-start">
                   <h2 className="font-bold text-2xl tracking-tight text-zinc-800 dark:text-zinc-100">
-                    <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition duration-300 ease-out group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-600/50 sm:-inset-x-6 sm:rounded-2xl" />
+                    <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-neutral-100 opacity-0 transition duration-300 ease-out group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-600/50 sm:-inset-x-6 sm:rounded-2xl" />
                     <a href="/articles/crafting-a-design-system-for-a-multiplanetary-future">
                       <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl" />
                       <span className="relative z-10">
@@ -66,7 +66,7 @@ const MoreArticles = ({ posts }: Props) => {
               <article className="md:grid md:grid-cols-4 md:items-baseline">
                 <div className="md:col-span-3 group relative flex flex-col items-start">
                   <h2 className="font-bold text-2xl tracking-tight text-zinc-800 dark:text-zinc-100">
-                    <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition duration-300 ease-out group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-600/50 sm:-inset-x-6 sm:rounded-2xl" />
+                    <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-neutral-100 opacity-0 transition duration-300 ease-out group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-600/50 sm:-inset-x-6 sm:rounded-2xl" />
                     <a href="/articles/crafting-a-design-system-for-a-multiplanetary-future">
                       <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl" />
                       <span className="relative z-10">
