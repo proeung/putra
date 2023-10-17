@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link'
 
 function ModeToggle() {
@@ -26,7 +26,7 @@ function ModeToggle() {
   return (
     <button
       type="button"
-      aria-label="Toggle dark mode"
+      aria-label="Toggle light mode"
       className="group rounded-full px-3 py-3 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:ring-white/20 dark:hover:ring-white/40"
       onClick={toggleMode}
     >

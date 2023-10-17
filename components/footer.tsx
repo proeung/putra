@@ -6,7 +6,7 @@ const Footer = () => {
       <Container>
         <div className="py-16 flex flex-col lg:flex-row items-center">
           <h4 className="font-bold tracking-tighter leading-tight text-center lg:text-left lg:pr-4 lg:w-1/2">
-            © 2023 Putra Bonaccorsi
+            &copy; {new Date().getFullYear()} Putra Bonaccorsi
           </h4>
         </div>
       </Container>
