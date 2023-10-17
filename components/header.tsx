@@ -103,9 +103,6 @@ const Header = () => {
       window.removeEventListener('scroll', handleScroll);
     };
 
-    const handleNavLinkClick = (sectionId) => {
-      setActiveSection(sectionId);
-    };
   }, []);
 
   return (
