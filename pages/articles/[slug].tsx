@@ -4,12 +4,12 @@ import Container from '../../components/container'
 import ArticleBody from '../../components/article-body'
 import ArticleHeader from '../../components/article-header'
 import Layout from '../../components/layout'
-import { getPostBySlug, getAllPosts } from '../../lib/api'
+import { getPostBySlug, getAllArticles } from '../../lib/api'
 import ArticleTitle from '../../components/article-title'
 import Head from 'next/head'
-import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
 import type ArticleType from '../../interfaces/article'
+import { SITE_NAME } from '../../lib/constants'
 
 type Props = {
   post: ArticleType
@@ -19,7 +19,7 @@ type Props = {
 
 export default function Post({ post, morePosts, preview }: Props) {
   const router = useRouter()
-  const title = `${post.title} | Next.js Blog Example with ${CMS_NAME}`
+  const title = `${post.title} | ${SITE_NAME}`
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
@@ -77,7 +77,7 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPosts(['slug'])
+  const posts = getAllArticles(['slug'])
 
   return {
     paths: posts.map((post) => {
