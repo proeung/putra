@@ -9,11 +9,11 @@ import PostTitle from '../../components/post-title'
 import Head from 'next/head'
 import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
-import type PostType from '../../interfaces/post'
+import type ArticleType from '../../interfaces/article'
 
 type Props = {
-  post: PostType
-  morePosts: PostType[]
+  post: ArticleType
+  morePosts: ArticleType[]
   preview?: boolean
 }
 
@@ -39,7 +39,6 @@ export default function Post({ post, morePosts, preview }: Props) {
                 title={post.title}
                 coverImage={post.coverImage}
                 date={post.date}
-                author={post.author}
               />
               <PostBody content={post.content} />
             </article>
@@ -61,7 +60,6 @@ export async function getStaticProps({ params }: Params) {
     'title',
     'date',
     'slug',
-    'author',
     'content',
     'ogImage',
     'coverImage',

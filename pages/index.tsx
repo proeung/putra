@@ -1,9 +1,8 @@
-import HeroPost from '../components/hero-post'
 import Intro from '../components/intro'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
-import Post from '../interfaces/post'
+import Post from '../interfaces/article'
 import MoreStories from '../components/more-stories'
 import MoreArticles from '../components/more-articles'
 import About from '../components/about'
@@ -23,7 +22,7 @@ export default function Index({ allPosts }: Props) {
           <title>{`Putra Bonaccorsi | Portfolio`}</title>
         </Head>
           <Intro />
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          <MoreStories />
           <MoreArticles posts={morePosts} />
           <MoreSandBox />
           <About />
@@ -37,7 +36,6 @@ export const getStaticProps = async () => {
     'title',
     'date',
     'slug',
-    'author',
     'coverImage',
     'excerpt',
   ])

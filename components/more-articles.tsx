@@ -1,5 +1,5 @@
 import PostPreview from './post-preview'
-import type Post from '../interfaces/post'
+import type Post from '../interfaces/article'
 import Container from './container'
 
 type Props = {
@@ -114,7 +114,6 @@ const MoreArticles = ({ posts }: Props) => {
               title={post.title}
               coverImage={post.coverImage}
               date={post.date}
-              author={post.author}
               slug={post.slug}
               excerpt={post.excerpt}
             />

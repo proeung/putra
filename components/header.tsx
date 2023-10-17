@@ -130,7 +130,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link className={`transition hover:text-teal-500 dark:hover:text-teal-400 ${activeSection === 'articles' ? 'active text-teal-500' : ''}`} href="#articles" scroll={false}>
+                  <Link className={`transition hover:text-teal-500 dark:hover:text-teal-400 ${activeSection === 'articles' ? 'active text-teal-500' : ''}`} href="/#articles" scroll={false}>
                     articles
                   </Link>
                 </li>
