@@ -3,14 +3,17 @@ module.exports = {
   content: ['./components/**/*.tsx', './pages/**/*.tsx'],
   darkMode: 'class',
   theme: {
+    container: {
+      center: true,
+      screens: {
+         sm: '100%',
+         md: '100%',
+         lg: '100%',
+         xl: '100%',
+         '2xl': '1680px'
+      }
+    },
     extend: {
-      colors: {
-        'accent-1': '#FAFAFA',
-        'accent-2': '#EAEAEA',
-        'accent-7': '#333',
-        success: '#0070f3',
-        cyan: '#79FFE1',
-      },
       fontFamily: {
         'sans': [
           'SofiaPro',
@@ -33,5 +36,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }

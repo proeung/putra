@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link'
+import Container from './container';
 
 function ModeToggle() {
   function disableTransitionsTemporarily() {
@@ -113,7 +114,7 @@ const Header = () => {
           : 'py-10'
       } sticky top-0 z-40 w-full backdrop-blur flex-none transition-all duration-500 ease-out lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.08] bg-white dark:bg-slate-900/75`}
     >
-      <div className="container mx-auto px-5 w-full">
+      <Container>
         <div className="flex items-center justify-between">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight md:tracking-tighter text-zinc-800 dark:text-zinc-100 leading-tight">
             <Link href="/">
@@ -153,7 +154,7 @@ const Header = () => {
           </div>
 
         </div>
-      </div>
+      </Container>
     </header>
   );
 }

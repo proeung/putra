@@ -3,7 +3,7 @@ import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import Post from '../interfaces/article'
-import MoreStories from '../components/more-stories'
+import MoreWork from '../components/more-work'
 import MoreArticles from '../components/more-articles'
 import About from '../components/about'
 import MoreSandBox from '../components/more-sandbox'
@@ -22,7 +22,7 @@ export default function Index({ allPosts }: Props) {
           <title>{`Putra Bonaccorsi | Portfolio`}</title>
         </Head>
           <Intro />
-          <MoreStories />
+          <MoreWork />
           <MoreArticles posts={morePosts} />
           <MoreSandBox />
           <About />

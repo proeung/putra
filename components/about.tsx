@@ -10,13 +10,13 @@ const About = () => {
             <h2 className="text-4xl font-light font-serif tracking-tight text-zinc-800 leading-tight dark:text-zinc-100 sm:text-6xl">
               About.
             </h2>
-            <p className="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
+            <p className="mt-6 text-lg leading-relaxed">
               I'm Putra, a Design Technologist with expertise in Technical Project Management, based South Jersey/Philadelphia area. I'm also the co-founder of <Link href="https://offred.co" target="_blank" className="font-bold text-teal-600 dark:text-teal-500 hover:underline">Off Red</Link>, where we craft innovative apps to satisfy our own curiosities and love for reality shows.
             </p>
-            <p className="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
+            <p className="mt-6 text-lg leading-relaxed">
               In my role as a Design Technologist Lead, I excel in bridging the gap between design and engineering, overseeing projects from initial prototypes to refined production code. Leveraging my dual role as an engineer and technical project manager, I efficiently create and manage design libraries, collaborating seamlessly with cross-functional teams, including UX Designers, Backend Engineers, and Product Owners. I’m passionate about leveraging my skills to elevate digital projects to their full potential.
             </p>
-            <p className="mt-6 text-lg text-zinc-600 dark:text-zinc-400">
+            <p className="mt-6 text-lg leading-relaxed">
               When I'm not immersed in code, I indulge my love for gardening, sharing my passion on Instagram and TikTok <Link href="https://instagram.com/goodpathgarden" target="_blank" className="font-bold text-teal-600 dark:text-teal-500 hover:underline">@goodpathgarden</Link>. In addition, my competitive spirit shines as I co-founded and manage a fantasy league app dedicated to the hit reality show "Big Brother" alongside my husband, aptly named <Link href="https://fantasybb.com" target="_blank" className="font-bold text-teal-600 dark:text-teal-500 hover:underline">FantasyBB</Link>.
             </p>
 
@@ -71,7 +71,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="auto-rows-[125px] grid grid-cols-2 gap-8 self-center lg:pl-16 xl:pl-24">
+          <div className="auto-rows-[130px] grid grid-cols-2 gap-8 self-center lg:pl-16 xl:pl-24">
             <div className="row-span-2 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-neutral-900 shadow-md via-teal-300 to-violet-500">
               <img
                 src="/assets/about/about--pic-01.webp"

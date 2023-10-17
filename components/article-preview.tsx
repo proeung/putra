@@ -10,7 +10,7 @@ type Props = {
   slug: string
 }
 
-const PostPreview = ({
+const ArticlePreview = ({
   title,
   coverImage,
   date,
@@ -39,4 +39,4 @@ const PostPreview = ({
   )
 }
 
-export default PostPreview
+export default ArticlePreview

@@ -1,4 +1,4 @@
-import PostPreview from './post-preview'
+import ArticlePreview from './article-preview'
 import type Post from '../interfaces/article'
 import Container from './container'
 
@@ -109,7 +109,7 @@ const MoreArticles = ({ posts }: Props) => {
 
         {/* <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mt-32 mb-32">
           {posts.map((post) => (
-            <PostPreview
+            <ArticlePreview
               key={post.slug}
               title={post.title}
               coverImage={post.coverImage}

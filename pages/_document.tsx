@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en" className="scroll-smooth scroll-pt-20 dark">
       <Head />
-      <body className="antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900 relative">
+      <body className="antialiased text-zinc-600 dark:text-zinc-300 bg-white dark:bg-slate-900 relative">
         <Main />
         <NextScript />
       </body>
