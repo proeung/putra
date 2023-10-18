@@ -60,7 +60,7 @@ const MoreSandBox = () => {
                 </div>
             </div>
             <h3 className="font-bold text-xl tracking-tight text-center mt-8 mb-4">
-            Leader Board - Alpine & Tailwind CSS
+            Leader Board - Tailwind CSS
             </h3>
           </a>
 
