@@ -3,7 +3,7 @@ import { Fade } from 'react-awesome-reveal'
 
 const MoreSandBox = () => {
   return (
-    <section id="sandbox" className="border-t lg:border-slate-900/10 dark:border-slate-50/[0.1] bg-slate-100 dark:bg-slate-800 py-40 relative w-full">
+    <section id="sandbox" className="border-t border-slate-900/10 dark:border-slate-50/[0.1] bg-slate-100 dark:bg-slate-800 py-40 relative w-full">
 
 
       <Container>

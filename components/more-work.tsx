@@ -43,15 +43,16 @@ const MoreWork = () => {
   }, []);
 
   return (
-    <section id="work" className="md:mb-40 pt-28">
+    <section id="work" className="pt-16 md:mb-40 md:pt-28">
       <Container>
         <div aria-hidden="true" className="pointer-events-none hidden lg:block blob absolute opacity-30 -right-40 -top-56 z-[-1]"></div>
 
-        <div className="grid grid-cols-3 gap-8">
-          <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+          <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden col-span-2 lg:col-span-1">
             <Fade delay={.5} triggerOnce>
               <img
                 src="/assets/work/ibm/work--ibm-thumb.webp"
+                className="h-full object-cover"
                 alt="Thumbnail showcasing projects from working at IBM"
                 loading="lazy"
               />

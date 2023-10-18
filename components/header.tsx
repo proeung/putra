@@ -29,11 +29,11 @@ function ModeToggle() {
     <button
       type="button"
       aria-label="Toggle light mode"
-      className="group rounded-full px-3 py-3 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:ring-white/20 dark:hover:ring-white/40"
+      className="group rounded-full px-2 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition md:px-3 md:py-3 dark:ring-white/20 dark:hover:ring-white/40"
       onClick={toggleMode}
     >
-      <SunIcon className="h-6 w-6 fill-zinc-100 stroke-teal-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-teal-50 [@media(prefers-color-scheme:dark)]:stroke-teal-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600" />
-      <MoonIcon className="hidden h-6 w-6 fill-slate-900 stroke-teal-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500" />
+      <SunIcon className="h-5 w-5 fill-zinc-100 stroke-teal-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 md:h-6 md:w-6 dark:hidden [@media(prefers-color-scheme:dark)]:fill-teal-50 [@media(prefers-color-scheme:dark)]:stroke-teal-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600" />
+      <MoonIcon className="hidden h-5 w-5 fill-slate-900 stroke-teal-500 transition md:h-6 md:w-6 dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500" />
     </button>
   )
 }
@@ -127,7 +127,7 @@ const Header = () => {
           <div className="flex items-center">
             <nav aria-label="Primary">
               <Fade cascade delay={1e2} damping={1e-1} triggerOnce>
-                <ul className="flex items-center font-bold gap-x-6 text-base md:gap-x-8 md:text-lg dark:text-zinc-300">
+                <ul className="flex items-center font-bold gap-x-4 text-base md:gap-x-8 md:text-lg dark:text-zinc-300">
                   <li>
                     <Link className={`transition hover:text-teal-500 dark:hover:text-teal-400 ${activeSection === 'work' ? 'active text-teal-500' : ''}`} href="/#work" scroll={false}>
                       work
@@ -152,7 +152,7 @@ const Header = () => {
               </Fade>
             </nav>
 
-            <div className="pointer-events-auto ml-8">
+            <div className="pointer-events-auto ml-6 md:ml-8">
               <Fade cascade delay={1e3} triggerOnce>
                 <ModeToggle />
               </Fade>

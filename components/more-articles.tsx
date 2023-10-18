@@ -9,7 +9,7 @@ type Props = {
 
 const MoreArticles = ({ articles }: Props) => {
   return (
-    <section id="articles" className="border-t lg:border-slate-900/10 bg-white dark:border-slate-50/[0.08] dark:bg-slate-900 py-40 w-full">
+    <section id="articles" className="border-t border-slate-900/10 bg-white dark:border-slate-50/[0.08] dark:bg-slate-900 py-40 w-full">
       <Container>
         <div className="max-w-2xl">
           <Fade cascade delay={1e2} damping={1e-1} triggerOnce>
