@@ -18,7 +18,7 @@ const ArticleHeader = ({ title, coverImage, date }: Props) => {
         </div>
       </div>
 
-      <div className="mb-8 overflow-hidden rounded-3xl md:mb-16 sm:mx-0 ">
+      <div className="bg-neutral-100 mb-8 overflow-hidden rounded-3xl dark:bg-slate-800 sm:mx-0 md:mb-16">
         <CoverImage title={title} src={coverImage} />
       </div>
 

@@ -111,20 +111,20 @@ const Header = () => {
       className={`${
         isSticky
           ? 'py-3'
-          : 'py-10'
-      } sticky top-0 z-40 w-full backdrop-blur flex-none transition-all duration-500 ease-out lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.08] bg-white dark:bg-slate-900/75`}
+          : 'py-6 md:py-10'
+      } sticky top-0 z-40 w-full backdrop-blur flex-none transition-all duration-500 ease-out z-50 border-b border-slate-900/10 dark:border-slate-50/[0.08] bg-white dark:bg-slate-900/75`}
     >
       <Container>
         <div className="flex items-center justify-between">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight md:tracking-tighter text-zinc-800 dark:text-zinc-100 leading-tight">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight md:tracking-tighter text-zinc-800 dark:text-zinc-100 leading-tight">
             <Link href="/">
-              putra<span className="text-teal-500">.</span>
+              p<span className="hidden md:inline">utra</span><span className="text-teal-500">.</span>
             </Link>
           </h1>
 
-          <div className="hidden md:flex items-center">
+          <div className="flex items-center">
             <nav aria-label="Primary">
-              <ul className="flex items-center font-bold gap-x-8 text-lg dark:text-zinc-300">
+              <ul className="flex items-center font-bold gap-x-6 text-base md:gap-x-8 md:text-lg dark:text-zinc-300">
                 <li>
                   <Link className={`transition hover:text-teal-500 dark:hover:text-teal-400 ${activeSection === 'work' ? 'active text-teal-500' : ''}`} href="/#work" scroll={false}>
                     work

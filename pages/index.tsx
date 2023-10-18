@@ -19,7 +19,7 @@ export default function Index({ allArticles }: Props) {
     <>
       <Layout>
         <Head>
-          <title>{`${SITE_NAME} | Design Technologist`}</title>
+          <title>{`${SITE_NAME} | Developer & Design Technologist`}</title>
         </Head>
           <Intro />
           <MoreWork />
