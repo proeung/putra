@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
-import Container from './container';
+import Container from './container'
+import { Fade } from 'react-awesome-reveal'
 
 function ModeToggle() {
   function disableTransitionsTemporarily() {
@@ -108,48 +109,53 @@ const Header = () => {
 
   return (
     <header
-      className={`${
-        isSticky
-          ? 'py-3'
-          : 'py-6 md:py-10'
-      } sticky top-0 z-40 w-full backdrop-blur flex-none transition-all duration-500 ease-out z-50 border-b border-slate-900/10 dark:border-slate-50/[0.08] bg-white dark:bg-slate-900/75`}
+      className={`${isSticky
+        ? 'py-3'
+        : 'py-6 md:py-10'
+        } sticky top-0 z-40 w-full backdrop-blur flex-none transition-all duration-500 ease-out z-50 border-b border-slate-900/10 dark:border-slate-50/[0.08] bg-white dark:bg-slate-900/75`}
     >
       <Container>
         <div className="flex items-center justify-between">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight md:tracking-tighter text-zinc-800 dark:text-zinc-100 leading-tight">
-            <Link href="/">
-              p<span className="hidden md:inline">utra</span><span className="text-teal-500">.</span>
-            </Link>
+            <Fade cascade delay={1} triggerOnce>
+              <Link href="/">
+                p<span className="hidden md:inline">utra</span><span className="text-teal-500">.</span>
+              </Link>
+            </Fade>
           </h1>
 
           <div className="flex items-center">
             <nav aria-label="Primary">
-              <ul className="flex items-center font-bold gap-x-6 text-base md:gap-x-8 md:text-lg dark:text-zinc-300">
-                <li>
-                  <Link className={`transition hover:text-teal-500 dark:hover:text-teal-400 ${activeSection === 'work' ? 'active text-teal-500' : ''}`} href="/#work" scroll={false}>
-                    work
-                  </Link>
-                </li>
-                <li>
-                  <Link className={`transition hover:text-teal-500 dark:hover:text-teal-400 ${activeSection === 'articles' ? 'active text-teal-500' : ''}`} href="/#articles" scroll={false}>
-                    articles
-                  </Link>
-                </li>
-                <li>
-                  <Link className={`transition hover:text-teal-500 dark:hover:text-teal-400 ${activeSection === 'sandbox' ? 'active text-teal-500' : ''}`} href="/#sandbox" scroll={false}>
-                    sandbox
-                  </Link>
-                </li>
-                <li>
-                  <Link className={`transition hover:text-teal-500 dark:hover:text-teal-400 ${activeSection === 'about' ? 'active text-teal-500' : ''}`} href="/#about" scroll={false}>
-                    about
-                  </Link>
-                </li>
-              </ul>
+              <Fade cascade delay={1e2} damping={1e-1} triggerOnce>
+                <ul className="flex items-center font-bold gap-x-6 text-base md:gap-x-8 md:text-lg dark:text-zinc-300">
+                  <li>
+                    <Link className={`transition hover:text-teal-500 dark:hover:text-teal-400 ${activeSection === 'work' ? 'active text-teal-500' : ''}`} href="/#work" scroll={false}>
+                      work
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className={`transition hover:text-teal-500 dark:hover:text-teal-400 ${activeSection === 'articles' ? 'active text-teal-500' : ''}`} href="/#articles" scroll={false}>
+                      articles
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className={`transition hover:text-teal-500 dark:hover:text-teal-400 ${activeSection === 'sandbox' ? 'active text-teal-500' : ''}`} href="/#sandbox" scroll={false}>
+                      sandbox
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className={`transition hover:text-teal-500 dark:hover:text-teal-400 ${activeSection === 'about' ? 'active text-teal-500' : ''}`} href="/#about" scroll={false}>
+                      about
+                    </Link>
+                  </li>
+                </ul>
+              </Fade>
             </nav>
 
             <div className="pointer-events-auto ml-8">
-              <ModeToggle />
+              <Fade cascade delay={1e3} triggerOnce>
+                <ModeToggle />
+              </Fade>
             </div>
           </div>
 
