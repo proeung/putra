@@ -43,9 +43,9 @@ const MoreWork = () => {
   }, []);
 
   return (
-    <section id="work" className="pt-10 pb-16 md:pb-40 md:pt-28">
+    <section id="work" className="pt-12 pb-16 md:pb-40 md:pt-28">
       <Container>
-        <div aria-hidden="true" className="pointer-events-none hidden lg:block blob absolute opacity-30 -right-40 -top-56 z-[-1]"></div>
+        <div aria-hidden="true" className="pointer-events-none block blob absolute opacity-30 -right-40 -top-56 z-[-1] w-[20rem] h-[20rem] lg:w-[40rem] lg:h-[40rem]"></div>
 
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
           <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden col-span-2 lg:col-span-1">
@@ -123,7 +123,7 @@ const MoreWork = () => {
             </Fade>
           </div>
         </div>
-        <div aria-hidden="true" className="pointer-events-none hidden lg:block blob absolute opacity-30 -left-40 -bottom-1/4 z-[-1]"></div>
+        <div aria-hidden="true" className="pointer-events-none blob absolute opacity-30 -left-40 -bottom-1/4 z-[-1] w-[40rem] h-[40rem]"></div>
       </Container>
     </section>
   )
