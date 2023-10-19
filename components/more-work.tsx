@@ -52,7 +52,7 @@ const MoreWork = () => {
             <Fade delay={.5} triggerOnce>
               <img
                 src="/assets/work/ibm/work--ibm-thumb.webp"
-                className="h-full object-cover"
+                className="w-full h-full object-cover"
                 alt="Thumbnail showcasing projects from working at IBM"
                 loading="lazy"
               />
@@ -93,7 +93,7 @@ const MoreWork = () => {
                 </div>
                 <img
                   src="/assets/work/merative/work--merative-thumb.webp"
-                  className="h-full object-cover"
+                  className="w-full h-full object-cover"
                   alt="Thumbnail showcasing projects from working at Merative"
                   loading="lazy"
                 />
@@ -105,7 +105,7 @@ const MoreWork = () => {
             <Fade delay={.5} triggerOnce>
               <img
                 src="/assets/work/merative/work--merative-thumb-02.webp"
-                className=""
+                className="w-full h-full"
                 alt="Thumbnail showcasing email web marketing project from Merative"
               />
             </Fade>
