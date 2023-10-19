@@ -23,7 +23,7 @@ const MoreSandBox = () => {
             <a href="https://codesandbox.io/s/ibm-lets-create-leadspace-ds0d0u" target="_blank" className="row-span-1 rounded-3xl bg-white overflow-hidden p-4 shadow-md text-zinc-800 dark:text-zinc-400 dark:bg-slate-900 hover:bg-slate-700 hover:dark:bg-slate-700 hover:text-white hover:dark:text-white transition duration-300 ease-out hover:ease-in">
               <div className="aspect-video border lg:border-slate-900/10 dark:border-slate-50/[0.1] relative overflow-hidden rounded-xl">
                 <div className="absolute inset-0">
-                  <video autoPlay loop muted playsInline className="object-cover w-full h-full">
+                  <video autoPlay loop muted playsInline preload="auto" className="object-cover w-full h-full">
                     <source src="/assets/sandbox/sandbox--ibm-leadspace.mp4" type="video/mp4" />
                   </video>
                 </div>
@@ -36,7 +36,7 @@ const MoreSandBox = () => {
             <a href="https://codesandbox.io/s/ibm-masthead-v2-lexu76" target="_blank" className="row-span-1 rounded-3xl bg-white overflow-hidden p-4 shadow-md text-zinc-800 dark:text-zinc-400 dark:bg-slate-900 hover:bg-slate-700 hover:dark:bg-slate-700 hover:text-white hover:dark:text-white transition duration-300 ease-out hover:ease-in">
               <div className="aspect-video border lg:border-slate-900/10 dark:border-slate-50/[0.1] relative overflow-hidden rounded-xl">
                 <div className="absolute inset-0">
-                  <video autoPlay loop muted playsInline className="object-cover w-full h-full">
+                  <video autoPlay loop muted playsInline preload="auto" className="object-cover w-full h-full">
                     <source src="/assets/sandbox/sandbox--fantasybb-hero.mp4" type="video/mp4" />
                   </video>
                 </div>
@@ -49,7 +49,7 @@ const MoreSandBox = () => {
             <a href="https://codesandbox.io/s/ibm-masthead-v2-lexu76" target="_blank" className="row-span-1 rounded-3xl bg-white overflow-hidden p-4 shadow-md text-zinc-800 dark:text-zinc-400 dark:bg-slate-900 hover:bg-slate-700 hover:dark:bg-slate-700 hover:text-white hover:dark:text-white transition duration-300 ease-out hover:ease-in">
               <div className="aspect-video border lg:border-slate-900/10 dark:border-slate-50/[0.1] relative overflow-hidden rounded-xl">
                 <div className="absolute inset-0">
-                  <video autoPlay loop muted playsInline className="object-cover w-full h-full">
+                  <video autoPlay loop muted playsInline preload="auto" className="object-cover w-full h-full">
                     <source src="/assets/sandbox/sandbox--ibm-masthead-v2.mp4" type="video/mp4" />
                   </video>
                 </div>
@@ -62,7 +62,7 @@ const MoreSandBox = () => {
             <a href="https://github.com/proeung/accessible-menu" target="_blank" className="row-span-1 rounded-3xl bg-white overflow-hidden p-4 shadow-md text-zinc-800 dark:text-zinc-400 dark:bg-slate-900 hover:bg-slate-700 hover:dark:bg-slate-700 hover:text-white hover:dark:text-white transition duration-300 ease-out hover:ease-in">
               <div className="aspect-video border lg:border-slate-900/10 dark:border-slate-50/[0.1] relative overflow-hidden rounded-xl">
                 <div className="absolute inset-0">
-                  <video autoPlay loop muted playsInline className="object-cover w-full h-full">
+                  <video autoPlay loop muted playsInline preload="auto" className="object-cover w-full h-full">
                     <source src="/assets/sandbox/sandbox--accessible-menu.mp4" type="video/mp4" />
                   </video>
                 </div>
@@ -75,7 +75,7 @@ const MoreSandBox = () => {
             <a href="https://codesandbox.io/s/leadspace-centered-ic4r8w?file=/index.html" target="_blank" className="row-span-1 rounded-3xl bg-white overflow-hidden p-4 shadow-md text-zinc-800 dark:text-zinc-400 dark:bg-slate-900 hover:bg-slate-700 hover:dark:bg-slate-700 hover:text-white hover:dark:text-white transition duration-300 ease-out hover:ease-in">
               <div className="aspect-video border lg:border-slate-900/10 dark:border-slate-50/[0.1] relative overflow-hidden rounded-xl">
                 <div className="absolute inset-0">
-                  <video autoPlay loop muted playsInline className="object-cover w-full h-full">
+                  <video autoPlay loop muted playsInline preload="auto" className="object-cover w-full h-full">
                     <source src="/assets/sandbox/sandbox--ibm-centered-leadspace.mp4" type="video/mp4" />
                   </video>
                 </div>

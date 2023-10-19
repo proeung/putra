@@ -21,11 +21,11 @@ export default function Index({ allArticles }: Props) {
         <Head>
           <title>{`${SITE_NAME} | Developer & Design Technologist`}</title>
         </Head>
-          <Intro />
-          <MoreWork />
-          {morePosts.length > 0 && <MoreArticles articles={morePosts} />}
-          <MoreSandBox />
-          <About />
+        <Intro />
+        <MoreWork />
+        {morePosts.length > 0 && <MoreArticles articles={morePosts} />}
+        <MoreSandBox />
+        <About />
       </Layout>
     </>
   )
