@@ -83,7 +83,7 @@ const MoreWork = () => {
             </Fade>
           </div>
 
-          <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden p-10">
+          <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden p-4 md:p-10">
             <Fade delay={.5} triggerOnce>
               <div className="w-full h-full shadow-lg rounded-lg overflow-hidden">
                 <div className="w-full h-6 rounded-t-lg bg-gray-200 dark:bg-slate-900 flex justify-start items-center space-x-1.5 px-4">

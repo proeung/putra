@@ -19,7 +19,7 @@ const ArticlePreview = ({
     <article className="md:grid md:grid-cols-4 md:items-baseline">
       <div className="md:col-span-3 group relative flex flex-col items-start">
         <Fade cascade delay={1e2} damping={1e-1} triggerOnce>
-          <h2 className="font-bold text-xl md:text-2xl tracking-tight text-zinc-800 dark:text-zinc-100">
+          <h2 className="font-bold text-base md:text-2xl tracking-tight text-zinc-800 w-11/12 md:w-full dark:text-zinc-100">
             <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-neutral-100 opacity-0 transition duration-300 ease-out group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-600/50 sm:-inset-x-6 sm:rounded-2xl" />
             <Link
               as={`/articles/${slug}`}

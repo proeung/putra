@@ -7,7 +7,7 @@ const About = () => {
     <section id="about" className="border-t lg:border-slate-900/10 py-16 dark:border-slate-50/[0.1] md:py-40 w-full">
       <Container>
         <div aria-hidden="true" className="pointer-events-none block blob absolute opacity-30 -right-40 -top-56 z-[-1] w-[20rem] h-[20rem] lg:w-[40rem] lg:h-[40rem]"></div>
-        <div className="mx-auto grid max-w-xl grid-cols-1 lg:max-w-none lg:grid-cols-2">
+        <div className="mx-auto grid lg:max-w-none lg:grid-cols-2">
           <div className="max-w-2xl">
             <Fade cascade delay={1e2} damping={1e-1} triggerOnce>
               <h2 className="text-3xl font-light font-serif tracking-tight text-zinc-800 leading-tight md:text-5xl lg:text-6xl dark:text-zinc-100">
@@ -48,7 +48,7 @@ const About = () => {
               <div className="row-span-2 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden shadow-md">
                 <img
                   src="/assets/about/about--pic-03.webp"
-                  className="grayscale h-full object-cover transition-all duration-500 ease-out hover:grayscale-0"
+                  className="grayscale w-full h-full object-cover transition-all duration-500 ease-out hover:grayscale-0"
                   alt="Screenshot of FantasyBB"
                   loading="lazy"
                 />
