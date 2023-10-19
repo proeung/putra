@@ -12,10 +12,10 @@ type Props = {
 const ArticleHeader = ({ title, coverImage, date }: Props) => {
   return (
     <>
-      <div className="max-w-3xl mx-auto mt-40 mb-16">
+      <div className="max-w-3xl mx-auto mt-16 mb-10 md:mt-28 lg:mt-40 md:mb-16">
         <Fade cascade delay={1} damping={1e-1} triggerOnce>
           <ArticleTitle>{title}</ArticleTitle>
-          <div className="font-bold mt-4 text-zinc-600 dark:text-zinc-400">
+          <div className="font-bold mt-4 text-sm text-zinc-600 md:text-base dark:text-zinc-400">
             <DateFormatter dateString={date} />
           </div>
         </Fade>

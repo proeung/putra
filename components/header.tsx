@@ -78,9 +78,9 @@ function MobileNavigation(props) {
   return (
     <Popover {...props}>
       <Fade delay={1} triggerOnce>
-        <Popover.Button className="group flex items-center rounded-full px-4 py-2 text-sm font-bold focus:outline-none text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:text-zinc-400 dark:ring-white/20 dark:hover:ring-white/40">
+        <Popover.Button className="group h-9 flex items-center rounded-full px-4 py-2 text-sm font-bold focus:outline-none leading-none text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:text-zinc-200 dark:ring-white/20 dark:hover:ring-white/40">
           menu
-          <ChevronDownIcon className="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400" />
+          <ChevronDownIcon className="ml-2 h-auto w-2 stroke-zinc-400 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400" />
         </Popover.Button>
       </Fade>
       <Transition.Root>
@@ -123,7 +123,7 @@ function MobileNavigation(props) {
                     as={Link}
                     href={link.href}
                     key={link.label}
-                    className="transition block py-2 hover:text-teal-500 dark:hover:text-teal-400"
+                    className="transition block py-2 hover:text-teal-600 dark:hover:text-teal-400"
                   >
                     {link.label}
                   </Popover.Button>
@@ -139,18 +139,18 @@ function MobileNavigation(props) {
 
 function ModeToggle() {
   function disableTransitionsTemporarily() {
-    document.documentElement.classList.add('[&_*]:!transition-none')
+    document.documentElement.classList.add('[&_*]:!transition-none');
     window.setTimeout(() => {
-      document.documentElement.classList.remove('[&_*]:!transition-none')
+      document.documentElement.classList.remove('[&_*]:!transition-none');
     }, 0)
   }
 
   function toggleMode() {
     disableTransitionsTemporarily()
 
-    let darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+    let darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     let isSystemDarkMode = darkModeMediaQuery.matches
-    let isDarkMode = document.documentElement.classList.toggle('dark')
+    let isDarkMode = document.documentElement.classList.toggle('dark');
 
     if (isDarkMode === isSystemDarkMode) {
       delete window.localStorage.isDarkMode
@@ -167,7 +167,7 @@ function ModeToggle() {
       onClick={toggleMode}
     >
       <SunIcon className="h-5 w-5 fill-zinc-100 stroke-teal-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 md:h-6 md:w-6 dark:hidden [@media(prefers-color-scheme:dark)]:fill-teal-50 [@media(prefers-color-scheme:dark)]:stroke-teal-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600" />
-      <MoonIcon className="hidden h-5 w-5 fill-slate-900 stroke-teal-500 transition md:h-6 md:w-6 dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500" />
+      <MoonIcon className="hidden h-5 w-5 fill-transparent stroke-teal-500 transition md:h-6 md:w-6 dark:block" />
     </button>
   )
 }
@@ -182,8 +182,8 @@ function NavItem({ href, children }) {
         className={clsx(
           'transition block py-2 md:inline-block md:py-0',
           isActive
-            ? 'text-teal-700 dark:text-teal-400'
-            : 'hover:text-teal-500 dark:hover:text-teal-400'
+            ? 'text-teal-600 dark:text-teal-400'
+            : 'hover:text-teal-600 dark:hover:text-teal-400'
         )}
       >
         {children}
@@ -198,7 +198,10 @@ function DesktopNavigation(props) {
       <Fade cascade delay={1e2} damping={1e-1} triggerOnce>
         <ul className="flex items-center font-bold gap-x-4 text-base md:gap-x-8 md:text-lg dark:text-zinc-300">
           {links.map((link) => (
-            <NavItem href={link.href}>
+            <NavItem
+              href={link.href}
+              key={link.label}
+            >
               {link.label}
             </NavItem>
           ))}
@@ -250,12 +253,12 @@ const Header = () => {
       className={`${isSticky
         ? 'py-3'
         : 'py-6 md:py-10'
-        } scroll-smooth sticky top-0 z-40 w-full backdrop-blur flex-none transition-all duration-500 ease-out z-50 border-b border-slate-900/10 dark:border-slate-50/[0.08] bg-white dark:bg-slate-900/75`}
+        } sticky top-0 w-full backdrop-blur flex-none transition-all duration-500 ease-out z-50 border-b border-slate-900/10 dark:border-slate-50/[0.08] bg-white dark:bg-slate-900/75`}
     >
       <Container>
         <div className="flex items-center justify-between">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight md:tracking-tighter text-zinc-800 dark:text-zinc-100 leading-tight">
-            <Fade cascade delay={.5} triggerOnce>
+            <Fade delay={.5} triggerOnce>
               <Link href="/">
                 putra<span className="text-teal-500">.</span>
               </Link>

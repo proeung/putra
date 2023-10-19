@@ -43,7 +43,7 @@ const MoreWork = () => {
   }, []);
 
   return (
-    <section id="work" className="pt-16 md:mb-40 md:pt-28">
+    <section id="work" className="pt-10 pb-16 md:pb-40 md:pt-28">
       <Container>
         <div aria-hidden="true" className="pointer-events-none hidden lg:block blob absolute opacity-30 -right-40 -top-56 z-[-1]"></div>
 
@@ -85,7 +85,7 @@ const MoreWork = () => {
 
           <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden p-10">
             <Fade delay={.5} triggerOnce>
-              <div className="w-full h-full shadow-lg h-full rounded-lg overflow-hidden">
+              <div className="w-full h-full shadow-lg rounded-lg overflow-hidden">
                 <div className="w-full h-6 rounded-t-lg bg-gray-200 dark:bg-slate-900 flex justify-start items-center space-x-1.5 px-4">
                   <span className="w-1.5 h-1.5 rounded-full bg-red-400" />
                   <span className="w-1.5 h-1.5 rounded-full bg-yellow-400" />

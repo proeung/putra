@@ -4,7 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .blob {
   width: 600px;
   height: 600px;
