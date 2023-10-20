@@ -269,7 +269,7 @@ const Header = () => {
             <MobileNavigation className="pointer-events-auto md:hidden" />
             <DesktopNavigation className="pointer-events-auto hidden md:block" />
             <div className="pointer-events-auto ml-4 md:ml-8">
-              <Fade cascade delay={1e3} triggerOnce>
+              <Fade delay={1e3} triggerOnce>
                 <ModeToggle />
               </Fade>
             </div>
