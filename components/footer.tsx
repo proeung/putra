@@ -11,7 +11,6 @@ const Footer = () => {
             <Fade cascade delay={1} damping={1e-1} triggerOnce>
               <ul className="flex font-bold gap-x-5 mb-4 text-sm text-zinc-600 md:mb-0 dark:text-zinc-400">
                 <li><Link className="transition hover:text-teal-600 dark:hover:text-teal-400" href="https://github.com/proeung" target="_blank">Github</Link></li>
-                <li><Link className="transition hover:text-teal-600 dark:hover:text-teal-400" href="https://instagram.com/goodpathgarden" target="_blank">Instagram</Link></li>
                 <li><Link className="transition hover:text-teal-600 dark:hover:text-teal-400" href="https://www.linkedin.com/in/putra-bonaccorsi" target="_blank">LinkedIn</Link></li>
                 <li><Link className="transition hover:text-teal-600 dark:hover:text-teal-400" href="mailto:putra.roeung@gmail.com" target="_blank">Email</Link></li>
               </ul>
