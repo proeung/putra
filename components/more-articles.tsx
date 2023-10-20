@@ -1,7 +1,7 @@
-import ArticlePreview from './article-preview'
-import type Article from '../interfaces/article'
-import Container from './container'
-import { Fade } from 'react-awesome-reveal'
+import ArticlePreview from './article-preview';
+import type Article from '../interfaces/article';
+import Container from './container';
+import { Fade } from 'react-awesome-reveal';
 
 type Props = {
   articles: Article[]
@@ -39,7 +39,7 @@ const MoreArticles = ({ articles }: Props) => {
         </div>
       </Container>
     </section>
-  )
+  );
 }
 
-export default MoreArticles
+export default MoreArticles;

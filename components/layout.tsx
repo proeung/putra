@@ -1,6 +1,6 @@
-import Header from './header'
-import Footer from './footer'
-import Meta from './meta'
+import Header from './header';
+import Footer from './footer';
+import Meta from './meta';
 
 type Props = {
   preview?: boolean
@@ -15,7 +15,7 @@ const Layout = ({ preview, children }: Props) => {
         <main className="min-h-screen overflow-hidden">{children}</main>
       <Footer />
     </>
-  )
+  );
 }
 
-export default Layout
+export default Layout;

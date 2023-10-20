@@ -1,10 +1,10 @@
 ---
-title: 'Deploy a shared navigational experience across multiple content ecosystems within ibm.com/cloud'
-excerpt: 'IBM.com is a massive web experience developed and managed by different teams, powered by technology ranging from standalone JavaScript applications to monolithic content management systems (Adobe Experience Manager, Drupal, etc).'
-coverImage: '/assets/articles/deploy-shared-navigational-experience/cover.webp'
-date: '2022-01-21T05:35:07.322Z'
+title: "Deploy a shared navigational experience across multiple content ecosystems within ibm.com/cloud"
+excerpt: "IBM.com is a massive web experience developed and managed by different teams, powered by technology ranging from standalone JavaScript applications to monolithic content management systems (Adobe Experience Manager, Drupal, etc)."
+coverImage: "/assets/articles/deploy-shared-navigational-experience/cover.webp"
+date: "2022-01-21T05:35:07.322Z"
 ogImage:
-  url: '/assets/articles/deploy-shared-navigational-experience/cover.webp'
+  url: "/assets/articles/deploy-shared-navigational-experience/cover.webp"
 ---
 
 

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Container from "./container";
-import { Fade } from 'react-awesome-reveal'
+import { Fade } from 'react-awesome-reveal';
 
 const MoreWork = () => {
 
@@ -129,4 +129,4 @@ const MoreWork = () => {
   )
 }
 
-export default MoreWork
+export default MoreWork;

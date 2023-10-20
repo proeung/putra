@@ -1,5 +1,5 @@
-import Container from './container'
-import { Fade } from 'react-awesome-reveal'
+import Container from './container';
+import { Fade } from 'react-awesome-reveal';
 
 const Intro = () => {
   return (
@@ -17,7 +17,7 @@ const Intro = () => {
         </div>
       </Container>
     </section>
-  )
+  );
 }
 
-export default Intro
+export default Intro;

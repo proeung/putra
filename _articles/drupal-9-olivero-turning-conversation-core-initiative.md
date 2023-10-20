@@ -1,10 +1,10 @@
 ---
-title: 'Drupal 9 Olivero: Turning Conversation into a Core Initiative'
-excerpt: 'How does an idea evolve from a conversation in a hotel lobby into a Drupal core release initiative? Follow the new Drupal 9 default theme, Olivero, from ideation through execution.'
-coverImage: '/assets/articles/drupal-9-olivero-turning-conversation-core-initiative/cover.webp'
-date: '2020-02-19T05:35:07.322Z'
+title: "Drupal 9 Olivero: Turning Conversation into a Core Initiative"
+excerpt: "How does an idea evolve from a conversation in a hotel lobby into a Drupal core release initiative? Follow the new Drupal 9 default theme, Olivero, from ideation through execution."
+coverImage: "/assets/articles/drupal-9-olivero-turning-conversation-core-initiative/cover.webp"
+date: "2020-02-19T05:35:07.322Z"
 ogImage:
-  url: '/assets/articles/drupal-9-olivero-turning-conversation-core-initiative/cover.webp'
+  url: "/assets/articles/drupal-9-olivero-turning-conversation-core-initiative/cover.webp"
 ---
 
 

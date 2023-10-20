@@ -1,5 +1,5 @@
-import Container from './container'
-import { Fade } from 'react-awesome-reveal'
+import Container from './container';
+import { Fade } from 'react-awesome-reveal';
 
 const MoreSandBox = () => {
   return (
@@ -86,7 +86,7 @@ const MoreSandBox = () => {
         </Fade>
       </Container>
     </section>
-  )
+  );
 }
 
-export default MoreSandBox
+export default MoreSandBox;

@@ -1,6 +1,6 @@
-import Container from './container'
-import Link from 'next/link'
-import { Fade } from 'react-awesome-reveal'
+import Container from './container';
+import Link from 'next/link';
+import { Fade } from 'react-awesome-reveal';
 
 const Footer = () => {
   return (
@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
       </Container>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

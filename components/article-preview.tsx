@@ -1,6 +1,6 @@
-import DateFormatter from './date-formatter'
-import Link from 'next/link'
-import { Fade } from 'react-awesome-reveal'
+import DateFormatter from './date-formatter';
+import Link from 'next/link';
+import { Fade } from 'react-awesome-reveal';
 
 type Props = {
   title: string
@@ -55,7 +55,7 @@ const ArticlePreview = ({
         <DateFormatter dateString={date} />
       </time>
     </article>
-  )
+  );
 }
 
-export default ArticlePreview
+export default ArticlePreview;

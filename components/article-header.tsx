@@ -1,7 +1,7 @@
-import DateFormatter from './date-formatter'
-import CoverImage from './cover-image'
-import ArticleTitle from './article-title'
-import { Fade } from 'react-awesome-reveal'
+import CoverImage from './cover-image';
+import DateFormatter from './date-formatter';
+import { Fade } from 'react-awesome-reveal';
+import PageTitle from './page-title';
 
 type Props = {
   title: string
@@ -14,7 +14,7 @@ const ArticleHeader = ({ title, coverImage, date }: Props) => {
     <>
       <div className="max-w-3xl mx-auto mt-16 mb-10 md:mt-28 lg:mt-40 md:mb-16">
         <Fade cascade delay={1} damping={1e-1} triggerOnce>
-          <ArticleTitle>{title}</ArticleTitle>
+          <PageTitle>{title}</PageTitle>
           <div className="font-bold mt-4 text-sm text-zinc-600 md:text-base dark:text-zinc-400">
             <DateFormatter dateString={date} />
           </div>
@@ -27,7 +27,7 @@ const ArticleHeader = ({ title, coverImage, date }: Props) => {
         </Fade>
       </div>
     </>
-  )
+  );
 }
 
-export default ArticleHeader
+export default ArticleHeader;

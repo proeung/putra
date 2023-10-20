@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import Container from './container'
-import { Fade } from 'react-awesome-reveal'
+import Link from 'next/link';
+import Container from './container';
+import { Fade } from 'react-awesome-reveal';
 
 const About = () => {
   return (
@@ -13,13 +13,13 @@ const About = () => {
               <h2 className="text-3xl font-light font-serif tracking-tight text-zinc-800 leading-tight md:text-5xl lg:text-6xl dark:text-zinc-100">
                 About.
               </h2>
-              <p className="mt-6 text-base md:text-lg leading-relaxed">
+              <p className="mt-6 text-base/relaxed md:text-lg/relaxed">
                 I'm Putra, a Developer and Design Technologist with expertise in Technical Project Management, based South Jersey/Philadelphia area. I'm also the co-founder of <Link href="https://offred.co" target="_blank" className="font-bold text-teal-600 dark:text-teal-500 hover:underline">Off Red</Link>, where we design and develop apps to satisfy our own curiosities and love for reality shows.
               </p>
-              <p className="mt-6 text-base md:text-lg leading-relaxed">
+              <p className="mt-6 text-base/relaxed md:text-lg/relaxed">
                 In my role as a Design Technologist Lead, I excel in bridging the gap between design and engineering, overseeing projects from initial prototypes to refined production code. Leveraging my dual role as an engineer and technical project manager, I efficiently create and manage design libraries, collaborating seamlessly with cross-functional teams, including UX Designers, Backend Engineers, and Product Owners. I’m passionate about leveraging my skills to elevate digital projects to their full potential.
               </p>
-              <p className="mt-6 text-base md:text-lg leading-relaxed">
+              <p className="mt-6 text-base/relaxed md:text-lg/relaxed">
                 When I'm not immersed in code, I indulge my love for gardening, sharing my passion on Instagram and TikTok <Link href="https://instagram.com/goodpathgarden" target="_blank" className="font-bold text-teal-600 dark:text-teal-500 hover:underline">@goodpathgarden</Link>. In addition, my competitive spirit shines as I co-founded and manage a fantasy league app dedicated to the hit reality show "Big Brother" alongside my husband <Link href="https://imjohnbon.com" target="_blank" className="font-bold text-teal-600 dark:text-teal-500 hover:underline">John</Link>, aptly named <Link href="https://fantasybb.com" target="_blank" className="font-bold text-teal-600 dark:text-teal-500 hover:underline">FantasyBB</Link>.
               </p>
             </Fade>
@@ -67,7 +67,7 @@ const About = () => {
         </div>
       </Container>
     </section >
-  )
+  );
 }
 
-export default About
+export default About;

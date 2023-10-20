@@ -1,10 +1,10 @@
-import React, { Fragment, useEffect, useState } from 'react'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
-import { Popover, Transition } from '@headlessui/react'
-import Container from './container'
-import clsx from 'clsx'
-import { Fade } from 'react-awesome-reveal'
+import React, { Fragment, useEffect, useState } from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { Popover, Transition } from '@headlessui/react';
+import Container from './container';
+import clsx from 'clsx';
+import { Fade } from 'react-awesome-reveal';
 
 function CloseIcon(props) {
   return (
@@ -18,7 +18,7 @@ function CloseIcon(props) {
         strokeLinejoin="round"
       />
     </svg>
-  )
+  );
 }
 
 function ChevronDownIcon(props) {
@@ -32,7 +32,7 @@ function ChevronDownIcon(props) {
         strokeLinejoin="round"
       />
     </svg>
-  )
+  );
 }
 
 function SunIcon(props) {
@@ -51,7 +51,7 @@ function SunIcon(props) {
         fill="none"
       />
     </svg>
-  )
+  );
 }
 
 function MoonIcon(props) {
@@ -64,7 +64,7 @@ function MoonIcon(props) {
         strokeLinejoin="round"
       />
     </svg>
-  )
+  );
 }
 
 const links = [
@@ -134,7 +134,7 @@ function MobileNavigation(props) {
         </Transition.Child>
       </Transition.Root>
     </Popover>
-  )
+  );
 }
 
 function ModeToggle() {
@@ -169,7 +169,7 @@ function ModeToggle() {
       <SunIcon className="h-5 w-5 fill-zinc-100 stroke-teal-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 md:h-6 md:w-6 dark:hidden [@media(prefers-color-scheme:dark)]:fill-teal-50 [@media(prefers-color-scheme:dark)]:stroke-teal-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600" />
       <MoonIcon className="hidden h-5 w-5 fill-transparent stroke-teal-500 transition md:h-6 md:w-6 dark:block" />
     </button>
-  )
+  );
 }
 
 function NavItem({ href, children }) {
@@ -189,7 +189,7 @@ function NavItem({ href, children }) {
         {children}
       </Link>
     </li>
-  )
+  );
 }
 
 function DesktopNavigation(props) {
@@ -208,7 +208,7 @@ function DesktopNavigation(props) {
         </ul>
       </Fade>
     </nav>
-  )
+  );
 }
 
 const Header = () => {
@@ -280,4 +280,4 @@ const Header = () => {
   );
 }
 
-export default Header
+export default Header;

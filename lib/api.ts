@@ -2,17 +2,22 @@ import fs from 'fs'
 import { join } from 'path'
 import matter from 'gray-matter'
 
-const postsDirectory = join(process.cwd(), '_articles')
+const articlesDirectory = join(process.cwd(), '_articles');
+const workDirectory = join(process.cwd(), '_work');
 
-export function getPostSlugs() {
-  return fs.readdirSync(postsDirectory)
+export function getArticleSlugs() {
+  return fs.readdirSync(articlesDirectory)
 }
 
-export function getPostBySlug(slug: string, fields: string[] = []) {
+export function getWorkSlugs() {
+  return fs.readdirSync(workDirectory)
+}
+
+export function getArticleBySlug(slug: string, fields: string[] = []) {
   const realSlug = slug.replace(/\.md$/, '')
-  const fullPath = join(postsDirectory, `${realSlug}.md`)
+  const fullPath = join(articlesDirectory, `${realSlug}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
-  const { data, content } = matter(fileContents)
+  const { data, content } = matter(fileContents);
 
   type Items = {
     [key: string]: string
@@ -38,10 +43,48 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
 }
 
 export function getAllArticles(fields: string[] = []) {
-  const slugs = getPostSlugs()
-  const posts = slugs
-    .map((slug) => getPostBySlug(slug, fields))
-    // sort posts by date in descending order
-    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
-  return posts
+  const slugs = getArticleSlugs();
+  const articles = slugs
+    .map((slug) => getArticleBySlug(slug, fields))
+    // sort articles by date in descending order
+    .sort((article1, article2) => (article1.date > article2.date ? -1 : 1))
+  return articles
+}
+
+export function getWorkBySlug(slug: string, fields: string[] = []) {
+  const realSlug = slug.replace(/\.md$/, '')
+  const fullPath = join(workDirectory, `${realSlug}.md`)
+  const fileContents = fs.readFileSync(fullPath, 'utf8')
+  const { data, content } = matter(fileContents);
+
+  type Items = {
+    [key: string]: string
+  }
+
+  const items: Items = {}
+
+  // Ensure only the minimal needed data is exposed
+  fields.forEach((field) => {
+    if (field === 'slug') {
+      items[field] = realSlug
+    }
+    if (field === 'content') {
+      items[field] = content
+    }
+
+    if (typeof data[field] !== 'undefined') {
+      items[field] = data[field]
+    }
+  })
+
+  return items
+}
+
+export function getAllWork(fields: string[] = []) {
+  const slugs = getWorkSlugs();
+  const works = slugs
+    .map((slug) => getWorkBySlug(slug, fields))
+    // sort work by date in descending order
+    .sort((work1, work2) => (work1.date > work2.date ? -1 : 1))
+  return works
 }
