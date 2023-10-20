@@ -20,7 +20,7 @@ export default function Document() {
         `}
       </Script>
       <Head />
-      <body className="antialiased text-zinc-700 dark:text-zinc-300 bg-white dark:bg-slate-900 relative">
+      <body className="antialiased text-zinc-700 dark:text-zinc-300 bg-white dark:bg-slate-900">
         <Main />
         <NextScript />
       </body>

@@ -48,7 +48,7 @@ const MoreWork = () => {
         <div aria-hidden="true" className="pointer-events-none block blob absolute opacity-30 -right-40 -top-56 z-[-1] w-[20rem] h-[20rem] lg:w-[40rem] lg:h-[40rem]"></div>
 
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
-          <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden col-span-2 lg:col-span-1">
+          <div className="row-span-1 rounded-2xl md:rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden col-span-2 lg:col-span-1">
             <Fade delay={.5} triggerOnce>
               <img
                 src="/assets/work/ibm/work--ibm-thumb.webp"
@@ -59,7 +59,7 @@ const MoreWork = () => {
             </Fade>
           </div>
 
-          <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden col-span-2">
+          <div className="row-span-1 rounded-2xl md:rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden col-span-2">
             <Fade delay={.5} triggerOnce>
               <div className="relative aspect-video overflow-hidden">
                 <div className="absolute inset-0">
@@ -71,7 +71,7 @@ const MoreWork = () => {
             </Fade>
           </div>
 
-          <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden col-span-2">
+          <div className="row-span-1 rounded-2xl md:rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden col-span-2">
             <Fade delay={.5} triggerOnce>
               <div className="relative aspect-video overflow-hidden">
                 <div className="absolute inset-0">
@@ -83,7 +83,7 @@ const MoreWork = () => {
             </Fade>
           </div>
 
-          <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden p-4 md:p-10">
+          <div className="row-span-1 rounded-2xl md:rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden p-4 md:p-10">
             <Fade delay={.5} triggerOnce>
               <div className="w-full h-full shadow-lg rounded-lg overflow-hidden">
                 <div className="w-full h-6 rounded-t-lg bg-gray-200 dark:bg-slate-900 flex justify-start items-center space-x-1.5 px-4">
@@ -101,7 +101,7 @@ const MoreWork = () => {
             </Fade>
           </div>
 
-          <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden">
+          <div className="row-span-1 rounded-2xl md:rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden">
             <Fade delay={.5} triggerOnce>
               <img
                 src="/assets/work/merative/work--merative-thumb-02.webp"
@@ -111,7 +111,7 @@ const MoreWork = () => {
             </Fade>
           </div>
 
-          <div className="row-span-1 rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden col-span-2">
+          <div className="row-span-1 rounded-2xl md:rounded-3xl bg-neutral-100 dark:bg-slate-800 overflow-hidden col-span-2">
             <Fade delay={.5} triggerOnce>
               <div className="relative aspect-video overflow-hidden">
                 <div className="absolute inset-0">
