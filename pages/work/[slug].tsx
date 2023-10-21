@@ -11,6 +11,9 @@ import PageTitle from '../../components/page-title';
 import WorkStats from '../../components/work-stats';
 import WorkMobile from '../../components/work-mobile';
 import WorkDesktop from '../../components/work-desktop';
+import WorkNext from '../../components/work-next';
+import ArticleBody from '../../components/article-body';
+import WorkBody from '../../components/work-body';
 
 type Props = {
   work: WorkType
@@ -42,7 +45,9 @@ export default function Post({ work, preview }: Props) {
           />
           <WorkMobile />
           <WorkDesktop />
+          <WorkBody content={work.content} />
           <WorkStats />
+          <WorkNext />
         </>
       )}
     </Layout>

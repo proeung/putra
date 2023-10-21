@@ -173,7 +173,9 @@ function ModeToggle() {
 }
 
 function NavItem({ href, children }) {
-  let isActive = useRouter().pathname === href
+  let hrefWithoutHash = href.replace('#', '');
+  let path = useRouter().pathname;
+  let isActive = path.includes(hrefWithoutHash);
 
   return (
     <li>

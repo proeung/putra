@@ -9,7 +9,7 @@ const WorkStats = () => {
           <h2 className="text-3xl font-light font-serif tracking-tight text-zinc-800 leading-tight md:text-5xl lg:text-6xl dark:text-zinc-100">
             Stats.
           </h2>
-          <div className="grid grid-cols-2 gap-y-16 mt-20">
+          <div className="grid grid-cols-2 gap-y-10 md:gap-y-16 mt-10 md:mt-20">
             <div className="gap-y-2 flex flex-wrap items-baseline">
               <h3 className="font-bold flex-none">Date</h3>
               <p className="flex-none w-full">03.12.2018</p>

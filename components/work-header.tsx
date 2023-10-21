@@ -33,7 +33,6 @@ const WorkHeader = ({ title, coverVideo, date, excerpt }: Props) => {
           </div>
         </Container>
       </section>
-
     </>
   );
 }
