@@ -26,7 +26,6 @@ export default function Post({ work, preview }: Props) {
     return <ErrorPage statusCode={404} />
   }
 
-  console.log(work.sectionDesktop);
   return (
     <Layout preview={preview}>
       {router.isFallback ? (
