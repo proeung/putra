@@ -26,7 +26,7 @@ export default function Post({ work, preview }: Props) {
     return <ErrorPage statusCode={404} />
   }
 
-  console.log(work.stats);
+  console.log(work.sectionDesktop);
   return (
     <Layout preview={preview}>
       {router.isFallback ? (
@@ -44,7 +44,7 @@ export default function Post({ work, preview }: Props) {
             poster={work.coverVideoPoster}
           />
           {work.sectionMobile && <WorkMobile items={work.sectionMobile} />}
-          <WorkDesktop />
+          {work.sectionDesktop && <WorkDesktop items={work.sectionDesktop} />}
           <WorkBody content={work.content} />
           {work.stats && <WorkStats stats={work.stats} />}
           <WorkNext
@@ -76,6 +76,7 @@ export async function getStaticProps({ params }: Params) {
     'coverVideoPoster',
     'stats',
     'sectionMobile',
+    'sectionDesktop',
     'nextTitle',
     'nextUrl',
   ]);

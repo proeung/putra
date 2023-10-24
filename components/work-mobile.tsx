@@ -30,7 +30,6 @@ const WorkMobile: React.FC<Props> = ({ items }) => {
                   {item.caption}
                 </p>
               ) : null}
-
             </div>
           ))}
         </div>

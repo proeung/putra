@@ -1,12 +1,19 @@
-type Stat = {
-  title: string
-  content: string
+type Desktop = {
+  url: string
+  alt: string
+  caption: string
+  style: string
 };
 
 type Mobile = {
   url: string
   alt: string
   caption: string
+};
+
+type Stat = {
+  title: string
+  content: string
 };
 
 type WorkType = {
@@ -23,6 +30,7 @@ type WorkType = {
   content: string
   stats: Stat[]
   sectionMobile: Mobile[]
+  sectionDesktop: Desktop[]
   nextTitle: string
   nextUrl: string
 }
