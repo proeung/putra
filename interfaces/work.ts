@@ -1,6 +1,12 @@
 type Stat = {
-  title: string;
-  content: string;
+  title: string
+  content: string
+};
+
+type Mobile = {
+  url: string
+  alt: string
+  caption: string
 };
 
 type WorkType = {
@@ -15,7 +21,10 @@ type WorkType = {
     url: string
   }
   content: string
-  stats: Stat[];
+  stats: Stat[]
+  sectionMobile: Mobile[]
+  nextTitle: string
+  nextUrl: string
 }
 
 export default WorkType

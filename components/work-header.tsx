@@ -1,4 +1,3 @@
-import DateFormatter from './date-formatter';
 import { Fade } from 'react-awesome-reveal';
 import PageTitle from './page-title';
 import CoverVideo from './cover-video';

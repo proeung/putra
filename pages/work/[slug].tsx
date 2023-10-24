@@ -33,7 +33,6 @@ export default function Post({ work, preview }: Props) {
         <PageTitle>Loading…</PageTitle>
       ) : (
         <>
-
           <Head>
             <title>{title}</title>
             <meta property="og:image" content={work.ogImage.url} />
@@ -44,11 +43,14 @@ export default function Post({ work, preview }: Props) {
             src={work.coverVideo}
             poster={work.coverVideoPoster}
           />
-          <WorkMobile />
+          {work.sectionMobile && <WorkMobile items={work.sectionMobile} />}
           <WorkDesktop />
           <WorkBody content={work.content} />
           {work.stats && <WorkStats stats={work.stats} />}
-          <WorkNext />
+          <WorkNext
+            title={work.nextTitle}
+            url={work.nextUrl}
+          />
         </>
       )}
     </Layout>
@@ -72,7 +74,10 @@ export async function getStaticProps({ params }: Params) {
     'coverImage',
     'coverVideo',
     'coverVideoPoster',
-    'stats'
+    'stats',
+    'sectionMobile',
+    'nextTitle',
+    'nextUrl',
   ]);
   const content = await markdownToHtml(work.content || '')
 
