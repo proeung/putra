@@ -7,11 +7,11 @@ import Container from './container';
 type Props = {
   title: string
   excerpt: string
-  coverVideo: string
-  date: string
+  src: string
+  poster: string
 }
 
-const WorkHeader = ({ title, coverVideo, date, excerpt }: Props) => {
+const WorkHeader = ({ title, src, poster, excerpt }: Props) => {
   return (
     <>
       <section className="py-16 md:py-40 relative w-full">
@@ -23,7 +23,8 @@ const WorkHeader = ({ title, coverVideo, date, excerpt }: Props) => {
           </div>
 
           <CoverVideo
-            src={coverVideo}
+            src={src}
+            poster={poster}
           />
 
           <div className="max-w-3xl mx-auto mt-16 md:mt-40">

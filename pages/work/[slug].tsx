@@ -12,7 +12,6 @@ import WorkStats from '../../components/work-stats';
 import WorkMobile from '../../components/work-mobile';
 import WorkDesktop from '../../components/work-desktop';
 import WorkNext from '../../components/work-next';
-import ArticleBody from '../../components/article-body';
 import WorkBody from '../../components/work-body';
 
 type Props = {
@@ -26,6 +25,8 @@ export default function Post({ work, preview }: Props) {
   if (!router.isFallback && !work?.slug) {
     return <ErrorPage statusCode={404} />
   }
+
+  console.log(work.stats);
   return (
     <Layout preview={preview}>
       {router.isFallback ? (
@@ -40,13 +41,13 @@ export default function Post({ work, preview }: Props) {
           <WorkHeader
             title={work.title}
             excerpt={work.excerpt}
-            coverVideo={work.coverVideo}
-            date={work.date}
+            src={work.coverVideo}
+            poster={work.coverVideoPoster}
           />
           <WorkMobile />
           <WorkDesktop />
           <WorkBody content={work.content} />
-          <WorkStats />
+          {work.stats && <WorkStats stats={work.stats} />}
           <WorkNext />
         </>
       )}
@@ -69,7 +70,9 @@ export async function getStaticProps({ params }: Params) {
     'content',
     'ogImage',
     'coverImage',
-    'coverVideo'
+    'coverVideo',
+    'coverVideoPoster',
+    'stats'
   ]);
   const content = await markdownToHtml(work.content || '')
 

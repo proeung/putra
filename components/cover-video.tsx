@@ -1,8 +1,11 @@
+import LazyVideo from "./lazy-video";
+
 type Props = {
   src: string
+  poster: string
 }
 
-const CoverVideo = ({ src }: Props) => {
+const CoverVideo = ({ src, poster }: Props) => {
   return (
     <>
       <div className="w-full h-full shadow-lg rounded-lg overflow-hidden">
@@ -13,9 +16,10 @@ const CoverVideo = ({ src }: Props) => {
         </div>
         <div className="relative aspect-video overflow-hidden">
           <div className="absolute inset-0">
-            <video autoPlay loop muted playsInline className="lazy object-cover w-full h-full">
-              <source src={src} type="video/mp4" />
-            </video>
+            <LazyVideo
+              src={src}
+              poster={poster}
+            />
           </div>
         </div>
       </div>

@@ -1,46 +1,9 @@
 import React, { useEffect } from 'react';
 import Container from "./container";
 import { Fade } from 'react-awesome-reveal';
+import LazyVideo from './lazy-video';
 
 const MoreWork = () => {
-
-  useEffect(() => {
-    const lazyVideos = Array.from(document.querySelectorAll<HTMLVideoElement>('video.lazy'));
-
-    if ('IntersectionObserver' in window) {
-      const lazyVideoObserver = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            Array.from(entry.target.children).forEach(child => {
-              if (child instanceof HTMLSourceElement) {
-                child.src = child.dataset.src || '';
-              }
-            });
-
-            // Typecast to HTMLVideoElement
-            const videoElement = entry.target as HTMLVideoElement;
-
-            // Call load() on the typed videoElement
-            videoElement.load();
-            videoElement.classList.remove('lazy');
-            lazyVideoObserver.unobserve(videoElement);
-          }
-        });
-      });
-
-      lazyVideos.forEach(lazyVideo => {
-        lazyVideoObserver.observe(lazyVideo);
-      });
-    }
-
-    return () => {
-      // Clean up the observer when the component unmounts
-      const lazyVideoObserver = new IntersectionObserver(() => { });
-      lazyVideos.forEach(lazyVideo => {
-        lazyVideoObserver.unobserve(lazyVideo);
-      });
-    };
-  }, []);
 
   return (
     <section id="work" className="pt-12 pb-16 md:pb-40 md:pt-28">
@@ -63,9 +26,10 @@ const MoreWork = () => {
             <Fade delay={.5} triggerOnce>
               <div className="relative aspect-video overflow-hidden">
                 <div className="absolute inset-0">
-                  <video autoPlay loop muted playsInline className="lazy object-cover w-full h-full" poster="/assets/work/outrider/work--outrider-poster.webp">
-                    <source data-src="/assets/work/outrider/work--outrider.mp4" type="video/mp4" />
-                  </video>
+                  <LazyVideo
+                    src="/assets/work/outrider/work--outrider.mp4"
+                    poster="/assets/work/outrider/work--outrider-poster.webp"
+                  />
                 </div>
               </div>
             </Fade>
@@ -75,9 +39,10 @@ const MoreWork = () => {
             <Fade delay={.5} triggerOnce>
               <div className="relative aspect-video overflow-hidden">
                 <div className="absolute inset-0">
-                  <video autoPlay loop muted playsInline className="lazy object-cover w-full h-full" poster="/assets/work/albright-knox/work--albright-knox-poster.webp">
-                    <source data-src="/assets/work/albright-knox/work--albright-knox.mp4" type="video/mp4" />
-                  </video>
+                  <LazyVideo
+                    src="/assets/work/albright-knox/work--albright-knox.mp4"
+                    poster="/assets/work/albright-knox/work--albright-knox-poster.webp"
+                  />
                 </div>
               </div>
             </Fade>
@@ -115,9 +80,10 @@ const MoreWork = () => {
             <Fade delay={.5} triggerOnce>
               <div className="relative aspect-video overflow-hidden">
                 <div className="absolute inset-0">
-                  <video autoPlay loop muted playsInline className="lazy object-cover w-full h-full" poster="/assets/work/happy-cog/work--happy-cog-homepage-poster.webp">
-                    <source data-src="/assets/work/happy-cog/work--happy-cog-homepage.mp4" type="video/mp4" />
-                  </video>
+                  <LazyVideo
+                    src="/assets/work/happy-cog/work--happy-cog-homepage.mp4"
+                    poster="/assets/work/happy-cog/work--happy-cog-homepage-poster.webp"
+                  />
                 </div>
               </div>
             </Fade>
