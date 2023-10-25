@@ -9,12 +9,7 @@ type Props = {
   slug: string
 }
 
-const ArticlePreview = ({
-  title,
-  date,
-  excerpt,
-  slug,
-}: Props) => {
+const ArticlePreview = ({ title, date, excerpt, slug }: Props) => {
   return (
     <article className="md:grid md:grid-cols-4 md:items-baseline">
       <div className="md:col-span-3 group relative flex flex-col items-start">

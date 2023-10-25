@@ -21,10 +21,17 @@ const WorkHeader = ({ title, src, poster, excerpt }: Props) => {
             </Fade>
           </div>
 
-          <CoverVideo
-            src={src}
-            poster={poster}
-          />
+          <div className="w-full h-full shadow-lg rounded-lg overflow-hidden">
+            <div className="w-full h-6 md:h-9 rounded-t-lg bg-gray-200 dark:bg-slate-800 flex justify-start items-center space-x-1.5 px-4">
+              <span className="w-1.5 h-1.5 rounded-full bg-red-400" />
+              <span className="w-1.5 h-1.5 rounded-full bg-yellow-400" />
+              <span className="w-1.5 h-1.5 rounded-full bg-green-400" />
+            </div>
+            <CoverVideo
+              src={src}
+              poster={poster}
+            />
+          </div>
 
           <div className="max-w-3xl mx-auto mt-16 md:mt-40">
             <p className="text-base/relaxed md:text-xl/relaxed">

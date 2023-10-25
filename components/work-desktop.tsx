@@ -1,4 +1,6 @@
 import Container from './container';
+import CoverVideo from './cover-video';
+import Image from 'next/image';
 import type WorkType from '../interfaces/work';
 
 type Props = {
@@ -22,12 +24,24 @@ const WorkDesktop: React.FC<Props> = ({ items }) => {
                 <span className="w-1.5 h-1.5 rounded-full bg-yellow-400" />
                 <span className="w-1.5 h-1.5 rounded-full bg-green-400" />
               </div>
-              <img
-                src={item.url}
-                className="w-full object-cover"
-                alt={item.alt}
-                loading="lazy"
-              />
+
+              {
+                item.type === 'video' ? (
+                  <CoverVideo
+                    src={item.url}
+                    poster=""
+                  />
+                ) :
+                  <Image
+                    src={item.url}
+                    alt={item.alt}
+                    className="w-full object-cover"
+                    width={1300}
+                    height={630}
+                    priority={false}
+                  />
+              }
+
               {
                 item.caption !== undefined && item.caption !== '' ? (
                   <p className="text-sm text-center mt-6">

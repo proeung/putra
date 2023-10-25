@@ -3,6 +3,7 @@ type Desktop = {
   alt: string
   caption: string
   style: string
+  type: string
 };
 
 type Mobile = {

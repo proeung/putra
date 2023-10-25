@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Container from './container';
 import { Fade } from 'react-awesome-reveal';
 
@@ -9,7 +10,7 @@ type Props = {
 const WorkNext = ({ title, url }: Props) => {
   return (
     <section>
-      <a href={url} className="block bg-slate-100 overflow-hidden py-16 dark:bg-slate-950/[0.4] md:py-40 relative w-full hover:bg-gray-900 hover:dark:bg-slate-950 hover:text-white hover:dark:text-white transition duration-300 ease-out hover:ease-in">
+      <Link href={url} className="block bg-slate-100 overflow-hidden py-16 dark:bg-slate-950/[0.4] md:py-40 relative w-full hover:bg-gray-900 hover:dark:bg-slate-950 hover:text-white hover:dark:text-white transition duration-300 ease-out hover:ease-in">
         <Container>
           <div className="mx-auto max-w-3xl">
             <Fade cascade delay={1e2} damping={1e-1} triggerOnce>
@@ -21,7 +22,7 @@ const WorkNext = ({ title, url }: Props) => {
             </Fade>
           </div>
         </Container>
-      </a>
+      </Link>
     </section>
   );
 }

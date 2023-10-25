@@ -1,6 +1,7 @@
-import Link from 'next/link';
 import Container from './container';
 import { Fade } from 'react-awesome-reveal';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const About = () => {
   return (
@@ -28,38 +29,42 @@ const About = () => {
           <Fade cascade delay={1e2} damping={1e-1} triggerOnce>
             <div className="auto-rows-[130px] grid grid-cols-2 gap-4 mt-10 self-center md:mt-20 md:gap-8 lg:pl-16 xl:pl-24">
               <div className="bg-neutral-100 row-span-2 rounded-2xl md:rounded-3xl  dark:bg-slate-800 overflow-hidden bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-neutral-900 shadow-md via-teal-300 to-violet-500">
-                <img
+                <Image
                   src="/assets/about/about--pic-01.webp"
-                  className="grayscale-[60%] h-full object-cover"
                   alt="Portrait of Putra Bonaccorsi"
-                  loading="lazy"
+                  className="grayscale-[60%] h-full object-cover"
+                  width={1024}
+                  height={678}
                 />
               </div>
 
               <div className="bg-neutral-100 overflow-hidden row-span-1 rounded-2xl shadow-md md:rounded-3xl dark:bg-slate-800">
-                <img
+                <Image
                   src="/assets/about/about--pic-02.webp"
-                  className="grayscale w-full h-full object-cover transition-all duration-500 ease-out hover:grayscale-0"
                   alt="Wide shot of the @GoodPathGarden"
-                  loading="lazy"
+                  className="grayscale w-full h-full object-cover transition-all duration-500 ease-out hover:grayscale-0"
+                  width={1024}
+                  height={678}
                 />
               </div>
 
               <div className="bg-neutral-100 overflow-hidden row-span-2 rounded-2xl shadow-md md:rounded-3xl dark:bg-slate-800">
-                <img
+                <Image
                   src="/assets/about/about--pic-03.webp"
-                  className="grayscale w-full h-full object-cover transition-all duration-500 ease-out hover:grayscale-0"
                   alt="Screenshot of FantasyBB"
-                  loading="lazy"
+                  className="grayscale w-full h-full object-cover transition-all duration-500 ease-out hover:grayscale-0"
+                  width={1024}
+                  height={678}
                 />
               </div>
 
               <div className="bg-neutral-100 overflow-hidden row-span-1 rounded-2xl shadow-md md:rounded-3xl dark:bg-slate-800">
-                <img
+                <Image
                   src="/assets/about/about--pic-04.webp"
-                  className="grayscale w-full h-full object-cover transition-all duration-500 ease-out hover:grayscale-0"
                   alt="Wide shot of Tulips"
-                  loading="lazy"
+                  className="grayscale w-full h-full object-cover transition-all duration-500 ease-out hover:grayscale-0"
+                  width={1024}
+                  height={678}
                 />
               </div>
             </div>
