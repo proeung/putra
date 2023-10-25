@@ -28,6 +28,11 @@ type WorkType = {
   ogImage: {
     url: string
   }
+  thumbnail: {
+    type: string
+    url: string
+    poster: string
+  }
   content: string
   stats: Stat[]
   sectionMobile: Mobile[]

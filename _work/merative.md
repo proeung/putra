@@ -1,16 +1,16 @@
 ---
-title: "Outrider.org"
+title: "Merative.com"
 excerpt: "An interactive visualization of what happens in a nuclear blast, and a flexible system of components for building media-rich longform articles. The Outrider Foundation “envisions a world where people live without fear of nuclear annihilation or climate-induced catastrophe.” To forward this vision, we built a flexible system for creating media-rich longform articles and two custom interactives."
 coverImage: ""
 coverVideo: "/assets/work/outrider/work--outrider.mp4"
 coverVideoPoster: "/assets/work/outrider/work--outrider-poster.webp"
-date: "2019-03-12"
+date: "2017-03-12"
 ogImage:
   url: "/assets/articles/deploy-shared-navigational-experience/cover.webp"
 thumbnail:
-  type: "video"
-  url: "/assets/work/outrider/work--outrider.mp4"
-  poster: "/assets/work/outrider/work--outrider-poster.webp"
+  type: "browser"
+  url: "/assets/work/merative/work--merative-thumb.webp"
+  poster: ""
 sectionMobile:
   - url: "/assets/work/outrider/work--outrider-mobile-mockup.png"
     alt: "alt text"
@@ -44,15 +44,15 @@ sectionDesktop:
     type: "video"
 stats:
   - title: "Date"
-    content: "03.12.2018"
+    content: "10.17.2023"
   - title: "Role"
     content: "Team Lead/Development"
   - title: "Agency"
-    content: "Bluecadet"
+    content: "Merative"
   - title: "Tech"
-    content: "React, Gatsby, REST API, CSS Modules, Netlify"
-nextTitle: "Albright-Knox Art Gallery"
-nextUrl: "/work/albright-knox"
+    content: "Adobe Experience Manager (AEM), AEM Franklin, CSS, Javascript, Design System, Marketo"
+nextTitle: "Whyy.org"
+nextUrl: "/work/whyy"
 ---
 
 An interactive visualization of what happens in a nuclear blast, and a flexible system of components for building media-rich longform articles. The Outrider Foundation “envisions a world where people live without fear of nuclear annihilation or climate-induced catastrophe.” To forward this vision, we built a flexible system for creating media-rich longform articles and two custom interactives.

@@ -1,16 +1,16 @@
 ---
-title: "Outrider.org"
+title: "ibm.com experience"
 excerpt: "An interactive visualization of what happens in a nuclear blast, and a flexible system of components for building media-rich longform articles. The Outrider Foundation “envisions a world where people live without fear of nuclear annihilation or climate-induced catastrophe.” To forward this vision, we built a flexible system for creating media-rich longform articles and two custom interactives."
 coverImage: ""
 coverVideo: "/assets/work/outrider/work--outrider.mp4"
 coverVideoPoster: "/assets/work/outrider/work--outrider-poster.webp"
-date: "2019-03-12"
+date: "2023-03-12"
 ogImage:
   url: "/assets/articles/deploy-shared-navigational-experience/cover.webp"
 thumbnail:
-  type: "video"
-  url: "/assets/work/outrider/work--outrider.mp4"
-  poster: "/assets/work/outrider/work--outrider-poster.webp"
+  type: "image"
+  url: "/assets/work/ibm/work--ibm-thumb.webp"
+  poster: ""
 sectionMobile:
   - url: "/assets/work/outrider/work--outrider-mobile-mockup.png"
     alt: "alt text"
@@ -44,15 +44,15 @@ sectionDesktop:
     type: "video"
 stats:
   - title: "Date"
-    content: "03.12.2018"
+    content: "2019 - 2023"
   - title: "Role"
-    content: "Team Lead/Development"
+    content: "Lead Developer & Project Manager"
   - title: "Agency"
-    content: "Bluecadet"
+    content: "Lullabot"
   - title: "Tech"
-    content: "React, Gatsby, REST API, CSS Modules, Netlify"
-nextTitle: "Albright-Knox Art Gallery"
-nextUrl: "/work/albright-knox"
+    content: "Web Components, TypeScript, Storybooks, Fractal, Drupal, Design System"
+nextTitle: "outrider.org"
+nextUrl: "/work/outrider"
 ---
 
 An interactive visualization of what happens in a nuclear blast, and a flexible system of components for building media-rich longform articles. The Outrider Foundation “envisions a world where people live without fear of nuclear annihilation or climate-induced catastrophe.” To forward this vision, we built a flexible system for creating media-rich longform articles and two custom interactives.
