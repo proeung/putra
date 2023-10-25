@@ -31,7 +31,7 @@
 }
 
 .markdown ul {
-  @apply space-y-4 list-disc list-outside ps-14 pe-14;
+  @apply marker:text-teal-500 list-disc list-outside ps-14 pe-14;
 }
 
 .markdown pre {

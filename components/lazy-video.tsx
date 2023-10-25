@@ -28,7 +28,7 @@ const LazyVideo = ({ src, poster }) => {
         lazyVideoObserver.unobserve(videoElement);
       }
     };
-  }, []);
+  }, [src, poster]);
 
   return (
     <video

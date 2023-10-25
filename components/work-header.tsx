@@ -2,6 +2,7 @@ import { Fade } from 'react-awesome-reveal';
 import PageTitle from './page-title';
 import CoverVideo from './cover-video';
 import Container from './container';
+import LazyVideo from './lazy-video';
 
 type Props = {
   title: string
