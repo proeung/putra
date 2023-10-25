@@ -9,7 +9,7 @@ const CoverVideo = ({ src, poster }: Props) => {
   return (
     <>
       <div className="relative aspect-video overflow-hidden">
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 top-0">
           <LazyVideo
             src={src}
             poster={poster}
