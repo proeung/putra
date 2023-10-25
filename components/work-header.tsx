@@ -22,7 +22,7 @@ const WorkHeader = ({ title, src, poster, excerpt }: Props) => {
             </Fade>
           </div>
 
-          <div className="w-full h-full shadow-lg rounded-lg overflow-hidden">
+          <div className="bg-neutral-100 dark:bg-slate-800 w-full h-full shadow-lg rounded-lg overflow-hidden">
             <div className="w-full h-6 md:h-9 rounded-t-lg bg-gray-200 dark:bg-slate-800 flex justify-start items-center space-x-1.5 px-4">
               <span className="w-1.5 h-1.5 rounded-full bg-red-400" />
               <span className="w-1.5 h-1.5 rounded-full bg-yellow-400" />

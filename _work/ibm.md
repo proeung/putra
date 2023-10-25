@@ -12,13 +12,13 @@ thumbnail:
   url: "/assets/work/ibm/work--ibm-thumb.webp"
   poster: ""
 sectionMobile:
-  - url: "/assets/work/outrider/work--outrider-mobile-mockup.png"
+  - url: "/assets/work/outrider/work--outrider-mobile-01.png"
     alt: "alt text"
     caption: "some caption 01"
-  - url: "/assets/work/outrider/work--outrider-mobile-mockup.png"
+  - url: "/assets/work/outrider/work--outrider-mobile-01.png"
     alt: "alt text"
     caption: "some caption 02"
-  - url: "/assets/work/outrider/work--outrider-mobile-mockup.png"
+  - url: "/assets/work/outrider/work--outrider-mobile-01.png"
     alt: "alt text"
     caption: "some caption 03"
 sectionDesktop:

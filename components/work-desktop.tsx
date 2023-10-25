@@ -17,34 +17,36 @@ const WorkDesktop: React.FC<Props> = ({ items }) => {
             <div
               key={index}
               className={`${item.style === 'half' ? 'col-span-1' : 'col-span-2'
-                } w-full shadow-lg rounded-lg overflow-hidden`}
+                } w-full`}
             >
-              <div className="w-full h-6 md:h-9 rounded-t-lg bg-gray-200 dark:bg-slate-800 flex justify-start items-center space-x-1.5 px-4">
-                <span className="w-1.5 h-1.5 rounded-full bg-red-400" />
-                <span className="w-1.5 h-1.5 rounded-full bg-yellow-400" />
-                <span className="w-1.5 h-1.5 rounded-full bg-green-400" />
+              <div className="bg-neutral-100 dark:bg-slate-800 w-full shadow-lg rounded-lg overflow-hidden">
+                <div className="w-full h-6 md:h-9 rounded-t-lg bg-gray-200 dark:bg-slate-800 flex justify-start items-center space-x-1.5 px-4">
+                  <span className="w-1.5 h-1.5 rounded-full bg-red-400" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-yellow-400" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-green-400" />
+                </div>
+
+                {
+                  item.type === 'video' ? (
+                    <CoverVideo
+                      src={item.url}
+                      poster=""
+                    />
+                  ) :
+                    <Image
+                      src={item.url}
+                      alt={item.alt}
+                      className="object-cover w-full"
+                      width={1300}
+                      height={630}
+                      priority={false}
+                    />
+                }
               </div>
 
               {
-                item.type === 'video' ? (
-                  <CoverVideo
-                    src={item.url}
-                    poster=""
-                  />
-                ) :
-                  <Image
-                    src={item.url}
-                    alt={item.alt}
-                    className="w-full object-cover"
-                    width={1300}
-                    height={630}
-                    priority={false}
-                  />
-              }
-
-              {
                 item.caption !== undefined && item.caption !== '' ? (
-                  <p className="text-sm text-center mt-6">
+                  <p className="text-sm mt-6">
                     {item.caption}
                   </p>
                 ) : null
