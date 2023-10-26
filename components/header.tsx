@@ -261,7 +261,10 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight md:tracking-tighter text-zinc-800 dark:text-zinc-100 leading-tight">
             <Fade delay={.5} triggerOnce>
-              <Link href="/">
+              <Link
+                href="/"
+                className="hover:text-zinc-500 transition duration-700 ease-in-out"
+              >
                 putra<span className="text-teal-500">.</span>
               </Link>
             </Fade>

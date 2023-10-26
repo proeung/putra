@@ -13,7 +13,7 @@ const WorkNext = ({ title, url }: Props) => {
       <Link
         as={url}
         href={url}
-        className="block bg-slate-100 overflow-hidden py-16 dark:bg-slate-950/[0.4] md:py-40 relative w-full hover:bg-gray-900 hover:dark:bg-slate-950 hover:text-white hover:dark:text-white transition duration-300 ease-out hover:ease-in"
+        className="block bg-gray-100 overflow-hidden py-16 dark:bg-slate-950/[0.2] md:py-40 relative w-full hover:bg-gray-900 hover:dark:bg-slate-950 hover:text-white hover:dark:text-white transition duration-300 ease-out hover:ease-in"
       >
         <Container>
           <div className="mx-auto max-w-3xl">

@@ -23,7 +23,7 @@ const MoreWork: React.FC<Props> = ({ works }) => {
               href={`/work/${work.slug}`}
               key={work.slug}
               className={`${work.thumbnail.type === 'video' ? 'col-span-2 xl:max-h-[582px]' : 'col-span-2 md:col-span-1'
-                } row-span-1 rounded-2xl md:rounded-3xl overflow-hidden bg-neutral-100 dark:bg-slate-800 hover:bg-slate-700 hover:dark:bg-slate-700 transition duration-300 ease-out hover:ease-in`}
+                } row-span-1 rounded-2xl md:rounded-3xl overflow-hidden bg-slate-100 dark:bg-slate-800 hover:bg-slate-700 hover:dark:bg-slate-700 transition duration-300 ease-out hover:ease-in`}
               title={work.title}
             >
               <Fade delay={.5} triggerOnce className="h-full">

@@ -8,7 +8,7 @@ type Props = {
 
 const WorkStats: React.FC<Props> = ({ stats }) => {
   return (
-    <section className="border-t border-slate-900/10 py-16 dark:border-slate-50/[0.1] md:py-40 relative w-full">
+    <section className="border-y border-slate-900/10 py-16 dark:border-slate-50/[0.1] md:py-40 relative w-full">
       <Container>
         <div className="mx-auto max-w-3xl">
           <Fade cascade delay={1e2} damping={1e-1} triggerOnce>

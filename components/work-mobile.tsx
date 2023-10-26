@@ -8,7 +8,7 @@ type Props = {
 
 const WorkMobile: React.FC<Props> = ({ items }) => {
   return (
-    <section id="mobile" className="bg-slate-100 py-16 dark:bg-slate-950/[0.4] md:py-40 relative w-full">
+    <section className="bg-gray-100 py-16 dark:bg-slate-950/[0.5] md:py-40 relative w-full">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 xl:gap-20 max-w-5xl mx-auto">
           {items.map((item, index) => (
