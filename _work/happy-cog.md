@@ -2,31 +2,32 @@
 title: "HappyCog.com homepage"
 excerpt: "An interactive visualization of what happens in a nuclear blast, and a flexible system of components for building media-rich longform articles. The Outrider Foundation “envisions a world where people live without fear of nuclear annihilation or climate-induced catastrophe.” To forward this vision, we built a flexible system for creating media-rich longform articles and two custom interactives."
 coverImage: ""
-coverVideo: "/assets/work/happy-cog/work--happy-cog-homepage.mp4"
-coverVideoPoster: "/assets/work/happy-cog/work--happy-cog-homepage-poster.webp"
+coverVideo: "/assets/work/happy-cog/video-cover.mp4"
+coverVideoPoster: "/assets/work/happy-cog/video-cover-poster.webp"
 date: "2017-01-12"
 ogImage:
-  url: "/assets/work/happy-cog/work--happy-cog-homepage-poster.webp"
+  url: "/assets/work/happy-cog/video-cover-poster.webp"
 thumbnail:
   type: "video"
-  url: "/assets/work/happy-cog/work--happy-cog-homepage.mp4"
-  poster: "/assets/work/happy-cog/work--happy-cog-homepage-poster.webp"
+  url: "/assets/work/happy-cog/video-cover.mp4"
+  poster: "/assets/work/happy-cog/video-cover-poster.webp"
 sectionDesktop:
-  - url: "/assets/work/merative/work--merative-thumb.webp"
+  - url: "/assets/work/happy-cog/desktop-half-01.webp"
     alt: "alt text"
     caption: ""
     style: "half"
     type: "image"
-  - url: "/assets/work/merative/work--merative-thumb.webp"
+  - url: "/assets/work/happy-cog/desktop-half-02.webp"
     alt: "alt text"
     caption: ""
     style: "half"
     type: "image"
-  - url: "/assets/articles/deploy-shared-navigational-experience/cover.webp"
+  - url: "/assets/work/happy-cog/video-01.mp4"
     alt: "alt text"
     caption: ""
     style: "full"
-    type: "image"
+    type: "video"
+    poster: "/assets/work/happy-cog/video-01-poster.webp"
 stats:
   - title: "Date"
     content: "10.08.2018"
@@ -39,5 +40,3 @@ stats:
 nextTitle: "ibm.com experience"
 nextUrl: "/work/ibm"
 ---
-
-An interactive visualization of what happens in a nuclear blast, and a flexible system of components for building media-rich longform articles. The Outrider Foundation “envisions a world where people live without fear of nuclear annihilation or climate-induced catastrophe.” To forward this vision, we built a flexible system for creating media-rich longform articles and two custom interactives.

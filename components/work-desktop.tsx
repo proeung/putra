@@ -30,7 +30,7 @@ const WorkDesktop: React.FC<Props> = ({ items }) => {
                   item.type === 'video' ? (
                     <CoverVideo
                       src={item.url}
-                      poster=""
+                      poster={item.poster}
                     />
                   ) :
                     <Image

@@ -27,11 +27,13 @@ sectionDesktop:
     caption: "Search the Collections"
     style: "full"
     type: "video"
+    poster: "/assets/work/albright-knox/video-01-poster.webp"
   - url: "/assets/work/albright-knox/video-02.mp4"
     alt: ""
     caption: "Experience Slider"
     style: "full"
     type: "video"
+    poster: "/assets/work/albright-knox/video-02-poster.webp"
 stats:
   - title: "Date"
     content: "03.12.2018"

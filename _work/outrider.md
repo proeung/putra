@@ -27,6 +27,7 @@ sectionDesktop:
     caption: ""
     style: "full"
     type: "video"
+    poster: "/assets/work/outrider/video-01-poster.webp"
   - url: "/assets/work/outrider/desktop-half-01.webp"
     alt: "Screenshot of the Outrider.org's homepage"
     caption: ""

@@ -4,6 +4,7 @@ type Desktop = {
   caption: string
   style: string
   type: string
+  poster: string
 };
 
 type Mobile = {
