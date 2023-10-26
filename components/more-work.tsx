@@ -36,7 +36,7 @@ const MoreWork: React.FC<Props> = ({ works }) => {
                   ) : work.thumbnail.type === 'browser' ? (
                     <div className="w-full h-full p-10 md:p-4 lg:p-10">
                       <div className="w-full h-full shadow-lg rounded-lg overflow-hidden">
-                        <div className="w-full h-6 rounded-t-lg bg-gray-200 dark:bg-slate-900 flex justify-start items-center space-x-1.5 px-4">
+                        <div className="w-full h-6 rounded-t-lg bg-gray-200 dark:bg-slate-900 flex justify-start items-center space-x-1.5 px-5 md:px-4">
                           <span className="w-1.5 h-1.5 rounded-full bg-red-400" />
                           <span className="w-1.5 h-1.5 rounded-full bg-yellow-400" />
                           <span className="w-1.5 h-1.5 rounded-full bg-green-400" />

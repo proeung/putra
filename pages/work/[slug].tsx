@@ -44,7 +44,7 @@ export default function Post({ work, preview }: Props) {
           />
           {work.sectionMobile && <WorkMobile items={work.sectionMobile} />}
           {work.sectionDesktop && <WorkDesktop items={work.sectionDesktop} />}
-          <WorkBody content={work.content} />
+          {work.content && <WorkBody content={work.content} />}
           {work.stats && <WorkStats stats={work.stats} />}
           <WorkNext
             title={work.nextTitle}
