@@ -9,7 +9,7 @@ type Props = {
 
 const WorkDesktop: React.FC<Props> = ({ items }) => {
   return (
-    <section className="bg-slate-200 py-16 dark:bg-slate-950/[0.2] md:py-40 relative overflow-hidden w-full">
+    <section className="border-t border-slate-900/10 dark:border-slate-50/[0.1] bg-slate-200 py-16 dark:bg-slate-950/[0.2] md:py-40 relative overflow-hidden w-full">
       <Container>
         <div aria-hidden="true" className="pointer-events-none block blob absolute opacity-20 -right-40 -bottom-56 w-[20rem] h-[20rem] lg:w-[40rem] lg:h-[40rem]"></div>
         <div className="grid grid-cols-2 gap-6 md:gap-14 relative w-full z-10">

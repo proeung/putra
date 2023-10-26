@@ -8,9 +8,10 @@ type Props = {
 
 const WorkMobile: React.FC<Props> = ({ items }) => {
   return (
-    <section className="bg-gray-100 py-16 dark:bg-slate-950/[0.5] md:py-40 relative w-full">
+    <section className="bg-gray-100 py-16 dark:bg-slate-950/[0.5] md:py-40 relative w-full overflow-hidden">
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 xl:gap-20 max-w-5xl mx-auto">
+        <div aria-hidden="true" className="pointer-events-none blob absolute opacity-30 -left-40 -bottom-1/4 md:-bottom-2/4 w-[40rem] h-[40rem]"></div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 xl:gap-20 max-w-5xl mx-auto relative">
           {items.map((item, index) => (
             <div key={index}>
               <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[10px] lg:border-[14px] rounded-[2.5rem] h-[400px] w-[200px] lg:h-[600px] lg:w-[300px]">
