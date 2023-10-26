@@ -3,10 +3,10 @@ title: "Whyy.org"
 excerpt: "An interactive visualization of what happens in a nuclear blast, and a flexible system of components for building media-rich longform articles. The Outrider Foundation “envisions a world where people live without fear of nuclear annihilation or climate-induced catastrophe.” To forward this vision, we built a flexible system for creating media-rich longform articles and two custom interactives."
 coverImage: ""
 coverVideo: "/assets/work/whyy/video-cover.mp4"
-coverVideoPoster: "/assets/work/outrider/video-cover-poster.webp"
+coverVideoPoster: "/assets/work/whyy/video-cover-poster.webp"
 date: "2017-02-12"
 ogImage:
-  url: "/assets/work/whyy/desktop-full-01.webp"
+  url: "/assets/work/whyy/video-cover-poster.webp"
 thumbnail:
   type: "image"
   url: "/assets/work/whyy/thumb.webp"
@@ -37,7 +37,7 @@ sectionDesktop:
     caption: "Persistent Audio Player"
     style: "full"
     type: "video"
-    poster: ""
+    poster: "/assets/work/whyy/video-01-poster.webp"
 stats:
   - title: "Date"
     content: "03.10.2018"

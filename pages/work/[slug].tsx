@@ -44,6 +44,8 @@ export default function Post({ work, preview }: Props) {
           />
           {work.sectionMobile && <WorkMobile items={work.sectionMobile} />}
           {work.sectionDesktop && <WorkDesktop items={work.sectionDesktop} />}
+          {work.sectionMobileBottom && <WorkMobile items={work.sectionMobileBottom} />}
+          {work.sectionDesktopBottom && <WorkDesktop items={work.sectionDesktopBottom} />}
           {work.content && <WorkBody content={work.content} />}
           {work.stats && <WorkStats stats={work.stats} />}
           <WorkNext
@@ -76,6 +78,8 @@ export async function getStaticProps({ params }: Params) {
     'stats',
     'sectionMobile',
     'sectionDesktop',
+    'sectionMobileBottom',
+    'sectionDesktopBottom',
     'nextTitle',
     'nextUrl',
   ]);

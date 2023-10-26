@@ -38,6 +38,8 @@ type WorkType = {
   stats: Stat[]
   sectionMobile: Mobile[]
   sectionDesktop: Desktop[]
+  sectionMobileBottom: Mobile[]
+  sectionDesktopBottom: Desktop[]
   nextTitle: string
   nextUrl: string
 }
