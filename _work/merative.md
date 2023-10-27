@@ -3,10 +3,10 @@ title: "Merative.com"
 excerpt: "An interactive visualization of what happens in a nuclear blast, and a flexible system of components for building media-rich longform articles. The Outrider Foundation “envisions a world where people live without fear of nuclear annihilation or climate-induced catastrophe.” To forward this vision, we built a flexible system for creating media-rich longform articles and two custom interactives."
 coverImage: ""
 coverVideo: "/assets/work/merative/video-cover.mp4"
-coverVideoPoster: "/assets/work/outrider/video-cover-poster.webp"
+coverVideoPoster: "/assets/work/merative/video-cover-poster.webp"
 date: "2017-03-12"
 ogImage:
-  url: "/assets/articles/deploy-shared-navigational-experience/cover.webp"
+  url: "/assets/work/merative/video-cover-poster.webp"
 thumbnail:
   type: "browser"
   url: "/assets/work/merative/thumb.webp"
@@ -37,7 +37,7 @@ sectionDesktop:
     caption: ""
     style: "full"
     type: "video"
-    poster: ""
+    poster: "/assets/work/merative/video-01-poster.webp"
 sectionMobileBottom:
   - url: "/assets/work/merative/mobile-04.webp"
     alt: "alt text"
@@ -53,7 +53,7 @@ sectionDesktopBottom:
     alt: "alt text"
     caption: ""
     style: "full"
-    type: "image"
+    type: "collage"
 stats:
   - title: "Date"
     content: "10.17.2023"

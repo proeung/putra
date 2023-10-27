@@ -20,11 +20,16 @@ const WorkDesktop: React.FC<Props> = ({ items }) => {
                 } w-full`}
             >
               <div className="bg-white dark:bg-slate-950 w-full shadow-lg rounded-lg overflow-hidden">
-                <div className="w-full h-6 md:h-9 rounded-t-lg bg-neutral-100 dark:bg-slate-800 flex justify-start items-center space-x-1.5 px-5 md:px-4">
-                  <span className="w-1.5 h-1.5 rounded-full bg-red-400" />
-                  <span className="w-1.5 h-1.5 rounded-full bg-yellow-400" />
-                  <span className="w-1.5 h-1.5 rounded-full bg-green-400" />
-                </div>
+                {
+                  item.type !== 'collage' ? (
+                    <div className="w-full h-6 md:h-9 rounded-t-lg bg-neutral-100 dark:bg-slate-800 flex justify-start items-center space-x-1.5 px-5 md:px-4">
+                      <span className="w-1.5 h-1.5 rounded-full bg-red-400" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-yellow-400" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-green-400" />
+                    </div>
+                  ) :
+                    null
+                }
 
                 {
                   item.type === 'video' ? (
@@ -39,7 +44,7 @@ const WorkDesktop: React.FC<Props> = ({ items }) => {
                       className="object-cover w-full"
                       width={1300}
                       height={630}
-                      priority={false}
+                      priority={true}
                     />
                 }
               </div>

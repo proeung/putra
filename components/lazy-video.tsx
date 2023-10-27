@@ -36,7 +36,7 @@ const LazyVideo = ({ src, poster }) => {
       loop
       muted
       playsInline
-      className="w-full h-full max-w-none object-cover"
+      className="w-full h-full max-w-none object-cover object-top"
       poster={poster}
       ref={videoRef}
       data-src={src}
