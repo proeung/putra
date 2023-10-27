@@ -62,7 +62,7 @@ stats:
   - title: "Agency"
     content: "Merative"
   - title: "Tech"
-    content: "Adobe Experience Manager (AEM), AEM Franklin, CSS, Javascript, Design System, Marketo"
+    content: "Adobe Experience Manager (AEM), AEM Franklin, CSS, Javascript, Marketo"
 nextTitle: "Whyy.org"
 nextUrl: "/work/whyy"
 ---
