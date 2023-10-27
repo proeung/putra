@@ -12,11 +12,11 @@ const WorkDesktop: React.FC<Props> = ({ items }) => {
     <section className="border-t border-slate-900/10 dark:border-slate-50/[0.1] bg-slate-200 py-16 dark:bg-slate-950/[0.2] md:py-40 relative overflow-hidden w-full">
       <Container>
         <div aria-hidden="true" className="pointer-events-none block blob absolute opacity-20 -right-40 -bottom-56 w-[20rem] h-[20rem] lg:w-[40rem] lg:h-[40rem]"></div>
-        <div className="grid grid-cols-2 gap-6 md:gap-14 relative w-full z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-14 relative w-full z-10">
           {items.map((item, index) => (
             <div
               key={index}
-              className={`${item.style === 'half' ? 'col-span-1' : 'col-span-2'
+              className={`${item.style === 'half' ? 'col-span-1' : 'col-span-1 md:col-span-2'
                 } w-full`}
             >
               <div className="bg-white dark:bg-slate-950 w-full shadow-lg rounded-lg overflow-hidden">

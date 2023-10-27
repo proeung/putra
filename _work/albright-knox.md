@@ -43,6 +43,6 @@ stats:
     content: "Bluecadet"
   - title: "Tech"
     content: "Drupal, PHP, Twig, CSS (Sass), MIMSY Sync, Pantheon"
-nextTitle: "Merative.com"
+nextTitle: "Merative.com & Demand Gen"
 nextUrl: "/work/merative"
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Merative.com"
+title: "Merative.com & Demand Gen"
 excerpt: "An interactive visualization of what happens in a nuclear blast, and a flexible system of components for building media-rich longform articles. The Outrider Foundation “envisions a world where people live without fear of nuclear annihilation or climate-induced catastrophe.” To forward this vision, we built a flexible system for creating media-rich longform articles and two custom interactives."
 coverImage: ""
 coverVideo: "/assets/work/merative/video-cover.mp4"

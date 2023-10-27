@@ -47,7 +47,7 @@ stats:
     content: "Bluecadet"
   - title: "Tech"
     content: "WordPress, PHP, Javascript, Ajax, CSS (Sass), Pantheon"
-nextTitle: "HappyCog.com homepage"
+nextTitle: "HappyCog.com Homepage"
 nextUrl: "/work/happy-cog"
 ---
 

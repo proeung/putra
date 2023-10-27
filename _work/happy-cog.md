@@ -1,5 +1,5 @@
 ---
-title: "HappyCog.com homepage"
+title: "HappyCog.com Homepage"
 excerpt: "An interactive visualization of what happens in a nuclear blast, and a flexible system of components for building media-rich longform articles. The Outrider Foundation “envisions a world where people live without fear of nuclear annihilation or climate-induced catastrophe.” To forward this vision, we built a flexible system for creating media-rich longform articles and two custom interactives."
 coverImage: ""
 coverVideo: "/assets/work/happy-cog/video-cover.mp4"
@@ -37,6 +37,6 @@ stats:
     content: "Happy Cog"
   - title: "Tech"
     content: "WordPress, PHP, Javascript, CSS animation"
-nextTitle: "ibm.com experience"
+nextTitle: "IBM.com experience"
 nextUrl: "/work/ibm"
 ---
