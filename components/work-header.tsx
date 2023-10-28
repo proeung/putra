@@ -13,7 +13,7 @@ type Props = {
 const WorkHeader = ({ title, src, poster, excerpt }: Props) => {
   return (
     <>
-      <section className="py-16 md:py-40 relative w-full">
+      <section className="py-16 md:py-40 w-full">
         <Container>
           <div className="max-w-3xl mx-auto mb-10 md:mb-16">
             <Fade cascade delay={1} damping={1e-1} triggerOnce>

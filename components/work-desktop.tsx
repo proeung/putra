@@ -19,7 +19,7 @@ const WorkDesktop: React.FC<Props> = ({ items }) => {
               className={`${item.style === 'half' ? 'col-span-1' : 'col-span-1 md:col-span-2'
                 } w-full`}
             >
-              <div className="bg-white dark:bg-slate-950 w-full shadow-lg rounded-lg overflow-hidden">
+              <div className="bg-neutral-100 dark:bg-slate-950 w-full shadow-lg rounded-lg overflow-hidden">
                 {
                   item.type !== 'collage' ? (
                     <div className="w-full h-6 md:h-8 rounded-t-lg bg-neutral-100 dark:bg-slate-800 flex justify-start items-center space-x-1.5 px-5 md:px-4">
