@@ -51,7 +51,7 @@ const WorkDesktop: React.FC<Props> = ({ items }) => {
 
               {
                 item.caption !== undefined && item.caption !== '' ? (
-                  <p className="text-sm mt-6">
+                  <p className="text-sm max-w-xs mt-6 md:max-w-lg">
                     {item.caption}
                   </p>
                 ) : null
