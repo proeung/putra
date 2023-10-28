@@ -3,9 +3,10 @@ import LazyVideo from "./lazy-video";
 type Props = {
   src: string
   poster: string
+  label: string
 }
 
-const CoverVideo = ({ src, poster }: Props) => {
+const CoverVideo = ({ label, src, poster }: Props) => {
   return (
     <>
       <div className="relative aspect-video overflow-hidden">
@@ -13,6 +14,7 @@ const CoverVideo = ({ src, poster }: Props) => {
           <LazyVideo
             src={src}
             poster={poster}
+            label={label}
           />
         </div>
       </div>

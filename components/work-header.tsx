@@ -30,6 +30,7 @@ const WorkHeader = ({ title, src, poster, excerpt }: Props) => {
             <CoverVideo
               src={src}
               poster={poster}
+              label={`Video screenshot of ${title}`}
             />
           </div>
 

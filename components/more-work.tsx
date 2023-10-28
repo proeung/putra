@@ -33,6 +33,7 @@ const MoreWork: React.FC<Props> = ({ works }) => {
                     <CoverVideo
                       src={work.thumbnail.url}
                       poster={work.thumbnail.poster}
+                      label={`Video screenshot of ${work.title}`}
                     />
                   ) : work.thumbnail.type === 'browser' ? (
                     <div className="w-full h-full p-10 md:p-4 lg:p-10">

@@ -36,6 +36,7 @@ const WorkDesktop: React.FC<Props> = ({ items }) => {
                     <CoverVideo
                       src={item.url}
                       poster={item.poster}
+                      label={item.alt}
                     />
                   ) :
                     <Image

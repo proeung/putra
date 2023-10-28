@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-const LazyVideo = ({ src, poster }) => {
+const LazyVideo = ({ label, src, poster }) => {
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -40,6 +40,7 @@ const LazyVideo = ({ src, poster }) => {
       poster={poster}
       ref={videoRef}
       data-src={src}
+      aria-label={label}
     >
       <source data-src={src} type="video/mp4" />
     </video>

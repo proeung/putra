@@ -35,7 +35,7 @@ stats:
   - title: "Agency"
     content: "Happy Cog"
   - title: "Tech"
-    content: "WordPress, PHP, Javascript, CSS animation"
+    content: "WordPress, PHP, Javascript, GSAP"
 nextTitle: "IBM.com experience"
 nextUrl: "/work/ibm"
 ---

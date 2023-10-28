@@ -42,7 +42,7 @@ stats:
   - title: "Agency"
     content: "Bluecadet"
   - title: "Tech"
-    content: "Drupal, PHP, Twig, CSS (Sass), MIMSY Sync, Pantheon"
+    content: "Drupal, PHP, Twig, Javascript, CSS Animations, MIMSY Sync, Pantheon"
 nextTitle: "Merative.com & Demand Gen"
 nextUrl: "/work/merative"
 ---
