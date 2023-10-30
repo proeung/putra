@@ -1,6 +1,6 @@
 ---
 title: "Whyy.org"
-excerpt: "An interactive visualization of what happens in a nuclear blast, and a flexible system of components for building media-rich longform articles. The Outrider Foundation “envisions a world where people live without fear of nuclear annihilation or climate-induced catastrophe.” To forward this vision, we built a flexible system for creating media-rich longform articles and two custom interactives."
+excerpt: "As a Senior Developer at Bluecadet, I played a pivotal role in the development of WHYY.org, a groundbreaking project for Greater Philadelphia's public media provider, WHYY. The revamped of this site not only integrated the station's renowned news service with compelling video/audio content, schedules, and event listings but also introduced innovative features to enhance user engagement with the platform's content."
 coverImage: ""
 coverVideo: "/assets/work/whyy/video-cover.mp4"
 coverVideoPoster: "/assets/work/whyy/video-cover-poster.webp"
@@ -51,4 +51,12 @@ nextTitle: "HappyCog.com Homepage"
 nextUrl: "/work/happy-cog"
 ---
 
-An interactive visualization of what happens in a nuclear blast, and a flexible system of components for building media-rich longform articles. The Outrider Foundation “envisions a world where people live without fear of nuclear annihilation or climate-induced catastrophe.” To forward this vision, we built a flexible system for creating media-rich longform articles and two custom interactives.
+One of the standout features was the implementation of a site-wide audio player or what we called "Persistent Audio Player", enabling users to stream episodes and segments while effortlessly navigating the site. To achieve this, we utilized the Ajaxify WordPress Site plugin and our own custom JavaScript code to create a this seamless browsing experience.
+
+We overcame significant challenges, including migrating sixteen years' worth of diverse data from multiple platforms, totaling 96,000 pieces of legacy content. Collaborating closely with WHYY's team, we successfully identified priorities, allowing us to focus on key features for the initial launch while planning for subsequent phases. Additionally, user focus groups provided invaluable insights, informing our design approach and content strategy, and ultimately ensuring a seamless and immersive user experience.
+
+## Results
+
+- Average session duration increased by 36%
+- 39% improvement in bounce rate
+- 16 years’ worth of content seamlessly migrated
