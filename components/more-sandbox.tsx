@@ -56,7 +56,11 @@ const MoreSandBox = () => {
               <a key={index} href={item.url} target="_blank" className="bg-white row-span-1 rounded-2xl md:rounded-3xl overflow-hidden p-4 shadow-md text-zinc-800 dark:text-zinc-400 dark:bg-slate-900 hover:bg-slate-700 hover:dark:bg-slate-700 hover:text-white hover:dark:text-white transition duration-300 ease-out hover:ease-in">
                 <div className="aspect-video border lg:border-slate-900/10 dark:border-slate-50/[0.1] relative overflow-hidden rounded-xl">
                   <div className="absolute inset-0">
-                    <LazyVideo src={item.videoSrc} poster={item.posterSrc} />
+                    <LazyVideo
+                      src={item.videoSrc}
+                      poster={item.posterSrc}
+                      label={`Video screenshot of ${item.title}`}
+                    />
                   </div>
                 </div>
                 <h3 className="font-bold text-base md:text-xl tracking-tight text-center mt-8 mb-4">{item.title}</h3>
