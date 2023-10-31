@@ -31,7 +31,7 @@ stats:
   - title: "Date"
     content: "10.08.2018"
   - title: "Role"
-    content: "Developer"
+    content: "Interactive Design Lead/Developer"
   - title: "Agency"
     content: "Happy Cog"
   - title: "Tech"

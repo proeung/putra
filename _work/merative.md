@@ -62,9 +62,11 @@ stats:
   - title: "Agency"
     content: "Merative"
   - title: "Tech"
-    content: "Adobe Experience Manager (AEM), AEM Franklin, CSS, Javascript, Marketo"
+    content: "Adobe Experience Manager (AEM) / AEM Franklin, CSS, Javascript, Marketo"
 nextTitle: "Whyy.org"
 nextUrl: "/work/whyy"
 ---
+
+### Email Marketing Templates
 
 An interactive visualization of what happens in a nuclear blast, and a flexible system of components for building media-rich longform articles. The Outrider Foundation “envisions a world where people live without fear of nuclear annihilation or climate-induced catastrophe.” To forward this vision, we built a flexible system for creating media-rich longform articles and two custom interactives.

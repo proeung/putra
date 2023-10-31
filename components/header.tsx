@@ -69,7 +69,7 @@ function MoonIcon(props) {
 
 const links = [
   { href: '/#work', label: 'work' },
-  { href: '/#articles', label: 'article' },
+  { href: '/#articles', label: 'articles' },
   { href: '/#sandbox', label: 'sandbox' },
   { href: '/#about', label: 'about' },
 ]

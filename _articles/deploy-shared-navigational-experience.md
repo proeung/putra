@@ -73,7 +73,7 @@ Due to the number of applications and content management systems we needed to la
 
 Using the new masthead is simple. Various standalone applications can call for the component and access its built static files using the following snippet:
 
-``` js
+``` html
 <script src="../carbon-for-ibm-dotcom/tag/v1/latest/cloud-masthead.min.js" type="module"></script>
 <dds-cloud-masthead-container
    platform="Cloud"

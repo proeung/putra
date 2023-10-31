@@ -65,7 +65,7 @@ For this ambitious project, we harnessed the power of Gatsby.js and Netlify to c
 
 A standout feature of Outrider.org is the Bomb Blast nuclear simulator, empowering users to craft custom nuclear visualizations by choosing locations, blast types, and bomb selections to simulate diverse effects. Developed using calculations by historian and scientist Alex Wellerstein, the simulator utilizes WebGL canvas to achieve optimal performance in rendering intricate blast effects, injuries, and fatalities. The architecture employs two separate canvas elements: the first for Mapbox mapping and the second, positioned on top, for the blast layer effects.
 
-## Results
+### Results
 
 - Viewed 1.4 million times in the first month
 - Featured in major media outlets around the world
