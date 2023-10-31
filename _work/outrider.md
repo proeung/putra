@@ -1,6 +1,6 @@
 ---
 title: "Outrider.org"
-excerpt: "An interactive visualization of what happens in a nuclear blast, and a flexible system of components for building media-rich longform articles. The Outrider Foundation “envisions a world where people live without fear of nuclear annihilation or climate-induced catastrophe.” To forward this vision, we built a flexible system for creating media-rich longform articles and two custom interactives."
+excerpt: "As a senior developer at Bluecadet, I had the privilege of spearheading the initial launch of Outrider.org, a groundbreaking collaboration with the Outrider Foundation aimed at addressing nuclear proliferation through innovative digital solutions. The site boasts interactive timelines, a nuclear blast simulator, and meticulously researched multimedia features, seamlessly integrating galleries of rarely-seen imagery, archival video clips, and unique data visualizations to create a dynamic reading experience."
 coverImage: ""
 coverVideo: "/assets/work/outrider/video-cover.mp4"
 coverVideoPoster: "/assets/work/outrider/video-cover-poster.webp"
@@ -56,9 +56,19 @@ stats:
   - title: "Agency"
     content: "Bluecadet"
   - title: "Tech"
-    content: "React, Gatsby, REST API, CSS Modules, Netlify"
+    content: "Headless CMS (Front-End: React, Gatsby, CSS Modules / Back-End: Drupal, REST API/GraphQL), Deployment - Netlify"
 nextTitle: "Albright-Knox Art Gallery"
 nextUrl: "/work/albright-knox"
 ---
 
-An interactive visualization of what happens in a nuclear blast, and a flexible system of components for building media-rich longform articles. The Outrider Foundation “envisions a world where people live without fear of nuclear annihilation or climate-induced catastrophe.” To forward this vision, we built a flexible system for creating media-rich longform articles and two custom interactives.
+For this ambitious project, we harnessed the power of Gatsby.js and Netlify to construct a search-engine-friendly, performance-driven front end. By adopting the Jamstack approach and seamlessly integrating data from the Drupal CMS, Outrider.org established a new standard for exceptional performance, scalability, and SEO optimization.
+
+A standout feature of Outrider.org is the Bomb Blast nuclear simulator, empowering users to craft custom nuclear visualizations by choosing locations, blast types, and bomb selections to simulate diverse effects. Developed using calculations by historian and scientist Alex Wellerstein, the simulator utilizes WebGL canvas to achieve optimal performance in rendering intricate blast effects, injuries, and fatalities. The architecture employs two separate canvas elements: the first for Mapbox mapping and the second, positioned on top, for the blast layer effects.
+
+## Results
+
+- Viewed 1.4 million times in the first month
+- Featured in major media outlets around the world
+- FWA Desktop + Mobile Site of the Day
+- Awwwards Desktop + Mobile Site of the Day
+- Communication Arts Webpick
