@@ -86,3 +86,5 @@ Using the new masthead is simple. Various standalone applications can call for t
 With the unified Cloud Masthead project, we were able to prove that it’s possible to speed up the development of future projects by sharing components between them and to be able to deploy content changes that will be reflected across different frameworks/content ecosystems.
 
 Since the launch of the unified Cloud Masthead in the last 6 months, we have received traffic of more than 8 million page loads globally and 650k active monthly users.
+
+You can also find this article published under the [Carbon Design System](https://medium.com/carbondesign/deploy-a-shared-navigational-experience-across-multiple-content-ecosystems-within-ibm-com-cloud-522162282aa3) account on Medium.

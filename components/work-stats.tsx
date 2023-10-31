@@ -16,11 +16,11 @@ const WorkStats: React.FC<Props> = ({ stats }) => {
               Stats.
             </h2>
 
-            <ul className="grid grid-cols-2 gap-y-10 md:gap-y-16 mt-10 md:mt-20">
+            <ul className="grid grid-cols-2 gap-y-10 md:gap-y-16 mt-10 md:mt-20 items-start">
               {stats.map((stat, index) => (
                 <li key={index} className="gap-y-2 flex flex-wrap items-baseline">
                   <h3 className="font-bold flex-none">{stat.title}</h3>
-                  <p className="flex-none w-full">{stat.content}</p>
+                  <p className="flex-none leading-relaxed w-full">{stat.content}</p>
                 </li>
               ))}
             </ul>
