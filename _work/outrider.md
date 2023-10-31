@@ -61,9 +61,9 @@ nextTitle: "Albright-Knox Art Gallery"
 nextUrl: "/work/albright-knox"
 ---
 
-For this ambitious project, we harnessed the power of Gatsby.js and Netlify to construct a search-engine-friendly, performance-driven front end. By adopting the Jamstack approach and seamlessly integrating data from the Drupal CMS, Outrider.org established a new standard for exceptional performance, scalability, and SEO optimization.
+For this ambitious project, we harnessed the power of [Gatsby.js](https://www.gatsbyjs.org) and [Netlify](https://www.netlify.com) to construct a search-engine-friendly, performance-driven front end. By adopting the Jamstack approach and seamlessly integrating data from the Drupal CMS, Outrider.org established a new standard for exceptional performance, scalability, and SEO optimization.
 
-A standout feature of Outrider.org is the Bomb Blast nuclear simulator, empowering users to craft custom nuclear visualizations by choosing locations, blast types, and bomb selections to simulate diverse effects. Developed using calculations by historian and scientist Alex Wellerstein, the simulator utilizes WebGL canvas to achieve optimal performance in rendering intricate blast effects, injuries, and fatalities. The architecture employs two separate canvas elements: the first for Mapbox mapping and the second, positioned on top, for the blast layer effects.
+A standout feature of Outrider.org is the Bomb Blast nuclear simulator, empowering users to craft custom nuclear visualizations by choosing locations, blast types, and bomb selections to simulate diverse effects. Developed using calculations by historian and scientist [Alex Wellerstein](https://alexwellerstein.com/), of the original [NUKEMAP](https://nuclearsecrecy.com/nukemap), the simulator utilizes WebGL canvas to achieve optimal performance in rendering intricate blast effects, injuries, and fatalities. The architecture employs two separate canvas elements: the first for [Mapbox](https://www.mapbox.com) mapping and the second, positioned on top, for the blast layer effects.
 
 ### Results
 

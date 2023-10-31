@@ -1,6 +1,6 @@
 ---
 title: "Merative.com & Demand Gen"
-excerpt: "An interactive visualization of what happens in a nuclear blast, and a flexible system of components for building media-rich longform articles. The Outrider Foundation “envisions a world where people live without fear of nuclear annihilation or climate-induced catastrophe.” To forward this vision, we built a flexible system for creating media-rich longform articles and two custom interactives."
+excerpt: "At Merative, I served as the Design Technologist Lead, overseeing the migration of merative.com pages from AEM Sites to AEM Franklin, a new content management system (CMS) concept that allows users to populate their page content directly from common word processors, like Microsoft Word or Google Docs.  In close collaboration with the Demand Services team, we executed a seamless transition, with a primary focus on enhancing speed, efficiency, and web performance to meet Merative's branding and marketing needs. Below are some key aspects of the migration work:"
 coverImage: ""
 coverVideo: "/assets/work/merative/video-cover.mp4"
 coverVideoPoster: "/assets/work/merative/video-cover-poster.webp"
@@ -24,17 +24,17 @@ sectionMobile:
 sectionDesktop:
   - url: "/assets/work/merative/desktop-half-01.webp"
     alt: "Screenshot of the desktop view of Merative.com's Thought Leadership"
-    caption: ""
+    caption: "Thought Leadership Landing Page (Desktop)"
     style: "half"
     type: "image"
   - url: "/assets/work/merative/desktop-half-02.webp"
     alt: "Screenshot of the desktop view of Merative.com's Microsite"
-    caption: ""
+    caption: "Example of a product's microsite page (Desktop)"
     style: "half"
     type: "image"
   - url: "/assets/work/merative/video-01.mp4"
     alt: "Video screenshot of a product microsite landing page"
-    caption: "Product Microsite Landing Page"
+    caption: "Microsite Landing Page with a custom header & scroll-to feature"
     style: "full"
     type: "video"
     poster: "/assets/work/merative/video-01-poster.webp"
@@ -67,6 +67,16 @@ nextTitle: "Whyy.org"
 nextUrl: "/work/whyy"
 ---
 
+In addition to technical leadership, I played a key role in streamlining our project management process by efficiently triaging requests from marketers and facilitating sprint planning through the JIRA board. I also actively contributed to the transition by coding day-to-day tasks, ensuring the successful migration to AEM Franklin.
+
 ### Email Marketing Templates
 
-An interactive visualization of what happens in a nuclear blast, and a flexible system of components for building media-rich longform articles. The Outrider Foundation “envisions a world where people live without fear of nuclear annihilation or climate-induced catastrophe.” To forward this vision, we built a flexible system for creating media-rich longform articles and two custom interactives.
+Beyond the Merative.com project, I had the opportunity to elevate our Email Marketing Newsletters by creating new modules within Marketo. These modules empower marketers to craft diverse layouts for newsletters and email marketing materials related to our events and Super-Six products. This multifaceted experience allowed me to significantly enhance Merative's digital presence, showcasing both technical expertise and strategic project management skills.
+
+### Results
+
+- Successfully migrated Landing, PDF Viewers, Thought Leadership, Products, Support, and other pages from AEM Sites to AEM Franklin.
+- Enabled marketers to efficiently edit and update content with reduced deployment time.
+- Introduced new Email product templates featuring over 12+ modules and design options within Marketo.
+- Designed a Linktree/Bitly-like template for use by marketers at conferences and events, enabling quick access to helpful links via mobile devices through QR codes.
+- Developed a custom microsite campaign template for targeted marketing of Merative's products to diverse customer segments.
