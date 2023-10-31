@@ -1,6 +1,6 @@
 ---
 title: "HappyCog.com Homepage"
-excerpt: "An interactive visualization of what happens in a nuclear blast, and a flexible system of components for building media-rich longform articles. The Outrider Foundation “envisions a world where people live without fear of nuclear annihilation or climate-induced catastrophe.” To forward this vision, we built a flexible system for creating media-rich longform articles and two custom interactives."
+excerpt: "As an Interactive Design Lead at Happy Cog, I led the development of the HappyCog.com Homepage, a vibrant testament to Happy Cog's prowess in digital branding and web design. This special project featured randomized key work highlighted with staggered text animations (crafted using GSAP), set against a captivating looping video background."
 coverImage: ""
 coverVideo: "/assets/work/happy-cog/video-cover.mp4"
 coverVideoPoster: "/assets/work/happy-cog/video-cover-poster.webp"
@@ -39,3 +39,5 @@ stats:
 nextTitle: "IBM.com experience"
 nextUrl: "/work/ibm"
 ---
+
+These animations provided engaging context Happy Cog's diverse clientele. Through subtle scroll reveal animations, we meticulously crafted a seamless user experience, empowering visitors to effortlessly explore and grasp the essence of Happy Cog as a dynamic creative force in the digital landscape.
