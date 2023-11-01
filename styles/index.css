@@ -4,7 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+
+  p a,
+  p a:visited {
+    @apply font-bold text-teal-600 dark:text-teal-500 hover:underline;
+  }
+}
+
 @layer utilities {
+
   .blob {
     @apply blur-[50px] will-change-transform rounded-[15rem];
     background: radial-gradient(110.88% 79.69% at 47.77%,

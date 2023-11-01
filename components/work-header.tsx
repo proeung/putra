@@ -11,6 +11,8 @@ type Props = {
 }
 
 const WorkHeader = ({ title, src, poster, excerpt }: Props) => {
+  const formattedExcerpt = { __html: excerpt };
+
   return (
     <>
       <section className="py-16 md:py-40 w-full">
@@ -36,7 +38,7 @@ const WorkHeader = ({ title, src, poster, excerpt }: Props) => {
 
           <div className="max-w-3xl mx-auto mt-16 md:mt-40">
             <p className="text-base/relaxed md:text-xl/relaxed">
-              <span className="font-bold">{title}</span> - {excerpt}
+              <span className="font-bold">{title}</span> - <span dangerouslySetInnerHTML={formattedExcerpt} />
             </p>
           </div>
         </Container>
