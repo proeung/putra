@@ -1,6 +1,6 @@
 ---
 title: "HappyCog.com Homepage"
-excerpt: "As an Interactive Design Lead at Happy Cog, I led the development of the HappyCog.com Homepage, a vibrant testament to Happy Cog's prowess in digital branding and web design. This special project featured randomized key work highlighted with staggered text animations (crafted using GSAP), set against a captivating looping video background."
+excerpt: "As an Interactive Design Lead at Happy Cog, I led the development of the HappyCog.com Homepage, a vibrant testament to Happy Cog's prowess in digital branding and web design. This special project featured randomized key work highlighted with staggered text animations (using GSAP), set against a captivating looping video background."
 coverImage: ""
 coverVideo: "/assets/work/happy-cog/video-cover.mp4"
 coverVideoPoster: "/assets/work/happy-cog/video-cover-poster.webp"

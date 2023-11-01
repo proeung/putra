@@ -1,6 +1,6 @@
 ---
 title: "Outrider.org"
-excerpt: "As a senior developer at Bluecadet, I had the privilege of spearheading the initial launch of Outrider.org, a groundbreaking collaboration with the Outrider Foundation aimed at addressing nuclear proliferation through innovative digital solutions. The site boasts interactive timelines, a nuclear blast simulator, and meticulously researched multimedia features, seamlessly integrating galleries of rarely-seen imagery, archival video clips, and unique data visualizations to create a dynamic reading experience."
+excerpt: "During my time as a senior developer at Bluecadet, I had the honor of spearheading the development of the initial launch of Outrider.org, an exciting partnership with the Outrider Foundation. Together with fellow developer <a href='https://chrisarasin.com' target='_blank'>Chris Arasin</a>, we embarked on a journey to tackle the complex issue of nuclear proliferation through innovative digital solutions. The site boasts interactive timelines, a nuclear blast simulator, and meticulously researched multimedia features, seamlessly integrating galleries of rarely-seen imagery, archival video clips, and unique data visualizations to create a dynamic reading experience."
 coverImage: ""
 coverVideo: "/assets/work/outrider/video-cover.mp4"
 coverVideoPoster: "/assets/work/outrider/video-cover-poster.webp"

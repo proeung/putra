@@ -71,9 +71,9 @@ In addition to technical leadership, I played a key role in streamlining our pro
 
 ### Email Marketing Templates
 
-Beyond the Merative.com project, I had the opportunity to elevate our Email Marketing Newsletters by creating new modules within Marketo. These modules empower marketers to craft diverse layouts for newsletters and email marketing materials related to our events and Super-Six products. This multifaceted experience allowed me to significantly enhance Merative's digital presence, showcasing both technical expertise and strategic project management skills.
+Beyond the Merative.com project, I had the opportunity to elevate our Email Marketing Newsletters by creating new modules within Marketo. These modules empower marketers to craft diverse layouts for newsletters and email marketing materials related to our events and Super-Six products.
 
-### Results
+### Summary
 
 - Successfully migrated Landing, PDF Viewers, Thought Leadership, Products, Support, and other pages from AEM Sites to AEM Franklin.
 - Enabled marketers to efficiently edit and update content with reduced deployment time.

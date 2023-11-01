@@ -91,13 +91,13 @@ A defining moment in my journey was leading the transition of IBM's legacy v18 P
 
 ### Adopting Carbon for IBM.com Design System Storybook
 
-As the Lead Engineer, I played a key role in integrating the Carbon for IBM.com design system into the new AEM Sites CMS. This transition marked a significant milestone in our digital evolution, achieved through collaboration with the IBM Design Program Office team to build the Storybook library for adoption across different teams within IBM's digital marketing teams. I actively contributed to the Carbon for IBM.com Web Components package and created an exertion library called Carbon for AEM to capture components designed specifically for pages built in AEM. These libraries now serve as the FE building blocks of IBM.com, reflecting the powerful synergy between technology and design.
+As the Lead Engineer, I helped to integrate the Carbon for IBM.com design system into the new AEM Sites CMS. This transition marked a significant milestone in our digital evolution, achieved through collaboration with the IBM Design Program Office team to build the Storybook library for adoption across different teams within IBM's digital marketing teams. I actively contributed to the Carbon for IBM.com Web Components package and created an exertion library called Carbon for AEM to capture components designed specifically for pages built in AEM. These libraries now serve as the FE building blocks of IBM.com.
 
 ### Beyond the Code
 
 Beyond shaping the technical landscape, I engaged with cross-functional teams, including Designers, Digital Strategists, and Product Managers, to prototype, A/B test, and launch custom branded experiences. Notable examples include IBM's "Let's Create" campaign and the marketing landing page for the "Watson Orchestrate" product. My proactive approach fueled our collective success, always seeking process improvements and efficiency enhancements.
 
-### Results
+### Summary
 
 - Unified Masthead across multiple content ecosystems within IBM.com
 - Contributed components to the Carbon for IBM.com Web Components package used and ingested by AEM Sites.
