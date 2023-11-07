@@ -99,6 +99,6 @@ Beyond shaping the technical landscape, I engaged with cross-functional teams, i
 
 ### Summary
 
-- Unified Masthead across multiple content ecosystems within IBM.com
+- Updated old Drupal pages (Page Builder and Product page types) from v18 to v19a as a stop-gap solution to the full release of Carbon for IBM.com Library.
 - Contributed components to the Carbon for IBM.com Web Components package used and ingested by AEM Sites.
-- Updated old Drupal pages (Page Builder and Product) from v18 to v19a as a stop-gap solution to the full release of Carbon for IBM.com
+- Unified Masthead across multiple content ecosystems within IBM.com. Learn more about this project by checking out this article published under the [Carbon Design System](https://medium.com/carbondesign/deploy-a-shared-navigational-experience-across-multiple-content-ecosystems-within-ibm-com-cloud-522162282aa3) account on Medium.
