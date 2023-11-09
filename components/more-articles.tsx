@@ -14,7 +14,7 @@ const MoreArticles = ({ articles }: Props) => {
         <div className="max-w-2xl">
           <Fade cascade delay={1e2} damping={1e-1} triggerOnce>
             <h2 className="text-3xl font-light font-serif tracking-tight text-zinc-800 leading-tight md:text-5xl lg:text-6xl dark:text-zinc-100">
-              Writing.
+              Articles.
             </h2>
             <p className="mt-4 md:mt-6 text-base text-zinc-600 max-w-sm md:text-lg md:max-w-lg dark:text-zinc-400">
               Discover my in-depth insights on programming, product design, and more, collected in chronological order.
