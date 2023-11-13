@@ -59,7 +59,6 @@ const MoreWork: React.FC<Props> = ({ works }) => {
                       className="w-full h-full object-cover"
                       width={956}
                       height={1112}
-                      priority={true}
                     />
                   )
                 }

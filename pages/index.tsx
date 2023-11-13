@@ -25,9 +25,8 @@ export default function Index({ allArticles, allWork }: Props) {
         <Head>
           <title>{`${SITE_NAME} | Developer & Design Technologist`}</title>
         </Head>
-        <Intro />
-        {/* <MoreWork /> */}
 
+        <Intro />
         {moreWork.length > 0 && <MoreWork works={moreWork} />}
         {morePosts.length > 0 && <MoreArticles articles={morePosts} />}
         <MoreSandBox />
