@@ -21,14 +21,14 @@ const About = () => {
                 In my role as a Design Technologist Lead, I excel in bridging the gap between design and engineering, overseeing projects from initial prototypes to production. Leveraging my dual role as an engineer and technical project manager, I efficiently create and manage design system libraries, collaborating seamlessly with cross-functional teams, including UX Designers, Backend Engineers, and Product Owners. I’m passionate about leveraging my skills to elevate digital projects to their full potential.
               </p>
               <p className="mt-6 text-base/relaxed md:text-lg/relaxed">
-                When I'm not immersed in code, I indulge my love for gardening, sharing my passion on Instagram and TikTok <Link href="https://instagram.com/goodpathgarden" target="_blank">@goodpathgarden</Link>. In addition, my competitive spirit shines as I co-founded and manage a fantasy league app dedicated to the hit reality show "Big Brother" alongside my husband <Link href="https://imjohnbon.com" target="_blank">John</Link>, aptly named <Link href="https://fantasybb.com" target="_blank">FantasyBB</Link>.
+                When I'm not immersed in code, I indulge my love for gardening, sharing my passion on Instagram and TikTok <Link href="https://instagram.com/goodpathgarden" target="_blank">@goodpathgarden</Link>. In addition, my competitive spirit shines as I co-founded and manage a fantasy league app dedicated to the hit reality show Big Brother alongside my husband <Link href="https://imjohnbon.com" target="_blank">John</Link>, aptly named <Link href="https://fantasybb.com" target="_blank">FantasyBB</Link>.
               </p>
             </Fade>
           </div>
 
           <Fade cascade delay={1e2} damping={1e-1} triggerOnce>
             <div className="auto-rows-[140px] grid grid-cols-2 gap-4 mt-10 self-center md:mt-20 md:gap-8 lg:pl-16 xl:pl-24">
-              <div className="bg-neutral-100 row-span-2 rounded-2xl md:rounded-3xl  dark:bg-slate-800 overflow-hidden bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-neutral-900 shadow-md via-teal-300 to-violet-500">
+              <div className="bg-neutral-100 row-span-2 rounded-2xl md:rounded-3xl  dark:bg-slate-800 overflow-hidden bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-neutral-900 shadow-sm via-teal-300 to-violet-500">
                 <Image
                   src="/assets/about/about--pic-01.webp"
                   alt="Portrait of Putra Bonaccorsi"
@@ -38,7 +38,7 @@ const About = () => {
                 />
               </div>
 
-              <div className="bg-neutral-100 overflow-hidden row-span-1 rounded-2xl shadow-md md:rounded-3xl dark:bg-slate-800">
+              <div className="bg-neutral-100 overflow-hidden row-span-1 rounded-2xl shadow-sm md:rounded-3xl dark:bg-slate-800">
                 <Image
                   src="/assets/about/about--pic-02.webp"
                   alt="Wide shot of the @GoodPathGarden"
@@ -48,7 +48,7 @@ const About = () => {
                 />
               </div>
 
-              <div className="bg-neutral-100 overflow-hidden row-span-2 rounded-2xl shadow-md md:rounded-3xl dark:bg-slate-800">
+              <div className="bg-neutral-100 overflow-hidden row-span-2 rounded-2xl shadow-sm md:rounded-3xl dark:bg-slate-800">
                 <Image
                   src="/assets/about/about--pic-03.webp"
                   alt="Screenshot of FantasyBB"
@@ -58,7 +58,7 @@ const About = () => {
                 />
               </div>
 
-              <div className="bg-neutral-100 overflow-hidden row-span-1 rounded-2xl shadow-md md:rounded-3xl dark:bg-slate-800">
+              <div className="bg-neutral-100 overflow-hidden row-span-1 rounded-2xl shadow-sm md:rounded-3xl dark:bg-slate-800">
                 <Image
                   src="/assets/about/about--pic-04.webp"
                   alt="Wide shot of Tulips"

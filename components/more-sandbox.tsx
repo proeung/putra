@@ -37,8 +37,9 @@ const sandboxItems = [
 
 const MoreSandBox = () => {
   return (
-    <section id="sandbox" className="border-t border-slate-900/10 dark:border-slate-50/[0.1] bg-slate-100 py-16 dark:bg-slate-800 md:py-40 relative w-full">
+    <section id="sandbox" className="border-t border-slate-900/10 dark:border-slate-50/[0.1] bg-slate-100 py-16 dark:bg-slate-800 md:py-40 relative w-full overflow-y-hidden">
       <Container>
+        <div aria-hidden="true" className="pointer-events-none block blob absolute opacity-20 -bottom-1/4 -z-1 w-[20rem] h-[20rem] lg:w-[40rem] lg:h-[40rem]"></div>
         <div className="max-w-2xl">
           <Fade cascade delay={1e2} damping={1e-1} triggerOnce>
             <h2 className="text-3xl font-light font-serif tracking-tight text-zinc-800 leading-tight md:text-5xl lg:text-6xl dark:text-zinc-100">
@@ -53,7 +54,7 @@ const MoreSandBox = () => {
         <Fade delay={1e2} triggerOnce>
           <div className="grid grid-cols-1 gap-4 md:gap-8 md:grid-cols-2 lg:grid-cols-3 mt-12 sm:mt-20">
             {sandboxItems.map((item, index) => (
-              <a key={index} href={item.url} target="_blank" className="bg-white row-span-1 rounded-2xl md:rounded-3xl overflow-hidden p-4 shadow-md text-zinc-800 dark:text-zinc-400 dark:bg-slate-900 hover:bg-slate-700 hover:dark:bg-slate-700 hover:text-white hover:dark:text-white transition duration-300 ease-out hover:ease-in">
+              <a key={index} href={item.url} target="_blank" className="bg-white row-span-1 rounded-2xl md:rounded-3xl overflow-hidden p-4  text-zinc-800 hover:shadow-xl dark:text-zinc-400 dark:bg-slate-900 hover:bg-slate-700 hover:dark:bg-slate-700 hover:text-white hover:dark:text-white hover:shadow-slate-400/50 hover:dark:shadow-slate-900/50 transition duration-300 ease-out hover:ease-in">
                 <div className="aspect-video border lg:border-slate-900/10 dark:border-slate-50/[0.1] relative overflow-hidden rounded-xl">
                   <div className="absolute inset-0">
                     <LazyVideo
