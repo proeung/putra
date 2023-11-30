@@ -5,6 +5,8 @@ coverImage: "/assets/articles/drupal-9-olivero-turning-conversation-core-initiat
 date: "2020-02-19T05:35:07.322Z"
 ogImage:
   url: "/assets/articles/drupal-9-olivero-turning-conversation-core-initiative/cover.webp"
+nextTitle: "Deploy a shared navigational experience across multiple content ecosystems within ibm.com/cloud"
+nextUrl: "/articles/deploy-shared-navigational-experience"
 ---
 
 

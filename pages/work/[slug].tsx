@@ -50,6 +50,7 @@ export default function Post({ work, preview }: Props) {
           {work.stats && <WorkStats stats={work.stats} />}
           <WorkNext
             title={work.nextTitle}
+            type="work"
             url={work.nextUrl}
           />
         </>

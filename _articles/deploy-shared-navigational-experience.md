@@ -5,6 +5,8 @@ coverImage: "/assets/articles/deploy-shared-navigational-experience/cover.webp"
 date: "2022-01-21T05:35:07.322Z"
 ogImage:
   url: "/assets/articles/deploy-shared-navigational-experience/cover.webp"
+nextTitle: "Drupal 9 Olivero: Turning Conversation into a Core Initiative"
+nextUrl: "/articles/drupal-9-olivero-turning-conversation-core-initiative"
 ---
 
 

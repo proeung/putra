@@ -10,6 +10,7 @@ import markdownToHtml from '../../lib/markdownToHtml';
 import type ArticleType from '../../interfaces/article';
 import { SITE_NAME } from '../../lib/constants';
 import PageTitle from '../../components/page-title';
+import WorkNext from '../../components/work-next';
 
 type Props = {
   article: ArticleType
@@ -24,12 +25,14 @@ export default function Post({ article, preview }: Props) {
   }
   return (
     <Layout preview={preview}>
-      <Container>
-        {router.isFallback ? (
-          <PageTitle>Loading…</PageTitle>
-        ) : (
-          <>
-            <article className="mb-32">
+
+      {router.isFallback ? (
+        <PageTitle>Loading…</PageTitle>
+      ) : (
+        <>
+
+          <article className="mb-32">
+            <Container>
               <Head>
                 <title>{title}</title>
                 <meta property="og:image" content={article.ogImage.url} />
@@ -40,10 +43,15 @@ export default function Post({ article, preview }: Props) {
                 date={article.date}
               />
               <ArticleBody content={article.content} />
-            </article>
-          </>
-        )}
-      </Container>
+            </Container>
+          </article>
+          <WorkNext
+            title={article.nextTitle}
+            type="article"
+            url={article.nextUrl}
+          />
+        </>
+      )}
     </Layout>
   );
 }
@@ -62,6 +70,8 @@ export async function getStaticProps({ params }: Params) {
     'content',
     'ogImage',
     'coverImage',
+    'nextTitle',
+    'nextUrl',
   ]);
   const content = await markdownToHtml(article.content || '');
 

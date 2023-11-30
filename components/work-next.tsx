@@ -4,12 +4,13 @@ import { Fade } from 'react-awesome-reveal';
 
 type Props = {
   title: string
+  type: string
   url: string
 }
 
-const WorkNext = ({ title, url }: Props) => {
+const WorkNext = ({ title, type, url }: Props) => {
   return (
-    <section>
+    <section className="border-t border-slate-900/10 dark:border-slate-50/[0.1] w-full">
       <Link
         as={url}
         href={url}
@@ -19,7 +20,7 @@ const WorkNext = ({ title, url }: Props) => {
           <div aria-hidden="true" className="pointer-events-none block blob absolute opacity-20 -left-40 -bottom-0 w-[20rem] h-[20rem] lg:w-[40rem] lg:h-[40rem]"></div>
           <div className="mx-auto max-w-3xl">
             <Fade cascade delay={1e2} damping={1e-1} triggerOnce>
-              <p className="font-bold mb-4">next project</p>
+              <p className="font-bold mb-4">next {type}</p>
               <h3 className="text-3xl font-light font-serif tracking-tight leading-tight md:text-5xl lg:text-6xl">
                 {title}
               </h3>

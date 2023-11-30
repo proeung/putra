@@ -8,6 +8,8 @@ type ArticleType = {
     url: string
   }
   content: string
+  nextTitle: string
+  nextUrl: string
 }
 
 export default ArticleType
