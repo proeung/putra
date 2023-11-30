@@ -8,7 +8,7 @@ type Props = {
   url: string
 }
 
-const WorkNext = ({ title, type, url }: Props) => {
+const NextItem = ({ title, type, url }: Props) => {
   return (
     <section className="border-t border-slate-900/10 dark:border-slate-50/[0.1] w-full">
       <Link
@@ -32,4 +32,4 @@ const WorkNext = ({ title, type, url }: Props) => {
   );
 }
 
-export default WorkNext;
+export default NextItem;

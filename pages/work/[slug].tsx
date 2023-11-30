@@ -6,13 +6,13 @@ import Head from 'next/head';
 import markdownToHtml from '../../lib/markdownToHtml';
 import type WorkType from '../../interfaces/work';
 import { SITE_NAME } from '../../lib/constants';
-import WorkHeader from '../../components/work-header';
 import PageTitle from '../../components/page-title';
+import WorkHeader from '../../components/work-header';
 import WorkStats from '../../components/work-stats';
 import WorkMobile from '../../components/work-mobile';
 import WorkDesktop from '../../components/work-desktop';
-import WorkNext from '../../components/work-next';
 import WorkBody from '../../components/work-body';
+import NextItem from '../../components/next-item';
 
 type Props = {
   work: WorkType
@@ -48,9 +48,9 @@ export default function Post({ work, preview }: Props) {
           {work.sectionDesktopBottom && <WorkDesktop items={work.sectionDesktopBottom} />}
           {work.content && <WorkBody content={work.content} />}
           {work.stats && <WorkStats stats={work.stats} />}
-          <WorkNext
+          <NextItem
             title={work.nextTitle}
-            type="work"
+            type="project"
             url={work.nextUrl}
           />
         </>

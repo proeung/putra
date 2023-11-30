@@ -10,7 +10,7 @@ import markdownToHtml from '../../lib/markdownToHtml';
 import type ArticleType from '../../interfaces/article';
 import { SITE_NAME } from '../../lib/constants';
 import PageTitle from '../../components/page-title';
-import WorkNext from '../../components/work-next';
+import NextItem from '../../components/next-item';
 
 type Props = {
   article: ArticleType
@@ -45,7 +45,7 @@ export default function Post({ article, preview }: Props) {
               <ArticleBody content={article.content} />
             </Container>
           </article>
-          <WorkNext
+          <NextItem
             title={article.nextTitle}
             type="article"
             url={article.nextUrl}
