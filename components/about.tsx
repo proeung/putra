@@ -15,7 +15,7 @@ const About = () => {
                 About.
               </h2>
               <p className="mt-6 text-base/relaxed md:text-lg/relaxed">
-                I'm Putra, a Developer and Design Technologist with expertise in Technical Project Management, based South Jersey/Philadelphia area. I'm also the co-founder of <Link href="https://offred.co" target="_blank">Off Red</Link>, where we design and develop apps to satisfy our own curiosities and love for reality shows.
+                I'm Putra, a Developer and Design Technologist with expertise in Technical Project Management, based in the South Jersey/Philadelphia area. I'm also the co-founder of <Link href="https://offred.co" target="_blank">Off Red</Link>, where we design and develop apps to satisfy our own curiosities and love for reality shows.
               </p>
               <p className="mt-6 text-base/relaxed md:text-lg/relaxed">
                 In my role as a Design Technologist Lead, I excel in bridging the gap between design and engineering, overseeing projects from initial prototypes to production. Leveraging my dual role as an engineer and technical project manager, I efficiently create and manage design system libraries, collaborating seamlessly with cross-functional teams, including UX Designers, Backend Engineers, and Product Owners. I’m passionate about leveraging my skills to elevate digital projects to their full potential.
