@@ -5,19 +5,19 @@ import LazyVideo from './lazy-video';
 const sandboxItems = [
   {
     title: 'Leadspace - Web Components',
-    url: 'https://codesandbox.io/s/ibm-lets-create-leadspace-ds0d0u',
+    url: 'https://codesandbox.io/p/sandbox/ibm-lets-create-leadspace-ds0d0u?file=%2Findex.html',
     videoSrc: '/assets/sandbox/sandbox--ibm-leadspace.mp4',
     posterSrc: '/assets/sandbox/sandbox--ibm-leadspace-poster.webp'
   },
   {
     title: 'Leader Board - Tailwind CSS',
-    url: 'https://codesandbox.io/s/ibm-masthead-v2-lexu76',
+    url: 'https://codesandbox.io/p/sandbox/unruffled-rain-8y5d9g?file=%2Findex.html',
     videoSrc: '/assets/sandbox/sandbox--fantasybb-hero.mp4',
     posterSrc: '/assets/sandbox/sandbox--fantasybb-hero-poster.webp'
   },
   {
     title: 'Masthead - Web Components',
-    url: 'https://codesandbox.io/s/ibm-masthead-v2-lexu76',
+    url: 'https://codesandbox.io/p/sandbox/ibm-masthead-v2-lexu76?file=%2Findex.html',
     videoSrc: '/assets/sandbox/sandbox--ibm-masthead-v2.mp4',
     posterSrc: '/assets/sandbox/sandbox--ibm-masthead-v2-poster.webp'
   },
@@ -29,7 +29,7 @@ const sandboxItems = [
   },
   {
     title: 'Leadspace - Web Components',
-    url: 'https://codesandbox.io/s/leadspace-centered-ic4r8w?file=/index.html',
+    url: 'https://codesandbox.io/p/sandbox/leadspace-centered-ic4r8w?file=%2Findex.html',
     videoSrc: '/assets/sandbox/sandbox--ibm-centered-leadspace.mp4',
     posterSrc: '/assets/sandbox/sandbox--ibm-centered-leadspace-poster.webp'
   }
