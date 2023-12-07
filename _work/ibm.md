@@ -81,7 +81,7 @@ stats:
   - title: "Agency"
     content: "Lullabot"
   - title: "Tech"
-    content: "Web Components, LitElement, TypeScript, Storybooks, Fractal, Drupal, Twig"
+    content: "Web Components, LitElement, TypeScript, Storybooks, Css Modules, Design Systems, (Legacy - Drupal, Fractal, Twig)"
 nextTitle: "outrider.org"
 nextUrl: "/work/outrider"
 ---
@@ -99,6 +99,6 @@ Beyond shaping the technical landscape, I engaged with cross-functional teams, i
 
 ### Summary
 
-- Updated old Drupal pages (Page Builder and Product page types) from v18 to v19a as a stop-gap solution to the full release of Carbon for IBM.com Library.
+- Updated old Drupal pages (Page Builder and Product page types) from v18 to v19a using Fractal as a stop-gap solution to the full release of Carbon for IBM.com Library.
 - Contributed components to the Carbon for IBM.com Web Components package used and ingested by AEM Sites.
 - Unified Masthead across multiple content ecosystems within IBM.com. Learn more about this project by checking out this article published under the [Carbon Design System](https://medium.com/carbondesign/deploy-a-shared-navigational-experience-across-multiple-content-ecosystems-within-ibm-com-cloud-522162282aa3) account on Medium.
