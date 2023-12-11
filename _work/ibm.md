@@ -81,17 +81,17 @@ stats:
   - title: "Agency"
     content: "Lullabot"
   - title: "Tech"
-    content: "Web Components, LitElement, TypeScript, Storybooks, Css Modules, Design Systems, (Legacy - Drupal, Fractal, Twig)"
+    content: "Web Components, LitElement, React, TypeScript, Storybooks, CSS Modules, Design Systems. Legacy - Drupal, Fractal, Twig"
 nextTitle: "outrider.org"
 nextUrl: "/work/outrider"
 ---
-### Transitioning Legacy Systems using Fractal
+### Transitioning Legacy Systems (v18 to v19) using Fractal
 
 A defining moment in my journey was leading the transition of IBM's legacy v18 Page Builder and Product pages to the interim "v19a" design system—a vital step in bridging the gap to the full Carbon design release. This initiative demanded meticulous attention to detail as every page was revisited and revamped, ensuring a smooth transition while preserving IBM's digital identity. Collaborating closely with diverse teams, I navigated the intricacies of this transition, leveraging Fractal, a living component/pattern library developed for the Hybrid Cloud umbrella that houses 41+ modules/patterns. This library served as the backbone of our front-end development of pages populated using Drupal, providing comprehensive documentation and enhancing efficiency.
 
 ### Adopting Carbon for IBM.com Design System Storybook
 
-As the Lead Engineer, I helped to integrate the Carbon for IBM.com design system into the new AEM Sites CMS. This transition marked a significant milestone in our digital evolution, achieved through collaboration with the IBM Design Program Office team to build the Storybook library for adoption across different teams within IBM's digital marketing teams. I actively contributed to the Carbon for IBM.com Web Components package and created an extension library of the Carbon Library called "Carbon for AEM" to capture components designed specifically for pages built in AEM. These libraries now serve as the FE building blocks of IBM.com.
+As the Lead Engineer, I helped to integrate the Carbon for IBM.com design system into the new AEM Sites CMS. This transition marked a significant milestone in our digital evolution, achieved through collaboration with the IBM Design Program Office team to build the Storybook library for adoption across different teams within IBM's digital marketing teams. I actively contributed to the Carbon for IBM.com Web Components package and created an extension library of the Carbon library called "Carbon for AEM" to capture components designed specifically for pages built in AEM. These libraries now serve as the FE building blocks of [IBM.com](https://www.ibm.com).
 
 ### Beyond the Code
 
@@ -99,6 +99,7 @@ Beyond shaping the technical landscape, I engaged with cross-functional teams, i
 
 ### Summary
 
-- Updated old Drupal pages (Page Builder and Product page types) from v18 to v19a using Fractal as a stop-gap solution to the full release of Carbon for IBM.com Library.
-- Contributed components to the Carbon for IBM.com Web Components package used and ingested by AEM Sites.
+- Updated old Drupal pages (Page Builder and Product page types) from v18 to v19 using Fractal as a stop-gap solution to the full release of Carbon for IBM.com Library.
+- Contributed components to the Carbon for IBM.com Web Components and React packages used and ingested by AEM Sites.
+- Created an extension library of Carbon called "Carbon for AEM" to manage new branding expressions and components that are intended for experimental usage within the IBM.com AEM Sites.
 - Unified Masthead across multiple content ecosystems within IBM.com. Learn more about this project by checking out this article published under the [Carbon Design System](https://medium.com/carbondesign/deploy-a-shared-navigational-experience-across-multiple-content-ecosystems-within-ibm-com-cloud-522162282aa3) account on Medium.
