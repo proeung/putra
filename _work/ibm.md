@@ -97,7 +97,7 @@ As the Lead Engineer, I helped to integrate the Carbon for IBM.com design system
 
 Beyond shaping the technical landscape, I engaged with cross-functional teams, including Design Directors, Digital Strategists, and Product Managers, to prototype, A/B test, and launch custom branded experiences. Notable examples include IBM's "Let's Create" campaign and the marketing landing page for the "Watson Orchestrate" product. My proactive approach fueled our collective success, always seeking process improvements and efficiency enhancements.
 
-### Summary
+### Summary of Role
 
 - Updated old Drupal pages (Page Builder and Product page types) from v18 to v19 using Fractal as a stop-gap solution to the full release of Carbon for IBM.com Library.
 - Contributed components to the Carbon for IBM.com Web Components and React packages used and ingested by AEM Sites.

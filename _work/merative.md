@@ -67,13 +67,15 @@ nextTitle: "Whyy.org"
 nextUrl: "/work/whyy"
 ---
 
-In addition to technical leadership, I played a key role in streamlining our project management process by efficiently triaging requests from marketers and facilitating sprint planning through the JIRA board. I also actively contributed to the transition by coding day-to-day tasks, ensuring the successful migration to AEM Franklin.
+### Technical Project Management
+
+In addition to technical leadership, I played a key role in streamlining our project management process by efficiently triaging requests from marketers and facilitating sprint planning through the JIRA board. I also actively contributed to the transition by coding day-to-day tasks, ensuring the successful migration to AEM Franklin as well managed offshore contractors to implement coding standards.
 
 ### Email Marketing Templates
 
-Beyond the Merative.com project, I had the opportunity to elevate our Email Marketing Newsletters by creating new modules within Marketo. These modules empower marketers to craft diverse layouts for newsletters and email marketing materials related to our events and Super-Six products.
+In addition to my involvement in the Merative.com project, I took the initiative to enhance our Email Marketing Newsletters. This involved creating 12+ new modules within Marketo, enabling marketers to design a variety of layouts adhering to the Merative Design System. These modules were specifically designed for crafting newsletters and email marketing materials related to our events and Super-Six products, providing greater flexibility and efficiency in our marketing efforts.
 
-### Summary
+### Summary of Role
 
 - Successfully migrated Landing, PDF Viewers, Thought Leadership, Products, Support, and other pages from AEM Sites to AEM Franklin.
 - Enabled marketers to efficiently edit and update content with reduced deployment time.
