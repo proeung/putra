@@ -197,7 +197,7 @@ function NavItem({ href, children }) {
 function DesktopNavigation(props) {
   return (
     <nav {...props}>
-      <Fade cascade delay={1e2} damping={1e-1} triggerOnce>
+      <Fade cascade delay={1e1} damping={1e-1} triggerOnce>
         <ul className="flex items-center font-bold gap-x-4 text-base md:gap-x-8 md:text-lg dark:text-zinc-300">
           {links.map((link) => (
             <NavItem
@@ -274,14 +274,14 @@ const Header = () => {
             <MobileNavigation className="pointer-events-auto md:hidden" />
             <DesktopNavigation className="pointer-events-auto hidden md:block" />
             <div className="pointer-events-auto ml-4 md:ml-8">
-              <Fade delay={1e3} triggerOnce>
+              <Fade delay={1e2} triggerOnce>
                 <ModeToggle />
               </Fade>
             </div>
           </div>
         </div>
       </Container>
-    </header>
+    </header >
   );
 }
 

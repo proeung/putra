@@ -11,7 +11,7 @@ const WorkStats: React.FC<Props> = ({ stats }) => {
     <section className="border-t border-slate-900/10 py-16 dark:border-slate-50/[0.1] md:py-40 relative w-full">
       <Container>
         <div className="mx-auto max-w-3xl">
-          <Fade cascade delay={1e2} damping={1e-1} triggerOnce>
+          <Fade cascade delay={1e2} damping={1e-1}>
             <h2 className="text-3xl font-light font-serif tracking-tight text-zinc-800 leading-tight md:text-5xl lg:text-6xl dark:text-zinc-100">
               Stats.
             </h2>
