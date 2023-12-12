@@ -28,7 +28,7 @@ const About = () => {
 
           <Fade cascade delay={1e2} damping={1e-1} triggerOnce>
             <div className="auto-rows-[140px] grid grid-cols-2 gap-4 mt-10 self-center md:mt-20 md:gap-8 lg:pl-16 xl:pl-24">
-              <div className="bg-neutral-100 row-span-2 rounded-2xl md:rounded-3xl  dark:bg-slate-800 overflow-hidden bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-neutral-900 shadow-sm via-teal-300 to-violet-500">
+              <div className="bg-neutral-100 row-span-2 rounded-2xl md:rounded-3xl  dark:bg-slate-800 overflow-hidden  shadow-sm bg-gradient-to-tr from-violet-600 via-indigo-500 to-teal-400 bg-300% animate-gradient">
                 <Image
                   src="/assets/about/about--pic-01.webp"
                   alt="Portrait of Putra Bonaccorsi"
