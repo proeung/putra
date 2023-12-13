@@ -66,11 +66,13 @@ const WorkDesktop: React.FC<Props> = ({ items }) => {
               }
 
               {item.type === 'text' &&
-                <div className="mx-auto max-w-3xl my-16 md:my-40">
-                  <div
-                    className={markdownStyles['markdown']}
-                    dangerouslySetInnerHTML={{ __html: item.content }}
-                  />
+                <div className="my-16 md:my-40">
+                  <div className="mx-auto prose max-w-full lg:max-w-3xl dark:prose-invert">
+                    <div
+                      className={markdownStyles['markdown']}
+                      dangerouslySetInnerHTML={{ __html: item.content }}
+                    />
+                  </div>
                 </div>
               }
             </div>

@@ -19,7 +19,12 @@
 }
 
 .markdown h3 {
-  @apply text-2xl mt-8 mb-4;
+  @apply text-2xl mt-8 lg:mt-14 mb-4;
+}
+
+.markdown h2:first-child,
+.markdown h3:first-child {
+  @apply mt-0;
 }
 
 .markdown a {

@@ -28,7 +28,7 @@ sectionDesktop:
     style: "full"
     type: "image"
   - content: "
-    <h3>Challenges: Transitioning Legacy Systems</h3>
+    <h2>Challenges: Transitioning Legacy Systems</h2>
 
     <p>In late 2018, I joined the IBM Marketing Tech team during a crucial phase: transitioning IBM.com's page experience from the v18 to v19 web standard design system. This project was pivotal in helping various business units craft cutting-edge online experiences. Our objectives were to enhance customer engagement, bolster brand loyalty, streamline operational costs, and harmonize product and web experiences.</p>
     
