@@ -58,7 +58,7 @@ stats:
   - title: "Date"
     content: "10.17.2023"
   - title: "Role"
-    content: "Lead Developer/Design Technologist"
+    content: "Design Technologist & Lead Engineer"
   - title: "Agency"
     content: "Merative"
   - title: "Tech"

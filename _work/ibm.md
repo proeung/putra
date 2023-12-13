@@ -111,7 +111,7 @@ stats:
   - title: "Date"
     content: "2019 - 2023"
   - title: "Role"
-    content: "Lead Developer & Project Manager"
+    content: "Lead Engineer & Technical Project Manager"
   - title: "Agency"
     content: "Lullabot"
   - title: "Tech"
