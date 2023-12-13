@@ -8,7 +8,7 @@ type Props = {
 
 const WorkMobile: React.FC<Props> = ({ items }) => {
   return (
-    <section className="bg-gray-100 py-16 dark:bg-slate-950/[0.5] md:py-40 relative w-full overflow-hidden">
+    <section className="border-t border-slate-900/10 dark:border-slate-50/[0.1] bg-gray-100 py-16 dark:bg-slate-950/[0.5] md:py-40 relative w-full overflow-hidden">
       <Container>
         <div aria-hidden="true" className="pointer-events-none blob absolute opacity-30 -left-40 -bottom-1/4 md:-bottom-2/4 w-[40rem] h-[40rem]"></div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 xl:gap-20 max-w-5xl mx-auto relative">

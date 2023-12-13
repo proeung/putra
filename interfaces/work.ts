@@ -2,6 +2,7 @@ type Desktop = {
   url: string
   alt: string
   caption: string
+  content: string
   style: string
   type: string
   poster: string
