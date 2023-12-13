@@ -28,13 +28,13 @@ sectionDesktop:
     style: "full"
     type: "image"
   - content: "
-    <h2>Challenges: Transitioning Legacy Systems</h2>
+    <h2>Challenge: Transitioning Legacy Systems</h2>
 
     <p>In late 2018, I joined the IBM Marketing Tech team during a crucial phase: transitioning IBM.com's page experience from the v18 to v19 web standard design system. This project was pivotal in helping various business units craft cutting-edge online experiences. Our objectives were to enhance customer engagement, bolster brand loyalty, streamline operational costs, and harmonize product and web experiences.</p>
     
     <p>Working alongside the Watson team, under the Program Design Office's guidance, we innovated numerous patterns and components. These enhancements transformed content presentation within IBM.com's Drupal ecosystem - the CMS of choice at the time. A central aspect of this initiative was to create a unified repository for all patterns, serving both as a resource for the Drupal theme and as comprehensive documentation. This repository facilitated widespread adoption and enablement across diverse teams.</p>
 
-    <h3>Solution: Fractal Library</h3>
+    <h2>Solution: Fractal Library</h2>
 
     <p>In my role, I spearheaded the development of a front-end library using Fractal, a dynamic pattern library. Fractal became the repository for front-end code (including Twig, CSS, and JS), which seamlessly integrated with our Drupal templates. This integration ensured that our style guide remained in sync with our production code, overcoming a common challenge in web development. As a result, content creators could easily utilize these new patterns on their product pages. This led to the widespread adoption of the new design system, with 90% of pages incorporating it.</p>
     
@@ -61,7 +61,7 @@ sectionDesktopBottom:
     style: "full"
     type: "collage"
   - content: "
-    <h3>Challenges: Unified Masthead</h3>
+    <h2>Challenge: Unified Masthead</h2>
 
     <p>A consistent interface is crucial for user ease and efficient navigation in any application. Recognizing this, we scrutinized common UI/UX challenges within IBM.com. The masthead, a pivotal navigational element present across all screens, showed functional and content inconsistencies, despite its superficial uniformity.</p>
 
@@ -73,9 +73,9 @@ sectionDesktopBottom:
       <li>Establish a centralized system for content updates and deployment, maintaining visual consistency.</li>
     </ul>
 
-    <h3>Solution: Web Components</h3>
+    <h2>Solution: Web Components</h2>
 
-    <p>As the lead UX engineer and primary liaison for stakeholders, I steered the project towards leveraging the Carbon for IBM.com suite. Utilizing Web Components, a cutting-edge web standard, we created framework-agnostic, reusable components. These were encapsulated within HTML tags, facilitating their use across different frameworks. By integrating the Carbon Web Components library, we built upon existing UI components, streamlining the development process.</p>
+    <p>As the Lead Engineer and primary liaison for stakeholders, I steered the project towards leveraging the Carbon for IBM.com suite. Utilizing Web Components, a cutting-edge web standard, we created framework-agnostic, reusable components. These were encapsulated within HTML tags, facilitating their use across different frameworks. By integrating the Carbon Web Components library, we built upon existing UI components, streamlining the development process.</p>
 
     <p>After six months of launching the unified Cloud Masthead, it has attracted over 8 million global page loads and 650,000 active monthly users. This success demonstrated the feasibility of accelerating future project development through shared components and deploying content changes uniformly across diverse ecosystems.</p>
 
@@ -94,9 +94,11 @@ sectionDesktopBottom:
     style: "half"
     type: "image"
   - content: "
-    <h3>Carbon for IBM.com Design System Contribution</h3>
+    <h2>Carbon for IBM.com Design System Contribution</h2>
 
-    <p>As the Lead Engineer, I helped to integrate the Carbon for IBM.com design system into the new AEM Sites CMS. This transition marked a significant milestone in our digital evolution, achieved through collaboration with the IBM Design Program Office team to build the Storybook library for adoption across different teams within IBM's digital marketing teams. I actively contributed to the Carbon for IBM.com Web Components package and created an extension library of the Carbon library called 'Carbon for AEM' to capture components designed specifically for pages built in AEM. These libraries now serve as the FE building blocks of IBM.com.</p>
+    <p>From 2021 to the middle of 2023, I played a pivotal role in integrating the Carbon for IBM.com design system into the new AEM Sites CMS. This integration was a crucial step in our digital evolution, accomplished in partnership with the IBM Design Program Office team. We developed the Storybook library to facilitate its adoption among various IBM digital marketing teams.</p>
+    
+    <p>My contributions included active involvement in the Carbon for IBM.com Web Components package and the creation of Carbon for AEM – an extension library tailored for AEM-built pages. These libraries have become fundamental in shaping the front-end architecture of IBM.com</p>
     "
     style: "full"
     type: "text"
@@ -118,13 +120,11 @@ nextTitle: "outrider.org"
 nextUrl: "/work/outrider"
 ---
 
-### Beyond the Code
+## Beyond the Code
 
 Beyond shaping the technical landscape, I managed a team of talented front-end developers as well as engaged with cross-functional teams, including Design Directors, Digital Strategists, and Product Managers, to prototype, A/B test, and launch custom branded experiences. Notable examples include IBM's "Let's Create" campaign and the marketing landing page for the "Watson Orchestrate" product. My proactive approach fueled our collective success, always seeking process improvements and efficiency enhancements.
 
-
-
-### Summary of Role
+## Summary of Role
 
 - Updated old Drupal pages (Page Builder and Product page types) from v18 to v19 using Fractal as a stop-gap solution to the full release of Carbon for IBM.com Library.
 - Contributed components to the Carbon for IBM.com Web Components and React packages used and ingested by AEM Sites, the content publishing tool for the marketing site.

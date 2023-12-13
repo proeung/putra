@@ -55,7 +55,7 @@ One of the standout features was the implementation of a site-wide audio player 
 
 We overcame significant challenges, including migrating sixteen years' worth of diverse data from multiple platforms, totaling 96,000 pieces of legacy content. Collaborating closely with WHYY's team, we successfully identified priorities, allowing us to focus on key features for the initial launch while planning for subsequent phases. Additionally, user focus groups provided invaluable insights, informing our design approach and content strategy, and ultimately ensuring a seamless and immersive user experience.
 
-### Results
+## Results
 
 - Average session duration increased by 36%
 - 39% improvement in bounce rate
