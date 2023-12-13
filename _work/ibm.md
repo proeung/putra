@@ -22,11 +22,6 @@ sectionDesktop:
     caption: ""
     style: "half"
     type: "image"
-  - url: "/assets/work/ibm/desktop-half-06.webp"
-    alt: "Screenshot of a component/band called Module 3A that's part of IBM.com's v19a/legacy Design System"
-    caption: ""
-    style: "full"
-    type: "image"
   - content: "
     <h2>Challenge: Transitioning Legacy Systems</h2>
 
@@ -42,7 +37,16 @@ sectionDesktop:
     "
     style: "full"
     type: "text"
-  
+  - url: "/assets/work/ibm/desktop-half-05.webp"
+    alt: "Screenshot of a component/band called Module 3A that's part of IBM.com's v19a/legacy Design System"
+    caption: ""
+    style: "half"
+    type: "image"
+  - url: "/assets/work/ibm/desktop-half-06.webp"
+    alt: "Screenshot of a component/band called Module 3A that's part of IBM.com's v19a/legacy Design System"
+    caption: ""
+    style: "half"
+    type: "image"
   - url: "/assets/work/ibm/desktop-half-07.webp"
     alt: "Screenshot of a component/band called Module 1B that's part of IBM.com's v19a/legacy Design System"
     caption: "IBM.com's v19a (legacy) Design System Library (Fractal)"
@@ -53,22 +57,22 @@ sectionDesktop:
     caption: ""
     style: "half"
     type: "image"
-  
 sectionDesktopBottom:
-  - url: "/assets/work/ibm/desktop-full-02.webp"
-    alt: "Screenshot of the Cloud Masthead in different devices, from mobile to desktop"
-    caption: "Cloud Masthead using Carbon for IBM.com Web Components package"
+  - url: "/assets/work/ibm/video-01.mp4"
+    alt: "Video screenshot of the desktop view of the global mashtead"
+    caption: "Global Masthead using Carbon for IBM.com Web Components package"
     style: "full"
-    type: "collage"
+    type: "video"
+    poster: "/assets/work/ibm/video-01-poster.webp"
   - content: "
     <h2>Challenge: Unified Masthead</h2>
 
     <p>A consistent interface is crucial for user ease and efficient navigation in any application. Recognizing this, we scrutinized common UI/UX challenges within IBM.com. The masthead, a pivotal navigational element present across all screens, showed functional and content inconsistencies, despite its superficial uniformity.</p>
 
-    <p>To address these disparities and promote a cohesive branding experience, we focused on redesigning the masthead for all applications under the ibm.com/cloud domain. The objectives were clear:</p>
+    <p>To address these disparities and promote a cohesive branding experience, we focused on redesigning the masthead for all applications under the ibm.com domain. The key goals are:</p>
 
     <ul>
-      <li>Eliminate UI/UX inconsistencies within IBM Cloud’s content ecosystems by developing a unified masthead.</li>
+      <li>Eliminate UI/UX inconsistencies within IBM content ecosystems by developing a unified masthead.</li>
       <li>Ensure the masthead’s adaptability across various publishing platforms (e.g., Drupal, AEM, React).</li>
       <li>Establish a centralized system for content updates and deployment, maintaining visual consistency.</li>
     </ul>
@@ -83,30 +87,57 @@ sectionDesktopBottom:
     "
     style: "full"
     type: "text"
+  - url: "/assets/work/ibm/desktop-full-02.webp"
+    alt: "Screenshot of the Cloud Masthead in different devices, from mobile to desktop"
+    caption: "Cloud Masthead using Carbon for IBM.com Web Components package"
+    style: "full"
+    type: "collage"
+  - content: "
+    <h2>Carbon for IBM.com Design System Contributions</h2>
+
+    <p>During my tenure from 2021 to mid-2023, I played a key role in the strategic integration of the Carbon for IBM.com design system into IBM's new AEM Sites CMS, marking a significant transition from Drupal. My responsibilities extended to organizing the repository and project boards, which were crucial for efficient team collaboration and tracking progress. In partnership with the IBM Design Program Office, I contributed to enhancing their Storybook library and collaborated with UI designers to refine documentation and practices.</p>
+    "
+    style: "full"
+    type: "text"
   - url: "/assets/work/ibm/desktop-half-03.webp"
     alt: "Screenshot of a component called Featured Section that's part of the Carbon for IBM.com storybook library"
-    caption: "Carbon for IBM.com (Storybook) - contributed components"
+    caption: "Carbon for IBM.com (Storybook) - Featured Section"
     style: "half"
     type: "image"
   - url: "/assets/work/ibm/desktop-half-04.webp"
     alt: "Screenshot of a component called Card in Card that's part of the Carbon for IBM.com storybook library"
-    caption: ""
+    caption: "Carbon for IBM.com (Storybook) - Card in Card"
     style: "half"
     type: "image"
   - content: "
-    <h2>Carbon for IBM.com Design System Contribution</h2>
-
-    <p>From 2021 to the middle of 2023, I played a pivotal role in integrating the Carbon for IBM.com design system into the new AEM Sites CMS. This integration was a crucial step in our digital evolution, accomplished in partnership with the IBM Design Program Office team. We developed the Storybook library to facilitate its adoption among various IBM digital marketing teams.</p>
+    <h2>Carbon Sandbox Library</h2>
     
-    <p>My contributions included active involvement in the Carbon for IBM.com Web Components package and the creation of Carbon for AEM – an extension library tailored for AEM-built pages. These libraries have become fundamental in shaping the front-end architecture of IBM.com</p>
+    <p>In addition to my contributions to the Carbon for IBM.com library, I initiated the development of Carbon for AEM – a specialized extension of the Carbon design system, designed specifically for AEM-built pages and experimental prototyping. This sandbox library served a crucial role in validating innovative design components for A/B testing before their potential integration into the main repository.</p>
+
+    <p>Consistent with my role at IBM, my collaboration with cross-functional teams, including Design Directors, Digital Strategists, and Product Managers, was integral in prototyping, A/B testing, and launching distinct branded experiences. Prominent projects included the <strong>Let's Create</strong> campaign and the <strong>Watson Orchestrate</strong> product's marketing landing page.</p>
     "
     style: "full"
     type: "text"
-  - url: "/assets/work/ibm/desktop-full-01.webp"
-    alt: "Screenshot of the desktop view of the IBM.com/cloud homepage using Carbon components"
-    caption: "IBM.com/cloud Homepage"
-    style: "full"
-    type: "collage"
+  - url: "/assets/sandbox/sandbox--ibm-leadspace.mp4"
+    alt: "Video screenshot of the Let's Create Leadspace in Storybook"
+    caption: "Carbon for AEM (Storybook) - Let's Create Leadspace"
+    style: "half"
+    type: "video"
+  - url: "/assets/sandbox/sandbox--ibm-centered-leadspace.mp4"
+    alt: "Video screenshot of the Centered Leadspace in Storybook"
+    caption: "Carbon for AEM (Storybook) - Centered Leadspace"
+    style: "half"
+    type: "video"
+sectionMobileBottom:
+  - url: "/assets/work/ibm/mobile-01.webp"
+    alt: "Screenshot of the mobile view of the Watson Orchestrate page's Leadspace section"
+    caption: "Watson Orchestrate Leadspace"
+  - url: "/assets/work/ibm/mobile-02.webp"
+    alt: "Screenshot of the mobile view of the Watson Orchestrate page's Info section"
+    caption: "Watson Orchestrate Info"
+  - url: "/assets/work/ibm/mobile-03.webp"
+    alt: "Screenshot of the mobile view of the Watson Orchestrate page's Resources section"
+    caption: "Watson Orchestrate Resources"
 stats:
   - title: "Date"
     content: "2019 - 2023"
@@ -120,13 +151,10 @@ nextTitle: "outrider.org"
 nextUrl: "/work/outrider"
 ---
 
-## Beyond the Code
-
-Beyond shaping the technical landscape, I managed a team of talented front-end developers as well as engaged with cross-functional teams, including Design Directors, Digital Strategists, and Product Managers, to prototype, A/B test, and launch custom branded experiences. Notable examples include IBM's "Let's Create" campaign and the marketing landing page for the "Watson Orchestrate" product. My proactive approach fueled our collective success, always seeking process improvements and efficiency enhancements.
-
 ## Summary of Role
 
 - Updated old Drupal pages (Page Builder and Product page types) from v18 to v19 using Fractal as a stop-gap solution to the full release of Carbon for IBM.com Library.
 - Contributed components to the Carbon for IBM.com Web Components and React packages used and ingested by AEM Sites, the content publishing tool for the marketing site.
 - Created an extension library of Carbon called "Carbon for AEM" to manage new branding expressions and components that are intended for experimental usage within the IBM.com AEM Sites.
 - Helped unified Masthead across multiple content ecosystems within IBM.com.
+- Managed a team of talented front-end developers as well as engaged with cross-functional teams, including Design Directors, Digital Strategists, and Product Managers, to prototype, A/B test, and launch custom branded experiences.

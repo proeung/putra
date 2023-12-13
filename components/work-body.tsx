@@ -7,7 +7,7 @@ type Props = {
 
 const WorkBody = ({ content }: Props) => {
   return (
-    <section className="py-16 md:py-40 relative w-full">
+    <section className="border-t border-slate-900/10 dark:border-slate-50/[0.1] py-16 md:py-40 relative w-full">
       <Container>
         <Textarea content={content} />
       </Container>
