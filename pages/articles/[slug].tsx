@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
 import Container from '../../components/container';
-import ArticleBody from '../../components/article-body';
 import ArticleHeader from '../../components/article-header';
 import Layout from '../../components/layout';
 import { getArticleBySlug, getAllArticles } from '../../lib/api';
@@ -11,6 +10,7 @@ import type ArticleType from '../../interfaces/article';
 import { SITE_NAME } from '../../lib/constants';
 import PageTitle from '../../components/page-title';
 import NextItem from '../../components/next-item';
+import Textarea from '../../components/textarea';
 
 type Props = {
   article: ArticleType
@@ -42,7 +42,7 @@ export default function Post({ article, preview }: Props) {
                 coverImage={article.coverImage}
                 date={article.date}
               />
-              <ArticleBody content={article.content} />
+              <Textarea content={article.content} />
             </Container>
           </article>
           <NextItem

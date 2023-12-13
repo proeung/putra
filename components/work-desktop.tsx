@@ -2,8 +2,7 @@ import Container from './container';
 import CoverVideo from './cover-video';
 import Image from 'next/image';
 import type WorkType from '../interfaces/work';
-import WorkBody from './work-body';
-import markdownStyles from './markdown-styles.module.css';
+import Textarea from './textarea';
 
 type Props = {
   items: WorkType['sectionDesktop'];
@@ -67,12 +66,7 @@ const WorkDesktop: React.FC<Props> = ({ items }) => {
 
               {item.type === 'text' &&
                 <div className="my-16 md:my-40">
-                  <div className="mx-auto prose max-w-full lg:max-w-3xl dark:prose-invert">
-                    <div
-                      className={markdownStyles['markdown']}
-                      dangerouslySetInnerHTML={{ __html: item.content }}
-                    />
-                  </div>
+                  <Textarea content={item.content} />
                 </div>
               }
             </div>

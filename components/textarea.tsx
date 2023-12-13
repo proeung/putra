@@ -4,7 +4,7 @@ type Props = {
   content: string
 }
 
-const ArticleBody = ({ content }: Props) => {
+const Textarea = ({ content }: Props) => {
   return (
     <div className="mx-auto prose max-w-full lg:max-w-3xl dark:prose-invert">
       <div
@@ -15,4 +15,4 @@ const ArticleBody = ({ content }: Props) => {
   );
 }
 
-export default ArticleBody;
+export default Textarea;
