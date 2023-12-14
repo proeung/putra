@@ -12,7 +12,7 @@ type Props = {
 const WorkDesktop: React.FC<Props> = ({ style, items }) => {
   return (
     <section
-      className={`${style === 'even' ? 'bg-slate-100  dark:bg-slate-700/[0.2]' : 'bg-slate-200 dark:bg-slate-950/[0.2]'
+      className={`${style === 'even' ? 'bg-white  dark:bg-slate-700/[0.2]' : 'bg-slate-200 dark:bg-slate-950/[0.2]'
         } border-t border-slate-900/10 dark:border-slate-50/[0.1] py-16 md:py-40 relative overflow-hidden w-full`}
     >
       <Container>
