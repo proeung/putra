@@ -263,7 +263,7 @@ const Header = () => {
             <Fade delay={.5} triggerOnce>
               <Link
                 href="/"
-                className="text-zinc-800 dark:text-zinc-100 hover:text-zinc-500 transition duration-700 ease-in-out"
+                className="text-zinc-800 dark:text-zinc-100 hover:opacity-60 transition duration-700 ease-in-out"
               >
                 putra<span className="text-teal-500">.</span>
               </Link>
