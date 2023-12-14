@@ -49,7 +49,6 @@ const WorkDesktop: React.FC<Props> = ({ items }) => {
                         className="object-cover w-full"
                         width={1300}
                         height={630}
-                        priority={false}
                       />
                   }
                 </div>
@@ -65,7 +64,7 @@ const WorkDesktop: React.FC<Props> = ({ items }) => {
               }
 
               {item.type === 'text' &&
-                <div className="my-16 md:my-40">
+                <div className="my-16 md:my-32">
                   <Textarea content={item.content} />
                 </div>
               }

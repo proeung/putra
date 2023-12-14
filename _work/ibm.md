@@ -27,11 +27,11 @@ sectionDesktop:
 
     <p>In late 2018, I joined the IBM Marketing Tech team during a crucial phase: transitioning IBM.com's page experience from the v18 to v19 web standard design system. This project was pivotal in helping various business units craft cutting-edge online experiences. Our objectives were to enhance customer engagement, bolster brand loyalty, streamline operational costs, and harmonize product and web experiences.</p>
     
-    <p>Working alongside the Watson team, under the Program Design Office's guidance, we innovated numerous patterns and components. These enhancements transformed content presentation within IBM.com's Drupal ecosystem - the CMS of choice at the time. A central aspect of this initiative was to create a unified repository for all patterns, serving both as a resource for the Drupal theme and as comprehensive documentation. This repository facilitated widespread adoption and enablement across diverse teams.</p>
+    <p>Working alongside the Watson team, under the Program Design Office's guidance, we innovated numerous patterns and components. These enhancements transformed content presentation within IBM.com's Drupal ecosystem - the CMS of choice at the time. A key focus of this initiative was establishing a unified repository. This repository not only served as a vital resource for the Drupal theme but also as extensive documentation, crucial for achieving broad adoption and enablement across various business units.</p>
 
     <h2>Solution: Fractal Library</h2>
 
-    <p>In my role, I spearheaded the development of a front-end library using Fractal, a dynamic pattern library. Fractal became the repository for front-end code (including Twig, CSS, and JS), which seamlessly integrated with our Drupal templates. This integration ensured that our style guide remained in sync with our production code, overcoming a common challenge in web development. As a result, content creators could easily utilize these new patterns on their product pages. This led to the widespread adoption of the new design system, with 90% of pages incorporating it.</p>
+    <p>In my role, I spearheaded the development of a front-end library using Fractal, a dynamic pattern library. Fractal became the repository for front-end code (including Twig, CSS, and JS), which seamlessly integrated with Drupal templates. This integration ensured that our style guide remained in sync with our production code, overcoming a common challenge in large-scale web projects. As a result, content creators could easily apply these new patterns to their pages, leading to a significant adoption of the design system across 90% of our pages. This approach served as an effective interim solution until the launch of the Carbon for IBM.com Library.</p>
     
     <p>The success of this project set a precedent, influencing the design elements seen in the current <a href='https://www.ibm.com/standards/carbon/' target='_blank'>Carbon for IBM.com</a> Design System.</p>
     "
@@ -57,7 +57,7 @@ sectionDesktop:
     caption: ""
     style: "half"
     type: "image"
-sectionDesktopBottom:
+sectionDesktopMiddle:
   - url: "/assets/work/ibm/video-01.mp4"
     alt: "Video screenshot of the desktop view of the global mashtead"
     caption: "Global Masthead using Carbon for IBM.com Web Components package"
@@ -92,13 +92,7 @@ sectionDesktopBottom:
     caption: "Cloud Masthead using Carbon for IBM.com Web Components package"
     style: "full"
     type: "collage"
-  - content: "
-    <h2>Carbon for IBM.com Design System Contributions</h2>
-
-    <p>During my tenure from 2021 to mid-2023, I played a key role in the strategic integration of the Carbon for IBM.com design system into IBM's new AEM Sites CMS, marking a significant transition from Drupal. My responsibilities extended to organizing the repository and project boards, which were crucial for efficient team collaboration and tracking progress. In partnership with the IBM Design Program Office, I contributed to enhancing their Storybook library and collaborated with UI designers to refine documentation and practices.</p>
-    "
-    style: "full"
-    type: "text"
+sectionDesktopBottom:
   - url: "/assets/work/ibm/desktop-half-03.webp"
     alt: "Screenshot of a component called Featured Section that's part of the Carbon for IBM.com storybook library"
     caption: "Carbon for IBM.com (Storybook) - Featured Section"
@@ -110,11 +104,9 @@ sectionDesktopBottom:
     style: "half"
     type: "image"
   - content: "
-    <h2>Carbon Sandbox Library</h2>
-    
-    <p>In addition to my contributions to the Carbon for IBM.com library, I initiated the development of Carbon for AEM – a specialized extension of the Carbon design system, designed specifically for AEM-built pages and experimental prototyping. This sandbox library served a crucial role in validating innovative design components for A/B testing before their potential integration into the main repository.</p>
+    <h2>Carbon for IBM.com Design System Contributions</h2>
 
-    <p>Consistent with my role at IBM, my collaboration with cross-functional teams, including Design Directors, Digital Strategists, and Product Managers, was integral in prototyping, A/B testing, and launching distinct branded experiences. Prominent projects included the <strong>Let's Create</strong> campaign and the <strong>Watson Orchestrate</strong> product's marketing landing page.</p>
+    <p>During my tenure from 2021 to mid-2023, I played a key role in the strategic integration of the Carbon for IBM.com design system into IBM's new AEM Sites CMS, marking a significant transition from Drupal. My responsibilities extended to organizing the repository and project boards, which were crucial for efficient team collaboration and tracking progress. In partnership with the IBM Design Program Office, I contributed to enhancing their Storybook library and collaborated with UI designers to refine documentation and practices.</p>
     "
     style: "full"
     type: "text"
@@ -128,6 +120,13 @@ sectionDesktopBottom:
     caption: "Carbon for AEM (Storybook) - Centered Leadspace"
     style: "half"
     type: "video"
+  - content: "
+    <h2>Carbon Sandbox Library</h2>
+    
+    <p>In addition to my contributions to the Carbon for IBM.com library, I initiated the development of Carbon for AEM – a specialized extension of the Carbon design system, designed specifically for AEM-built pages and experimental prototyping. This sandbox library served a tool in validating innovative design components for A/B testing before their potential integration into the main upstream repository as well as launching distinct branded experiences. Prominent projects included the Let's Create campaign and the Watson Orchestrate product's marketing landing page.</p>
+    "
+    style: "full"
+    type: "text"
 sectionMobileBottom:
   - url: "/assets/work/ibm/mobile-01.webp"
     alt: "Screenshot of the mobile view of the Watson Orchestrate page's Leadspace section"
@@ -140,7 +139,7 @@ sectionMobileBottom:
     caption: "Watson Orchestrate Resources"
 stats:
   - title: "Date"
-    content: "2019 - 2023"
+    content: "2018 - 2023"
   - title: "Role"
     content: "Lead Engineer & Technical Project Manager"
   - title: "Agency"
