@@ -9,6 +9,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@headlessui/react": "^1.7.17",
+    "@vercel/speed-insights": "^1.0.2",
     "classnames": "^2.3.1",
     "clsx": "^2.0.0",
     "date-fns": "^2.28.0",
