@@ -43,9 +43,9 @@ export default function Post({ work, preview }: Props) {
             poster={work.coverVideoPoster}
           />
           {work.sectionMobile && <WorkMobile items={work.sectionMobile} />}
-          {work.sectionDesktop && <WorkDesktop items={work.sectionDesktop} />}
-          {work.sectionDesktopMiddle && <WorkDesktop items={work.sectionDesktopMiddle} />}
-          {work.sectionDesktopBottom && <WorkDesktop items={work.sectionDesktopBottom} />}
+          {work.sectionDesktop && <WorkDesktop style="odd" items={work.sectionDesktop} />}
+          {work.sectionDesktopMiddle && <WorkDesktop style="even" items={work.sectionDesktopMiddle} />}
+          {work.sectionDesktopBottom && <WorkDesktop style="odd" items={work.sectionDesktopBottom} />}
           {work.sectionMobileBottom && <WorkMobile items={work.sectionMobileBottom} />}
           {work.content && <WorkBody content={work.content} />}
           {work.stats && <WorkStats stats={work.stats} />}

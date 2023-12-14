@@ -58,12 +58,11 @@ sectionDesktop:
     style: "half"
     type: "image"
 sectionDesktopMiddle:
-  - url: "/assets/work/ibm/video-01.mp4"
-    alt: "Video screenshot of the desktop view of the global mashtead"
-    caption: "Global Masthead using Carbon for IBM.com Web Components package"
+  - url: "/assets/work/ibm/desktop-full-02.webp"
+    alt: "Screenshot of the Cloud Masthead in different devices, from mobile to desktop"
+    caption: "Masthead v1 - Carbon for IBM.com Web Components package"
     style: "full"
-    type: "video"
-    poster: "/assets/work/ibm/video-01-poster.webp"
+    type: "collage"
   - content: "
     <h2>Challenge: Unified Masthead</h2>
 
@@ -87,11 +86,12 @@ sectionDesktopMiddle:
     "
     style: "full"
     type: "text"
-  - url: "/assets/work/ibm/desktop-full-02.webp"
-    alt: "Screenshot of the Cloud Masthead in different devices, from mobile to desktop"
-    caption: "Cloud Masthead using Carbon for IBM.com Web Components package"
+  - url: "/assets/work/ibm/video-01.mp4"
+    alt: "Video screenshot of the desktop view of the global mashtead"
+    caption: "Masthead v2 - Carbon for IBM.com Web Components package"
     style: "full"
-    type: "collage"
+    type: "video"
+    poster: "/assets/work/ibm/video-01-poster.webp"
 sectionDesktopBottom:
   - url: "/assets/work/ibm/desktop-half-03.webp"
     alt: "Screenshot of a component called Featured Section that's part of the Carbon for IBM.com storybook library"

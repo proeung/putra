@@ -5,14 +5,22 @@ import type WorkType from '../interfaces/work';
 import Textarea from './textarea';
 
 type Props = {
+  style: string
   items: WorkType['sectionDesktop'];
 };
 
-const WorkDesktop: React.FC<Props> = ({ items }) => {
+const WorkDesktop: React.FC<Props> = ({ style, items }) => {
   return (
-    <section className="border-t border-slate-900/10 dark:border-slate-50/[0.1] bg-slate-200 py-16 dark:bg-slate-950/[0.2] md:py-40 relative overflow-hidden w-full">
+    <section
+      className={`${style === 'even' ? 'bg-slate-100  dark:bg-slate-700/[0.2]' : 'bg-slate-200 dark:bg-slate-950/[0.2]'
+        } border-t border-slate-900/10 dark:border-slate-50/[0.1] py-16 md:py-40 relative overflow-hidden w-full`}
+    >
       <Container>
-        <div aria-hidden="true" className="pointer-events-none block blob absolute opacity-20 -right-40 -bottom-56 w-[20rem] h-[20rem] lg:w-[40rem] lg:h-[40rem]"></div>
+        <div
+          aria-hidden="true"
+          className={`${style === 'even' ? '-left-40' : '-right-40'
+            } pointer-events-none block blob absolute opacity-20 -bottom-56 w-[20rem] h-[20rem] lg:w-[40rem] lg:h-[40rem]`}>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-14 relative w-full z-10">
           {items.map((item, index) => (
 
@@ -64,7 +72,7 @@ const WorkDesktop: React.FC<Props> = ({ items }) => {
               }
 
               {item.type === 'text' &&
-                <div className="my-16 md:my-32">
+                <div className="mt-16 mb-16 md:mt-24 md:mb-20">
                   <Textarea content={item.content} />
                 </div>
               }

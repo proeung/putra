@@ -38,6 +38,12 @@ sectionDesktop:
     style: "full"
     type: "video"
     poster: "/assets/work/merative/video-01-poster.webp"
+sectionDesktopBottom:
+  - url: "/assets/work/merative/desktop-full-01.webp"
+    alt: "Screenshot of different email newsletter templates developed in Marketo"
+    caption: "Email Newsletter Templates using Marketo"
+    style: "full"
+    type: "collage"
 sectionMobileBottom:
   - url: "/assets/work/merative/mobile-04.webp"
     alt: "Screenshot of the mobile view of the Quick Links template that's used for Merative's Events"
@@ -48,12 +54,6 @@ sectionMobileBottom:
   - url: "/assets/work/merative/mobile-06.webp"
     alt: "creenshot of the mobile view of a Product Campaign's overview section"
     caption: "Product Campaign"
-sectionDesktopBottom:
-  - url: "/assets/work/merative/desktop-full-01.webp"
-    alt: "Screenshot of different email newsletter templates developed in Marketo"
-    caption: "Email Newsletter Templates using Marketo"
-    style: "full"
-    type: "collage"
 stats:
   - title: "Date"
     content: "10.17.2023"

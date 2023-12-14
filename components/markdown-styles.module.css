@@ -3,8 +3,6 @@
 }
 
 .markdown p,
-.markdown ul,
-.markdown ol,
 .markdown blockquote {
   @apply my-6 leading-relaxed lg:my-10;
 }
@@ -35,8 +33,9 @@
   @apply underline;
 }
 
-.markdown ul {
-  @apply marker:text-teal-500 list-disc list-outside ps-14 pe-14;
+.markdown ul,
+.markdown ol {
+  @apply marker:text-teal-500 list-disc list-outside ps-14 pe-14 leading-relaxed mt-6 mb-0 lg:mt-10;
 }
 
 .markdown pre {
