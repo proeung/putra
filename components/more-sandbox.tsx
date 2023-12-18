@@ -22,10 +22,16 @@ const sandboxItems = [
     posterSrc: '/assets/sandbox/sandbox--ibm-masthead-v2-poster.webp'
   },
   {
-    title: 'Accessible Menu - ES6 & Tailwind CSS',
+    title: 'Accessible Menu - Tailwind CSS',
     url: 'https://github.com/proeung/accessible-menu',
     videoSrc: '/assets/sandbox/sandbox--accessible-menu.mp4',
     posterSrc: '/assets/sandbox/sandbox--accessible-menu-poster.webp'
+  },
+  {
+    title: 'Hero Animation - Anime.js',
+    url: 'https://codepen.io/proeung/pen/VwgoGPq',
+    videoSrc: '/assets/sandbox/sandbox--happycog-hero2.mp4',
+    posterSrc: '/assets/sandbox/sandbox--happycog-hero-poster.webp'
   },
   {
     title: 'Leadspace - Web Components',
@@ -55,7 +61,7 @@ const MoreSandBox = () => {
           <div className="grid grid-cols-1 gap-4 md:gap-8 md:grid-cols-2 lg:grid-cols-3 mt-12 sm:mt-20">
             {sandboxItems.map((item, index) => (
               <a key={index} href={item.url} target="_blank" className="bg-white row-span-1 rounded-2xl md:rounded-3xl overflow-hidden p-4  text-zinc-800 hover:shadow-xl dark:text-zinc-400 dark:bg-slate-900 hover:bg-slate-700 hover:dark:bg-slate-700 hover:text-white hover:dark:text-white hover:shadow-slate-400/50 hover:dark:shadow-slate-900/50 transition duration-300 ease-out hover:ease-in">
-                <div className="aspect-video border lg:border-slate-900/10 dark:border-slate-50/[0.1] relative overflow-hidden rounded-xl">
+                <div className="aspect-video border lg:border-slate-900/10 dark:border-transparent relative overflow-hidden rounded-xl">
                   <div className="absolute inset-0">
                     <LazyVideo
                       src={item.videoSrc}
