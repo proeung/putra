@@ -30,7 +30,7 @@ const sandboxItems = [
   {
     title: 'Hero Animation - Anime.js',
     url: 'https://codepen.io/proeung/pen/VwgoGPq',
-    videoSrc: '/assets/sandbox/sandbox--happycog-hero2.mp4',
+    videoSrc: '/assets/sandbox/sandbox--happycog-hero.mp4',
     posterSrc: '/assets/sandbox/sandbox--happycog-hero-poster.webp'
   },
   {
