@@ -40,7 +40,7 @@ sectionDesktop:
     poster: "/assets/work/whyy/video-01-poster.webp"
 stats:
   - title: "Date"
-    content: "03.10.2018"
+    content: "10.10.2017"
   - title: "Role"
     content: "Lead Developer"
   - title: "Agency"

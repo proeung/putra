@@ -36,7 +36,7 @@ sectionDesktop:
     poster: "/assets/work/albright-knox/video-02-poster.webp"
 stats:
   - title: "Date"
-    content: "03.12.2018"
+    content: "11.06.2016"
   - title: "Role"
     content: "Lead Developer"
   - title: "Agency"

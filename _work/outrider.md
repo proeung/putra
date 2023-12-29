@@ -50,7 +50,7 @@ sectionDesktop:
     type: "image"
 stats:
   - title: "Date"
-    content: "03.12.2018"
+    content: "04.12.2018"
   - title: "Role"
     content: "Lead Developer"
   - title: "Agency"
