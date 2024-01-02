@@ -106,7 +106,7 @@ sectionDesktopBottom:
   - content: "
     <h2>Carbon for IBM.com Design System Contributions</h2>
 
-    <p>During my tenure from 2021 to mid-2023, I played a key role in the strategic integration of the Carbon for IBM.com design system into IBM's new AEM Sites CMS, marking a significant transition from Drupal. My responsibilities extended to organizing the repository and project boards, which were crucial for efficient team collaboration and tracking progress. In partnership with the IBM Design Program Office, I contributed to enhancing their Storybook library and collaborated with UI designers to refine documentation and practices.</p>
+    <p>During my tenure from 2021 to mid-2023, I played a pivotal role in integrating the Carbon for IBM.com design system into IBM's new AEM Sites CMS, transitioning from Drupal. My responsibilities included developing various components, conducting PR/Code reviews, bug fixing, and organizing the repository and project boards. These tasks were essential for team collaboration and progress tracking. In collaboration with the IBM Design Program Office, I enhanced their Storybook library and worked with UI designers to refine documentation and practices.</p>
     "
     style: "full"
     type: "text"
