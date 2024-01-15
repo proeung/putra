@@ -23,15 +23,21 @@ sectionDesktop:
     style: "half"
     type: "image"
   - content: "
-    <h2>Challenge: Transitioning Legacy Systems</h2>
+    <h2>01. Transitioning Legacy Systems</h2>
 
     <p>In late 2018, I joined the IBM Marketing Tech team during a crucial phase: transitioning IBM.com's page experience from the v18 to v19 web standard design system. This project was pivotal in helping various business units craft cutting-edge online experiences. Our objectives were to enhance customer engagement, bolster brand loyalty, streamline operational costs, and harmonize product and web experiences.</p>
+
+    <h3>Challenge:</h3>
     
     <p>Working alongside the Watson team, under the Program Design Office's guidance, we innovated numerous patterns and components. These enhancements transformed content presentation within IBM.com's Drupal ecosystem - the CMS of choice at the time. A key focus of this initiative was establishing a unified repository. This repository not only served as a vital resource for the Drupal theme but also as extensive documentation, crucial for achieving broad adoption and enablement across various business units.</p>
 
-    <h2>Solution: Fractal Library</h2>
+    <h3>Solution:</h3>
 
-    <p>In my role, I spearheaded the development of a front-end library using Fractal, a dynamic pattern library. Fractal became the repository for front-end code (including Twig, CSS, and JS), which seamlessly integrated with Drupal templates. This integration ensured that our style guide remained in sync with our production code, overcoming a common challenge in large-scale web projects. As a result, content creators could easily apply these new patterns to their pages, leading to a significant adoption of the design system across 90% of our pages. This approach served as an effective interim solution until the launch of the Carbon for IBM.com Library.</p>
+    <p>In my role, I spearheaded the development of a front-end library using Fractal, a dynamic pattern library. Fractal became the repository for front-end code (including Twig, CSS, and JS), which seamlessly integrated with Drupal templates. This integration ensured that our style guide remained in sync with our production code, overcoming a common challenge in large-scale web projects.</p> 
+    
+    <h3>Result:</h3>
+
+    <p>As a result, content creators and different business units could easily apply these new patterns to their pages, leading to a significant adoption of the design system across 90% (2k+ pages) of IBM.com. This approach served as an effective interim solution until the launch of the Carbon for IBM.com Library.</p>
     
     <p>The success of this project set a precedent, influencing the design elements seen in the current <a href='https://www.ibm.com/standards/carbon/' target='_blank'>Carbon for IBM.com</a> Design System.</p>
     "
@@ -64,11 +70,15 @@ sectionDesktopMiddle:
     style: "full"
     type: "collage"
   - content: "
-    <h2>Challenge: Unified Masthead</h2>
+    <h2>02. Unified Masthead</h2>
 
-    <p>A consistent interface is crucial for user ease and efficient navigation in any application. Recognizing this, we scrutinized common UI/UX challenges within IBM.com. The masthead, a pivotal navigational element present across all screens, showed functional and content inconsistencies, despite its superficial uniformity.</p>
+    <p>A consistent interface is crucial for user ease and efficient navigation in any application. Recognizing this, we scrutinized common UI/UX challenges within IBM.com.</p>
+    
+    <h3>Challenge:</h3>
+    
+    <p>The masthead, a pivotal navigational element present across all screens, showed functional and content inconsistencies, despite its superficial uniformity.
 
-    <p>To address these disparities and promote a cohesive branding experience, we focused on redesigning the masthead for all applications under the ibm.com domain. The key goals are:</p>
+    To address these disparities and promote a cohesive branding experience, we focused on redesigning the masthead for all applications under the ibm.com domain. The key goals are:</p>
 
     <ul>
       <li>Eliminate UI/UX inconsistencies within IBM content ecosystems by developing a unified masthead.</li>
@@ -76,9 +86,11 @@ sectionDesktopMiddle:
       <li>Establish a centralized system for content updates and deployment, maintaining visual consistency.</li>
     </ul>
 
-    <h2>Solution: Web Components</h2>
+    <h3>Solution:</h3>
 
     <p>As the Lead Engineer and primary liaison for stakeholders, I steered the project towards leveraging the Carbon for IBM.com suite. Utilizing Web Components, a cutting-edge web standard, we created framework-agnostic, reusable components. These were encapsulated within HTML tags, facilitating their use across different frameworks. By integrating the Carbon Web Components library, we built upon existing UI components, streamlining the development process.</p>
+
+    <h3>Result:</h3>
 
     <p>After six months of launching the unified Cloud Masthead, it has attracted over 8 million global page loads and 650,000 active monthly users. This success demonstrated the feasibility of accelerating future project development through shared components and deploying content changes uniformly across diverse ecosystems.</p>
 
@@ -104,7 +116,7 @@ sectionDesktopBottom:
     style: "half"
     type: "image"
   - content: "
-    <h2>Carbon for IBM.com Design System Contributions</h2>
+    <h2>03. Carbon Design System Contributions</h2>
 
     <p>During my tenure from 2021 to mid-2023, I played a pivotal role in integrating the Carbon for IBM.com design system into IBM's new AEM Sites CMS, transitioning from Drupal. My responsibilities included developing various components, conducting PR/Code reviews, bug fixing, and organizing the repository and project boards. These tasks were essential for team collaboration and progress tracking. In collaboration with the IBM Design Program Office, I enhanced their Storybook library and worked with UI designers to refine documentation and practices.</p>
     "
@@ -121,7 +133,7 @@ sectionDesktopBottom:
     style: "half"
     type: "video"
   - content: "
-    <h2>Carbon Sandbox Library</h2>
+    <h2>04. Carbon Sandbox Library</h2>
     
     <p>In addition to my contributions to the Carbon for IBM.com library, I initiated the development of Carbon for AEM – a specialized extension of the Carbon design system, designed specifically for AEM-built pages and experimental prototyping. This sandbox library served a tool in validating innovative design components for A/B testing before their potential integration into the main upstream repository as well as launching distinct branded experiences. Prominent projects included the Let's Create campaign and the Watson Orchestrate product's marketing landing page.</p>
     "
@@ -154,6 +166,6 @@ nextUrl: "/work/outrider"
 
 - Updated old Drupal pages (Page Builder and Product page types) from v18 to v19 using Fractal as a stop-gap solution to the full release of Carbon for IBM.com Library.
 - Contributed components to the Carbon for IBM.com Web Components and React packages used and ingested by AEM Sites, the content publishing tool for the marketing site.
-- Created an extension library of Carbon called "Carbon for AEM" to manage new branding expressions and components that are intended for experimental usage within the IBM.com AEM Sites.
-- Helped unified Masthead across multiple content ecosystems within IBM.com.
-- Managed a team of talented front-end developers as well as engaged with cross-functional teams, including Design Directors, Digital Strategists, and Product Managers, to prototype, A/B test, and launch custom branded experiences.
+- Created an extension library of the Carbon Design System called "Carbon for AEM" to manage new branding expressions and components that are intended for experimental usage within the IBM.com AEM Sites.
+- Helped unify the Global Masthead component across multiple content ecosystems within IBM.com.
+- Managed a team of talented front-end developers as well as engage with cross-functional teams, including Design Directors, Digital Strategists, and Product Managers, to prototype, A/B test, and launch custom branded experiences
