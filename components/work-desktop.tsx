@@ -57,6 +57,7 @@ const WorkDesktop: React.FC<Props> = ({ style, items }) => {
                         className="object-cover w-full"
                         width={1300}
                         height={630}
+                        priority
                       />
                   }
                 </div>
