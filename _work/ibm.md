@@ -153,7 +153,7 @@ stats:
   - title: "Date"
     content: "2018 - 2023"
   - title: "Role"
-    content: "Lead Engineer / Technical Project Manager"
+    content: "Lead Engineer / Technical Project Manager / Carbon Design System Contributor"
   - title: "Agency"
     content: "Lullabot"
   - title: "Tech"

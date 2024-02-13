@@ -42,13 +42,14 @@ export default function Post({ work, preview }: Props) {
             src={work.coverVideo}
             poster={work.coverVideoPoster}
           />
+          {work.stats && <WorkStats hideTitle={true} stats={work.stats} />}
           {work.sectionMobile && <WorkMobile items={work.sectionMobile} />}
           {work.sectionDesktop && <WorkDesktop style="odd" items={work.sectionDesktop} />}
           {work.sectionDesktopMiddle && <WorkDesktop style="even" items={work.sectionDesktopMiddle} />}
           {work.sectionDesktopBottom && <WorkDesktop style="odd" items={work.sectionDesktopBottom} />}
           {work.sectionMobileBottom && <WorkMobile items={work.sectionMobileBottom} />}
           {work.content && <WorkBody content={work.content} />}
-          {work.stats && <WorkStats stats={work.stats} />}
+          {work.stats && <WorkStats hideTitle={false} stats={work.stats} />}
           <NextItem
             title={work.nextTitle}
             type="project"
