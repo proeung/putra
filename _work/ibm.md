@@ -116,9 +116,9 @@ sectionDesktopBottom:
     style: "half"
     type: "image"
   - content: "
-    <h2>03. Carbon Design System Contributions</h2>
+    <h2>03. Carbon for IBM.com Library Contributions</h2>
 
-    <p>During my tenure from 2021 to mid-2023, I played a pivotal role in integrating the Carbon for IBM.com design system into IBM's new AEM Sites CMS, transitioning from Drupal. My responsibilities included developing various components, conducting PR/Code reviews, bug fixing, and organizing the repository and project boards. These tasks were essential for team collaboration and progress tracking. In collaboration with the IBM Design Program Office, I enhanced their Storybook library and worked with UI designers to refine documentation and practices.</p>
+    <p>During my tenure from 2021 to mid-2023, I played a pivotal role in integrating the Carbon for IBM.com design system into IBM's new AEM Sites CMS, transitioning from Drupal. My responsibilities included developing various components, conducting PR/Code reviews, bug fixing, and organizing the repository and project boards. These tasks were essential for team collaboration and progress tracking. In collaboration with the IBM Design Program Office team, I enhanced and contributed components to the Storybook library and worked with UI/UX designers to refine documentation and practices.</p>
     "
     style: "full"
     type: "text"
@@ -133,9 +133,9 @@ sectionDesktopBottom:
     style: "half"
     type: "video"
   - content: "
-    <h2>04. Carbon Sandbox Library</h2>
+    <h2>04. Carbon Sandbox Library Creation</h2>
     
-    <p>In addition to my contributions to the Carbon for IBM.com library, I initiated the development of Carbon for AEM – a specialized extension of the Carbon design system, designed specifically for AEM-built pages and experimental prototyping. This sandbox library served a tool in validating innovative design components for A/B testing before their potential integration into the main upstream repository as well as launching distinct branded experiences. Prominent projects included the Let's Create campaign and the Watson Orchestrate product's marketing landing page.</p>
+    <p>In addition to my contributions to the Carbon for IBM.com library, I initiated the development of Carbon for AEM – a specialized extension of the Carbon design system, designed specifically for AEM (Adobe Experience Manager) built pages and experimental prototyping. This sandbox library served a tool in validating innovative design components for A/B testing before their potential integration into the main upstream repository as well as launching distinct branded experiences. Prominent projects included the Let's Create campaign and the Watson Orchestrate product's marketing landing page.</p>
     "
     style: "full"
     type: "text"
@@ -153,11 +153,11 @@ stats:
   - title: "Date"
     content: "2018 - 2023"
   - title: "Role"
-    content: "Lead Engineer & Technical Project Manager"
+    content: "Lead Engineer / Technical Project Manager"
   - title: "Agency"
     content: "Lullabot"
   - title: "Tech"
-    content: "Web Components, React, LitElement, TypeScript, Storybooks, CSS Modules, Design Systems. Legacy - Drupal, Fractal, Twig"
+    content: "Web Components, React, LitElement, TypeScript, Storybooks, CSS Modules, Design Systems, Github Actions, Jenkins, Drupal, Fractal, Twig"
 nextTitle: "outrider.org"
 nextUrl: "/work/outrider"
 ---

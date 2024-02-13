@@ -72,11 +72,11 @@ stats:
   - title: "Date"
     content: "10.17.2023"
   - title: "Role"
-    content: "Design Technologist & Lead Engineer"
+    content: "Design Technologist / Lead Engineer"
   - title: "Agency"
     content: "Merative"
   - title: "Tech"
-    content: "Adobe Experience Manager (AEM) / AEM Franklin, CSS, Javascript, Marketo, Design Systems"
+    content: "Adobe Experience Manager (AEM) / AEM Franklin, CSS, Javascript, Email Marketing (Marketo)"
 nextTitle: "Whyy.org"
 nextUrl: "/work/whyy"
 ---
