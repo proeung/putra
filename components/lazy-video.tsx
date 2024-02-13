@@ -41,6 +41,7 @@ const LazyVideo = ({ label, src, poster }) => {
       ref={videoRef}
       data-src={src}
       aria-label={label}
+      disableRemotePlayback
     >
       <source data-src={src} type="video/mp4" />
     </video>
