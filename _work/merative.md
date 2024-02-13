@@ -22,6 +22,11 @@ sectionMobile:
     alt: "Screenshot of the mobile view of Merative.com's Thought Leadership Sidebar Filtering"
     caption: "Sidebar Filtering"
 sectionDesktop:
+  - url: "/assets/work/merative/video-01.mp4"
+    alt: "Video screenshot of a product microsite landing page"
+    caption: "Microsite Landing Page with a custom header & scroll-to feature"
+    style: "full"
+    type: "video"
   - url: "/assets/work/merative/desktop-half-01.webp"
     alt: "Screenshot of the desktop view of Merative.com's Thought Leadership"
     caption: "Thought Leadership Landing Page (Desktop)"
@@ -32,12 +37,13 @@ sectionDesktop:
     caption: "Example of a product's microsite page (Desktop)"
     style: "half"
     type: "image"
-  - url: "/assets/work/merative/video-01.mp4"
-    alt: "Video screenshot of a product microsite landing page"
-    caption: "Microsite Landing Page with a custom header & scroll-to feature"
-    style: "full"
-    type: "video"
     poster: "/assets/work/merative/video-01-poster.webp"
+sectionDesktopMiddle:
+  - url: "/assets/work/merative/desktop-full-02.webp"
+    alt: "Screenshot of Merative.com & Email Marketing Intake Process"
+    caption: "Merative.com & Email Marketing Intake Process"
+    style: "full"
+    type: "collage"
   - content: "
     <h2>Technical Project Management</h2>
 
@@ -48,11 +54,11 @@ sectionDesktop:
 sectionDesktopBottom:
   - url: "/assets/work/merative/desktop-full-01.webp"
     alt: "Screenshot of different email newsletter templates developed in Marketo"
-    caption: "Email Newsletter Templates using Marketo"
+    caption: "Different Email Newsletter Templates developed in Marketo"
     style: "full"
     type: "collage"
   - content: "
-    <h2>Email Marketing Templates</h2>
+    <h2>Email Marketing Templates (Marketo)</h2>
 
     <p>In addition to my involvement in the Merative.com project, I took the initiative to enhance our Email Marketing Newsletters. This involved creating 12+ new modules within Marketo, enabling marketers to design a variety of layouts adhering to the Merative Design System. These modules were specifically designed for crafting newsletters and email marketing materials related to our events and Super-Six products, providing greater flexibility and efficiency in our marketing efforts.</p>
     "
@@ -88,3 +94,4 @@ nextUrl: "/work/whyy"
 - Introduced new Email product templates featuring over 12+ modules and design options within Marketo.
 - Designed a Linktree/Bitly-like template for use by marketers at conferences and events, enabling quick access to helpful links via mobile devices through QR codes.
 - Developed a custom microsite campaign template for targeted marketing of Merative's products to diverse customer segments.
+- Managed offshore contractors, helped implement coding standards, and optimized user engagement on the web platform.

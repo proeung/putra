@@ -4,6 +4,7 @@ import { Fade } from 'react-awesome-reveal';
 
 type Props = {
   stats: WorkType['stats'];
+  
 };
 
 const WorkStats: React.FC<Props> = ({ stats }) => {
@@ -12,11 +13,11 @@ const WorkStats: React.FC<Props> = ({ stats }) => {
       <Container>
         <div className="mx-auto max-w-3xl">
           <Fade cascade delay={1e2} damping={1e-1}>
-            <h2 className="text-3xl font-light font-serif tracking-tight text-zinc-800 leading-tight md:text-5xl lg:text-6xl dark:text-zinc-100">
+            <h2 className="text-3xl font-light font-serif tracking-tight text-zinc-800 leading-tight mb-10 md:mb-20 md:text-5xl lg:text-6xl dark:text-zinc-100">
               Stats.
             </h2>
 
-            <ul className="grid grid-cols-2 gap-y-10 md:gap-y-16 mt-10 md:mt-20 items-start">
+            <ul className="grid grid-cols-2 gap-y-10 md:gap-y-16 items-start">
               {stats.map((stat, index) => (
                 <li key={index} className="gap-y-2 flex flex-wrap items-baseline">
                   <h3 className="font-bold flex-none">{stat.title}</h3>

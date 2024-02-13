@@ -10,10 +10,6 @@
   p a:visited {
     @apply font-bold text-teal-600 dark:text-teal-500 hover:underline;
   }
-
-  video::-internal-media-controls-overlay-cast-button {
-    display: none;
-  }
 }
 
 @layer utilities {
