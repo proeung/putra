@@ -14,11 +14,21 @@ thumbnail:
 sectionDesktop:
   - url: "/assets/work/ibm/desktop-half-01.webp"
     alt: "Screenshot of the IBM.com/watson homepage using v19a Design System"
-    caption: "IBM.com/watson homepage using v19a Design System"
+    caption: "Watson's homepage using v19a Design System and published using Drupal"
     style: "half"
     type: "image"
   - url: "/assets/work/ibm/desktop-half-02.webp"
     alt: "Screenshot of the IBM.com/watson homepage using v19a (legacy) Design System"
+    caption: ""
+    style: "half"
+    type: "image"
+  - url: "/assets/work/ibm/desktop-half-05.webp"
+    alt: "Screenshot of a component/band called Module 3A that's part of IBM.com's v19a/legacy Design System"
+    caption: "IBM.com's v19a (legacy) Design System Library (Fractal)"
+    style: "half"
+    type: "image"
+  - url: "/assets/work/ibm/desktop-half-06.webp"
+    alt: "Screenshot of a component/band called Module 3A that's part of IBM.com's v19a/legacy Design System"
     caption: ""
     style: "half"
     type: "image"
@@ -29,7 +39,7 @@ sectionDesktop:
 
     <h3>Challenge:</h3>
     
-    <p>Working alongside the Watson team, under the Program Design Office's guidance, we innovated numerous patterns and components. These enhancements transformed content presentation within IBM.com's Drupal ecosystem - the CMS of choice at the time. A key focus of this initiative was establishing a unified repository. This repository not only served as a vital resource for the Drupal theme but also as extensive documentation, crucial for achieving broad adoption and enablement across various business units.</p>
+    <p>Working alongside the Watson design team, under the Program Design Office's guidance, we innovated numerous patterns and components. These enhancements transformed content presentation within IBM.com's Drupal ecosystem - the CMS of choice at the time. A key focus of this initiative was establishing a unified repository. This repository not only served as a vital resource for the Drupal theme but also as extensive documentation, crucial for achieving broad adoption and enablement across various business units.</p>
 
     <h3>Solution:</h3>
 
@@ -43,16 +53,6 @@ sectionDesktop:
     "
     style: "full"
     type: "text"
-  - url: "/assets/work/ibm/desktop-half-05.webp"
-    alt: "Screenshot of a component/band called Module 3A that's part of IBM.com's v19a/legacy Design System"
-    caption: ""
-    style: "half"
-    type: "image"
-  - url: "/assets/work/ibm/desktop-half-06.webp"
-    alt: "Screenshot of a component/band called Module 3A that's part of IBM.com's v19a/legacy Design System"
-    caption: ""
-    style: "half"
-    type: "image"
   - url: "/assets/work/ibm/desktop-half-07.webp"
     alt: "Screenshot of a component/band called Module 1B that's part of IBM.com's v19a/legacy Design System"
     caption: "IBM.com's v19a (legacy) Design System Library (Fractal)"
@@ -64,11 +64,12 @@ sectionDesktop:
     style: "half"
     type: "image"
 sectionDesktopMiddle:
-  - url: "/assets/work/ibm/desktop-full-02.webp"
-    alt: "Screenshot of the Cloud Masthead in different devices, from mobile to desktop"
-    caption: "Masthead v1 - Carbon for IBM.com Web Components package"
+  - url: "/assets/work/ibm/video-01.mp4"
+    alt: "Video screenshot of the desktop view of the global mashtead"
+    caption: "Masthead v2 - Carbon for IBM.com Web Components package"
     style: "full"
-    type: "collage"
+    type: "video"
+    poster: "/assets/work/ibm/video-01-poster.webp"
   - content: "
     <h2>02. Unified Masthead</h2>
 
@@ -98,12 +99,11 @@ sectionDesktopMiddle:
     "
     style: "full"
     type: "text"
-  - url: "/assets/work/ibm/video-01.mp4"
-    alt: "Video screenshot of the desktop view of the global mashtead"
-    caption: "Masthead v2 - Carbon for IBM.com Web Components package"
+  - url: "/assets/work/ibm/desktop-full-02.webp"
+    alt: "Screenshot of the Cloud Masthead in different devices, from mobile to desktop"
+    caption: "Masthead v1 - Carbon for IBM.com Web Components package"
     style: "full"
-    type: "video"
-    poster: "/assets/work/ibm/video-01-poster.webp"
+    type: "collage"
 sectionDesktopBottom:
   - url: "/assets/work/ibm/desktop-half-03.webp"
     alt: "Screenshot of a component called Featured Section that's part of the Carbon for IBM.com storybook library"
