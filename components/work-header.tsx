@@ -37,20 +37,18 @@ const WorkHeader = ({ title, coverImage, coverVideo, poster, excerpt }: Props) =
               )
             }
 
-            {coverVideo && (
+            {coverVideo ? (
               <CoverVideo
                 src={coverVideo}
                 poster={poster}
                 label={`Video screenshot of ${title}`}
               />
-            )}
-
-            {coverImage && (
+            ) : coverImage ? (
               <CoverImage
                 src={coverImage}
                 alt={`Cover Image for ${title}`}
               />
-            )}
+            ) : null}
           </div>
 
           <div className="max-w-3xl mx-auto mt-16 md:mt-40">
