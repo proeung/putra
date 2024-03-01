@@ -39,7 +39,8 @@ export default function Post({ work, preview }: Props) {
           <WorkHeader
             title={work.title}
             excerpt={work.excerpt}
-            src={work.coverVideo}
+            coverImage={work.coverImage}
+            coverVideo={work.coverVideo}
             poster={work.coverVideoPoster}
           />
           {work.stats && <WorkStats hideTitle={true} stats={work.stats} />}

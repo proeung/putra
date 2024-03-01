@@ -1,12 +1,12 @@
 ---
 title: "IBM.com experience"
 excerpt: "Over my tenure at Lullabot, I had the privilege of contributing to a groundbreaking project: the transformation of IBM.com. My role evolved from Senior Frontend Developer to Technical Project Manager and eventually Lead Engineer. Although I served as a contractor during this IBM.com engagement, the 4.5 years I spent played a pivotal role in evolving IBM's web experience."
-coverImage: ""
-coverVideo: "/assets/work/ibm/video-cover.mp4"
-coverVideoPoster: "/assets/work/ibm/video-cover-poster.webp"
+coverImage: "/assets/work/ibm/image-cover.webp"
+coverVideo: ""
+coverVideoPoster: ""
 date: "2023-10-17"
 ogImage:
-  url: "/assets/work/ibm/video-cover-poster.webp"
+  url: "/assets/work/ibm/image-cover.webp"
 thumbnail:
   type: "image"
   url: "/assets/work/ibm/thumb.webp"
@@ -24,16 +24,16 @@ sectionDesktop:
     type: "image"
   - url: "/assets/work/ibm/desktop-half-05.webp"
     alt: "Screenshot of a component/band called Module 3A that's part of IBM.com's v19a/legacy Design System"
-    caption: "IBM.com's v19a (legacy) Design System Library (Fractal)"
+    caption: "IBM.com's v19a Design System Library (Fractal) - Module 2A"
     style: "half"
     type: "image"
   - url: "/assets/work/ibm/desktop-half-06.webp"
     alt: "Screenshot of a component/band called Module 3A that's part of IBM.com's v19a/legacy Design System"
-    caption: ""
+    caption: "IBM.com's v19a Design System Library (Fractal) - Module 3A"
     style: "half"
     type: "image"
   - content: "
-    <h2>01. Transitioning Legacy Systems</h2>
+    <h2>2018 - 2021: Transitioning Legacy Systems</h2>
 
     <p>In late 2018, I joined the IBM Marketing Tech team during a crucial phase: transitioning IBM.com's page experience from the v18 to v19 web standard design system. This project was pivotal in helping various business units craft cutting-edge online experiences. Our objectives were to enhance customer engagement, bolster brand loyalty, streamline operational costs, and harmonize product and web experiences.</p>
 
@@ -55,15 +55,32 @@ sectionDesktop:
     type: "text"
   - url: "/assets/work/ibm/desktop-half-07.webp"
     alt: "Screenshot of a component/band called Module 1B that's part of IBM.com's v19a/legacy Design System"
-    caption: "IBM.com's v19a (legacy) Design System Library (Fractal)"
+    caption: "IBM.com's v19a Design System Library (Fractal) - Module 1B"
     style: "half"
     type: "image"
   - url: "/assets/work/ibm/desktop-half-08.webp"
     alt: "Screenshot of a component/band called Module 2C that's part of IBM.com's v19a/legacy Design System"
-    caption: ""
+    caption: "IBM.com's v19a Design System Library (Fractal) - Module 2C"
     style: "half"
     type: "image"
 sectionDesktopMiddle:
+  - url: "/assets/work/ibm/desktop-half-03.webp"
+    alt: "Screenshot of a component called Featured Section that's part of the Carbon for IBM.com storybook library"
+    caption: "Carbon for IBM.com (Storybook) - Featured Section"
+    style: "half"
+    type: "image"
+  - url: "/assets/work/ibm/desktop-half-04.webp"
+    alt: "Screenshot of a component called Card in Card that's part of the Carbon for IBM.com storybook library"
+    caption: "Carbon for IBM.com (Storybook) - Card in Card"
+    style: "half"
+    type: "image"
+  - content: "
+    <h2>2021 - 2023: Carbon for IBM.com Library Contributions</h2>
+
+    <p>During my tenure from 2021 to mid-2023, I played a pivotal role in integrating the Carbon for IBM.com design system into IBM's new AEM Sites CMS, transitioning from Drupal. My responsibilities included developing various components, conducting PR/Code reviews, bug fixing, and organizing the repository and project boards. These tasks were essential for team collaboration and progress tracking. In collaboration with the IBM Design Program Office team, I enhanced and contributed components to the Storybook library and worked with UI/UX designers to refine documentation and practices.</p>
+    "
+    style: "full"
+    type: "text"
   - url: "/assets/work/ibm/video-01.mp4"
     alt: "Video screenshot of the desktop view of the global mashtead"
     caption: "Masthead v2 - Carbon for IBM.com Web Components package"
@@ -71,7 +88,7 @@ sectionDesktopMiddle:
     type: "video"
     poster: "/assets/work/ibm/video-01-poster.webp"
   - content: "
-    <h2>02. Unified Masthead</h2>
+    <h2>2022 - 2023: Unified Masthead</h2>
 
     <p>A consistent interface is crucial for user ease and efficient navigation in any application. Recognizing this, we scrutinized common UI/UX challenges within IBM.com.</p>
     
@@ -105,20 +122,10 @@ sectionDesktopMiddle:
     style: "full"
     type: "collage"
 sectionDesktopBottom:
-  - url: "/assets/work/ibm/desktop-half-03.webp"
-    alt: "Screenshot of a component called Featured Section that's part of the Carbon for IBM.com storybook library"
-    caption: "Carbon for IBM.com (Storybook) - Featured Section"
-    style: "half"
-    type: "image"
-  - url: "/assets/work/ibm/desktop-half-04.webp"
-    alt: "Screenshot of a component called Card in Card that's part of the Carbon for IBM.com storybook library"
-    caption: "Carbon for IBM.com (Storybook) - Card in Card"
-    style: "half"
-    type: "image"
   - content: "
-    <h2>03. Carbon for IBM.com Library Contributions</h2>
-
-    <p>During my tenure from 2021 to mid-2023, I played a pivotal role in integrating the Carbon for IBM.com design system into IBM's new AEM Sites CMS, transitioning from Drupal. My responsibilities included developing various components, conducting PR/Code reviews, bug fixing, and organizing the repository and project boards. These tasks were essential for team collaboration and progress tracking. In collaboration with the IBM Design Program Office team, I enhanced and contributed components to the Storybook library and worked with UI/UX designers to refine documentation and practices.</p>
+    <h2>2022 - 2023: Carbon Sandbox Library Creation</h2>
+    
+    <p>In addition to my contributions to the Carbon for IBM.com library, I initiated the development of Carbon for AEM – a specialized extension of the Carbon design system, designed specifically for AEM (Adobe Experience Manager) built pages and experimental prototyping. This sandbox library served a tool in validating innovative design components for A/B testing before their potential integration into the main upstream repository as well as launching distinct branded experiences. Prominent projects included the Let's Create campaign and the Watson Orchestrate product's marketing landing page.</p>
     "
     style: "full"
     type: "text"
@@ -132,23 +139,6 @@ sectionDesktopBottom:
     caption: "Carbon for AEM (Storybook) - Centered Leadspace"
     style: "half"
     type: "video"
-  - content: "
-    <h2>04. Carbon Sandbox Library Creation</h2>
-    
-    <p>In addition to my contributions to the Carbon for IBM.com library, I initiated the development of Carbon for AEM – a specialized extension of the Carbon design system, designed specifically for AEM (Adobe Experience Manager) built pages and experimental prototyping. This sandbox library served a tool in validating innovative design components for A/B testing before their potential integration into the main upstream repository as well as launching distinct branded experiences. Prominent projects included the Let's Create campaign and the Watson Orchestrate product's marketing landing page.</p>
-    "
-    style: "full"
-    type: "text"
-sectionMobileBottom:
-  - url: "/assets/work/ibm/mobile-01.webp"
-    alt: "Screenshot of the mobile view of the Watson Orchestrate page's Leadspace section"
-    caption: "Watson Orchestrate Leadspace"
-  - url: "/assets/work/ibm/mobile-02.webp"
-    alt: "Screenshot of the mobile view of the Watson Orchestrate page's Info section"
-    caption: "Watson Orchestrate Info"
-  - url: "/assets/work/ibm/mobile-03.webp"
-    alt: "Screenshot of the mobile view of the Watson Orchestrate page's Resources section"
-    caption: "Watson Orchestrate Resources"
 stats:
   - title: "Date"
     content: "2018 - 2023"
