@@ -122,13 +122,6 @@ sectionDesktopMiddle:
     style: "full"
     type: "collage"
 sectionDesktopBottom:
-  - content: "
-    <h2>2022 - 2023: Carbon Sandbox Library Creation</h2>
-    
-    <p>In addition to my contributions to the Carbon for IBM.com library, I initiated the development of Carbon for AEM – a specialized extension of the Carbon design system, designed specifically for AEM (Adobe Experience Manager) built pages and experimental prototyping. This sandbox library served a tool in validating innovative design components for A/B testing before their potential integration into the main upstream repository as well as launching distinct branded experiences. Prominent projects included the Let's Create campaign and the Watson Orchestrate product's marketing landing page.</p>
-    "
-    style: "full"
-    type: "text"
   - url: "/assets/sandbox/sandbox--ibm-leadspace.mp4"
     alt: "Video screenshot of the Let's Create Leadspace in Storybook"
     caption: "Carbon for AEM (Storybook) - Let's Create Leadspace"
@@ -139,6 +132,13 @@ sectionDesktopBottom:
     caption: "Carbon for AEM (Storybook) - Centered Leadspace"
     style: "half"
     type: "video"
+  - content: "
+    <h2>2022 - 2023: Carbon Sandbox Library Creation</h2>
+    
+    <p>In addition to my contributions to the Carbon for IBM.com library, I initiated the development of Carbon for AEM – a specialized extension of the Carbon design system, designed specifically for AEM (Adobe Experience Manager) built pages and experimental prototyping. This sandbox library served a tool in validating innovative design components for A/B testing before their potential integration into the main upstream repository as well as launching distinct branded experiences. Prominent projects included the Let's Create campaign and the Watson Orchestrate product's marketing landing page.</p>
+    "
+    style: "full"
+    type: "text"
 stats:
   - title: "Date"
     content: "2018 - 2023"

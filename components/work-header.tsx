@@ -7,7 +7,6 @@ import CoverImage from './cover-image';
 type Props = {
   title: string
   excerpt: string
-  src: string
   coverImage?: string
   coverVideo?: string
   poster: string
