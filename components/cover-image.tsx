@@ -14,7 +14,7 @@ const CoverImage = ({ src, alt }: Props) => {
         className="w-full object-cover"
         width={1300}
         height={630}
-        loading="lazy"
+        priority={true}
       />
     </>
   );
