@@ -25,11 +25,15 @@
   @apply mt-0;
 }
 
+.markdown h2 span {
+  @apply block font-sans font-bold text-lg mb-4 opacity-60;
+}
+
 .markdown a {
   @apply font-bold no-underline text-teal-600 dark:text-teal-500;
 }
 
-.markdown a:hover {
+.markdown a:hover { 
   @apply underline;
 }
 
