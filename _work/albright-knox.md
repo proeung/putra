@@ -43,8 +43,8 @@ stats:
     content: "Bluecadet"
   - title: "Tech"
     content: "Drupal, PHP, Twig, Javascript, CSS Animations, MIMSY Sync, Pantheon"
-nextTitle: "Merative.com & Demand Gen"
-nextUrl: "/work/merative"
+nextTitle: "Whyy.org"
+nextUrl: "/work/whyy"
 ---
 
 A focal point of the website is the "Search the Collection" section, which enables users to search for artworks by artist, title, object type, date range, and more. Working closely with another developer, I wrote a custom module script to periodically query and parse data from their MIMSY database where the artwork is stored, syncing it back into Drupal as nodes. This allows the artwork content to be accessible and enables advanced search and discovery capabilities. 

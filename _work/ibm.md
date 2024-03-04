@@ -148,8 +148,8 @@ stats:
     content: "Lullabot"
   - title: "Tech"
     content: "Web Components, React, LitElement, TypeScript, Storybooks, CSS Modules, Design Systems, Github Actions, Jenkins, Drupal, Fractal, Twig"
-nextTitle: "outrider.org"
-nextUrl: "/work/outrider"
+nextTitle: "Merative.com & Demand Gen"
+nextUrl: "/work/merative"
 ---
 
 ## Summary of Role
