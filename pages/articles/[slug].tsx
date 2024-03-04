@@ -35,7 +35,14 @@ export default function Post({ article, preview }: Props) {
             <Container>
               <Head>
                 <title>{title}</title>
-                <meta property="og:image" content={article.ogImage.url} />
+                <meta
+                  property="og:image"
+                  content={article.ogImage.url}
+                />
+                <meta
+                  name="description"
+                  content={article.excerpt}
+                />
               </Head>
               <ArticleHeader
                 title={article.title}
