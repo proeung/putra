@@ -77,7 +77,7 @@ sectionDesktopMiddle:
   - content: "
     <h2><span>2021 - 2023</span> Carbon for IBM.com Library Contributions</h2>
 
-    <p>During my tenure from 2021 to mid-2023, I played a pivotal role in integrating the Carbon for IBM.com design system into IBM's new AEM Sites CMS, transitioning from Drupal. My responsibilities included developing various components, conducting PR/Code reviews, bug fixing, and organizing the repository and project boards. These tasks were essential for team collaboration and progress tracking. In collaboration with the IBM Design Program Office team, I enhanced and contributed components to the Storybook library and worked with UI/UX designers to refine documentation and practices.</p>
+    <p>During my tenure from 2021 to mid-2023, I played a pivotal role in integrating the Carbon for IBM.com design system into IBM's new AEM Sites CMS, transitioning from Drupal. My responsibilities included developing various components in Web Components, conducting PR/Code reviews, bug fixing, and organizing the repository and project boards. These tasks were essential for team collaboration and progress tracking. In collaboration with the IBM Design Program Office team, I enhanced and contributed components to the Storybook library and worked with UI/UX designers to refine documentation and practices.</p>
     "
     style: "full"
     type: "text"
@@ -106,7 +106,7 @@ sectionDesktopMiddle:
 
     <h3>Solution:</h3>
 
-    <p>As the Lead Engineer and primary liaison for stakeholders, I steered the project towards leveraging the Carbon for IBM.com suite. Utilizing Web Components, a cutting-edge web standard, we created framework-agnostic, reusable components. These were encapsulated within HTML tags, facilitating their use across different frameworks. By integrating the Carbon Web Components library, we built upon existing UI components, streamlining the development process.</p>
+    <p>As the Lead Engineer and primary liaison for stakeholders, I steered the project towards leveraging the Carbon for IBM.com suite. Utilizing Web Components, an emerging web standard that allows us to create framework-agnostic components that are reusable with encapsulated inside HTML tags that can be shared between frameworks. By integrating the Carbon Web Components library, we built upon existing UI components, streamlining the development process.</p>
 
     <h3>Result:</h3>
 
@@ -138,6 +138,8 @@ sectionDesktopBottom:
     <p>In addition to my contributions to the <a href='https://github.com/carbon-design-system/carbon-for-ibm-dotcom/' target='_blank'>Carbon for IBM.com</a> library, I initiated the development of Carbon for AEM – a specialized extension of the Carbon design system, designed specifically for AEM (Adobe Experience Manager) built pages and experimental prototyping.</p>
     
     <p>This sandbox library served a tool in validating innovative design components for A/B testing before their potential integration into the main upstream repository as well as launching distinct branded experiences. Prominent projects included the Let's Create campaign and the Watson Orchestrate product's marketing landing page.</p>
+
+    <p>Similar to Carbon for IBM.com, this sandbox library (Carbon for AEM) offers the CDN delivery method where adopters can add a script tag directly to an HTML page and rendered the Web Components without the need for front-end bundling.</p>
     "
     style: "full"
     type: "text"
@@ -149,7 +151,7 @@ stats:
   - title: "Agency"
     content: "Lullabot"
   - title: "Tech"
-    content: "Web Components, TypeScript, LitElement, React, Storybooks, CSS Modules, Design Systems, Github Actions, Jenkins, Drupal, Fractal, Twig"
+    content: "Web Components, LitElement, TypeScript, Storybooks, CSS Modules, Github Actions, Jenkins, Cypress, Design Systems, Drupal, Fractal, Twig"
 nextTitle: "Merative.com & Demand Gen"
 nextUrl: "/work/merative"
 ---
