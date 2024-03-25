@@ -133,11 +133,11 @@ sectionDesktopBottom:
     style: "half"
     type: "video"
   - content: "
-    <h2><span>2022 - 2023</span> Carbon Sandbox Library Creation</h2>
+    <h2><span>2022 - 2023</span> Sandbox Library Creation (Carbon for AEM)</h2>
     
     <p>In addition to my contributions to the <a href='https://github.com/carbon-design-system/carbon-for-ibm-dotcom/' target='_blank'>Carbon for IBM.com</a> library, I initiated the development of Carbon for AEM – a specialized extension of the Carbon design system, designed specifically for AEM (Adobe Experience Manager) built pages and experimental prototyping.</p>
     
-    <p>This sandbox library served a tool in validating innovative design components for A/B testing before their potential integration into the main upstream repository as well as launching distinct branded experiences. Prominent projects included the Let's Create campaign and the Watson Orchestrate product's marketing landing page.</p>
+    <p>This sandbox library served a tool in validating innovative design components for A/B testing before their potential integration into the main upstream repository as well as launching distinct branded experiences within IBM.com pages that are managed in AEM. Prominent projects included the Let's Create campaign and the Watson Orchestrate product's marketing landing pages.</p>
 
     <p>Similar to Carbon for IBM.com, this sandbox library (Carbon for AEM) offers the CDN delivery method where adopters can add a script tag directly to an HTML page and rendered the Web Components without the need for front-end bundling.</p>
     "
@@ -151,7 +151,7 @@ stats:
   - title: "Agency"
     content: "Lullabot"
   - title: "Tech"
-    content: "Web Components, LitElement, TypeScript, Storybooks, CSS Modules, Github Actions, Jenkins, Cypress, Design Systems, Drupal, Fractal, Twig"
+    content: "Web Components, LitElement, TypeScript, Storybooks, Sass, Github Actions, Jenkins, Cypress, Design Systems, AEM, Drupal, Fractal, Twig"
 nextTitle: "Merative.com & Demand Gen"
 nextUrl: "/work/merative"
 ---
