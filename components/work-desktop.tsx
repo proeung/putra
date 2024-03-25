@@ -66,9 +66,10 @@ const WorkDesktop: React.FC<Props> = ({ style, items }) => {
 
               {
                 item.caption !== undefined && item.caption !== '' ? (
-                  <p className="text-sm max-w-xs mt-6 md:max-w-lg">
-                    {item.caption}
-                  </p>
+                  <p
+                    className="text-sm max-w-xs mt-6 md:max-w-lg"
+                    dangerouslySetInnerHTML={{ __html: item.caption }}
+                  />
                 ) : null
               }
 
