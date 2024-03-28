@@ -45,11 +45,21 @@ sectionDesktop:
 
     <p>In my role, I spearheaded the development of a front-end library using Fractal, a dynamic pattern library. Fractal became the repository for front-end code (including Twig, CSS, and JS), which seamlessly integrated with Drupal templates. This integration ensured that our style guide remained in sync with our production code, overcoming a common challenge in large-scale web projects.</p> 
     
-    <h3>Result:</h3>
+    <h3>Results:</h3>
 
     <p>As a result, content creators and different business units could easily apply these new patterns to their pages, leading to a significant adoption of the design system across 90% (2k+ pages) of IBM.com. This approach served as an effective interim solution until the launch of the Carbon for IBM.com Library.</p>
     
-    <p>The success of this project set a precedent, influencing the design elements seen in the current <a href='https://www.ibm.com/standards/carbon/' target='_blank'>Carbon for IBM.com</a> Design System.</p>
+
+    <h3>Highlights:</h3>
+
+    <ul>
+      <li>Developed a comprehensive front-end library using Fractal</li>
+      <li>Created a centralized documentation (eg. Content Entry, Component Usage, and Code Adoption) for production use</li>
+      <li>Developed 42+ patterns with variations and theme colors</li>
+      <li>Supported global languages and accessibility standards</li>
+      <li>Resulted in a 30%+ engagement rate and site-wide adoption across different business units and products.</li>
+      <li>The success of this project set a precedent, influencing the design elements seen in the current <a href='https://www.ibm.com/standards/carbon/' target='_blank'>Carbon for IBM.com</a> Design System</li>
+    </ul>
     "
     style: "full"
     type: "text"
@@ -78,6 +88,15 @@ sectionDesktopMiddle:
     <h2><span>2021 - 2023</span> Carbon for IBM.com Library Contributions</h2>
 
     <p>During my tenure from 2021 to mid-2023, I played a pivotal role in integrating the Carbon for IBM.com design system into IBM's new AEM Sites CMS, transitioning from Drupal. My responsibilities included developing various components in Web Components, conducting PR/Code reviews, bug fixing, and organizing the repository and project boards. These tasks were essential for team collaboration and progress tracking. In collaboration with the IBM Design Program Office team, I enhanced and contributed components to the Storybook library and worked with UI/UX designers to refine documentation and practices.</p>
+
+    <h3>Highlights:</h3>
+
+    <ul>
+      <li>Established/Fostered collaboration between the AEM Sites Frontend team and IBM's Design Program Office/Carbon Design System team.</li>
+      <li>Contributed components/patterns within the Web Components npm package that is used for integration within AEM Sites.</li>
+      <li>Supported global languages and accessibility standards</li>
+      <li>Helped marketers to migrate pages off from Drupal to AEM Sites</li>
+    </ul>
     "
     style: "full"
     type: "text"
@@ -98,6 +117,7 @@ sectionDesktopMiddle:
 
     To address these disparities and promote a cohesive branding experience, we focused on redesigning the masthead for all applications under the ibm.com domain. The key goals are:</p>
 
+    <h3>Goals:</h3>
     <ul>
       <li>Eliminate UI/UX inconsistencies within IBM content ecosystems by developing a unified masthead.</li>
       <li>Ensure the masthead’s adaptability across various publishing platforms (e.g., Drupal, AEM, React).</li>
@@ -108,7 +128,7 @@ sectionDesktopMiddle:
 
     <p>As the Lead Engineer and primary liaison for stakeholders, I steered the project towards leveraging the Carbon for IBM.com suite. Utilizing Web Components, an emerging web standard that allows us to create framework-agnostic components that are reusable with encapsulated inside HTML tags that can be shared between frameworks. By integrating the Carbon Web Components library, we built upon existing UI components, streamlining the development process.</p>
 
-    <h3>Result:</h3>
+    <h3>Results:</h3>
 
     <p>After six months of launching the unified Cloud Masthead, it has attracted over 8 million global page loads and 650,000 active monthly users. This success demonstrated the feasibility of accelerating future project development through shared components and deploying content changes uniformly across diverse ecosystems.</p>
 
@@ -137,9 +157,9 @@ sectionDesktopBottom:
     
     <p>In addition to my contributions to the <a href='https://github.com/carbon-design-system/carbon-for-ibm-dotcom/' target='_blank'>Carbon for IBM.com</a> library, I initiated the development of Carbon for AEM – a specialized extension of the Carbon design system, designed specifically for AEM (Adobe Experience Manager) built pages and experimental prototyping.</p>
     
-    <p>This sandbox library served a tool in validating innovative design components for A/B testing before their potential integration into the main upstream repository as well as launching distinct branded experiences within IBM.com pages that are managed in AEM. Prominent projects included the Let's Create campaign and the Watson Orchestrate product's marketing landing pages.</p>
+    <p>This sandbox library served a tool in validating innovative design components for A/B testing before their potential integration into the main upstream repository as well as launching distinct branded experiences within IBM.com pages that are managed in AEM.</p>
 
-    <p>Similar to Carbon for IBM.com, this sandbox library (Carbon for AEM) offers the CDN delivery method where adopters can add a script tag directly to an HTML page and rendered the Web Components without the need for front-end bundling.</p>
+    <p>Similar to Carbon for IBM.com, this sandbox library (Carbon for AEM) offers the CDN delivery method where adopters can add a script tag directly to an HTML page and rendered the Web Components without the need for front-end bundling. Prominent projects included the Let's Create campaign and the Watson Orchestrate product's marketing landing pages.</p>
     "
     style: "full"
     type: "text"
