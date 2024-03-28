@@ -26,6 +26,7 @@ const WorkDesktop: React.FC<Props> = ({ style, items }) => {
 
             <div
               key={index}
+              id={item.id}
               className={`${item.style === 'half' ? 'col-span-1' : 'col-span-1 md:col-span-2'
                 } w-full`}
             >

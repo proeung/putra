@@ -6,6 +6,7 @@ type Desktop = {
   style: string
   type: string
   poster: string
+  id: string
 };
 
 type Mobile = {

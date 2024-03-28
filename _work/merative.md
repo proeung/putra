@@ -51,6 +51,7 @@ sectionDesktopMiddle:
     "
     style: "full"
     type: "text"
+    id: "technical-project-management"
 sectionDesktopBottom:
   - url: "/assets/work/merative/desktop-full-01.webp"
     alt: "Screenshot of different email newsletter templates developed in Marketo"
@@ -60,10 +61,11 @@ sectionDesktopBottom:
   - content: "
     <h2>Email Marketing Templates (Marketo)</h2>
 
-    <p>In addition to my involvement in the Merative.com project, I took the initiative to enhance our Email Marketing Newsletters. This involved creating 12+ new modules within Marketo, enabling marketers to design a variety of layouts adhering to the Merative Design System. These modules were specifically designed for crafting newsletters and email marketing materials related to our events and Super-Six products, providing greater flexibility and efficiency in our marketing efforts.</p>
+    <p>In collaboration with the Marketing Design Leads at Merative, I helped to enhance our Email Marketing Newsletters. This involved creating 12+ new modules within Marketo, enabling marketers to design a variety of layouts adhering to the Merative Design System. These modules were specifically designed for crafting newsletters and email marketing materials related to our events and Super-Six products, providing greater flexibility and efficiency in our marketing efforts.</p>
     "
     style: "full"
     type: "text"
+    id: "email-templates"
 sectionMobileBottom:
   - url: "/assets/work/merative/mobile-04.webp"
     alt: "Screenshot of the mobile view of the Quick Links template that's used for Merative's Events"
@@ -91,7 +93,7 @@ nextUrl: "/work/outrider"
 
 - Successfully migrated Landing, PDF Viewers, Thought Leadership, Products, Support, and other pages from AEM Sites to AEM Franklin.
 - Enabled marketers to efficiently edit and update content with reduced deployment time.
-- Introduced new Email product templates featuring over 12+ modules and design options within Marketo.
+- Developed new Email product templates featuring over 12+ modules and design options within Marketo.
 - Designed a Linktree/Bitly-like template for use by marketers at conferences and events, enabling quick access to helpful links via mobile devices through QR codes.
 - Developed a custom microsite campaign template for targeted marketing of Merative's products to diverse customer segments.
 - Managed offshore contractors, helped implement coding standards, and optimized user engagement on the web platform.
