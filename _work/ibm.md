@@ -6,7 +6,7 @@ coverVideo: ""
 coverVideoPoster: ""
 date: "2023-10-17"
 ogImage:
-  url: "/assets/work/ibm/image-cover.webp"
+  url: "/assets/work/ibm/og.webp"
 thumbnail:
   type: "image"
   url: "/assets/work/ibm/thumb.webp"

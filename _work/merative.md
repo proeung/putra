@@ -6,7 +6,7 @@ coverVideo: "/assets/work/merative/video-cover.mp4"
 coverVideoPoster: "/assets/work/merative/video-cover-poster.webp"
 date: "2017-03-12"
 ogImage:
-  url: "/assets/work/merative/video-cover-poster.webp"
+  url: "/assets/work/merative/og.webp"
 thumbnail:
   type: "browser"
   url: "/assets/work/merative/thumb.webp"
