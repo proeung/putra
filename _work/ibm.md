@@ -177,7 +177,7 @@ stats:
   - title: "Agency"
     content: "Lullabot"
   - title: "Tech"
-    content: "Web Components, LitElement, TypeScript, Storybooks, Sass, Github Actions, Jenkins, Cypress, Design Systems, AEM, Drupal, Fractal, Twig"
+    content: "Web Components, Lit, TypeScript, Storybooks, Sass, Github Actions, Jenkins, Cypress, Percy, Design Systems, AEM, Drupal, Fractal, Twig"
 nextTitle: "Merative.com & Demand Gen"
 nextUrl: "/work/merative"
 ---
