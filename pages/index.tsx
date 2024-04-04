@@ -8,7 +8,7 @@ import MoreWork from '../components/more-work'
 import MoreArticles from '../components/more-articles'
 import About from '../components/about'
 import MoreSandBox from '../components/more-sandbox'
-import { SITE_NAME } from '../lib/constants'
+import { SITE_NAME, HOME_OG_IMAGE_URL } from '../lib/constants'
 
 type Props = {
   allArticles: Article[]
@@ -24,6 +24,14 @@ export default function Index({ allArticles, allWork }: Props) {
       <Layout>
         <Head>
           <title>{`${SITE_NAME} | Developer & Design Technologist`}</title>
+          <meta
+            name="description"
+            content="Putra a Creative developer/designer with expertise in Technical Project Management, based South Jersey/Philadelphia area."
+          />
+          <meta
+            property="og:image"
+            content={HOME_OG_IMAGE_URL}
+          />
         </Head>
 
         <Intro />

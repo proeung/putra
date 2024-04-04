@@ -30,20 +30,19 @@ export default function Post({ article, preview }: Props) {
         <PageTitle>Loading…</PageTitle>
       ) : (
         <>
-
+          <Head>
+            <title>{title}</title>
+            <meta
+              name="description"
+              content={article.excerpt}
+            />
+            <meta
+              property="og:image"
+              content={article.ogImage.url}
+            />
+          </Head>
           <article className="mb-32">
             <Container>
-              <Head>
-                <title>{title}</title>
-                <meta
-                  property="og:image"
-                  content={article.ogImage.url}
-                />
-                <meta
-                  name="description"
-                  content={article.excerpt}
-                />
-              </Head>
               <ArticleHeader
                 title={article.title}
                 coverImage={article.coverImage}
