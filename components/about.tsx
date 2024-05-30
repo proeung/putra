@@ -40,7 +40,7 @@ const About = () => {
 
           <div className="auto-rows-[150px] grid grid-cols-2 gap-4 self-end md:gap-8 lg:pl-16 xl:pl-24">
             <div className="bg-neutral-100 row-span-2 rounded-2xl md:rounded-3xl  dark:bg-slate-800 overflow-hidden  shadow-sm bg-gradient-to-tr from-violet-600 via-indigo-500 to-teal-400 bg-300% animate-gradient">
-              <Fade delay={.5} triggerOnce className="h-full">
+              <Fade delay={.5} triggerOnce className="h-full will-change-transform">
                 <Image
                   src="/assets/about/about--pic-01.webp"
                   alt="Portrait of Putra Bonaccorsi"
@@ -52,7 +52,7 @@ const About = () => {
             </div>
 
             <div className="bg-neutral-100 overflow-hidden row-span-1 rounded-2xl shadow-sm md:rounded-3xl dark:bg-slate-800">
-              <Fade delay={.5} triggerOnce className="h-full">
+              <Fade delay={.5} triggerOnce className="h-full will-change-transform">
                 <Image
                   src="/assets/about/about--pic-02.webp"
                   alt="Wide shot of the @GoodPathGarden"
@@ -64,7 +64,7 @@ const About = () => {
             </div>
 
             <div className="bg-neutral-100 overflow-hidden row-span-2 rounded-2xl shadow-sm md:rounded-3xl dark:bg-slate-800">
-              <Fade delay={.5} triggerOnce className="h-full">
+              <Fade delay={.5} triggerOnce className="h-full will-change-transform">
                 <Image
                   src="/assets/about/about--pic-03.webp"
                   alt="Screenshot of FantasyBB"
@@ -76,7 +76,7 @@ const About = () => {
             </div>
 
             <div className="bg-neutral-100 overflow-hidden row-span-1 rounded-2xl shadow-sm md:rounded-3xl dark:bg-slate-800">
-              <Fade delay={.5} triggerOnce className="h-full">
+              <Fade delay={.5} triggerOnce className="h-full will-change-transform">
                 <Image
                   src="/assets/about/about--pic-04.webp"
                   alt="Wide shot of Tulips"

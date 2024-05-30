@@ -57,7 +57,7 @@ const MoreSandBox = () => {
           </Fade>
         </div>
 
-        <Fade delay={1e2} triggerOnce>
+        <Fade delay={1e2} triggerOnce className="h-full will-change-transform">
           <div className="grid grid-cols-1 gap-4 md:gap-8 md:grid-cols-2 lg:grid-cols-3 mt-12 sm:mt-20">
             {sandboxItems.map((item, index) => (
               <a key={index} href={item.url} target="_blank" className="bg-white row-span-1 rounded-2xl md:rounded-3xl overflow-hidden p-4  text-zinc-800 hover:shadow-xl dark:text-zinc-400 dark:bg-slate-900 hover:bg-slate-700 hover:dark:bg-slate-700 hover:text-white hover:dark:text-white hover:shadow-slate-400/50 hover:dark:shadow-slate-900/50 transition duration-300 ease-out hover:ease-in">

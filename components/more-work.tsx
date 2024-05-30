@@ -27,7 +27,7 @@ const MoreWork: React.FC<Props> = ({ works }) => {
                 } row-span-1 rounded-2xl md:rounded-3xl overflow-hidden bg-slate-100 dark:bg-slate-800 hover:shadow-xl hover:shadow-slate-400/50 hover:dark:shadow-slate-800 hover:bg-slate-300 hover:dark:bg-slate-700 transition duration-300 ease-out hover:ease-in`}
               title={work.title}
             >
-              <Fade delay={.5} triggerOnce className="h-full">
+              <Fade delay={.5} triggerOnce className="h-full will-change-transform">
                 {
                   work.thumbnail.type === 'video' ? (
                     <CoverVideo
