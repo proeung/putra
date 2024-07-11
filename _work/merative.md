@@ -4,7 +4,7 @@ excerpt: "At Merative, I served as the Design Technologist Lead, overseeing the 
 coverImage: ""
 coverVideo: "/assets/work/merative/video-cover.mp4"
 coverVideoPoster: "/assets/work/merative/video-cover-poster.webp"
-date: "2023 - 2024"
+date: "2017-03-12"
 ogImage:
   url: "/assets/work/merative/og.webp"
 thumbnail:
@@ -78,7 +78,7 @@ sectionMobileBottom:
     caption: "Product Campaign"
 stats:
   - title: "Date"
-    content: "10.17.2023"
+    content: "2023-2024"
   - title: "Role"
     content: "Design Technologist Lead / Technical Project Manager"
   - title: "Agency"
