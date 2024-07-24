@@ -22,16 +22,16 @@ const sandboxItems = [
     posterSrc: '/assets/sandbox/sandbox--ibm-masthead-v2-poster.webp'
   },
   {
+    title: 'Sortable Table - React',
+    url: 'https://github.com/proeung/sortable-table',
+    videoSrc: '/assets/sandbox/sandbox--sortable-table.mp4',
+    posterSrc: '/assets/sandbox/sandbox--sortable-table-poster.webp'
+  },
+  {
     title: 'Accessible Menu - Tailwind CSS',
     url: 'https://github.com/proeung/accessible-menu',
     videoSrc: '/assets/sandbox/sandbox--accessible-menu.mp4',
     posterSrc: '/assets/sandbox/sandbox--accessible-menu-poster.webp'
-  },
-  {
-    title: 'Hero Animation - Anime.js',
-    url: 'https://codepen.io/proeung/pen/VwgoGPq',
-    videoSrc: '/assets/sandbox/sandbox--happycog-hero.mp4',
-    posterSrc: '/assets/sandbox/sandbox--happycog-hero-poster.webp'
   },
   {
     title: 'Leadspace - Web Components',
