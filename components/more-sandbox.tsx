@@ -1,6 +1,6 @@
+import React, { useRef, useEffect, useState } from 'react';
 import Container from './container';
 import { Fade } from 'react-awesome-reveal';
-import LazyVideo from './lazy-video';
 
 const sandboxItems = [
   {
@@ -42,6 +42,50 @@ const sandboxItems = [
 ];
 
 const MoreSandBox = () => {
+  const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
+  const [isPlaying, setIsPlaying] = useState<boolean[]>(Array(sandboxItems.length).fill(false));
+
+  useEffect(() => {
+    videoRefs.current.forEach((video) => {
+      if (video) {
+        video.pause();
+      }
+    });
+  }, []);
+
+  const handleMouseOver = async (index: number) => {
+    const video = videoRefs.current[index];
+    if (video) {
+      if (video.paused && !isPlaying[index]) {
+        try {
+          await video.play();
+          setIsPlaying((prevState) => {
+            const newState = [...prevState];
+            newState[index] = true;
+            return newState;
+          });
+        } catch (error) {
+          console.error(`Failed to play video at index ${index}: ${error}`);
+        }
+      }
+    }
+  };
+
+  const handleMouseLeave = (index: number) => {
+    const video = videoRefs.current[index];
+    if (video) {
+      if (!video.paused && isPlaying[index]) {
+        video.pause();
+        video.currentTime = 0;
+        setIsPlaying((prevState) => {
+          const newState = [...prevState];
+          newState[index] = false;
+          return newState;
+        });
+      }
+    }
+  };
+
   return (
     <section id="sandbox" className="border-t border-slate-900/10 dark:border-slate-50/[0.1] bg-slate-100 py-16 dark:bg-slate-800 md:py-40 relative w-full overflow-y-hidden">
       <Container>
@@ -60,14 +104,27 @@ const MoreSandBox = () => {
         <Fade delay={1e2} triggerOnce className="h-full will-change-transform">
           <div className="grid grid-cols-1 gap-4 md:gap-8 md:grid-cols-2 lg:grid-cols-3 mt-12 sm:mt-20">
             {sandboxItems.map((item, index) => (
-              <a key={index} href={item.url} target="_blank" className="bg-white row-span-1 rounded-2xl md:rounded-3xl overflow-hidden p-4  text-zinc-800 hover:shadow-xl dark:text-zinc-400 dark:bg-slate-900 hover:bg-slate-700 hover:dark:bg-slate-700 hover:text-white hover:dark:text-white hover:shadow-slate-400/50 hover:dark:shadow-slate-900/50 transition duration-300 ease-out hover:ease-in">
+              <a
+                key={index}
+                href={item.url}
+                target="_blank"
+                className="bg-white row-span-1 rounded-2xl md:rounded-3xl overflow-hidden p-4 text-zinc-800 hover:shadow-xl dark:text-zinc-400 dark:bg-slate-900 hover:bg-slate-700 hover:dark:bg-slate-700 hover:text-white hover:dark:text-white hover:shadow-slate-400/50 hover:dark:shadow-slate-900/50 transition duration-300 ease-out hover:ease-in"
+                onMouseOver={() => handleMouseOver(index)}
+                onMouseLeave={() => handleMouseLeave(index)}
+              >
                 <div className="aspect-video border lg:border-slate-900/10 dark:border-transparent relative overflow-hidden rounded-xl">
                   <div className="absolute inset-0">
-                    <LazyVideo
-                      src={item.videoSrc}
+                    <video
+                      ref={(el) => (videoRefs.current[index] = el)}
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full max-w-none object-cover object-top"
                       poster={item.posterSrc}
-                      label={`Video screenshot of ${item.title}`}
-                    />
+                      src={item.videoSrc}
+                      aria-label={`Video screenshot of ${item.title}`}
+                    >
+                    </video>
                   </div>
                 </div>
                 <h3 className="font-bold text-base md:text-xl tracking-tight text-center mt-8 mb-4">{item.title}</h3>
@@ -78,6 +135,6 @@ const MoreSandBox = () => {
       </Container>
     </section>
   );
-}
+};
 
 export default MoreSandBox;
