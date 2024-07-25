@@ -5,6 +5,7 @@ coverImage: ""
 coverVideo: "/assets/work/outrider/video-cover.mp4"
 coverVideoPoster: "/assets/work/outrider/video-cover-poster.webp"
 date: "2019-03-12"
+featured: 1
 ogImage:
   url: "/assets/work/outrider/og.webp"
 thumbnail:

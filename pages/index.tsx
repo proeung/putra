@@ -17,13 +17,13 @@ type Props = {
 
 export default function Index({ allArticles, allWork }: Props) {
   const morePosts = allArticles.slice(0);
-  const moreWork = allWork.slice(0);
+  const moreWork = allWork.filter((work) => work.featured === 1);
 
   return (
     <>
       <Layout>
         <Head>
-          <title>{`${SITE_NAME} | Developer & Design Technologist`}</title>
+          <title>{`${SITE_NAME} | Developer / Design Technologist / TPM`}</title>
           <meta
             name="description"
             content="Putra a Creative developer/designer with expertise in Technical Project Management, based South Jersey/Philadelphia area."
@@ -57,7 +57,8 @@ export const getStaticProps = async () => {
     'date',
     'slug',
     'excerpt',
-    'thumbnail'
+    'thumbnail',
+    'featured'
   ]);
 
   return {

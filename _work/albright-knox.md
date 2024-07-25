@@ -5,6 +5,7 @@ coverImage: ""
 coverVideo: "/assets/work/albright-knox/video-cover.mp4"
 coverVideoPoster: "/assets/work/albright-knox/video-cover-poster.webp"
 date: "2018-03-12"
+featured: 1
 ogImage:
   url: "/assets/work/albright-knox/video-cover-poster.webp"
 thumbnail:

@@ -21,7 +21,7 @@ type Props = {
 
 export default function Post({ work, preview }: Props) {
   const router = useRouter();
-  const title = `${work.title} | ${SITE_NAME}`
+  const title = `${work?.title ?? 'Untitled'} | ${SITE_NAME}`;
   if (!router.isFallback && !work?.slug) {
     return <ErrorPage statusCode={404} />
   }
@@ -81,6 +81,7 @@ export async function getStaticProps({ params }: Params) {
     'date',
     'excerpt',
     'slug',
+    'featured',
     'content',
     'ogImage',
     'coverImage',

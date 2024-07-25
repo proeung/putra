@@ -5,6 +5,7 @@ coverImage: ""
 coverVideo: "/assets/work/happy-cog/video-cover.mp4"
 coverVideoPoster: "/assets/work/happy-cog/video-cover-poster.webp"
 date: "2017-01-12"
+featured: 1
 ogImage:
   url: "/assets/work/happy-cog/video-cover-poster.webp"
 thumbnail:

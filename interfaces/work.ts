@@ -36,6 +36,7 @@ type WorkType = {
     url: string
     poster: string
   }
+  featured: number
   content: string
   stats: Stat[]
   sectionMobile: Mobile[]

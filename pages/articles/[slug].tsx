@@ -18,8 +18,8 @@ type Props = {
 }
 
 export default function Post({ article, preview }: Props) {
-  const router = useRouter()
-  const title = `${article.title} | ${SITE_NAME}`
+  const router = useRouter();
+  const title = `${article?.title ?? 'Untitled'} | ${SITE_NAME}`;
   if (!router.isFallback && !article?.slug) {
     return <ErrorPage statusCode={404} />
   }
