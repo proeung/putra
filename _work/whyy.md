@@ -20,7 +20,7 @@ sectionMobile:
     alt: "Screenshot of the mobile view of whyy.org's Homepage"
     caption: "Homepage"
   - url: "/assets/work/whyy/mobile-03.webp"
-    alt: "creenshot of the mobile view of whyy.org's Programs Schedule"
+    alt: "Screenshot of the mobile view of whyy.org's Programs Schedule"
     caption: "Programs Schedule"
 sectionDesktop:
   - url: "/assets/work/whyy/desktop-half-01.webp"
