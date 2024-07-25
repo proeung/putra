@@ -53,3 +53,22 @@
     transform: translateZ(0);
   }
 }
+
+@layer components {
+
+  .card {
+    @apply relative;
+    transform-style: preserve-3d;
+    overflow: unset;
+  }
+
+  .card::before {
+    @apply content-[""] absolute pointer-events-none transition-[filter] duration-[0.35s] ease-[ease] bg-clip-content p-px rounded-[inherit] inset-0;
+    transform: translateZ(-1px);
+    background: linear-gradient(123deg, #14b8a5, #3a3cd7, #31e7d2);
+  }
+
+  .card:hover::before {
+    @apply blur-[15px];
+  }
+}
