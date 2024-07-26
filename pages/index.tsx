@@ -17,7 +17,7 @@ type Props = {
 
 export default function Index({ allArticles, allWork }: Props) {
   const morePosts = allArticles.slice(0);
-  const moreWork = allWork.filter((work) => work.featured === 1);
+  const moreWork = allWork.slice(0);
 
   return (
     <>
@@ -58,7 +58,8 @@ export const getStaticProps = async () => {
     'slug',
     'excerpt',
     'thumbnail',
-    'featured'
+    'featured',
+    'recent'
   ]);
 
   return {

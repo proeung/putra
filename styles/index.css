@@ -56,16 +56,27 @@
 
 @layer components {
 
+  .button {
+    @apply text-gray-900 bg-transparent border border-gray-300 hover:bg-gray-100 hover:shadow-xl font-bold rounded-3xl text-sm px-4 md:px-7 py-2 md:py-2.5 relative dark:text-zinc-300 dark:border-slate-50/[0.3] dark:hover:bg-slate-900 dark:hover:border-slate-900 hover:dark:shadow-slate-900/50 transition duration-200 ease-in;
+  }
+
+  .button.active {
+    @apply border-white bg-white text-gray-900 shadow-md dark:text-white dark:bg-slate-900 dark:border-slate-900;
+  }
+
   .card {
     @apply relative;
     transform-style: preserve-3d;
     overflow: unset;
+    will-change: transform;
   }
 
   .card::before {
     @apply content-[""] absolute pointer-events-none transition-[filter] duration-[0.35s] ease-[ease] bg-clip-content p-px rounded-[inherit] inset-0;
     transform: translateZ(-1px);
     background: linear-gradient(123deg, #14b8a5, #3a3cd7, #31e7d2);
+    width: calc(100% - 4px);
+    left: 2px;
   }
 
   .card:hover::before {
