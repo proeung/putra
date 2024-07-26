@@ -72,7 +72,7 @@ const links = [
   { href: '/#articles', label: 'articles' },
   { href: '/#sandbox', label: 'sandbox' },
   { href: '/#about', label: 'about' },
-]
+];
 
 function MobileNavigation(props) {
   return (
@@ -149,13 +149,13 @@ function ModeToggle() {
     disableTransitionsTemporarily()
 
     let darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    let isSystemDarkMode = darkModeMediaQuery.matches
+    let isSystemDarkMode = darkModeMediaQuery.matches;
     let isDarkMode = document.documentElement.classList.toggle('dark');
 
     if (isDarkMode === isSystemDarkMode) {
-      delete window.localStorage.isDarkMode
+      delete window.localStorage.isDarkMode;
     } else {
-      window.localStorage.isDarkMode = isDarkMode
+      window.localStorage.isDarkMode = isDarkMode;
     }
   }
 
@@ -281,7 +281,7 @@ const Header = () => {
           </div>
         </div>
       </Container>
-    </header >
+    </header>
   );
 }
 

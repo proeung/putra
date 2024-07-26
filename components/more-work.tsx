@@ -89,6 +89,7 @@ const MoreWork: React.FC<Props> = ({ works }) => {
                             className="w-full h-full object-cover"
                             width={856}
                             height={890}
+                            priority
                           />
                         </div>
                       </div>
@@ -99,6 +100,7 @@ const MoreWork: React.FC<Props> = ({ works }) => {
                         className="w-full h-full object-cover"
                         width={956}
                         height={1112}
+                        priority
                       />
                     )
                   }
