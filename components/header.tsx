@@ -198,7 +198,7 @@ function DesktopNavigation(props) {
   return (
     <nav {...props}>
       <Fade cascade delay={1e1} damping={1e-1} triggerOnce>
-        <ul className="flex items-center font-bold gap-x-4 text-base md:gap-x-8 md:text-lg dark:text-zinc-300">
+        <ul className="flex items-center font-bold gap-x-4 text-base md:gap-x-9 md:text-lg dark:text-zinc-300">
           {links.map((link) => (
             <NavItem
               href={link.href}

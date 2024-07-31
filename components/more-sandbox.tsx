@@ -108,7 +108,7 @@ const MoreSandBox = () => {
                 key={index}
                 href={item.url}
                 target="_blank"
-                className="bg-white row-span-1 rounded-2xl md:rounded-3xl overflow-hidden p-4 text-zinc-800 hover:shadow-xl dark:text-zinc-400 dark:bg-slate-900 hover:bg-slate-700 hover:dark:bg-slate-700 hover:text-white hover:dark:text-white hover:shadow-slate-400/50 hover:dark:shadow-slate-900/50 transition duration-300 ease-out hover:ease-in"
+                className="bg-white row-span-1 rounded-2xl md:rounded-3xl p-4 text-zinc-800 hover:shadow-xl dark:text-zinc-400  dark:bg-slate-900 hover:bg-white hover:dark:bg-slate-950 transition duration-300 ease-out hover:ease-in card"
                 onMouseOver={() => handleMouseOver(index)}
                 onMouseLeave={() => handleMouseLeave(index)}
               >
