@@ -32,11 +32,10 @@ const About = () => {
                 As a Developer/Design Technologist Lead, I excel at bridging the gap between design and engineering, overseeing projects from initial prototypes to production. Leveraging my dual role as an engineer and technical project manager, I efficiently create and manage design system libraries while collaborating seamlessly with cross-functional teams, including UX Designers, Backend Engineers, and Product Owners. I’m passionate about using my skills to help digital projects reach their full potential.
               </p>
               <p className="mt-4 md:mt-6 text-base/relaxed md:text-lg/relaxed">
-                When I'm not coding, I indulge my love for gardening by sharing my passion on <Link href="https://instagram.com/goodpathgarden" target="_blank">Instagram</Link> and <Link href="https://tiktok.com/@goodpathgarden" target="_blank">TikTok</Link> (@goodpathgarden). In addition, my competitive spirit shines as I co-founded and manage a fantasy league app dedicated to the hit reality show Big Brother alongside my husband <Link href="https://imjohnbon.com" target="_blank">John</Link>, aptly named <Link href="https://fantasybb.com" target="_blank">FantasyBB</Link>.
+                When I'm not coding, I indulge my love for gardening by sharing my passion on <Link href="https://instagram.com/goodpathgarden" target="_blank">Instagram</Link> and <Link href="https://tiktok.com/@goodpathgarden" target="_blank">TikTok</Link> (@goodpathgarden). In addition, my competitive spirit shines as I co-founded and manage a fantasy games web app for reality TV shows alongside my husband <Link href="https://imjohnbon.com" target="_blank">John</Link>, aptly named <Link href="https://tellydraft.com" target="_blank">TellyDraft</Link>.
               </p>
             </Fade>
           </div>
-
 
           <div className="auto-rows-[150px] grid grid-cols-2 gap-4 self-end md:gap-8 lg:pl-16 xl:pl-24">
             <div className="bg-neutral-100 row-span-2 rounded-2xl md:rounded-3xl  dark:bg-slate-800 overflow-hidden  shadow-sm bg-gradient-to-tr from-violet-600 via-indigo-500 to-teal-400 bg-300% animate-gradient">

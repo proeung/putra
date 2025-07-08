@@ -87,8 +87,8 @@ stats:
     content: "Merative"
   - title: "Tech"
     content: "Adobe Experience Manager (AEM) / AEM Franklin, CSS, Javascript, Email Marketing (Marketo)"
-nextTitle: "Outrider.org"
-nextUrl: "/work/outrider"
+nextTitle: "Flexgen.com"
+nextUrl: "/work/flexgen"
 ---
 
 ## Summary of Role
