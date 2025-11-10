@@ -100,8 +100,8 @@ stats:
     content: "Alphex Information Solutions & Arrowake"
   - title: "Tech"
     content: "Drupal 11, Javascript, SCSS, Vite + Hot Module Replacement (HMR), Widget/App - (React, TypeScript, ChartJS, Material UI)"
-nextTitle: "IBM.com experience"
-nextUrl: "/work/ibm"
+nextTitle: "Outrider.org"
+nextUrl: "/work/outrider"
 ---
 
 Special thanks to Duran Goodyear ([Alphex Information Solutions](https://alphex.com/)) for having me on this project and Mandy Beerley ([Arrowake](https://arrowake.com/)) for the beautiful design.
