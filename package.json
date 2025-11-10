@@ -1,4 +1,7 @@
 {
+  "description": "iamputra.com website build with Next.js + TailwindCSS",
+  "version": "2.0.0",
+  "author": "Putra Bonaccorsi <putra@offred.co>",
   "private": true,
   "scripts": {
     "dev": "next",
