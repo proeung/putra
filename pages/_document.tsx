@@ -4,7 +4,25 @@ import Script from "next/script"
 export default function Document() {
   return (
     <Html lang="en" className="scroll-smooth scroll-pt-[3.875rem] md:scroll-pt-20 dark">
-      <Head />
+      <Head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                let darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+                let isSystemDarkMode = darkModeMediaQuery.matches;
+                let isDarkMode = window.localStorage.isDarkMode === 'true' || (!('isDarkMode' in window.localStorage) && true);
+
+                if (isDarkMode) {
+                  document.documentElement.classList.add('dark');
+                } else {
+                  document.documentElement.classList.remove('dark');
+                }
+              })()
+            `,
+          }}
+        />
+      </Head>
       <body className="antialiased text-zinc-700 dark:text-zinc-300 bg-white dark:bg-slate-900">
         <Main />
         <NextScript />

@@ -155,7 +155,7 @@ function ModeToggle() {
     if (isDarkMode === isSystemDarkMode) {
       delete window.localStorage.isDarkMode;
     } else {
-      window.localStorage.isDarkMode = isDarkMode;
+      window.localStorage.isDarkMode = String(isDarkMode);
     }
   }
 
@@ -163,7 +163,7 @@ function ModeToggle() {
     <button
       type="button"
       aria-label="Toggle light mode"
-      className="group rounded-full px-2 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition md:px-3 md:py-3 dark:ring-white/20 dark:hover:ring-white/40"
+      className="cursor-pointer group rounded-full px-2 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition md:px-3 md:py-3 dark:ring-white/20 dark:hover:ring-white/40"
       onClick={toggleMode}
     >
       <SunIcon className="h-5 w-5 fill-zinc-100 stroke-teal-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 md:h-6 md:w-6 dark:hidden [@media(prefers-color-scheme:dark)]:fill-teal-50 [@media(prefers-color-scheme:dark)]:stroke-teal-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600" />
