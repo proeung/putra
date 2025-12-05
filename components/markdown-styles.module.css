@@ -41,7 +41,7 @@
 
 .markdown ul,
 .markdown ol {
-  @apply marker:text-teal-500 list-disc list-outside ps-14 pe-14 leading-relaxed mt-6 mb-0 lg:mt-10;
+  @apply marker:text-teal-500 list-disc list-outside ps-14 pe-14 leading-relaxed mt-6 mb-0 space-y-2 lg:mt-10 lg:space-y-6;
 }
 
 .markdown pre {
