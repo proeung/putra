@@ -15,7 +15,7 @@ const ArticleHeader = ({ title, coverImage, date }: Props) => {
       <div className="max-w-3xl mx-auto mt-16 mb-10 md:mt-28 lg:mt-40 md:mb-16">
         <Fade cascade delay={1} damping={1e-1}>
           <PageTitle>{title}</PageTitle>
-          <div className="font-bold mt-4 text-sm text-zinc-600 md:text-base dark:text-zinc-400">
+          <div className="font-sans font-bold mt-4 text-sm text-zinc-600 md:text-base dark:text-zinc-400">
             <DateFormatter dateString={date} />
           </div>
         </Fade>

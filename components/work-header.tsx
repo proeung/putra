@@ -52,7 +52,7 @@ const WorkHeader = ({ title, coverImage, coverVideo, poster, excerpt }: Props) =
 
           <div className="max-w-3xl mx-auto mt-10 md:mt-16 lg:mt-40">
             <p className="text-base/relaxed md:text-xl/relaxed">
-              <span className="font-bold">{title}</span> - <span dangerouslySetInnerHTML={formattedExcerpt} />
+              <span className="font-sans font-bold">{title}</span> - <span dangerouslySetInnerHTML={formattedExcerpt} />
             </p>
           </div>
         </Container>

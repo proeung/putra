@@ -78,7 +78,7 @@ function MobileNavigation(props) {
   return (
     <Popover {...props}>
       <Fade delay={1} triggerOnce>
-        <Popover.Button className="group h-9 flex items-center rounded-full px-4 py-2 text-sm font-bold focus:outline-none leading-none text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:text-zinc-200 dark:ring-white/20 dark:hover:ring-white/40">
+        <Popover.Button className="group h-9 flex items-center rounded-full px-4 py-2 text-sm font-sans font-bold focus:outline-none leading-none text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:text-zinc-200 dark:ring-white/20 dark:hover:ring-white/40">
           menu
           <ChevronDownIcon className="ml-2 h-auto w-2 stroke-zinc-400 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400" />
         </Popover.Button>
@@ -117,7 +117,7 @@ function MobileNavigation(props) {
               </h2>
             </div>
             <nav className="mt-6">
-              <ul className="-my-2 divide-y divide-zinc-100 font-bold text-base text-zinc-800 dark:divide-slate-800 dark:text-zinc-300">
+              <ul className="-my-2 divide-y divide-zinc-100 font-sans font-bold text-base text-zinc-800 dark:divide-slate-800 dark:text-zinc-300">
                 {links.map((link) => (
                   <Popover.Button
                     as={Link}
@@ -198,7 +198,7 @@ function DesktopNavigation(props) {
   return (
     <nav {...props}>
       <Fade cascade delay={1e1} damping={1e-1} triggerOnce>
-        <ul className="flex items-center font-bold gap-x-4 text-base md:gap-x-9 md:text-lg dark:text-zinc-300">
+        <ul className="flex items-center font-sans font-bold gap-x-4 text-base md:gap-x-9 md:text-lg dark:text-zinc-300">
           {links.map((link) => (
             <NavItem
               href={link.href}
@@ -259,7 +259,7 @@ const Header = () => {
     >
       <Container>
         <div className="flex items-center justify-between">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight md:tracking-tighter leading-tight">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-sans font-bold tracking-tight md:tracking-tighter leading-tight">
             <Fade delay={.5} triggerOnce>
               <Link
                 href="/"

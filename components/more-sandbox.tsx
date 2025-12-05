@@ -115,7 +115,7 @@ const MoreSandBox = () => {
                 <div className="aspect-video border lg:border-slate-900/10 dark:border-transparent relative overflow-hidden rounded-xl">
                   <div className="absolute inset-0">
                     <video
-                      ref={(el) => (videoRefs.current[index] = el)}
+                      ref={(el) => { videoRefs.current[index] = el; }}
                       loop
                       muted
                       playsInline
@@ -127,7 +127,7 @@ const MoreSandBox = () => {
                     </video>
                   </div>
                 </div>
-                <h3 className="font-bold text-base md:text-xl tracking-tight text-center mt-8 mb-4">{item.title}</h3>
+                <h3 className="font-sans font-bold text-base md:text-xl tracking-tight text-center mt-8 mb-4">{item.title}</h3>
               </a>
             ))}
           </div>
