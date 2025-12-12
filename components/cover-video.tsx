@@ -49,7 +49,6 @@ const CoverVideo = ({ label, src, poster, pauseOnHover = false }: Props) => {
       const activeElement = document.activeElement;
       const container = containerRef.current;
 
-      // Check if focus is on the container, inside it, or on a parent element containing it
       const isFocusedWithin =
         container && activeElement && (
           container.contains(activeElement) ||
@@ -83,9 +82,10 @@ const CoverVideo = ({ label, src, poster, pauseOnHover = false }: Props) => {
     <>
       <div
         ref={containerRef}
-        className="relative aspect-video overflow-hidden group"
+        className={`relative aspect-video overflow-hidden group ${!pauseOnHover ? 'cursor-pointer' : ''}`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+        onClick={!pauseOnHover ? togglePlayPause : undefined}
       >
         <div className="absolute inset-0 top-0">
           <LazyVideo
@@ -103,7 +103,7 @@ const CoverVideo = ({ label, src, poster, pauseOnHover = false }: Props) => {
             onClick={togglePlayPause}
             onFocus={() => setIsFocused(true)}
             onBlur={() => setIsFocused(false)}
-            className={`absolute bottom-5 right-5 lg:bottom-7 lg:right-7 w-8 h-8 md:w-10 md:h-10 rounded-full bg-white text-slate-950 flex items-center justify-center transition-all duration-200 cursor-pointer z-10 shadow-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 ${showButton ? 'opacity-100' : 'opacity-0'
+            className={`absolute bottom-5 right-5 lg:bottom-7 lg:right-7 w-8 h-8 md:w-10 md:h-10 rounded-full bg-white text-slate-950 flex items-center justify-center transition-all duration-200 cursor-pointer z-10 shadow-2xs focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 ${showButton ? 'opacity-100' : 'opacity-0'
               }`}
           >
             {isPlaying ? (
