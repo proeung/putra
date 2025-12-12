@@ -4,10 +4,11 @@ excerpt: "At Merative, I served as the Design Technologist Lead, overseeing the 
 coverImage: ""
 coverVideo: "/assets/work/merative/video-cover.mp4"
 coverVideoPoster: "/assets/work/merative/video-cover-poster.webp"
-date: "2017-03-12"
-order: 4
+date: "2023-10-06"
 featured: 1
 recent: 1
+featuredOrder: 4
+recentOrder: 1
 ogImage:
   url: "/assets/work/merative/og.webp"
 thumbnail:

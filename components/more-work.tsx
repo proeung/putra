@@ -18,10 +18,14 @@ const MoreWork: React.FC<Props> = ({ works }) => {
     let filtered;
     switch (filter) {
       case 'featured':
-        filtered = works.filter((work) => work.featured === 1);
+        filtered = works
+          .filter((work) => work.featured === 1)
+          .sort((a, b) => a.featuredOrder - b.featuredOrder);
         break;
       case 'recent':
-        filtered = works.filter((work) => work.recent === 1);
+        filtered = works
+          .filter((work) => work.recent === 1)
+          .sort((a, b) => a.recentOrder - b.recentOrder);
         break;
       default:
         filtered = works;

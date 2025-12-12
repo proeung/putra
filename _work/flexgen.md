@@ -4,10 +4,11 @@ excerpt: "In under six weeks, I spearheaded the development and relaunch of Flex
 coverImage: ""
 coverVideo: "/assets/work/flexgen/video-cover.mp4"
 coverVideoPoster: "/assets/work/flexgen/video-cover-poster.webp"
-date: "2024-07-12"
-order: 5
+date: "2024-09-12"
 featured: 1
 recent: 1
+featuredOrder: 5
+recentOrder: 5
 ogImage:
   url: "/assets/work/flexgen/video-cover-poster.webp"
 thumbnail:

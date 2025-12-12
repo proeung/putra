@@ -5,9 +5,10 @@ coverImage: "/assets/work/ibm/image-cover.webp"
 coverVideo: ""
 coverVideoPoster: ""
 date: "2023-10-17"
-order: 1
 featured: 1
 recent: 0
+featuredOrder: 1
+recentOrder: 1
 ogImage:
   url: "/assets/work/ibm/og.webp"
 thumbnail:

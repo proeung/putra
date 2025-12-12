@@ -4,10 +4,11 @@ excerpt: "I was contracted by Bluecadet as the Lead Engineer and Site Builder fo
 coverImage: ""
 coverVideo: "/assets/work/puam/video-cover.mp4"
 coverVideoPoster: "/assets/work/puam/video-cover-poster.webp"
-date: "2025-08-17"
-order: 2
+date: "2025-08-02"
 featured: 1
 recent: 1
+featuredOrder: 2
+recentOrder: 2
 ogImage:
   url: "/assets/work/puam/og.webp"
 thumbnail:

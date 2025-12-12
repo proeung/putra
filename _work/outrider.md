@@ -5,9 +5,10 @@ coverImage: ""
 coverVideo: "/assets/work/outrider/video-cover.mp4"
 coverVideoPoster: "/assets/work/outrider/video-cover-poster.webp"
 date: "2019-03-12"
-order: 6
 featured: 1
 recent: 0
+featuredOrder: 6
+recentOrder: 6
 ogImage:
   url: "/assets/work/outrider/og.webp"
 thumbnail:

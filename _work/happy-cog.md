@@ -5,9 +5,10 @@ coverImage: ""
 coverVideo: "/assets/work/happy-cog/video-cover.mp4"
 coverVideoPoster: "/assets/work/happy-cog/video-cover-poster.webp"
 date: "2017-01-12"
-order: 9
 featured: 1
 recent: 0
+featuredOrder: 9
+recentOrder: 9
 ogImage:
   url: "/assets/work/happy-cog/video-cover-poster.webp"
 thumbnail:

@@ -36,9 +36,10 @@ type WorkType = {
     url: string
     poster: string
   }
-  order: number
   featured: number
   recent: number
+  featuredOrder: number
+  recentOrder: number
   content: string
   stats: Stat[]
   sectionMobile: Mobile[]
