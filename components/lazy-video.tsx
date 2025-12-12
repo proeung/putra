@@ -1,7 +1,15 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, RefObject } from 'react';
 
-const LazyVideo = ({ label, src, poster }) => {
-  const videoRef = useRef(null);
+type Props = {
+  label: string;
+  src: string;
+  poster: string;
+  videoRef?: RefObject<HTMLVideoElement>;
+};
+
+const LazyVideo = ({ label, src, poster, videoRef: externalRef }: Props) => {
+  const internalRef = useRef<HTMLVideoElement>(null);
+  const videoRef = externalRef || internalRef;
 
   useEffect(() => {
     const videoElement = videoRef.current;
