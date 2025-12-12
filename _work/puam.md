@@ -118,7 +118,9 @@ sectionDesktopBottom:
   - content: "
     <h2>Saving Objects</h2>
 
-    <p>The centerpiece of the user experience is a sophisticated collection search tool that makes exploring over <strong>117,000 artworks</strong> both intuitive and delightful. Designed and built in close collaboration with the Museum's development team, the search interface offers helpful suggestions, intelligent filters for year, culture, and place made, plus a playful &ldquo;surprise me&rdquo; feature that encourages serendipitous discovery. For scholars and researchers, an advanced search mode enables granular queries across specific fields with Boolean logic support for precise research needs.</p>
+    <p>Another standout feature of the site is the &ldquo;Saving Objects&rdquo; feature, which leverages Drupal's Flag module to enable museum visitors to curate personal collections of artworks when browsing the site. When users authenticate through Princeton ID CAS Login, they gain access to &ldquo;My Collection&rdquo; — a Views page that displays all their saved items in an organized list. For non-authenticated visitors, attempting to save an object triggers a dialog that encourages them to sign in, creating a clear pathway to engagement while respecting the feature's authenticated nature.</p>
+
+    <p>When logged-in users flag an object, a heart icon in the site header provides immediate visual feedback through a carefully timed animation sequence. This real-time response was achieved through a MutationObserver-based behavior that monitors DOM changes and manages animation states, ensuring consistent feedback across AJAX interactions without requiring page reloads. In addition, we exposed the flagged data via custom REST API endpoints, making user collections accessible to the Collection Search React app.</p>
     "
     style: "full"
     type: "text"
