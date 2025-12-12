@@ -5,6 +5,7 @@ coverImage: ""
 coverVideo: "/assets/work/merative/video-cover.mp4"
 coverVideoPoster: "/assets/work/merative/video-cover-poster.webp"
 date: "2017-03-12"
+order: 4
 featured: 1
 recent: 1
 ogImage:

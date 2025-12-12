@@ -5,7 +5,8 @@ coverImage: ""
 coverVideo: "/assets/work/flexgen/video-cover.mp4"
 coverVideoPoster: "/assets/work/flexgen/video-cover-poster.webp"
 date: "2024-07-12"
-featured: 0
+order: 5
+featured: 1
 recent: 1
 ogImage:
   url: "/assets/work/flexgen/video-cover-poster.webp"

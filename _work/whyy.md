@@ -5,6 +5,7 @@ coverImage: ""
 coverVideo: "/assets/work/whyy/video-cover.mp4"
 coverVideoPoster: "/assets/work/whyy/video-cover-poster.webp"
 date: "2017-02-12"
+order: 8
 featured: 1
 recent: 0
 ogImage:

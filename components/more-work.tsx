@@ -12,20 +12,37 @@ type Props = {
 
 const MoreWork: React.FC<Props> = ({ works }) => {
   const [filter, setFilter] = useState<string>('featured');
+  const [showAll, setShowAll] = useState<boolean>(false);
 
   const getFilteredWorks = () => {
+    let filtered;
     switch (filter) {
       case 'featured':
-        return works.filter((work) => work.featured === 1);
+        filtered = works.filter((work) => work.featured === 1);
+        break;
       case 'recent':
-        return works.filter((work) => work.recent === 1);
+        filtered = works.filter((work) => work.recent === 1);
+        break;
       default:
-        return works;
+        filtered = works;
+    }
+    return showAll ? filtered : filtered.slice(0, 6);
+  };
+
+  const getTotalFilteredCount = () => {
+    switch (filter) {
+      case 'featured':
+        return works.filter((work) => work.featured === 1).length;
+      case 'recent':
+        return works.filter((work) => work.recent === 1).length;
+      default:
+        return works.length;
     }
   };
 
   const handleFilterChange = (newFilter: string) => {
     setFilter(newFilter);
+    setShowAll(false);
   };
 
   return (
@@ -109,6 +126,21 @@ const MoreWork: React.FC<Props> = ({ works }) => {
             ))}
           </div>
         </Fade>
+
+        {!showAll && getTotalFilteredCount() > 6 && (
+          <Fade delay={.5} triggerOnce>
+            <div className="flex justify-center mt-8 md:mt-12">
+              <button
+                type="button"
+                aria-label="See More Work"
+                className="button"
+                onClick={() => setShowAll(true)}
+              >
+                See More Work
+              </button>
+            </div>
+          </Fade>
+        )}
 
         <div aria-hidden="true" className="pointer-events-none blob absolute opacity-30 -left-40 -bottom-1/4 z-[-1] w-[40rem] h-[40rem]"></div>
       </Container>

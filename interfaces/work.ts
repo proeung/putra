@@ -36,6 +36,7 @@ type WorkType = {
     url: string
     poster: string
   }
+  order: number
   featured: number
   recent: number
   content: string

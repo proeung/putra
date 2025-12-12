@@ -4,15 +4,16 @@ excerpt: "I was contracted by Bluecadet as the Lead Engineer and Site Builder fo
 coverImage: ""
 coverVideo: "/assets/work/puam/video-cover.mp4"
 coverVideoPoster: "/assets/work/puam/video-cover-poster.webp"
-date: "2017-03-12"
-featured: 0
-recent: 0
+date: "2025-08-17"
+order: 2
+featured: 1
+recent: 1
 ogImage:
   url: "/assets/work/puam/og.webp"
 thumbnail:
-  type: "browser"
-  url: "/assets/work/puam/thumb.webp"
-  poster: ""
+  type: "video"
+  url: "/assets/work/puam/video-cover.mp4"
+  poster: "/assets/work/puam/video-cover-poster.webp"
 sectionMobile:
   - url: "/assets/work/puam/mobile-01.webp"
     alt: "Screenshot of the mobile view of artmuseum.princeton.edu's Exhibitions & Events Landing page"

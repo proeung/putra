@@ -5,14 +5,15 @@ coverImage: ""
 coverVideo: "/assets/work/clark-foundation/video-cover.mp4"
 coverVideoPoster: "/assets/work/clark-foundation/video-cover-poster.webp"
 date: "2017-03-12"
-featured: 0
-recent: 0
+order: 3
+featured: 1
+recent: 1
 ogImage:
   url: "/assets/work/clark-foundation/og.webp"
 thumbnail:
-  type: "browser"
-  url: "/assets/work/clark-foundation/thumb.webp"
-  poster: ""
+  type: "video"
+  url: "/assets/work/clark-foundation/video-cover.mp4"
+  poster: "/assets/work/clark-foundation/video-cover-poster.webp"
 sectionDesktop:
   - url: "/assets/work/clark-foundation/video-home-01.mp4"
     alt: "Video screenshot of a product microsite landing page"
