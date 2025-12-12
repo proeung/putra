@@ -2,8 +2,8 @@
 title: "The A. James & Alice B. Clark Foundation Website Redesign"
 excerpt: "I was brought on by Bluecadet as Lead Engineer for the A. James & Alice B. Clark Foundation website redesign, developed in Drupal 11+. In close collaboration with Bluecadet's team, we launched a digital legacy that documents the foundation's remarkable 10-year journey of spending down $1.4 billion from 2016–2025 to support engineering education, reinvest in Washington DC, and serve our nation's veterans. With the foundation sunsetting its operations, the site is designed to remain live for 10+ years as a permanent archive showcasing their philanthropic impact. <a href='https://clarkfoundationdc.org' target='_blank'>visit site</a>"
 coverImage: ""
-coverVideo: "/assets/work/clark-foundation/video-cover.mp4"
-coverVideoPoster: "/assets/work/clark-foundation/video-cover-poster.webp"
+coverVideo: "/assets/work/clark-foundation/video-cover-02.mp4"
+coverVideoPoster: "/assets/work/clark-foundation/video-cover-02-poster.webp"
 date: "2025-05-12"
 featured: 1
 recent: 1
@@ -94,8 +94,8 @@ stats:
     content: "Bluecadet"
   - title: "Tech"
     content: "Drupal 11+, Single-Directory Components (SDC), CSS, Javascript, GSAP, PHP, Twig, Accessibility"
-nextTitle: "Flexgen.com"
-nextUrl: "/work/flexgen"
+nextTitle: "Merative.com & Demand Gen"
+nextUrl: "/work/merative"
 ---
 
 ## Summary of Role

@@ -146,7 +146,7 @@ const MoreWork: React.FC<Props> = ({ works }) => {
           </Fade>
         )}
 
-        <div aria-hidden="true" className="pointer-events-none blob absolute opacity-30 -left-40 -bottom-1/4 z-[-1] w-[40rem] h-[40rem]"></div>
+        <div aria-hidden="true" className="pointer-events-none blob absolute opacity-20 -left-40 -bottom-1/4 z-[-1] w-[40rem] h-[40rem] lg:w-[60rem] lg:h-[60rem]"></div>
       </Container>
     </section>
   );
