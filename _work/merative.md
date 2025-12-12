@@ -73,10 +73,10 @@ sectionMobileBottom:
     alt: "Screenshot of the mobile view of the Quick Links template that's used for Merative's Events"
     caption: "Event Quick Links"
   - url: "/assets/work/merative/mobile-05.webp"
-    alt: "creenshot of the mobile view of the Support Hub Landing Page"
+    alt: "Screenshot of the mobile view of the Support Hub Landing Page"
     caption: "Support Hub"
   - url: "/assets/work/merative/mobile-06.webp"
-    alt: "creenshot of the mobile view of a Product Campaign's overview section"
+    alt: "Screenshot of the mobile view of a Product Campaign's overview section"
     caption: "Product Campaign"
 stats:
   - title: "Date"
