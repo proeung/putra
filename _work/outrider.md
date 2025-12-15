@@ -15,7 +15,7 @@ thumbnail:
   type: "video"
   url: "/assets/work/outrider/video-cover.mp4"
   poster: "/assets/work/outrider/video-cover-poster.webp"
-  workType: "Headless CMS (Front-End: React, Gatsby, CSS Modules / Back-End: Drupal, REST API/GraphQL), Deployment - Netlify"
+  workType: "Headless CMS (Front-End: React, Gatsby, CSS Modules / Back-End: Drupal, REST API/GraphQL)"
 sectionMobile:
   - url: "/assets/work/outrider/mobile-01.webp"
     alt: "Screenshot of the mobile view of the Outrider.org's Challenge Page"

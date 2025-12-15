@@ -15,7 +15,7 @@ thumbnail:
   type: "video"
   url: "/assets/work/clark-foundation/video-cover.mp4"
   poster: "/assets/work/clark-foundation/video-cover-poster.webp"
-  workType: "Drupal 11+, Single-Directory Components (SDC), CSS, Javascript, GSAP, PHP, Twig, Accessibility"
+  workType: "Drupal 11+, Single-Directory Components (SDC), CSS, Javascript, GSAP, PHP, Twig"
 sectionDesktop:
   - url: "/assets/work/clark-foundation/video-home-01.mp4"
     alt: "Video screenshot of a product microsite landing page"
