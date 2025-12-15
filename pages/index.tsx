@@ -26,7 +26,7 @@ export default function Index({ allArticles, allWork }: Props) {
           <title>{`${SITE_NAME} | Developer / Design Technologist / TPM`}</title>
           <meta
             name="description"
-            content="Putra a Creative developer/designer with expertise in Technical Project Management, based South Jersey/Philadelphia area."
+            content="Putra Bonaccorsi is a Developer and Design Technologist with expertise in Technical Project Management, based in the South Jersey/Philadelphia, PA area."
           />
           <meta
             property="og:image"

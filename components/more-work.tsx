@@ -150,7 +150,7 @@ const MoreWork: React.FC<Props> = ({ works }) => {
 
         {!showAll && getTotalFilteredCount() > 6 && (
           <Fade delay={.5} triggerOnce>
-            <div className="flex justify-center mt-8 md:mt-12">
+            <div className="flex justify-center mt-16 md:mt-20">
               <button
                 type="button"
                 aria-label="See More Work"
