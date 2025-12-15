@@ -13,7 +13,6 @@ const CoverVideo = ({ label, src, poster, pauseOnHover = false }: Props) => {
   const [isFocused, setIsFocused] = useState(false);
   const [isPlaying, setIsPlaying] = useState(true);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
 
   const togglePlayPause = () => {
     if (videoRef.current) {
@@ -45,43 +44,11 @@ const CoverVideo = ({ label, src, poster, pauseOnHover = false }: Props) => {
   useEffect(() => {
     if (!pauseOnHover) return;
 
-    const handleFocusChange = () => {
-      const activeElement = document.activeElement;
-      const container = containerRef.current;
-
-      const isFocusedWithin =
-        container && activeElement && (
-          container.contains(activeElement) ||
-          activeElement.contains(container) ||
-          container === activeElement
-        );
-
-      if (isFocusedWithin) {
-        setIsFocused(true);
-        if (videoRef.current) {
-          videoRef.current.pause();
-        }
-      } else {
-        setIsFocused(false);
-        if (videoRef.current && !isHovered) {
-          videoRef.current.play();
-        }
-      }
-    };
-
-    document.addEventListener('focusin', handleFocusChange);
-    document.addEventListener('focusout', handleFocusChange);
-
-    return () => {
-      document.removeEventListener('focusin', handleFocusChange);
-      document.removeEventListener('focusout', handleFocusChange);
-    };
   }, [pauseOnHover, isHovered]);
 
   return (
     <>
       <div
-        ref={containerRef}
         className={`relative aspect-video overflow-hidden group ${!pauseOnHover ? 'cursor-pointer' : ''}`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
