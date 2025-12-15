@@ -255,7 +255,7 @@ const Header = () => {
       className={`${isSticky
         ? 'py-3'
         : 'py-6 md:py-10'
-        } sticky top-0 w-full backdrop-blur flex-none transition-all duration-500 ease-out z-50 border-b border-slate-900/10 dark:border-slate-50/[0.08] bg-white dark:bg-slate-900/75`}
+        } sticky top-0 w-full backdrop-blur flex-none transition-all duration-500 ease-out z-50 border-b border-slate-900/10 dark:border-slate-50/8 bg-white dark:bg-slate-900/75`}
     >
       <Container>
         <div className="flex items-center justify-between">

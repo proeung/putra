@@ -87,7 +87,7 @@ const MoreSandBox = () => {
   };
 
   return (
-    <section id="sandbox" className="border-t border-slate-900/10 dark:border-slate-50/[0.1] bg-slate-100 py-16 dark:bg-slate-800 md:py-40 relative w-full overflow-y-hidden">
+    <section id="sandbox" className="border-t border-slate-900/10 dark:border-slate-50/10 bg-slate-100 py-16 dark:bg-slate-800 md:py-40 relative w-full overflow-y-hidden">
       <Container>
         <div aria-hidden="true" className="pointer-events-none block blob absolute opacity-20 -bottom-1/4 -z-1 w-[20rem] h-[20rem] lg:w-[40rem] lg:h-[40rem]"></div>
         <div className="max-w-2xl">

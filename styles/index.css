@@ -29,7 +29,7 @@
 
   p a,
   p a:visited {
-    @apply font-bold font-sans font-bold text-teal-600 dark:text-teal-500 hover:underline;
+    @apply font-sans font-bold text-teal-600 dark:text-teal-500 hover:underline;
   }
 }
 
