@@ -52,7 +52,7 @@ const MoreWork: React.FC<Props> = ({ works }) => {
   return (
     <section id="work" className="pt-12 pb-16 md:pb-40 md:pt-12">
       <Container>
-        <div aria-hidden="true" className="pointer-events-none block blob absolute opacity-30 -right-40 -top-56 z-[-1] w-[20rem] h-[20rem] lg:w-[40rem] lg:h-[40rem]"></div>
+        <div aria-hidden="true" className="pointer-events-none block blob absolute opacity-30 -right-40 -top-70 z-[-1] w-[20rem] h-[20rem] lg:w-[40rem] lg:h-[40rem]"></div>
 
         <Fade delay={.5} triggerOnce>
           <div className="pb-12 flex flex-col items-end justify-end lg:flex-row">

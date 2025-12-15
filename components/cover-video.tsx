@@ -70,7 +70,7 @@ const CoverVideo = ({ label, src, poster, pauseOnHover = false }: Props) => {
             onClick={togglePlayPause}
             onFocus={() => setIsFocused(true)}
             onBlur={() => setIsFocused(false)}
-            className={`absolute bottom-5 right-5 lg:bottom-7 lg:right-7 w-8 h-8 md:w-10 md:h-10 rounded-full bg-white text-slate-950 flex items-center justify-center transition-all duration-200 cursor-pointer z-10 shadow-2xs focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 ${showButton ? 'opacity-100' : 'opacity-0'
+            className={`absolute bottom-5 right-5 lg:bottom-7 lg:right-7 w-8 h-8 md:w-10 md:h-10 rounded-full bg-white text-slate-950 flex items-center justify-center transition-all duration-200 cursor-pointer z-10 shadow-xl/20 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 ${showButton ? 'opacity-100' : 'opacity-0'
               }`}
           >
             {isPlaying ? (
