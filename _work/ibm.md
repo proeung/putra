@@ -15,6 +15,7 @@ thumbnail:
   type: "image"
   url: "/assets/work/ibm/thumb.webp"
   poster: ""
+  workType: "Web Components, Lit, TypeScript, Storybooks, Design Systems"
 sectionDesktop:
   - url: "/assets/work/ibm/desktop-half-01.webp"
     alt: "Screenshot of the IBM.com/watson homepage using v19a Design System"

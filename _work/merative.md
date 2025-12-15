@@ -15,6 +15,7 @@ thumbnail:
   type: "browser"
   url: "/assets/work/merative/thumb.webp"
   poster: ""
+  workType: "Adobe Experience Manager (AEM) / AEM Franklin, CSS, Javascript, Email Marketing (Marketo)"
 sectionMobile:
   - url: "/assets/work/merative/mobile-01.webp"
     alt: "Screenshot of the mobile view of Merative.com's Product Landing page"

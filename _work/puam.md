@@ -15,6 +15,7 @@ thumbnail:
   type: "video"
   url: "/assets/work/puam/video-cover.mp4"
   poster: "/assets/work/puam/video-cover-poster.webp"
+  workType: "Drupal 11+, Single-Directory Components (SDC), CSS, Javascript, React, PHP, Twig, Accessibility"
 sectionMobile:
   - url: "/assets/work/puam/mobile-01.webp"
     alt: "Screenshot of the mobile view of artmuseum.princeton.edu's Exhibitions & Events Landing page"

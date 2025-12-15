@@ -15,6 +15,7 @@ thumbnail:
   type: "browser"
   url: "/assets/work/flexgen/thumb.webp"
   poster: ""
+  workType: "Drupal, JS, SCSS, Vite, Widget/App - (React, TypeScript, ChartJS, Material UI)"
 sectionMobile:
   - url: "/assets/work/flexgen/mobile-01.webp"
     alt: "Screenshot of the mobile view of the Tabs Section component used within FlexGen's services page."

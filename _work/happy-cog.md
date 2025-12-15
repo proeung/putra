@@ -15,6 +15,7 @@ thumbnail:
   type: "video"
   url: "/assets/work/happy-cog/video-cover.mp4"
   poster: "/assets/work/happy-cog/video-cover-poster.webp"
+  workType: "WordPress, PHP, Javascript, GSAP"
 sectionDesktop:
   - url: "/assets/work/happy-cog/desktop-half-01.webp"
     alt: "Screenshot of the desktop view of the Happy Cog's homepage with a featured project"

@@ -83,11 +83,11 @@
 @layer components {
 
   .button {
-    @apply cursor-pointer text-gray-900 bg-transparent border border-gray-300 hover:bg-gray-100 hover:shadow-xl font-sans font-bold rounded-3xl text-sm px-4 md:px-7 py-2 md:py-2.5 relative dark:text-zinc-300 dark:border-slate-50/[0.3] dark:hover:bg-slate-900 dark:hover:border-slate-900 hover:dark:shadow-slate-900/50 transition duration-200 ease-in;
+    @apply cursor-pointer text-gray-900 bg-transparent border border-gray-300 hover:bg-gray-100 hover:shadow-xl font-sans font-bold rounded-3xl text-sm px-5 md:px-7 py-2 md:py-2.5 relative dark:text-zinc-300 dark:border-slate-50/30 dark:hover:bg-slate-900 dark:hover:border-slate-900 hover:dark:shadow-slate-900/50 transition duration-200 ease-in;
   }
 
   .button.active {
-    @apply border-white bg-white text-gray-900 shadow-md dark:text-white dark:bg-slate-900 dark:border-slate-900;
+    @apply border-white bg-white text-gray-900 shadow-md dark:text-white dark:bg-slate-950 dark:border-slate-950;
   }
 
   .card {

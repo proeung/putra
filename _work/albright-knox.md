@@ -15,6 +15,7 @@ thumbnail:
   type: "video"
   url: "/assets/work/albright-knox/video-cover.mp4"
   poster: "/assets/work/albright-knox/video-cover-poster.webp"
+  workType: "Drupal, PHP, Twig, Javascript, CSS Animations, MIMSY Sync, Pantheon"
 sectionMobile:
   - url: "/assets/work/albright-knox/mobile-01.webp"
     alt: "Screenshot of the mobile view of the Albright-Knox's Collection Landing page"

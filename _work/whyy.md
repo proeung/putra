@@ -15,6 +15,7 @@ thumbnail:
   type: "image"
   url: "/assets/work/whyy/thumb.webp"
   poster: ""
+  workType: "WordPress, PHP, Javascript, Ajax, CSS (Sass), Pantheon"
 sectionMobile:
   - url: "/assets/work/whyy/mobile-01.webp"
     alt: "Screenshot of the mobile view of whyy.org's News page with audio"
