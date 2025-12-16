@@ -13,7 +13,7 @@ const NextItem = ({ title, type, url }: Props) => {
     <section className="border-t border-slate-900/10 dark:border-slate-50/10 w-full">
       <Link
         href={url}
-        className="bg-gray-100 overflow-hidden py-16 min-h-80 flex flex-col items-center dark:bg-slate-950/20 md:py-40 relative w-full hover:bg-gray-900 hover:dark:bg-slate-950 hover:text-white hover:dark:text-white transition duration-300 ease-out hover:ease-in"
+        className="bg-gray-100 overflow-hidden py-16 min-h-80 flex flex-col items-center justify-center dark:bg-slate-950/20 md:py-40 relative w-full hover:bg-gray-900 hover:dark:bg-slate-950 hover:text-white hover:dark:text-white transition duration-300 ease-out hover:ease-in"
       >
         <Container>
           <div aria-hidden="true" className="pointer-events-none block blob absolute opacity-20 -left-40 bottom-0 w-[20rem] h-[20rem] lg:w-[40rem] lg:h-[40rem]"></div>

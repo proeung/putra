@@ -3,6 +3,7 @@ import PageTitle from './page-title';
 import CoverVideo from './cover-video';
 import Container from './container';
 import CoverImage from './cover-image';
+import markdownStyles from './markdown-styles.module.css';
 
 type Props = {
   title: string
@@ -50,7 +51,7 @@ const WorkHeader = ({ title, coverImage, coverVideo, poster, excerpt }: Props) =
             ) : null}
           </div>
 
-          <div className="max-w-3xl mx-auto mt-10 md:mt-16 lg:mt-40">
+          <div className={`max-w-3xl mx-auto mt-10 md:mt-16 lg:mt-40 ${markdownStyles['markdown']}`}>
             <p className="text-base/relaxed md:text-xl/relaxed">
               <span className="font-sans font-bold">{title}</span> - <span dangerouslySetInnerHTML={formattedExcerpt} />
             </p>
