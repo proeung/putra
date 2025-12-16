@@ -10,6 +10,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@carbon/icons-react": "^11.71.0",
     "@emotion/react": "^11.14.0",
     "@headlessui/react": "^2.2.9",
     "@vercel/analytics": "^1.6.1",

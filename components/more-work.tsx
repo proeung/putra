@@ -5,6 +5,7 @@ import { Fade } from 'react-awesome-reveal';
 import Link from 'next/link';
 import Image from 'next/image';
 import type WorkType from '../interfaces/work';
+import { OverflowMenuHorizontal } from '@carbon/icons-react';
 
 type Props = {
   works: WorkType[];
@@ -129,7 +130,7 @@ const MoreWork: React.FC<Props> = ({ works }) => {
                     }
 
                     {/* Dark overlay with work info */}
-                    <div className="absolute backdrop-blur-md inset-0 bg-slate-950/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex flex-col justify-end px-8 py-10 rounded-2xl md:rounded-3xl lg:px-10 lg:py-14 pointer-events-none">
+                    <div className="absolute backdrop-blur-lg inset-0 bg-black/75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex flex-col justify-end px-8 py-10 rounded-2xl md:rounded-3xl lg:px-10 lg:py-14 pointer-events-none">
                       {work.title && (
                         <h3 className="font-sans font-bold text-white text-2xl mb-2 lg:text-4xl lg:mb-4 lg:w-2/3">
                           {work.title}
@@ -158,6 +159,7 @@ const MoreWork: React.FC<Props> = ({ works }) => {
                 onClick={() => setShowAll(true)}
               >
                 See More Work
+                <OverflowMenuHorizontal size={16} />
               </button>
             </div>
           </Fade>

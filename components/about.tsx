@@ -2,10 +2,11 @@ import Container from './container';
 import { Fade } from 'react-awesome-reveal';
 import Image from 'next/image';
 import Link from 'next/link';
+import { CalendarAdd } from '@carbon/icons-react';
 
 const About = () => {
   return (
-    <section id="about" className="border-t lg:border-slate-900/10 py-16 dark:border-slate-50/[0.1] md:py-40 w-full">
+    <section id="about" className="border-t lg:border-slate-900/10 py-16 dark:border-slate-50/10 md:py-40 w-full">
       <Container>
         <div aria-hidden="true" className="pointer-events-none block blob absolute opacity-30 -right-40 -top-56 z-[-1] w-[20rem] h-[20rem] lg:w-[40rem] lg:h-[40rem]"></div>
         <div className="mx-auto grid lg:max-w-none lg:grid-cols-2">
@@ -15,12 +16,12 @@ const About = () => {
                 <h2 className="text-3xl font-light font-serif tracking-tight text-zinc-800 leading-tight md:text-5xl lg:text-6xl dark:text-zinc-100">
                   About.
                 </h2>
-                <p className="inline-flex shrink-0 items-center gap-2 rounded-full border border-slate-900/10 dark:border-slate-50/[0.2] py-1.5 pl-3 pr-4 text-xs md:text-sm text-zinc-600  dark:text-zinc-200">
+                <p className="inline-flex shrink-0 items-center gap-2 rounded-full border border-slate-900/10 dark:border-slate-50/20 py-2 pl-3 pr-4 text-xs md:text-sm text-zinc-600  dark:text-zinc-200">
                   <span className="relative flex h-3 w-3 mr-1">
                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
                     <span className="relative inline-flex h-3 w-3 rounded-full bg-green-500" />
                   </span>
-                  Available for select freelance
+                  Available for select freelance work
                 </p>
               </Fade>
             </div>
@@ -34,16 +35,22 @@ const About = () => {
               <p className="mt-4 md:mt-6 text-base/relaxed md:text-lg/relaxed">
                 When I'm not coding, I indulge my love for gardening by sharing my passion on <Link href="https://instagram.com/goodpathgarden" target="_blank">Instagram</Link> and <Link href="https://tiktok.com/@goodpathgarden" target="_blank">TikTok</Link> (@goodpathgarden). In addition, my competitive spirit shines as I co-founded and manage a fantasy games web app for reality TV shows alongside my husband <Link href="https://imjohnbon.com" target="_blank">John</Link>, aptly named <Link href="https://tellydraft.com" target="_blank">TellyDraft</Link>.
               </p>
+
+              <p className="mt-8 md:mt-12">
+                <Link className="button" href="https://zcal.co/putrabonaccorsi/30min" target="_blank">
+                  Schedule an Intro Call <CalendarAdd size={16} />
+                </Link>
+              </p>
             </Fade>
           </div>
 
           <div className="auto-rows-[150px] grid grid-cols-2 gap-4 self-end md:gap-8 lg:pl-16 xl:pl-24">
-            <div className="bg-neutral-100 row-span-2 rounded-2xl md:rounded-3xl  dark:bg-slate-800 overflow-hidden  shadow-sm bg-gradient-to-tr from-violet-600 via-indigo-500 to-teal-400 bg-size-[300%] animate-gradient">
+            <div className="bg-neutral-100 row-span-2 rounded-2xl md:rounded-3xl dark:bg-slate-800 overflow-hidden  shadow-sm bg-linear-to-tr from-violet-600 via-indigo-500 to-teal-400 bg-size-[300%] animate-gradient">
               <Fade delay={.5} triggerOnce className="h-full will-change-transform">
                 <Image
                   src="/assets/about/about--pic-01.webp"
                   alt="Portrait of Putra Bonaccorsi"
-                  className="grayscale-[60%] h-full object-cover"
+                  className="grayscale-60 h-full object-cover"
                   width={1024}
                   height={678}
                 />
