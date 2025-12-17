@@ -49,11 +49,19 @@
 }
 
 .markdown pre {
-  @apply rounded-xl;
+  @apply rounded-xl bg-slate-950 p-6 my-6 lg:my-10 overflow-x-auto;
+}
+
+.markdown pre code {
+  @apply text-sm md:text-base font-mono text-slate-50 block;
 }
 
 .markdown img {
-  @apply h-auto max-w-full mb-0 rounded-xl w-full;
+  @apply h-auto max-w-full mb-0 rounded-xl w-full transition-opacity duration-700 ease-in-out;
+}
+
+.markdown img.lazy-loaded {
+  opacity: 1 !important;
 }
 
 .markdown img + em {
