@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import LazyImage from './lazy-image';
 
 type Props = {
   src: string
@@ -8,13 +8,11 @@ type Props = {
 const CoverImage = ({ src, alt }: Props) => {
   return (
     <>
-      <Image
+      <LazyImage
         src={src}
         alt={alt}
-        className="w-full object-cover"
         width={1300}
         height={630}
-        priority
       />
     </>
   );

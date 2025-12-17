@@ -20,6 +20,7 @@
   @apply my-6 leading-relaxed lg:my-10;
 }
 
+
 .markdown h2,
 .markdown h3 {
   @apply font-light font-serif tracking-tight leading-tight;

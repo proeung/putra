@@ -1,8 +1,9 @@
 import Container from './container';
 import CoverVideo from './cover-video';
-import Image from 'next/image';
+import LazyImage from './lazy-image';
 import type WorkType from '../interfaces/work';
 import Textarea from './textarea';
+import markdownStyles from './markdown-styles.module.css';
 
 type Props = {
   style: string
@@ -12,8 +13,8 @@ type Props = {
 const WorkDesktop: React.FC<Props> = ({ style, items }) => {
   return (
     <section
-      className={`${style === 'even' ? 'bg-white  dark:bg-slate-700/[0.2]' : 'bg-slate-200 dark:bg-slate-950/[0.2]'
-        } border-t border-slate-900/10 dark:border-slate-50/[0.1] py-16 md:py-40 relative overflow-hidden w-full`}
+      className={`${style === 'even' ? 'bg-white  dark:bg-slate-700/20' : 'bg-slate-200 dark:bg-slate-950/20'
+        } border-t border-slate-900/10 dark:border-slate-50/10 py-16 md:py-40 relative overflow-hidden w-full`}
     >
       <Container>
         <div
@@ -52,10 +53,9 @@ const WorkDesktop: React.FC<Props> = ({ style, items }) => {
                         label={item.alt}
                       />
                     ) :
-                      <Image
+                      <LazyImage
                         src={item.url}
                         alt={item.alt}
-                        className="object-cover w-full"
                         width={1300}
                         height={630}
                       />
@@ -66,10 +66,12 @@ const WorkDesktop: React.FC<Props> = ({ style, items }) => {
 
               {
                 item.caption !== undefined && item.caption !== '' ? (
-                  <p
-                    className="text-sm max-w-xs mt-6 md:max-w-lg"
-                    dangerouslySetInnerHTML={{ __html: item.caption }}
-                  />
+                  <div className={`${markdownStyles['markdown']} max-w-xs mt-6 md:max-w-lg`}>
+                    <p
+                      className={`text-sm my-0!`}
+                      dangerouslySetInnerHTML={{ __html: item.caption }}
+                    />
+                  </div>
                 ) : null
               }
 

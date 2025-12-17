@@ -22,12 +22,10 @@ const ArticleHeader = ({ title, coverImage, date }: Props) => {
       </div>
 
       <div className="bg-neutral-100 mb-8 -mx-5 overflow-hidden shadow-lg dark:bg-slate-800 sm:mx-0 md:rounded-3xl md:mb-16">
-        <Fade delay={1e2} damping={1e-1}>
-          <CoverImage
-            src={coverImage}
-            alt={`Cover Image for ${title}`}
-          />
-        </Fade>
+        <CoverImage
+          src={coverImage}
+          alt={`Cover Image for ${title}`}
+        />
       </div>
     </>
   );
