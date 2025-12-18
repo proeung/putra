@@ -6,7 +6,7 @@ import { CalendarAdd } from '@carbon/icons-react';
 
 const About = () => {
   return (
-    <section id="about" className="border-t lg:border-slate-900/10 py-16 dark:border-slate-50/10 md:py-40 w-full">
+    <section id="about" className="border-t border-slate-900/10 py-16 dark:border-slate-50/10 md:py-40 w-full">
       <Container>
         <div aria-hidden="true" className="pointer-events-none block blob absolute opacity-30 -right-40 -top-56 z-[-1] w-[20rem] h-[20rem] lg:w-[40rem] lg:h-[40rem]"></div>
         <div className="mx-auto grid items-center lg:max-w-none lg:grid-cols-2">

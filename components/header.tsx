@@ -78,9 +78,9 @@ function MobileNavigation(props) {
   return (
     <Popover {...props}>
       <Fade delay={1} triggerOnce>
-        <Popover.Button className="group h-9 flex items-center rounded-full px-4 py-2 text-sm font-sans font-bold focus:outline-none leading-none text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:text-zinc-200 dark:ring-white/20 dark:hover:ring-white/40">
+        <Popover.Button className="group h-9 flex items-center rounded-full px-4 py-2 text-sm font-sans font-bold focus:outline-none leading-none text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-gray-300 backdrop-blur dark:text-zinc-200 dark:ring-white/20 dark:hover:ring-white/40">
           menu
-          <ChevronDownIcon className="ml-2 h-auto w-2 stroke-zinc-400 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400" />
+          <ChevronDownIcon className="ml-2 h-auto w-2 stroke-gray-400 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400" />
         </Popover.Button>
       </Fade>
       <Transition.Root>
@@ -163,7 +163,7 @@ function ModeToggle() {
     <button
       type="button"
       aria-label="Toggle light mode"
-      className="cursor-pointer group rounded-full px-2 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition md:px-3 md:py-3 dark:ring-white/20 dark:hover:ring-white/40"
+      className="cursor-pointer group rounded-full px-2 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-gray-300 backdrop-blur transition md:px-3 md:py-3 dark:ring-white/20 dark:hover:ring-white/40"
       onClick={toggleMode}
     >
       <SunIcon className="h-5 w-5 fill-zinc-100 stroke-teal-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 md:h-5.5 md:w-5.5 dark:hidden [@media(prefers-color-scheme:dark)]:fill-teal-50 [@media(prefers-color-scheme:dark)]:stroke-teal-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600" />
