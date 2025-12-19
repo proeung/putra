@@ -10,7 +10,7 @@ recent: 1
 featuredOrder: 5
 recentOrder: 5
 ogImage:
-  url: "/assets/work/flexgen/video-cover-poster.webp"
+  url: "/assets/work/flexgen/og.webp"
 thumbnail:
   type: "browser"
   url: "/assets/work/flexgen/thumb.webp"
