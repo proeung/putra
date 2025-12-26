@@ -52,7 +52,7 @@ const WorkHeader = ({ title, coverImage, coverVideo, poster, excerpt }: Props) =
           </div>
 
           <div className={`max-w-3xl mx-auto mt-10 md:mt-16 lg:mt-40 ${markdownStyles['markdown']}`}>
-            <p className="text-base/relaxed md:text-xl/relaxed">
+            <p className="text-base/relaxed md:text-xl/relaxed mb-0!">
               <span className="font-sans font-bold">{title}</span> - <span dangerouslySetInnerHTML={formattedExcerpt} />
             </p>
           </div>
