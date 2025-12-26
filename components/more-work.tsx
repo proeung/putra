@@ -79,7 +79,7 @@ const MoreWork: React.FC<Props> = ({ works }) => {
         </Fade>
 
         <Fade key={filter} duration={500} triggerOnce>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 xl:gap-8">
             {getFilteredWorks().map((work) => (
               <Link
                 as={`/work/${work.slug}`}
@@ -100,7 +100,7 @@ const MoreWork: React.FC<Props> = ({ works }) => {
                           pauseOnHover={true}
                         />
                       ) : work.thumbnail.type === 'browser' ? (
-                        <div className="w-full h-full p-10 md:p-4 lg:p-10">
+                        <div className="w-full h-full p-10 md:p-4 lg:p-7 xl:p-10">
                           <div className="w-full h-full shadow-lg rounded-lg overflow-hidden">
                             <div className="w-full h-6 md:h-8 rounded-t-lg bg-gray-200 dark:bg-slate-900 flex justify-start items-center space-x-1.5 px-5 md:px-4">
                               <span className="w-1.5 h-1.5 rounded-full bg-red-400" />

@@ -102,7 +102,7 @@ const MoreSandBox = () => {
         </div>
 
         <Fade delay={1e2} triggerOnce className="h-full will-change-transform">
-          <div className="grid grid-cols-1 gap-4 md:gap-8 md:grid-cols-2 lg:grid-cols-3 mt-12 sm:mt-20">
+          <div className="grid grid-cols-1 gap-4 sm:mt-20 md:gap-8 md:grid-cols-2 xl:grid-cols-3 mt-12">
             {sandboxItems.map((item, index) => (
               <a
                 key={index}

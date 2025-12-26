@@ -49,7 +49,7 @@ const CoverVideo = ({ label, src, poster, pauseOnHover = false }: Props) => {
   return (
     <>
       <div
-        className={`relative aspect-video overflow-hidden group ${!pauseOnHover ? 'cursor-pointer' : ''}`}
+        className={`relative aspect-video overflow-hidden h-full group ${!pauseOnHover ? 'cursor-pointer' : ''}`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         onClick={!pauseOnHover ? togglePlayPause : undefined}
