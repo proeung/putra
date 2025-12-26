@@ -8,7 +8,7 @@ date: "2025-08-02"
 featured: 1
 recent: 1
 featuredOrder: 2
-recentOrder: 2
+recentOrder: 1
 ogImage:
   url: "/assets/work/puam/og.webp"
 thumbnail:

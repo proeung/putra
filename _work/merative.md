@@ -8,7 +8,7 @@ date: "2023-10-06"
 featured: 1
 recent: 1
 featuredOrder: 4
-recentOrder: 1
+recentOrder: 2
 ogImage:
   url: "/assets/work/merative/og.webp"
 thumbnail:

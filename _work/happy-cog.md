@@ -41,8 +41,8 @@ stats:
     content: "Happy Cog"
   - title: "Tech"
     content: "WordPress, PHP, Javascript, GSAP"
-nextTitle: "Flexgen.com"
-nextUrl: "/work/flexgen"
+nextTitle: "IBM.com experience"
+nextUrl: "/work/ibm"
 ---
 
 These animations provided engaging context Happy Cog's diverse clientele. Through subtle scroll reveal animations, we meticulously crafted a seamless user experience, empowering visitors to effortlessly explore and grasp the essence of Happy Cog as a dynamic creative force in the digital landscape.

@@ -183,8 +183,8 @@ stats:
     content: "Lullabot"
   - title: "Tech"
     content: "Web Components, Lit, TypeScript, Storybooks, Sass, Github Actions, Jenkins, Cypress, Percy, Design Systems, AEM, Drupal, Fractal, Twig"
-nextTitle: "Merative.com & Demand Gen"
-nextUrl: "/work/merative"
+nextTitle: "Princeton University Art Museum Website Redesign"
+nextUrl: "/work/puam"
 ---
 
 ## Summary of Role

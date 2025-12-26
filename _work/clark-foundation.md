@@ -8,7 +8,7 @@ date: "2025-05-12"
 featured: 1
 recent: 1
 featuredOrder: 3
-recentOrder: 3
+recentOrder: 4
 ogImage:
   url: "/assets/work/clark-foundation/og.webp"
 thumbnail:

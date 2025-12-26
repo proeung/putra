@@ -8,7 +8,7 @@ date: "2024-09-12"
 featured: 1
 recent: 1
 featuredOrder: 5
-recentOrder: 5
+recentOrder: 3
 ogImage:
   url: "/assets/work/flexgen/og.webp"
 thumbnail:
