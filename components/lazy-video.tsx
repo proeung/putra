@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, RefObject } from 'react';
+import React, { useEffect, useRef, useState, RefObject } from 'react';
 
 type Props = {
   label: string;
@@ -10,6 +10,25 @@ type Props = {
 const LazyVideo = ({ label, src, poster, videoRef: externalRef }: Props) => {
   const internalRef = useRef<HTMLVideoElement>(null);
   const videoRef = externalRef || internalRef;
+  const [shouldAutoPlay, setShouldAutoPlay] = useState(true);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    const handleMotionPreferenceChange = (e: MediaQueryListEvent | MediaQueryList) => {
+      setShouldAutoPlay(!e.matches);
+    };
+
+    // Set initial value
+    handleMotionPreferenceChange(mediaQuery);
+
+    // Listen for changes
+    mediaQuery.addEventListener('change', handleMotionPreferenceChange);
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleMotionPreferenceChange);
+    };
+  }, []);
 
   useEffect(() => {
     const videoElement = videoRef.current;
@@ -40,7 +59,7 @@ const LazyVideo = ({ label, src, poster, videoRef: externalRef }: Props) => {
 
   return (
     <video
-      autoPlay
+      autoPlay={shouldAutoPlay}
       loop
       muted
       playsInline

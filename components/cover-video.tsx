@@ -11,6 +11,7 @@ type Props = {
 const CoverVideo = ({ label, src, poster, pauseOnHover = false }: Props) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isFocused, setIsFocused] = useState(false);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const [isPlaying, setIsPlaying] = useState(true);
   const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -27,19 +28,46 @@ const CoverVideo = ({ label, src, poster, pauseOnHover = false }: Props) => {
 
   const handleMouseEnter = () => {
     setIsHovered(true);
-    if (pauseOnHover && videoRef.current && isPlaying) {
+    if (pauseOnHover && videoRef.current && isPlaying && !prefersReducedMotion) {
       videoRef.current.pause();
     }
   };
 
   const handleMouseLeave = () => {
     setIsHovered(false);
-    if (pauseOnHover && videoRef.current && !isFocused) {
+    if (pauseOnHover && videoRef.current && !isFocused && !prefersReducedMotion) {
       videoRef.current.play();
     }
   };
 
   const showButton = (isHovered || isFocused) && !pauseOnHover;
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    const handleMotionPreferenceChange = (e: MediaQueryListEvent | MediaQueryList) => {
+      const reducedMotion = e.matches;
+      setPrefersReducedMotion(reducedMotion);
+
+      // If reduced motion is enabled, pause the video
+      if (reducedMotion) {
+        setIsPlaying(false);
+        if (videoRef.current) {
+          videoRef.current.pause();
+        }
+      }
+    };
+
+    // Set initial value
+    handleMotionPreferenceChange(mediaQuery);
+
+    // Listen for changes
+    mediaQuery.addEventListener('change', handleMotionPreferenceChange);
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleMotionPreferenceChange);
+    };
+  }, []);
 
   useEffect(() => {
     if (!pauseOnHover) return;
