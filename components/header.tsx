@@ -78,7 +78,7 @@ function MobileNavigation(props) {
   return (
     <Popover {...props}>
       <Fade delay={1} triggerOnce>
-        <Popover.Button className="group h-9 flex items-center rounded-full px-4 py-2 text-sm font-sans font-bold focus:outline-none leading-none text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-gray-300 backdrop-blur dark:text-zinc-200 dark:ring-white/20 dark:hover:ring-white/40">
+        <Popover.Button className="cursor-pointer group h-9 flex items-center rounded-full px-4 py-2 text-sm font-sans font-bold focus:outline-none leading-none text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-gray-300 backdrop-blur dark:text-zinc-200 dark:ring-white/20 dark:hover:ring-white/40">
           menu
           <ChevronDownIcon className="ml-2 h-auto w-2 stroke-gray-400 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400" />
         </Popover.Button>
@@ -109,8 +109,8 @@ function MobileNavigation(props) {
             className="fixed inset-x-4 top-8 z-50 origin-top rounded-3xl bg-white p-8 ring-1 ring-zinc-900/5 dark:bg-slate-900 dark:ring-slate-800"
           >
             <div className="flex flex-row-reverse items-center justify-between">
-              <Popover.Button aria-label="Close menu" className="-m-1 p-1 focus:outline-none">
-                <CloseIcon className="h-6 w-6 text-zinc-500 dark:text-zinc-400" />
+              <Popover.Button aria-label="Close menu" className="cursor-pointer -m-1 p-1 focus:outline-none">
+                <CloseIcon className="h-6 w-6 text-zinc-500 transition dark:text-zinc-400 hover:text-teal-600 dark:hover:text-teal-400" />
               </Popover.Button>
               <h2 className="text-sm font-light font-serif tracking-tight text-zinc-600 dark:text-zinc-400">
                 Navigation
