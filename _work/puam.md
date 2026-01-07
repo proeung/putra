@@ -166,8 +166,8 @@ nextUrl: "/work/clark-foundation"
 - Served as Lead Engineer and Site Builder, handling both frontend and backend development for the full Drupal 11+ implementation
 - Architected and developed 70+ Single Directory Components with comprehensive documentation and a visual browsing interface for content authors
 - Developed the Homepage Intro Sequence and account of multiple rounds of feedback related to animations and accessibility
-- Transformed and integrated a React-based collection search application, aligning it with new brand guidelines and packaging it as an npm module for Drupal integration
-- Built custom Drupal modules to enable seamless integration between the React app and the CMS
+- Transformed the beta version collection search (React app) to align with new brand guidelines and worked closely with the PUAM development team to package it as an npm module for Drupal integration
+- Built custom various Drupal modules like the Menu Branding color that allows content authors to pick color per page
 - Collaborated directly with the PUAM development team on artwork collection data synchronization and API architecture
 - Partnered with Bluecadet's Project Manager to establish sprint schedules, development milestones, and client delivery timelines
 - Ensured accessibility and usability standards were met across all components and features
