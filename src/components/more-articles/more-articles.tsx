@@ -1,15 +1,24 @@
+'use client';
+
+import { useState } from 'react';
 import ArticlePreview from '@/components/article-preview';
 import type Article from '@/types/article';
 import Container from '@/components/container';
 import { Fade } from 'react-awesome-reveal';
+import { OverflowMenuHorizontal } from '@carbon/icons-react';
+
+const ARTICLES_LIMIT = 3;
 
 type Props = {
   articles: Article[]
 }
 
 const MoreArticles = ({ articles }: Props) => {
+  const [showAll, setShowAll] = useState<boolean>(false);
+  const visibleArticles = showAll ? articles : articles.slice(0, ARTICLES_LIMIT);
+
   return (
-    <section id="articles" className="border-t border-slate-900/10 bg-white py-16 dark:border-slate-50/[0.08] dark:bg-slate-900 md:py-40 w-full">
+    <section id="articles" className="border-t border-slate-900/10 bg-white py-16 dark:border-slate-50/8 dark:bg-slate-900 md:py-40 w-full">
       <Container>
         <div className="max-w-2xl">
           <Fade cascade delay={1e2} damping={1e-1} triggerOnce>
@@ -25,7 +34,7 @@ const MoreArticles = ({ articles }: Props) => {
         <div className="mt-12 sm:mt-20">
           <div className="md:border-l md:border-zinc-200 md:pl-6 md:dark:border-teal-900">
             <div className="flex max-w-4xl flex-col space-y-10 md:space-y-16">
-              {articles.map((article) => (
+              {visibleArticles.map((article) => (
                 <ArticlePreview
                   key={article.slug}
                   title={article.title}
@@ -37,6 +46,22 @@ const MoreArticles = ({ articles }: Props) => {
             </div>
           </div>
         </div>
+
+        {!showAll && articles.length > ARTICLES_LIMIT && (
+          <Fade delay={.5} triggerOnce>
+            <div className="flex justify-center mt-16 md:mt-20">
+              <button
+                type="button"
+                aria-label="See More Articles"
+                className="button"
+                onClick={() => setShowAll(true)}
+              >
+                See More Articles
+                <OverflowMenuHorizontal size={16} />
+              </button>
+            </div>
+          </Fade>
+        )}
       </Container>
     </section>
   );
