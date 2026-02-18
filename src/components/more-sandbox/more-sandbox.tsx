@@ -112,7 +112,7 @@ const MoreSandBox = () => {
                 onMouseOver={() => handleMouseOver(index)}
                 onMouseLeave={() => handleMouseLeave(index)}
               >
-                <div className="aspect-video border border-gray-300 dark:border-transparent relative overflow-hidden rounded-xl">
+                <div className="aspect-video border border-gray-300 dark:border-transparent relative overflow-hidden rounded-lg md:rounded-2xl">
                   <div className="absolute inset-0">
                     <video
                       ref={(el) => { videoRefs.current[index] = el; }}
