@@ -46,6 +46,8 @@ export default function Post({ article, preview }: Props) {
               <ArticleHeader
                 title={article.title}
                 coverImage={article.coverImage}
+                coverVideo={article.coverVideo}
+                poster={article.poster}
                 date={article.date}
               />
               <Textarea content={article.content} />
@@ -76,6 +78,8 @@ export async function getStaticProps({ params }: Params) {
     'content',
     'ogImage',
     'coverImage',
+    'coverVideo',
+    'poster',
     'nextTitle',
     'nextUrl',
   ]);

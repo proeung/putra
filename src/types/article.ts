@@ -2,7 +2,9 @@ type ArticleType = {
   slug: string
   title: string
   date: string
-  coverImage: string
+  coverImage?: string
+  coverVideo?: string
+  poster?: string
   excerpt: string
   ogImage: {
     url: string
