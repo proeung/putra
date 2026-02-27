@@ -1,8 +1,17 @@
 import React, { useRef, useEffect, useState } from 'react';
 import Container from '@/components/container';
 import { Fade } from 'react-awesome-reveal';
+import { OverflowMenuHorizontal } from '@carbon/icons-react';
+
+const SANDBOX_LIMIT = 6;
 
 const sandboxItems = [
+  {
+    title: 'Headshot Processor - Next.js',
+    url: 'https://github.com/offred/headshot-app',
+    videoSrc: '/assets/sandbox/sandbox--offred-headshot-app.mp4',
+    posterSrc: '/assets/sandbox/sandbox--offred-headshot-app-poster.webp'
+  },
   {
     title: 'Leadspace - Web Components',
     url: 'https://codesandbox.io/p/sandbox/ibm-lets-create-leadspace-ds0d0u?file=%2Findex.html',
@@ -16,10 +25,10 @@ const sandboxItems = [
     posterSrc: '/assets/sandbox/sandbox--fantasybb-hero-poster.webp'
   },
   {
-    title: 'Masthead - Web Components',
-    url: 'https://codesandbox.io/p/sandbox/ibm-masthead-v2-lexu76?file=%2Findex.html',
-    videoSrc: '/assets/sandbox/sandbox--ibm-masthead-v2.mp4',
-    posterSrc: '/assets/sandbox/sandbox--ibm-masthead-v2-poster.webp'
+    title: 'Accessible Menu - Tailwind CSS',
+    url: 'https://github.com/proeung/accessible-menu',
+    videoSrc: '/assets/sandbox/sandbox--accessible-menu.mp4',
+    posterSrc: '/assets/sandbox/sandbox--accessible-menu-poster.webp'
   },
   {
     title: 'Sortable Table - React',
@@ -28,10 +37,10 @@ const sandboxItems = [
     posterSrc: '/assets/sandbox/sandbox--sortable-table-poster.webp'
   },
   {
-    title: 'Accessible Menu - Tailwind CSS',
-    url: 'https://github.com/proeung/accessible-menu',
-    videoSrc: '/assets/sandbox/sandbox--accessible-menu.mp4',
-    posterSrc: '/assets/sandbox/sandbox--accessible-menu-poster.webp'
+    title: 'Masthead - Web Components',
+    url: 'https://codesandbox.io/p/sandbox/ibm-masthead-v2-lexu76?file=%2Findex.html',
+    videoSrc: '/assets/sandbox/sandbox--ibm-masthead-v2.mp4',
+    posterSrc: '/assets/sandbox/sandbox--ibm-masthead-v2-poster.webp'
   },
   {
     title: 'Leadspace - Web Components',
@@ -42,6 +51,8 @@ const sandboxItems = [
 ];
 
 const MoreSandBox = () => {
+  const [showAll, setShowAll] = useState<boolean>(false);
+  const visibleItems = showAll ? sandboxItems : sandboxItems.slice(0, SANDBOX_LIMIT);
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
   const [isPlaying, setIsPlaying] = useState<boolean[]>(Array(sandboxItems.length).fill(false));
 
@@ -103,7 +114,7 @@ const MoreSandBox = () => {
 
         <Fade delay={1e2} triggerOnce className="h-full will-change-transform">
           <div className="grid grid-cols-1 gap-4 sm:mt-20 md:gap-8 md:grid-cols-2 xl:grid-cols-3 mt-12">
-            {sandboxItems.map((item, index) => (
+            {visibleItems.map((item, index) => (
               <a
                 key={index}
                 href={item.url}
@@ -132,6 +143,22 @@ const MoreSandBox = () => {
             ))}
           </div>
         </Fade>
+
+        {!showAll && sandboxItems.length > SANDBOX_LIMIT && (
+          <Fade delay={.5} triggerOnce>
+            <div className="flex justify-center mt-16 md:mt-20">
+              <button
+                type="button"
+                aria-label="See More Sandbox"
+                className="button"
+                onClick={() => setShowAll(true)}
+              >
+                See More Sandbox
+                <OverflowMenuHorizontal size={16} />
+              </button>
+            </div>
+          </Fade>
+        )}
       </Container>
     </section>
   );
