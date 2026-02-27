@@ -10,7 +10,8 @@ type Props = {
 const LazyVideo = ({ label, src, poster, videoRef: externalRef }: Props) => {
   const internalRef = useRef<HTMLVideoElement>(null);
   const videoRef = externalRef || internalRef;
-  const [shouldAutoPlay, setShouldAutoPlay] = useState(true);
+  const loadedRef = useRef(false);
+  const [shouldAutoPlay, setShouldAutoPlay] = useState(false);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -19,10 +20,7 @@ const LazyVideo = ({ label, src, poster, videoRef: externalRef }: Props) => {
       setShouldAutoPlay(!e.matches);
     };
 
-    // Set initial value
     handleMotionPreferenceChange(mediaQuery);
-
-    // Listen for changes
     mediaQuery.addEventListener('change', handleMotionPreferenceChange);
 
     return () => {
@@ -32,46 +30,47 @@ const LazyVideo = ({ label, src, poster, videoRef: externalRef }: Props) => {
 
   useEffect(() => {
     const videoElement = videoRef.current;
+    if (!videoElement) return;
 
-    const handleIntersection = (entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          videoElement.src = videoElement.dataset.src || '';
-          videoElement.load();
-          videoElement.classList.remove('lazy');
-          observer.unobserve(videoElement);
-        }
-      });
-    };
+    const observer = new IntersectionObserver(
+      (entries: IntersectionObserverEntry[]) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            if (!loadedRef.current) {
+              videoElement.src = src;
+              videoElement.load();
+              loadedRef.current = true;
+            }
+            if (shouldAutoPlay) {
+              videoElement.play().catch(() => {});
+            }
+          } else if (loadedRef.current) {
+            videoElement.pause();
+          }
+        });
+      },
+      { rootMargin: '200px 0px' }
+    );
 
-    const lazyVideoObserver = new IntersectionObserver(handleIntersection);
-
-    if (videoElement) {
-      lazyVideoObserver.observe(videoElement);
-    }
+    observer.observe(videoElement);
 
     return () => {
-      if (videoElement) {
-        lazyVideoObserver.unobserve(videoElement);
-      }
+      observer.disconnect();
     };
-  }, [src, poster]);
+  }, [src, shouldAutoPlay]);
 
   return (
     <video
-      autoPlay={shouldAutoPlay}
       loop
       muted
       playsInline
+      preload="none"
       className="w-full h-full max-w-none object-cover object-top"
       poster={poster}
       ref={videoRef}
-      data-src={src}
       aria-label={label}
       disableRemotePlayback
-    >
-      <source data-src={src} type="video/mp4" />
-    </video>
+    />
   );
 };
 
