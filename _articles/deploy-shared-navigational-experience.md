@@ -1,6 +1,6 @@
 ---
 title: "Deploy a shared navigational experience across multiple content ecosystems within ibm.com/cloud"
-excerpt: "IBM.com is a massive web experience developed and managed by different teams, powered by technology ranging from standalone JavaScript applications to monolithic content management systems (Adobe Experience Manager, Drupal, etc)."
+excerpt: "How cross-org teams at IBM coordinated to build a shared masthead — a single navigation experience spanning AEM, Drupal, and more with minimal code duplication."
 coverImage: "/assets/articles/deploy-shared-navigational-experience/cover.webp"
 date: "2022-01-21T05:35:07.322Z"
 ogImage:

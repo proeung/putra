@@ -87,7 +87,7 @@ const MoreWork: React.FC<Props> = ({ works }) => {
 
         <Fade key={filter} duration={500} triggerOnce>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 xl:gap-8">
-            {getFilteredWorks().map((work, index) => (
+            {getFilteredWorks().map((work, index: number) => (
               <Link
                 as={`/work/${work.slug}`}
                 href="/work/[slug]"
