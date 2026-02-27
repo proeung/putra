@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import ArticlePreview from '@/components/article-preview';
 import type Article from '@/types/article';
 import Container from '@/components/container';
@@ -16,6 +16,13 @@ type Props = {
 const MoreArticles = ({ articles }: Props) => {
   const [showAll, setShowAll] = useState<boolean>(false);
   const visibleArticles = showAll ? articles : articles.slice(0, ARTICLES_LIMIT);
+  const firstNewArticleRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (showAll && firstNewArticleRef.current) {
+      firstNewArticleRef.current.querySelector('a')?.focus();
+    }
+  }, [showAll]);
 
   return (
     <section id="articles" className="border-t border-slate-900/10 bg-white py-16 dark:border-slate-50/8 dark:bg-slate-900 md:py-40 w-full">
@@ -34,14 +41,15 @@ const MoreArticles = ({ articles }: Props) => {
         <div className="mt-12 sm:mt-20">
           <div className="md:border-l md:border-zinc-200 md:pl-6 md:dark:border-teal-900">
             <div className="flex max-w-4xl flex-col space-y-10 md:space-y-16">
-              {visibleArticles.map((article) => (
-                <ArticlePreview
-                  key={article.slug}
-                  title={article.title}
-                  date={article.date}
-                  slug={article.slug}
-                  excerpt={article.excerpt}
-                />
+              {visibleArticles.map((article, index) => (
+                <div key={article.slug} ref={index === ARTICLES_LIMIT ? firstNewArticleRef : undefined}>
+                  <ArticlePreview
+                    title={article.title}
+                    date={article.date}
+                    slug={article.slug}
+                    excerpt={article.excerpt}
+                  />
+                </div>
               ))}
             </div>
           </div>

@@ -19,6 +19,7 @@ const ArticlePreview = ({ title, date, excerpt, slug }: Props) => {
             <Link
               as={`/articles/${slug}`}
               href="/articles/[slug]"
+              className="block"
             >
               <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl" />
               <span className="relative z-10">

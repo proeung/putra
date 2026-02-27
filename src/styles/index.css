@@ -27,6 +27,11 @@
 
 @layer base {
 
+  a:focus-visible,
+  button:focus-visible {
+    @apply outline-none ring-2 ring-teal-500 ring-offset-2 ring-offset-white dark:ring-teal-400 dark:ring-offset-slate-900;
+  }
+
   p a,
   p a:visited {
     @apply font-sans font-bold text-teal-600 dark:text-teal-400 hover:underline;

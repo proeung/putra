@@ -54,6 +54,7 @@ const MoreSandBox = () => {
   const [showAll, setShowAll] = useState<boolean>(false);
   const visibleItems = showAll ? sandboxItems : sandboxItems.slice(0, SANDBOX_LIMIT);
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
+  const firstNewCardRef = useRef<HTMLAnchorElement | null>(null);
   const [isPlaying, setIsPlaying] = useState<boolean[]>(Array(sandboxItems.length).fill(false));
 
   useEffect(() => {
@@ -63,6 +64,12 @@ const MoreSandBox = () => {
       }
     });
   }, []);
+
+  useEffect(() => {
+    if (showAll && firstNewCardRef.current) {
+      firstNewCardRef.current.focus();
+    }
+  }, [showAll]);
 
   const handleMouseOver = async (index: number) => {
     const video = videoRefs.current[index];
@@ -116,6 +123,7 @@ const MoreSandBox = () => {
           {visibleItems.map((item, index) => (
             <a
               key={index}
+              ref={index === SANDBOX_LIMIT ? firstNewCardRef : undefined}
               href={item.url}
               target="_blank"
               className="bg-white row-span-1 rounded-2xl md:rounded-3xl p-4 text-zinc-800 hover:shadow-xl dark:text-zinc-400  dark:bg-slate-900 hover:bg-white hover:dark:bg-slate-950 transition duration-300 ease-out hover:ease-in card"

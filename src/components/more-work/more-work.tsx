@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Container from '@/components/container';
 import CoverVideo from '@/components/cover-video';
 import { Fade } from 'react-awesome-reveal';
@@ -14,6 +14,13 @@ type Props = {
 const MoreWork: React.FC<Props> = ({ works }) => {
   const [filter, setFilter] = useState<string>('featured');
   const [showAll, setShowAll] = useState<boolean>(false);
+  const firstNewWorkRef = useRef<HTMLAnchorElement | null>(null);
+
+  useEffect(() => {
+    if (showAll && firstNewWorkRef.current) {
+      firstNewWorkRef.current.focus();
+    }
+  }, [showAll]);
 
   const getFilteredWorks = () => {
     let filtered;
@@ -80,11 +87,12 @@ const MoreWork: React.FC<Props> = ({ works }) => {
 
         <Fade key={filter} duration={500} triggerOnce>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 xl:gap-8">
-            {getFilteredWorks().map((work) => (
+            {getFilteredWorks().map((work, index) => (
               <Link
                 as={`/work/${work.slug}`}
                 href="/work/[slug]"
                 key={work.slug}
+                ref={index === 6 ? firstNewWorkRef : undefined}
                 className={`${work.thumbnail.type === 'video' ? 'col-span-2 xl:max-h-[582px]' : 'col-span-2 md:col-span-1'
                   } row-span-1 rounded-2xl md:rounded-3xl bg-slate-100 dark:bg-slate-800 hover:bg-white hover:dark:bg-slate-950 transition duration-300 ease-out hover:ease-in card group`}
                 title={work.title}
