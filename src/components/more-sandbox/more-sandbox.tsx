@@ -112,18 +112,18 @@ const MoreSandBox = () => {
           </Fade>
         </div>
 
-        <Fade delay={1e2} triggerOnce className="h-full will-change-transform">
-          <div className="grid grid-cols-1 gap-4 sm:mt-20 md:gap-8 md:grid-cols-2 xl:grid-cols-3 mt-12">
-            {visibleItems.map((item, index) => (
-              <a
-                key={index}
-                href={item.url}
-                target="_blank"
-                className="bg-white row-span-1 rounded-2xl md:rounded-3xl p-4 text-zinc-800 hover:shadow-xl dark:text-zinc-400  dark:bg-slate-900 hover:bg-white hover:dark:bg-slate-950 transition duration-300 ease-out hover:ease-in card"
-                onMouseOver={() => handleMouseOver(index)}
-                onMouseLeave={() => handleMouseLeave(index)}
-              >
-                <div className="aspect-video border border-gray-300 dark:border-transparent relative overflow-hidden rounded-lg md:rounded-2xl">
+        <div className="grid grid-cols-1 gap-4 sm:mt-20 md:gap-8 md:grid-cols-2 xl:grid-cols-3 mt-12">
+          {visibleItems.map((item, index) => (
+            <a
+              key={index}
+              href={item.url}
+              target="_blank"
+              className="bg-white row-span-1 rounded-2xl md:rounded-3xl p-4 text-zinc-800 hover:shadow-xl dark:text-zinc-400  dark:bg-slate-900 hover:bg-white hover:dark:bg-slate-950 transition duration-300 ease-out hover:ease-in card"
+              onMouseOver={() => handleMouseOver(index)}
+              onMouseLeave={() => handleMouseLeave(index)}
+            >
+              <Fade cascade damping={0.2} triggerOnce>
+                <div className="aspect-video border border-white dark:border-transparent relative overflow-hidden rounded-lg md:rounded-2xl">
                   <div className="absolute inset-0">
                     <video
                       ref={(el) => { videoRefs.current[index] = el; }}
@@ -139,10 +139,10 @@ const MoreSandBox = () => {
                   </div>
                 </div>
                 <h3 className="font-sans font-bold text-base md:text-xl tracking-tight text-center mt-8 mb-4">{item.title}</h3>
-              </a>
-            ))}
-          </div>
-        </Fade>
+              </Fade>
+            </a>
+          ))}
+        </div>
 
         {!showAll && sandboxItems.length > SANDBOX_LIMIT && (
           <Fade delay={.5} triggerOnce>
