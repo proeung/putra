@@ -7,8 +7,8 @@ coverVideoPoster: "/assets/work/happy-cog/video-cover-poster.webp"
 date: "2017-01-12"
 featured: 1
 recent: 0
-featuredOrder: 9
-recentOrder: 9
+featuredOrder: 10
+recentOrder: 10
 ogImage:
   url: "/assets/work/happy-cog/video-cover-poster.webp"
 thumbnail:

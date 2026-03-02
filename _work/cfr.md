@@ -5,9 +5,9 @@ coverImage: ""
 coverVideo: "/assets/work/cfr/video-cover.mp4"
 coverVideoPoster: "/assets/work/cfr/video-cover-poster.webp"
 date: "2025-12-01"
-featured: 0
+featured: 1
 recent: 1
-featuredOrder: 2
+featuredOrder: 8
 recentOrder: 2
 ogImage:
   url: "/assets/work/cfr/video-cover-poster.webp"

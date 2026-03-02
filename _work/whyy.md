@@ -7,8 +7,8 @@ coverVideoPoster: "/assets/work/whyy/video-cover-poster.webp"
 date: "2017-02-12"
 featured: 1
 recent: 0
-featuredOrder: 8
-recentOrder: 8
+featuredOrder: 9
+recentOrder: 9
 ogImage:
   url: "/assets/work/whyy/video-cover-poster.webp"
 thumbnail:
