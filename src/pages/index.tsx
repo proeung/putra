@@ -23,8 +23,8 @@ export default function Index({ allArticles, allWork }: Props) {
     <>
       <Layout>
         <Head>
-          <title>{`${SITE_NAME} — Developer & Design Technologist`}</title>
-          <meta name="description" content="Putra Bonaccorsi is a Developer and Design Technologist based in South Jersey/Philadelphia with 14+ years of experience. Owner of Off Red LLC, specializing in scalable websites, design systems, React, and AI-assisted development." />
+          <title>{`${SITE_NAME} | Developer & Design Technologist`}</title>
+          <meta name="description" content="Putra Bonaccorsi is a Developer and Design Technologist based in South Jersey/Philadelphia with over a decade of experience. Owner of Off Red LLC, specializing in scalable websites, design systems, React, and AI-assisted development." />
           <meta name="author" content="Putra Bonaccorsi" />
           <meta name="keywords" content="Putra Bonaccorsi, Developer, Design Technologist, Technical Project Manager, Off Red LLC, React, Design Systems, Frontend Developer, Philadelphia, South Jersey" />
           <link rel="canonical" href={SITE_URL} />
@@ -34,14 +34,14 @@ export default function Index({ allArticles, allWork }: Props) {
           <meta property="og:url" content={SITE_URL} />
           <meta property="og:site_name" content={SITE_NAME} />
           <meta property="og:title" content={`${SITE_NAME} — Developer & Design Technologist`} />
-          <meta property="og:description" content="Developer and Design Technologist with 14+ years of experience building scalable websites and design systems. Owner of Off Red LLC, based in South Jersey/Philadelphia." />
+          <meta property="og:description" content="Developer and Design Technologist with over a decade of experience building scalable websites and design systems. Owner of Off Red LLC, based in South Jersey/Philadelphia." />
           <meta property="og:image" content={`${SITE_URL}${HOME_OG_IMAGE_URL}`} />
           <meta property="og:image:alt" content="Putra Bonaccorsi — Developer & Design Technologist" />
 
           {/* Twitter */}
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content={`${SITE_NAME} — Developer & Design Technologist`} />
-          <meta name="twitter:description" content="Developer and Design Technologist with 14+ years of experience building scalable websites and design systems. Owner of Off Red LLC." />
+          <meta name="twitter:description" content="Developer and Design Technologist with over a decade of experience building scalable websites and design systems. Owner of Off Red LLC." />
           <meta name="twitter:image" content={`${SITE_URL}${HOME_OG_IMAGE_URL}`} />
 
           {/* JSON-LD Person Schema */}
