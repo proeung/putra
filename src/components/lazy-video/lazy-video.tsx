@@ -29,6 +29,15 @@ const LazyVideo = ({ label, src, poster, videoRef: externalRef }: Props) => {
   }, []);
 
   useEffect(() => {
+    loadedRef.current = false;
+    const videoElement = videoRef.current;
+    if (videoElement) {
+      videoElement.removeAttribute('src');
+      videoElement.load();
+    }
+  }, [src]);
+
+  useEffect(() => {
     const videoElement = videoRef.current;
     if (!videoElement) return;
 
