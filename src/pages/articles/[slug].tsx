@@ -7,7 +7,7 @@ import { getArticleBySlug, getAllArticles } from '@/lib/api';
 import Head from 'next/head';
 import markdownToHtml from '@/lib/markdownToHtml';
 import type ArticleType from '@/types/article';
-import { SITE_NAME } from '@/lib/constants';
+import { SITE_NAME, SITE_URL } from '@/lib/constants';
 import PageTitle from '@/components/page-title';
 import NextItem from '@/components/next-item';
 import Textarea from '@/components/textarea';
@@ -32,14 +32,26 @@ export default function Post({ article, preview }: Props) {
         <>
           <Head>
             <title>{title}</title>
-            <meta
-              name="description"
-              content={article.excerpt}
-            />
-            <meta
-              property="og:image"
-              content={article.ogImage.url}
-            />
+            <meta name="description" content={article.excerpt} />
+            <meta name="author" content="Putra Bonaccorsi" />
+            <link rel="canonical" href={`${SITE_URL}/articles/${article.slug}`} />
+
+            {/* Open Graph */}
+            <meta property="og:type" content="article" />
+            <meta property="og:url" content={`${SITE_URL}/articles/${article.slug}`} />
+            <meta property="og:site_name" content={SITE_NAME} />
+            <meta property="og:title" content={title} />
+            <meta property="og:description" content={article.excerpt} />
+            <meta property="og:image" content={`${SITE_URL}${article.ogImage.url}`} />
+            <meta property="og:image:alt" content={article.title} />
+            <meta property="article:author" content="Putra Bonaccorsi" />
+            <meta property="article:published_time" content={article.date} />
+
+            {/* Twitter */}
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content={title} />
+            <meta name="twitter:description" content={article.excerpt} />
+            <meta name="twitter:image" content={`${SITE_URL}${article.ogImage.url}`} />
           </Head>
           <article className="mb-32">
             <Container>
@@ -75,6 +87,7 @@ export async function getStaticProps({ params }: Params) {
     'title',
     'date',
     'slug',
+    'excerpt',
     'content',
     'ogImage',
     'coverImage',

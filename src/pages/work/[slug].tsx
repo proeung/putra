@@ -5,7 +5,7 @@ import { getWorkBySlug, getAllWork } from '@/lib/api';
 import Head from 'next/head';
 import markdownToHtml from '@/lib/markdownToHtml';
 import type WorkType from '@/types/work';
-import { SITE_NAME } from '@/lib/constants';
+import { SITE_NAME, SITE_URL } from '@/lib/constants';
 import PageTitle from '@/components/page-title';
 import WorkHeader from '@/components/work-header';
 import WorkStats from '@/components/work-stats';
@@ -34,14 +34,24 @@ export default function Post({ work, preview }: Props) {
         <>
           <Head>
             <title>{title}</title>
-            <meta
-              name="description"
-              content={work.excerpt}
-            />
-            <meta
-              property="og:image"
-              content={work.ogImage.url}
-            />
+            <meta name="description" content={work.excerpt} />
+            <meta name="author" content="Putra Bonaccorsi" />
+            <link rel="canonical" href={`${SITE_URL}/work/${work.slug}`} />
+
+            {/* Open Graph */}
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content={`${SITE_URL}/work/${work.slug}`} />
+            <meta property="og:site_name" content={SITE_NAME} />
+            <meta property="og:title" content={title} />
+            <meta property="og:description" content={work.excerpt} />
+            <meta property="og:image" content={`${SITE_URL}${work.ogImage.url}`} />
+            <meta property="og:image:alt" content={work.title} />
+
+            {/* Twitter */}
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content={title} />
+            <meta name="twitter:description" content={work.excerpt} />
+            <meta name="twitter:image" content={`${SITE_URL}${work.ogImage.url}`} />
           </Head>
           <WorkHeader
             title={work.title}
