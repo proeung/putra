@@ -69,7 +69,7 @@ sectionDesktopMiddle:
 
     <h3>Results:</h3>
 
-    <p>The Storybook library became the team's primary reference throughout the engagement, enabling faster handoffs between design and development. By the end of the four-month engagement, components were production-ready and integrated directly into the CFR.org platform, immediately usable by editorial teams without developer intervention.</p>
+    <p>The Storybook library became the team's primary reference throughout the engagement, enabling faster handoffs between design and development. By the end of the four-month engagement, components were production-ready and integrated directly into the CFR.org platform.</p>
     "
     style: "full"
     type: "text"

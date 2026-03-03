@@ -4,6 +4,7 @@ import CoverVideo from '@/components/cover-video';
 import { Fade } from 'react-awesome-reveal';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import type WorkType from '@/types/work';
 import { OverflowMenuHorizontal } from '@carbon/icons-react';
 
@@ -12,9 +13,11 @@ type Props = {
 };
 
 const MoreWork: React.FC<Props> = ({ works }) => {
+  const router = useRouter();
   const [filter, setFilter] = useState<string>('featured');
   const [showAll, setShowAll] = useState<boolean>(false);
   const firstNewWorkRef = useRef<HTMLAnchorElement | null>(null);
+  const isInitialLoad = useRef(true);
 
   useEffect(() => {
     if (showAll && firstNewWorkRef.current) {
@@ -22,8 +25,25 @@ const MoreWork: React.FC<Props> = ({ works }) => {
     }
   }, [showAll]);
 
+  useEffect(() => {
+    if (!router.isReady) return;
+    const queryFilter = router.query.filter as string;
+    if (queryFilter === 'featured' || queryFilter === 'recent') {
+      setFilter(queryFilter);
+      if (isInitialLoad.current) {
+        const workSection = document.getElementById('work');
+        const headerHeight = document.querySelector('header')?.offsetHeight ?? 0;
+        if (workSection) {
+          const top = workSection.getBoundingClientRect().top + window.scrollY - headerHeight;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }
+    }
+    isInitialLoad.current = false;
+  }, [router.isReady, router.query.filter]);
+
   const getFilteredWorks = () => {
-    let filtered;
+    let filtered: WorkType[];
     switch (filter) {
       case 'featured':
         filtered = works
@@ -55,6 +75,7 @@ const MoreWork: React.FC<Props> = ({ works }) => {
   const handleFilterChange = (newFilter: string) => {
     setFilter(newFilter);
     setShowAll(false);
+    router.push({ pathname: '/', query: { filter: newFilter } }, undefined, { shallow: true, scroll: false });
   };
 
   return (
@@ -87,7 +108,7 @@ const MoreWork: React.FC<Props> = ({ works }) => {
 
         <Fade key={filter} duration={500} triggerOnce>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 xl:gap-8">
-            {getFilteredWorks().map((work, index: number) => (
+            {getFilteredWorks().map((work: WorkType, index: number) => (
               <Link
                 as={`/work/${work.slug}`}
                 href="/work/[slug]"

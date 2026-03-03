@@ -173,9 +173,12 @@ function ModeToggle() {
 }
 
 function NavItem({ href, children }) {
+  const router = useRouter();
   let hrefWithoutHash = href.replace('#', '');
-  let path = useRouter().pathname;
-  let isActive = path.includes(hrefWithoutHash);
+  let path = router.pathname;
+  let isActive =
+    (path !== '/' && path.includes(hrefWithoutHash)) ||
+    (href === '/#work' && path === '/' && !!router.query.filter);
 
   return (
     <li>
