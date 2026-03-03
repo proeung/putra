@@ -107,4 +107,11 @@ nextTitle: "Outrider.org"
 nextUrl: "/work/outrider"
 ---
 
-Special thanks to Duran Goodyear ([Alphex Information Solutions](https://alphex.com/)) for having me on this project and Mandy Beerley ([Arrowake](https://arrowake.com/)) for the beautiful design.
+## Summary of Role
+
+- Led the development of Flexgen.com from start to finish, owning both frontend and backend across the full Drupal 11+ build
+- Architected and built 15+ custom Paragraph types and components to support a flexible, editor-friendly content authoring experience
+- Configured Vite as the front-end build tool with Hot Module Replacement (HMR) for a fast, modern development workflow
+- Developed product landing pages, service pages, blog infrastructure, theme variations, and lead generation forms
+- Built a standalone React + TypeScript calculator widget (Phase 2) integrated as a custom Drupal block, featuring ChartJS visualizations, Material UI components, and a token-based locked/unlocked mode for newsletter lead capture
+- Collaborated with [Alphex Information Solutions](https://alphex.com/) and [Arrowake](https://arrowake.com/) throughout the engagement, shipping the full marketing site in under six weeks

@@ -46,6 +46,11 @@
 .markdown ul,
 .markdown ol {
   @apply marker:text-teal-500 list-disc list-outside ps-8 leading-relaxed mt-6 mb-0 space-y-2 md:ps-10 lg:mt-10 lg:space-y-6;
+
+  li a,
+  li a:visited {
+    @apply font-sans font-bold text-teal-600 dark:text-teal-400 hover:underline;
+  }
 }
 
 .markdown pre {
