@@ -1,6 +1,6 @@
 ---
 title: "CFR.org Website Redesign"
-excerpt: "When Upstatement brought me on as a support engineer for the CFR.org redesign, I joined at a critical juncture to help accelerate UI development for a headless Next.js platform powered by WordPress Gutenberg. Over four months, I built production-ready React components, maintained a Storybook library, and collaborated closely with their lead engineers, PM, and designers to deliver a polished editorial experience."
+excerpt: "When Upstatement brought me on as a support engineer for the Council on Foreign Relations website redesign, I joined at a critical juncture to help accelerate UI development for a headless Next.js platform powered by WordPress Gutenberg. Over four months, I built production-ready React components, maintained a Storybook library, and collaborated closely with their lead engineers, PM, and designers to deliver a polished editorial experience."
 coverImage: ""
 coverVideo: "/assets/work/cfr/video-cover.mp4"
 coverVideoPoster: "/assets/work/cfr/video-cover-poster.webp"
@@ -94,7 +94,7 @@ nextUrl: "/work/flexgen"
 
 ## Summary of Role
 
-- Contracted by Upstatement as a support engineer to accelerate UI development during a critical phase of the CFR.org redesign
+- Contracted by Upstatement as a support engineer to accelerate UI development during a critical phase of the Council on Foreign Relations website redesign
 - Built and organized production-ready React UI components with TailwindCSS within Upstatement's existing Storybook setup (housed inside the Next.js project), each mapped to WordPress Gutenberg blocks for content authoring
 - Built ahead of finalized design specs, drawing on a strong design background to make informed decisions and maintain visual consistency while designs were still in progress
 - Maintained a rigorous PR review process to ensure design-to-code parity, catching drift early before components reached production
