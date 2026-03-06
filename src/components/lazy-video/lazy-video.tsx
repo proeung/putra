@@ -49,8 +49,15 @@ const LazyVideo = ({ label, src, poster, videoRef: externalRef }: Props) => {
               videoElement.src = src;
               videoElement.load();
               loadedRef.current = true;
-            }
-            if (shouldAutoPlay) {
+              if (shouldAutoPlay) {
+                // Safari requires waiting for canplay before calling play()
+                // after setting src — Chrome/Firefox handle the immediate call fine
+                videoElement.addEventListener('canplay', () => {
+                  videoElement.play().catch(() => {});
+                }, { once: true });
+              }
+            } else if (shouldAutoPlay) {
+              // Video already loaded, safe to play immediately
               videoElement.play().catch(() => {});
             }
           } else if (loadedRef.current) {
