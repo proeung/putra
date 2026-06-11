@@ -16,6 +16,7 @@ const About = () => {
                 <h2 className="text-3xl font-light font-serif tracking-tight text-zinc-800 leading-tight md:text-5xl lg:text-6xl dark:text-zinc-100">
                   About.
                 </h2>
+                {false && (
                 <p className="inline-flex shrink-0 items-center gap-2 rounded-full border border-slate-900/10 dark:border-slate-50/20 py-2 pl-3 pr-4 text-xs md:text-sm text-zinc-600  dark:text-zinc-200">
                   <span className="relative flex h-3 w-3 mr-1">
                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
@@ -23,6 +24,7 @@ const About = () => {
                   </span>
                   Booking new projects for 2026
                 </p>
+                )}
               </Fade>
             </div>
             <Fade cascade delay={1e2} damping={1e-1} triggerOnce>
